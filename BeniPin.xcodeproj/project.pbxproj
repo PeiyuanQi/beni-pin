@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00D2852B1E64CBC8A87233F0 /* BenefitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926EBC2EDB9093AF08DA87EA /* BenefitDetailView.swift */; };
+		0886D44BAC7AB41B80915DF2 /* MyCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2B1A28FAAC643F0ED5631 /* MyCardsView.swift */; };
+		0EF788FA22841A82F553D745 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 101E8657BBDFFD6097FDA749 /* Localizable.strings */; };
+		2D619691C002D19545F3401F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 573F589A31BCC2288BF0AC8A /* Foundation.framework */; };
+		2E0791732F317AD17A886954 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF34D57895DED61D0CC7729 /* AppLanguage.swift */; };
+		345D84A271551AC6740B702B /* AddCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1399B4BE18730AE7660F8B /* AddCardView.swift */; };
+		3B565744DDC1E86FDB7AAB83 /* BeniPinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539C322E556B9FA812F44F3C /* BeniPinApp.swift */; };
+		444BE9C78388D74552F12EF0 /* BackgroundRefreshCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E47657596E83C19F5523875 /* BackgroundRefreshCoordinator.swift */; };
+		4F2D8255F357407F69BF3085 /* CatalogStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A91DCD5B6110009CC41705 /* CatalogStore.swift */; };
+		6287CD4757AAD9439FD501EA /* WalletCapability.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5AA18CDEC4ABB123A9A34A /* WalletCapability.swift */; };
+		6634D3D6183659D98D199F65 /* BenefitRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216AB2721D3086FE511B7E1B /* BenefitRow.swift */; };
+		7AD7C0D55DF6AD56DDB56A31 /* BenefitSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C35FB6D69198E0E38D8D8A /* BenefitSearch.swift */; };
+		7E85CDC7B1B9209F2ADD8A5B /* BenefitSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E943980087E339D5AFDA2F1F /* BenefitSearchView.swift */; };
+		829D8EF724E5AD79D7AC926B /* catalog.v1.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C76A9E2A8BE3B5CBE9D129C /* catalog.v1.json */; };
+		8712E71B4FA597420AF59973 /* CatalogRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDCA39928468018C2ECB74F /* CatalogRepository.swift */; };
+		8BF485C8B9360D53C0DF7575 /* UserCardCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B609A000A3627C09791712 /* UserCardCollection.swift */; };
+		9198B3CE9B1249A064778CDD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB56CA379211CF7051DD7051 /* SettingsView.swift */; };
+		919FF720F14473A0F08AF070 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35819DBF03C3CA358D5522DC /* CardDetailView.swift */; };
+		9C1EEF56B16796AFB831F2D9 /* UserStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627DDFE16A5235A60184CEA /* UserStateTests.swift */; };
+		A814374C436610D6DD06FF7D /* WalletInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6962303F61DFDBF33047A447 /* WalletInfoView.swift */; };
+		B8AA4077A452CDC929D6C667 /* LocalizedCopy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9F27ACDAAC0B35055C7239 /* LocalizedCopy.swift */; };
+		BB9DE6AF5126CCD72F52CD73 /* BenefitUsageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BCC763844F2AF84B2262AC /* BenefitUsageStore.swift */; };
+		BCF59B8D7A04FDBDFE314CFE /* CardArtworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3001776C1052E4FA3F85300 /* CardArtworkView.swift */; };
+		C3BDB269D54816A1F7E61199 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E028161DB1BE31E927447822 /* Color+Hex.swift */; };
+		C643AF8DB0590368E690A3C6 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2866FEEA54DF103683FAF3D /* RootView.swift */; };
+		C8F36C2FA6A97CADCE52A295 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 573F589A31BCC2288BF0AC8A /* Foundation.framework */; };
+		CFC7B34A4C915FDA625436F2 /* BenefitSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA40280C66713AD82CD458 /* BenefitSearchTests.swift */; };
+		D751C75B79C5AD7714C466F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D405F6F2D70A02D2518C46D0 /* AppDelegate.swift */; };
+		E2DB7866851CF60B0EE92553 /* CatalogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B53788DDEDC6E516D3F043 /* CatalogTests.swift */; };
+		E49D9FB11FBC15EFC85DAE99 /* catalog.v1.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C76A9E2A8BE3B5CBE9D129C /* catalog.v1.json */; };
+		E5F3B8C9D0A14234B6C7D8E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4E2A7B8C9F04123A5B6C7D8 /* Assets.xcassets */; };
+		F4EB6C07950FF8F2BD70F060 /* CardCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401414A5C44735A6B8AEAEF1 /* CardCatalog.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18686C4A88B442E3059B03FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A37609A2CFDF8EDB5E924F4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCBDFE30D27E4AE38DBB4126;
+			remoteInfo = BeniPin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F9F27ACDAAC0B35055C7239 /* LocalizedCopy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalizedCopy.swift; path = Models/LocalizedCopy.swift; sourceTree = "<group>"; };
+		11A91DCD5B6110009CC41705 /* CatalogStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CatalogStore.swift; path = Services/CatalogStore.swift; sourceTree = "<group>"; };
+		216AB2721D3086FE511B7E1B /* BenefitRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BenefitRow.swift; path = Components/BenefitRow.swift; sourceTree = "<group>"; };
+		25B53788DDEDC6E516D3F043 /* CatalogTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CatalogTests.swift; sourceTree = "<group>"; };
+		25DA40280C66713AD82CD458 /* BenefitSearchTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BenefitSearchTests.swift; sourceTree = "<group>"; };
+		28B609A000A3627C09791712 /* UserCardCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserCardCollection.swift; path = Services/UserCardCollection.swift; sourceTree = "<group>"; };
+		30219914F11B2EA114A0C897 /* BeniPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeniPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35819DBF03C3CA358D5522DC /* CardDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardDetailView.swift; path = Features/Cards/CardDetailView.swift; sourceTree = "<group>"; };
+		3E47657596E83C19F5523875 /* BackgroundRefreshCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackgroundRefreshCoordinator.swift; path = Services/BackgroundRefreshCoordinator.swift; sourceTree = "<group>"; };
+		401414A5C44735A6B8AEAEF1 /* CardCatalog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardCatalog.swift; path = Models/CardCatalog.swift; sourceTree = "<group>"; };
+		539C322E556B9FA812F44F3C /* BeniPinApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeniPinApp.swift; path = App/BeniPinApp.swift; sourceTree = "<group>"; };
+		53B2B1A28FAAC643F0ED5631 /* MyCardsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MyCardsView.swift; path = Features/Cards/MyCardsView.swift; sourceTree = "<group>"; };
+		573F589A31BCC2288BF0AC8A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5C14128CABDEED72DAD85ABA /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "Resources/zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		6962303F61DFDBF33047A447 /* WalletInfoView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WalletInfoView.swift; path = Features/Cards/WalletInfoView.swift; sourceTree = "<group>"; };
+		7C76A9E2A8BE3B5CBE9D129C /* catalog.v1.json */ = {isa = PBXFileReference; includeInIndex = 1; path = catalog.v1.json; sourceTree = "<group>"; };
+		926EBC2EDB9093AF08DA87EA /* BenefitDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BenefitDetailView.swift; path = Features/Benefits/BenefitDetailView.swift; sourceTree = "<group>"; };
+		94C35FB6D69198E0E38D8D8A /* BenefitSearch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BenefitSearch.swift; path = Models/BenefitSearch.swift; sourceTree = "<group>"; };
+		9627DDFE16A5235A60184CEA /* UserStateTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserStateTests.swift; sourceTree = "<group>"; };
+		9CF34D57895DED61D0CC7729 /* AppLanguage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppLanguage.swift; path = Localization/AppLanguage.swift; sourceTree = "<group>"; };
+		9D12EB026B506624BAB9A314 /* BeniPinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeniPinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2866FEEA54DF103683FAF3D /* RootView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RootView.swift; path = App/RootView.swift; sourceTree = "<group>"; };
+		AEDCA39928468018C2ECB74F /* CatalogRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CatalogRepository.swift; path = Services/CatalogRepository.swift; sourceTree = "<group>"; };
+		BB56CA379211CF7051DD7051 /* SettingsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SettingsView.swift; path = Features/Settings/SettingsView.swift; sourceTree = "<group>"; };
+		C0BCC763844F2AF84B2262AC /* BenefitUsageStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BenefitUsageStore.swift; path = Services/BenefitUsageStore.swift; sourceTree = "<group>"; };
+		C55C0F1608F47E2285767CFA /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Resources/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CD1399B4BE18730AE7660F8B /* AddCardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AddCardView.swift; path = Features/Cards/AddCardView.swift; sourceTree = "<group>"; };
+		D3001776C1052E4FA3F85300 /* CardArtworkView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardArtworkView.swift; path = Components/CardArtworkView.swift; sourceTree = "<group>"; };
+		D405F6F2D70A02D2518C46D0 /* AppDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = App/AppDelegate.swift; sourceTree = "<group>"; };
+		D4E2A7B8C9F04123A5B6C7D8 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
+		E028161DB1BE31E927447822 /* Color+Hex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Color+Hex.swift"; path = "Utilities/Color+Hex.swift"; sourceTree = "<group>"; };
+		E943980087E339D5AFDA2F1F /* BenefitSearchView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BenefitSearchView.swift; path = Features/Benefits/BenefitSearchView.swift; sourceTree = "<group>"; };
+		EE5AA18CDEC4ABB123A9A34A /* WalletCapability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WalletCapability.swift; path = Services/WalletCapability.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		605776C2FFB66FE02834E2BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D619691C002D19545F3401F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1177698EE75001442C0B72C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8F36C2FA6A97CADCE52A295 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2986402782DE89F2A78A233F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D6F6061D85F379246B2FA71 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5088F0901325EE98FA0ABDE9 /* BeniPinTests */ = {
+			isa = PBXGroup;
+			children = (
+				25DA40280C66713AD82CD458 /* BenefitSearchTests.swift */,
+				25B53788DDEDC6E516D3F043 /* CatalogTests.swift */,
+				9627DDFE16A5235A60184CEA /* UserStateTests.swift */,
+			);
+			name = BeniPinTests;
+			path = BeniPinTests;
+			sourceTree = "<group>";
+		};
+		5D6F6061D85F379246B2FA71 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				573F589A31BCC2288BF0AC8A /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		73B9A0A472294D66047E7E7D = {
+			isa = PBXGroup;
+			children = (
+				9B50846F64FF42364CAAEA2E /* Products */,
+				2986402782DE89F2A78A233F /* Frameworks */,
+				86596E001444CF56E1B059F4 /* BeniPin */,
+				8D3A78E9AB2A8D593C768A16 /* Catalog */,
+				5088F0901325EE98FA0ABDE9 /* BeniPinTests */,
+			);
+			sourceTree = "<group>";
+		};
+		86596E001444CF56E1B059F4 /* BeniPin */ = {
+			isa = PBXGroup;
+			children = (
+				D405F6F2D70A02D2518C46D0 /* AppDelegate.swift */,
+				539C322E556B9FA812F44F3C /* BeniPinApp.swift */,
+				A2866FEEA54DF103683FAF3D /* RootView.swift */,
+				216AB2721D3086FE511B7E1B /* BenefitRow.swift */,
+				D3001776C1052E4FA3F85300 /* CardArtworkView.swift */,
+				926EBC2EDB9093AF08DA87EA /* BenefitDetailView.swift */,
+				E943980087E339D5AFDA2F1F /* BenefitSearchView.swift */,
+				CD1399B4BE18730AE7660F8B /* AddCardView.swift */,
+				35819DBF03C3CA358D5522DC /* CardDetailView.swift */,
+				53B2B1A28FAAC643F0ED5631 /* MyCardsView.swift */,
+				6962303F61DFDBF33047A447 /* WalletInfoView.swift */,
+				BB56CA379211CF7051DD7051 /* SettingsView.swift */,
+				9CF34D57895DED61D0CC7729 /* AppLanguage.swift */,
+				94C35FB6D69198E0E38D8D8A /* BenefitSearch.swift */,
+				401414A5C44735A6B8AEAEF1 /* CardCatalog.swift */,
+				0F9F27ACDAAC0B35055C7239 /* LocalizedCopy.swift */,
+				3E47657596E83C19F5523875 /* BackgroundRefreshCoordinator.swift */,
+				C0BCC763844F2AF84B2262AC /* BenefitUsageStore.swift */,
+				AEDCA39928468018C2ECB74F /* CatalogRepository.swift */,
+				11A91DCD5B6110009CC41705 /* CatalogStore.swift */,
+				28B609A000A3627C09791712 /* UserCardCollection.swift */,
+				EE5AA18CDEC4ABB123A9A34A /* WalletCapability.swift */,
+				E028161DB1BE31E927447822 /* Color+Hex.swift */,
+				D4E2A7B8C9F04123A5B6C7D8 /* Assets.xcassets */,
+				101E8657BBDFFD6097FDA749 /* Localizable.strings */,
+			);
+			name = BeniPin;
+			path = BeniPin;
+			sourceTree = "<group>";
+		};
+		8D3A78E9AB2A8D593C768A16 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				7C76A9E2A8BE3B5CBE9D129C /* catalog.v1.json */,
+			);
+			name = Catalog;
+			path = catalog;
+			sourceTree = "<group>";
+		};
+		9B50846F64FF42364CAAEA2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30219914F11B2EA114A0C897 /* BeniPin.app */,
+				9D12EB026B506624BAB9A314 /* BeniPinTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCBDFE30D27E4AE38DBB4126 /* BeniPin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3BE9F59689207B45BDE3FC1 /* Build configuration list for PBXNativeTarget "BeniPin" */;
+			buildPhases = (
+				0C7DCF450634B14F428A6630 /* Sources */,
+				605776C2FFB66FE02834E2BC /* Frameworks */,
+				2DEA9ED4EEE376DD400E055A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeniPin;
+			productName = BeniPin;
+			productReference = 30219914F11B2EA114A0C897 /* BeniPin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAFC011C18FA3A141256AE43 /* BeniPinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28C720AA5CC4D7F2801032AD /* Build configuration list for PBXNativeTarget "BeniPinTests" */;
+			buildPhases = (
+				38FE4C47A7184D6583372421 /* Sources */,
+				B1177698EE75001442C0B72C /* Frameworks */,
+				E9DB1435C5D5EB85D205BA16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EE402C616099CE96D961F7E /* PBXTargetDependency */,
+			);
+			name = BeniPinTests;
+			productName = BeniPinTests;
+			productReference = 9D12EB026B506624BAB9A314 /* BeniPinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A37609A2CFDF8EDB5E924F4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+			};
+			buildConfigurationList = 5591985BEABE5EB4E2940061 /* Build configuration list for PBXProject "BeniPin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+				Base,
+			);
+			mainGroup = 73B9A0A472294D66047E7E7D;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9B50846F64FF42364CAAEA2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCBDFE30D27E4AE38DBB4126 /* BeniPin */,
+				FAFC011C18FA3A141256AE43 /* BeniPinTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DEA9ED4EEE376DD400E055A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF788FA22841A82F553D745 /* Localizable.strings in Resources */,
+				829D8EF724E5AD79D7AC926B /* catalog.v1.json in Resources */,
+				E5F3B8C9D0A14234B6C7D8E9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9DB1435C5D5EB85D205BA16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E49D9FB11FBC15EFC85DAE99 /* catalog.v1.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C7DCF450634B14F428A6630 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D751C75B79C5AD7714C466F6 /* AppDelegate.swift in Sources */,
+				3B565744DDC1E86FDB7AAB83 /* BeniPinApp.swift in Sources */,
+				C643AF8DB0590368E690A3C6 /* RootView.swift in Sources */,
+				6634D3D6183659D98D199F65 /* BenefitRow.swift in Sources */,
+				BCF59B8D7A04FDBDFE314CFE /* CardArtworkView.swift in Sources */,
+				00D2852B1E64CBC8A87233F0 /* BenefitDetailView.swift in Sources */,
+				7E85CDC7B1B9209F2ADD8A5B /* BenefitSearchView.swift in Sources */,
+				345D84A271551AC6740B702B /* AddCardView.swift in Sources */,
+				919FF720F14473A0F08AF070 /* CardDetailView.swift in Sources */,
+				0886D44BAC7AB41B80915DF2 /* MyCardsView.swift in Sources */,
+				A814374C436610D6DD06FF7D /* WalletInfoView.swift in Sources */,
+				9198B3CE9B1249A064778CDD /* SettingsView.swift in Sources */,
+				2E0791732F317AD17A886954 /* AppLanguage.swift in Sources */,
+				7AD7C0D55DF6AD56DDB56A31 /* BenefitSearch.swift in Sources */,
+				F4EB6C07950FF8F2BD70F060 /* CardCatalog.swift in Sources */,
+				B8AA4077A452CDC929D6C667 /* LocalizedCopy.swift in Sources */,
+				444BE9C78388D74552F12EF0 /* BackgroundRefreshCoordinator.swift in Sources */,
+				BB9DE6AF5126CCD72F52CD73 /* BenefitUsageStore.swift in Sources */,
+				8712E71B4FA597420AF59973 /* CatalogRepository.swift in Sources */,
+				4F2D8255F357407F69BF3085 /* CatalogStore.swift in Sources */,
+				8BF485C8B9360D53C0DF7575 /* UserCardCollection.swift in Sources */,
+				6287CD4757AAD9439FD501EA /* WalletCapability.swift in Sources */,
+				C3BDB269D54816A1F7E61199 /* Color+Hex.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38FE4C47A7184D6583372421 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC7B34A4C915FDA625436F2 /* BenefitSearchTests.swift in Sources */,
+				E2DB7866851CF60B0EE92553 /* CatalogTests.swift in Sources */,
+				9C1EEF56B16796AFB831F2D9 /* UserStateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4EE402C616099CE96D961F7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BeniPin;
+			target = CCBDFE30D27E4AE38DBB4126 /* BeniPin */;
+			targetProxy = 18686C4A88B442E3059B03FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		101E8657BBDFFD6097FDA749 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C55C0F1608F47E2285767CFA /* Localizable.strings */,
+				5C14128CABDEED72DAD85ABA /* Localizable.strings */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0E4EA56B7D9751E0B45F05CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BeniPin/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peiyuanqi.benipin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3075908FC6860AC3B4D6DC1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A16C045DFB0184B60C56A8A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.peiyuanqi.benipin.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeniPin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BeniPin";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB4140EECADBC7D210F95062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BeniPin/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peiyuanqi.benipin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB4EBC80E8FA8F2E83ABB32E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CC589AADA9B57FD55FA393B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.peiyuanqi.benipin.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeniPin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BeniPin";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28C720AA5CC4D7F2801032AD /* Build configuration list for PBXNativeTarget "BeniPinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A16C045DFB0184B60C56A8A3 /* Release */,
+				CC589AADA9B57FD55FA393B1 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5591985BEABE5EB4E2940061 /* Build configuration list for PBXProject "BeniPin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB4EBC80E8FA8F2E83ABB32E /* Debug */,
+				3075908FC6860AC3B4D6DC1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3BE9F59689207B45BDE3FC1 /* Build configuration list for PBXNativeTarget "BeniPin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E4EA56B7D9751E0B45F05CD /* Release */,
+				CB4140EECADBC7D210F95062 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A37609A2CFDF8EDB5E924F4F /* Project object */;
+}

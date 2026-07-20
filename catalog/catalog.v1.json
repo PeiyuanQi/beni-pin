@@ -1,0 +1,738 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-19T10:30:00Z",
+  "cards": [
+    {
+      "id": "amex-platinum",
+      "issuer": "American Express",
+      "name": {
+        "en": "The Platinum Card",
+        "zhHans": "美国运通白金卡"
+      },
+      "family": {
+        "en": "Membership Rewards",
+        "zhHans": "Membership Rewards 系列"
+      },
+      "network": "americanExpress",
+      "artwork": {
+        "primaryHex": "777B7E",
+        "secondaryHex": "2E3336",
+        "accentHex": "F2F3F3",
+        "symbolName": "diamond.fill",
+        "remoteImageURL": null
+      },
+      "benefitIDs": [
+        "amex-platinum-hotel-credit",
+        "amex-platinum-uber-cash",
+        "amex-platinum-airline-fee-credit",
+        "amex-platinum-lounge-access"
+      ],
+      "sourceURLs": [
+        "https://www.americanexpress.com/us/credit-cards/card/platinum/"
+      ],
+      "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "amex-gold",
+      "issuer": "American Express",
+      "name": {
+        "en": "American Express Gold Card",
+        "zhHans": "美国运通金卡"
+      },
+      "family": {
+        "en": "Membership Rewards",
+        "zhHans": "Membership Rewards 系列"
+      },
+      "network": "americanExpress",
+      "artwork": {
+        "primaryHex": "A97A27",
+        "secondaryHex": "5E3F13",
+        "accentHex": "FFF3C4",
+        "symbolName": "fork.knife",
+        "remoteImageURL": null
+      },
+      "benefitIDs": [
+        "amex-gold-uber-cash",
+        "amex-gold-dining-credit",
+        "amex-gold-dunkin-credit",
+        "amex-gold-hotel-collection-credit",
+        "amex-gold-points-categories"
+      ],
+      "sourceURLs": [
+        "https://www.americanexpress.com/us/credit-cards/card/gold-card/"
+      ],
+      "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "chase-sapphire-reserve",
+      "issuer": "Chase",
+      "name": {
+        "en": "Sapphire Reserve",
+        "zhHans": "Sapphire Reserve"
+      },
+      "family": {
+        "en": "Sapphire",
+        "zhHans": "Sapphire 蓝宝石系列"
+      },
+      "network": "visa",
+      "artwork": {
+        "primaryHex": "173D5E",
+        "secondaryHex": "081B2C",
+        "accentHex": "6FD0D8",
+        "symbolName": "airplane.departure",
+        "remoteImageURL": null
+      },
+      "benefitIDs": [
+        "chase-reserve-travel-credit",
+        "chase-reserve-edit-credit",
+        "chase-reserve-dining-credit",
+        "chase-reserve-lounge-access",
+        "chase-reserve-travel-protections"
+      ],
+      "sourceURLs": [
+        "https://www.chase.com/sapphire-cards/personal/reserve"
+      ],
+      "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "chase-sapphire-preferred",
+      "issuer": "Chase",
+      "name": {
+        "en": "Sapphire Preferred",
+        "zhHans": "Sapphire Preferred"
+      },
+      "family": {
+        "en": "Sapphire",
+        "zhHans": "Sapphire 蓝宝石系列"
+      },
+      "network": "visa",
+      "artwork": {
+        "primaryHex": "2E6A9B",
+        "secondaryHex": "102A47",
+        "accentHex": "A8DBFF",
+        "symbolName": "suitcase.rolling.fill",
+        "remoteImageURL": null
+      },
+      "benefitIDs": [
+        "chase-preferred-hotel-credit",
+        "chase-preferred-trusted-traveler-credit",
+        "chase-preferred-travel-protections",
+        "chase-preferred-points-categories"
+      ],
+      "sourceURLs": [
+        "https://www.chase.com/sapphire-cards/personal/preferred"
+      ],
+      "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "capital-one-venture-x",
+      "issuer": "Capital One",
+      "name": {
+        "en": "Venture X Rewards",
+        "zhHans": "Venture X Rewards"
+      },
+      "family": {
+        "en": "Venture",
+        "zhHans": "Venture 旅行系列"
+      },
+      "network": "visa",
+      "artwork": {
+        "primaryHex": "252C35",
+        "secondaryHex": "090C10",
+        "accentHex": "B9D7E8",
+        "symbolName": "globe.americas.fill",
+        "remoteImageURL": null
+      },
+      "benefitIDs": [
+        "venture-x-travel-credit",
+        "venture-x-anniversary-miles",
+        "venture-x-capital-one-lounge-access",
+        "venture-x-priority-pass-access",
+        "venture-x-trusted-traveler-credit",
+        "venture-x-travel-protections"
+      ],
+      "sourceURLs": [
+        "https://www.capitalone.com/credit-cards/venture-x/"
+      ],
+      "lastVerified": "2026-07-19T10:30:00Z"
+    }
+  ],
+  "benefits": [
+    {
+      "id": "amex-platinum-hotel-credit",
+      "cardIDs": ["amex-platinum"],
+      "title": {
+        "en": "Up to $300 hotel credit each half-year",
+        "zhHans": "每半年最高 $300 酒店报销"
+      },
+      "summary": {
+        "en": "Up to $600 per calendar year for eligible prepaid Fine Hotels + Resorts or The Hotel Collection bookings through American Express Travel.",
+        "zhHans": "每个自然年最高 $600，适用于通过 American Express Travel 预付的合资格 FHR 或 The Hotel Collection 订单。"
+      },
+      "details": {
+        "en": "The benefit is split into January-June and July-December periods, with up to $300 available in each period. The Hotel Collection generally requires a minimum two-night stay.",
+        "zhHans": "权益分为 1-6 月和 7-12 月两个周期，每周期最高 $300。The Hotel Collection 通常要求至少入住两晚。"
+      },
+      "category": "hotel",
+      "cadence": "semiannual",
+      "isTrackable": true,
+      "valueCents": 30000,
+      "currencyCode": "USD",
+      "enrollmentRequired": false,
+      "sourceURL": "https://global.americanexpress.com/card-benefits/detail/hotel-credit/platinum",
+      "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "amex-platinum-uber-cash",
+      "cardIDs": ["amex-platinum"],
+      "title": {
+        "en": "$15 monthly Uber Cash",
+        "zhHans": "每月 $15 Uber Cash"
+      },
+      "summary": {
+        "en": "Receive $15 in Uber Cash each month, plus an additional $20 in December, for eligible U.S. rides and orders.",
+        "zhHans": "每月获得 $15 Uber Cash，12 月额外获得 $20，适用于美国境内合资格行程和订单。"
+      },
+      "details": {
+        "en": "Add the eligible Platinum Card to the Uber account and use an American Express card for the transaction. Unused monthly Uber Cash does not roll over.",
+        "zhHans": "需要把合资格白金卡添加到 Uber 账户，并在交易时选择美国运通卡。未使用的月度额度不会结转。"
+      },
+      "category": "transportation",
+      "cadence": "monthly",
+      "isTrackable": true,
+      "valueCents": 1500,
+      "currencyCode": "USD",
+      "enrollmentRequired": true,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/platinum/",
+      "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "amex-platinum-airline-fee-credit",
+      "cardIDs": ["amex-platinum"],
+      "title": {
+        "en": "Up to $200 airline fee credit",
+        "zhHans": "最高 $200 航空杂费报销"
+      },
+      "summary": {
+        "en": "Statement credits for eligible incidental fees charged by one selected qualifying airline.",
+        "zhHans": "选择一家合资格航空公司后，可报销符合条件的航空杂费。"
+      },
+      "details": {
+        "en": "Select a qualifying airline before using the benefit. Eligible incidental charges can include items such as checked-bag fees and in-flight refreshments; airfare is generally excluded.",
+        "zhHans": "使用前需选择一家合资格航空公司。符合条件的费用可包括托运行李和机上餐饮等杂费，机票通常不在报销范围内。"
+      },
+      "category": "travelCredit",
+      "cadence": "annual",
+      "isTrackable": true,
+      "valueCents": 20000,
+      "currencyCode": "USD",
+      "enrollmentRequired": true,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/platinum/",
+      "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "amex-platinum-lounge-access",
+      "cardIDs": ["amex-platinum"],
+      "title": {
+        "en": "Global Lounge Collection access",
+        "zhHans": "Global Lounge Collection 贵宾室权益"
+      },
+      "summary": {
+        "en": "Access to participating Centurion, Priority Pass Select, Delta Sky Club, and other partner lounges under current terms.",
+        "zhHans": "按现行条款使用 Centurion、Priority Pass Select、Delta Sky Club 及其他合作贵宾室。"
+      },
+      "details": {
+        "en": "Enrollment may be required for some programs. Visit limits, same-day travel requirements, guests, and participating locations vary by lounge network.",
+        "zhHans": "部分项目需要注册。访问次数、当日乘机要求、同行客人和参与地点会因贵宾室网络而异。"
+      },
+      "category": "lounge",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": true,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/platinum/",
+      "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "amex-gold-uber-cash",
+      "cardIDs": ["amex-gold"],
+      "title": {
+        "en": "$10 monthly Uber Cash",
+        "zhHans": "每月 $10 Uber Cash"
+      },
+      "summary": {
+        "en": "Up to $120 per year in Uber Cash for eligible U.S. rides and Uber Eats orders.",
+        "zhHans": "每年最高 $120 Uber Cash，适用于美国境内合资格行程和 Uber Eats 订单。"
+      },
+      "details": {
+        "en": "Add the Gold Card to the Uber account. Monthly amounts expire at the end of each month and an American Express card must be selected for the transaction.",
+        "zhHans": "需要把金卡添加到 Uber 账户。月度额度在当月底失效，交易时需选择美国运通卡。"
+      },
+      "category": "transportation",
+      "cadence": "monthly",
+      "isTrackable": true,
+      "valueCents": 1000,
+      "currencyCode": "USD",
+      "enrollmentRequired": true,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
+      "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "amex-gold-dining-credit",
+      "cardIDs": ["amex-gold"],
+      "title": {
+        "en": "Up to $10 monthly dining credit",
+        "zhHans": "每月最高 $10 餐饮报销"
+      },
+      "summary": {
+        "en": "Up to $120 per year in statement credits at participating dining partners after enrollment.",
+        "zhHans": "注册后，在参与活动的餐饮合作商户消费，每年最高获得 $120 账单报销。"
+      },
+      "details": {
+        "en": "Enrollment is required. Eligible partners and purchase channels are defined by American Express and can change.",
+        "zhHans": "必须先注册。合资格合作商户和购买渠道由美国运通规定，并可能发生变化。"
+      },
+      "category": "dining",
+      "cadence": "monthly",
+      "isTrackable": true,
+      "valueCents": 1000,
+      "currencyCode": "USD",
+      "enrollmentRequired": true,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
+      "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "amex-gold-dunkin-credit",
+      "cardIDs": ["amex-gold"],
+      "title": {
+        "en": "Up to $7 monthly Dunkin' credit",
+        "zhHans": "每月最高 $7 Dunkin' 报销"
+      },
+      "summary": {
+        "en": "Up to $84 per year in statement credits for eligible U.S. Dunkin' purchases after enrollment.",
+        "zhHans": "注册后，在美国 Dunkin' 进行合资格消费，每年最高获得 $84 账单报销。"
+      },
+      "details": {
+        "en": "Enrollment is required. Purchases must be made with the eligible Gold Card at qualifying U.S. locations or channels.",
+        "zhHans": "必须先注册，并使用合资格金卡在美国参与活动的门店或渠道消费。"
+      },
+      "category": "dining",
+      "cadence": "monthly",
+      "isTrackable": true,
+      "valueCents": 700,
+      "currencyCode": "USD",
+      "enrollmentRequired": true,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
+      "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "amex-gold-hotel-collection-credit",
+      "cardIDs": ["amex-gold"],
+      "title": {
+        "en": "$100 Hotel Collection experience credit",
+        "zhHans": "$100 The Hotel Collection 入住消费额度"
+      },
+      "summary": {
+        "en": "A property credit toward eligible charges on qualifying Hotel Collection stays booked through American Express Travel.",
+        "zhHans": "通过 American Express Travel 预订合资格 The Hotel Collection 住宿，可获得用于酒店内合资格消费的额度。"
+      },
+      "details": {
+        "en": "A minimum two-night stay is required. Eligible charges vary by property, and the credit is attached to each qualifying booking rather than a monthly or annual allowance.",
+        "zhHans": "至少入住两晚。可抵扣的消费因酒店而异，此额度按每笔合资格订单提供，而不是月度或年度固定额度。"
+      },
+      "category": "hotel",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": 10000,
+      "currencyCode": "USD",
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
+      "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "amex-gold-points-categories",
+      "cardIDs": ["amex-gold"],
+      "title": {
+        "en": "Elevated dining and U.S. supermarket points",
+        "zhHans": "餐饮和美国超市加倍积分"
+      },
+      "summary": {
+        "en": "Earn elevated Membership Rewards rates on eligible restaurant and U.S. supermarket purchases, subject to annual caps.",
+        "zhHans": "在合资格餐厅和美国超市消费可赚取更高倍数 Membership Rewards 积分，并受年度消费上限限制。"
+      },
+      "details": {
+        "en": "The official product page lists 4X at restaurants worldwide on up to $50,000 per calendar year and 4X at U.S. supermarkets on up to $25,000 per calendar year, then 1X.",
+        "zhHans": "官网列明：全球餐厅消费每自然年前 $50,000 可得 4X，美国超市消费每自然年前 $25,000 可得 4X，超过后为 1X。"
+      },
+      "category": "points",
+      "cadence": "annual",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
+      "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "chase-reserve-travel-credit",
+      "cardIDs": ["chase-sapphire-reserve"],
+      "title": {
+        "en": "$300 annual travel credit",
+        "zhHans": "每年 $300 旅行报销"
+      },
+      "summary": {
+        "en": "Automatic statement credits for a broad range of eligible travel purchases each account anniversary year.",
+        "zhHans": "每个持卡周年年度内，广泛的合资格旅行消费可自动获得账单报销。"
+      },
+      "details": {
+        "en": "Chase applies the credit to purchases that code as travel, up to the annual limit. Purchases covered by the credit generally do not earn points.",
+        "zhHans": "Chase 会对编码为旅行类别的消费自动使用额度，直至达到年度上限。被报销的消费通常不赚取积分。"
+      },
+      "category": "travelCredit",
+      "cadence": "anniversary",
+      "isTrackable": true,
+      "valueCents": 30000,
+      "currencyCode": "USD",
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.chase.com/personal/credit-cards/education/rewards-benefits/chase-sapphire-reserve-travel-credit-how-it-works",
+      "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "chase-reserve-edit-credit",
+      "cardIDs": ["chase-sapphire-reserve"],
+      "title": {
+        "en": "Up to $500 annual The Edit hotel credit",
+        "zhHans": "每年最高 $500 The Edit 酒店报销"
+      },
+      "summary": {
+        "en": "Statement credits for eligible prepaid stays booked through The Edit by Chase Travel.",
+        "zhHans": "通过 The Edit by Chase Travel 预付合资格住宿，可获得账单报销。"
+      },
+      "details": {
+        "en": "The current terms require a minimum two-night stay and limit each qualifying transaction to up to $250 in credit. Check Chase for property and booking restrictions.",
+        "zhHans": "现行条款要求至少入住两晚，每笔合资格交易最多报销 $250。酒店范围和预订限制请以 Chase 最新条款为准。"
+      },
+      "category": "hotel",
+      "cadence": "annual",
+      "isTrackable": true,
+      "valueCents": 50000,
+      "currencyCode": "USD",
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.chase.com/sapphire-cards/personal/reserve",
+      "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "chase-reserve-dining-credit",
+      "cardIDs": ["chase-sapphire-reserve"],
+      "title": {
+        "en": "Up to $150 semiannual dining credit",
+        "zhHans": "每半年最高 $150 餐饮报销"
+      },
+      "summary": {
+        "en": "Up to $300 per year at restaurants participating in Sapphire Reserve Exclusive Tables.",
+        "zhHans": "在 Sapphire Reserve Exclusive Tables 参与餐厅消费，每年最高报销 $300。"
+      },
+      "details": {
+        "en": "The benefit is split into two six-month periods and applies only to participating restaurants and eligible purchase channels.",
+        "zhHans": "权益分为两个半年周期，仅适用于参与活动的餐厅和合资格购买渠道。"
+      },
+      "category": "dining",
+      "cadence": "semiannual",
+      "isTrackable": true,
+      "valueCents": 15000,
+      "currencyCode": "USD",
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.chase.com/sapphire-cards/personal/reserve",
+      "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "chase-reserve-lounge-access",
+      "cardIDs": ["chase-sapphire-reserve"],
+      "title": {
+        "en": "Chase Sapphire Lounge and Priority Pass access",
+        "zhHans": "Chase Sapphire Lounge 与 Priority Pass 贵宾室"
+      },
+      "summary": {
+        "en": "Access participating Chase Sapphire Lounges and Priority Pass locations under current membership terms.",
+        "zhHans": "按现行会员条款使用参与活动的 Chase Sapphire Lounge 和 Priority Pass 贵宾室。"
+      },
+      "details": {
+        "en": "Priority Pass Select is automatically activated for eligible primary cardmembers and authorized users. Guest rules, participating locations, and same-day travel requirements can change.",
+        "zhHans": "合资格主卡持有人和附属卡用户的 Priority Pass Select 会自动激活。同行客人政策、参与地点和当日乘机要求可能变化。"
+      },
+      "category": "lounge",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.chase.com/personal/credit-cards/offerdetails/chasesapphire",
+      "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "chase-reserve-travel-protections",
+      "cardIDs": ["chase-sapphire-reserve"],
+      "title": {
+        "en": "Travel and purchase protections",
+        "zhHans": "旅行与购物保障"
+      },
+      "summary": {
+        "en": "A package of trip cancellation, interruption, delay, luggage, rental-car, and purchase protections under the benefit guide.",
+        "zhHans": "权益指南包含旅行取消、中断、延误、行李、租车和购物等多类保障。"
+      },
+      "details": {
+        "en": "Coverage limits, eligible travelers, required payment methods, exclusions, and claim deadlines vary. Review the current Guide to Benefits before relying on coverage.",
+        "zhHans": "保障额度、合资格旅行者、付款要求、除外责任和理赔期限各不相同。依赖保障前请查看最新 Guide to Benefits。"
+      },
+      "category": "protection",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://asset.chase.com/content/services/structured-document/document.en.pdf/card/benefits-center/product-benefits-guide-pdf/BGC11388_v2.pdf",
+      "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "chase-preferred-hotel-credit",
+      "cardIDs": ["chase-sapphire-preferred"],
+      "title": {
+        "en": "Up to $100 annual Chase Travel hotel credit",
+        "zhHans": "每年最高 $100 Chase Travel 酒店报销"
+      },
+      "summary": {
+        "en": "Statement credits for eligible hotel stays purchased through Chase Travel each account anniversary year.",
+        "zhHans": "每个持卡周年年度，通过 Chase Travel 购买合资格酒店住宿可获得账单报销。"
+      },
+      "details": {
+        "en": "The credit is automatically applied to qualifying Chase Travel hotel purchases, up to the annual limit. Credited purchases generally do not earn points.",
+        "zhHans": "额度会自动用于合资格 Chase Travel 酒店消费，直至年度上限。被报销的消费通常不赚取积分。"
+      },
+      "category": "hotel",
+      "cadence": "anniversary",
+      "isTrackable": true,
+      "valueCents": 10000,
+      "currencyCode": "USD",
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.chase.com/personal/credit-cards/education/rewards-benefits/how-to-use-the-sapphire-preferred-hotel-credit",
+      "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "chase-preferred-trusted-traveler-credit",
+      "cardIDs": ["chase-sapphire-preferred"],
+      "title": {
+        "en": "Up to $120 trusted-traveler application credit",
+        "zhHans": "最高 $120 快速通关申请费报销"
+      },
+      "summary": {
+        "en": "A statement credit for an eligible Global Entry, TSA PreCheck, or NEXUS application charged to the card.",
+        "zhHans": "使用该卡支付合资格 Global Entry、TSA PreCheck 或 NEXUS 申请费，可获得账单报销。"
+      },
+      "details": {
+        "en": "The credit is available once every four years under current terms. Only one eligible application fee is reimbursed per benefit period.",
+        "zhHans": "按现行条款，每四年可使用一次；每个权益周期仅报销一笔合资格申请费。"
+      },
+      "category": "travelCredit",
+      "cadence": "fourYears",
+      "isTrackable": true,
+      "valueCents": 12000,
+      "currencyCode": "USD",
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.chase.com/sapphire-cards/personal/preferred",
+      "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "chase-preferred-travel-protections",
+      "cardIDs": ["chase-sapphire-preferred"],
+      "title": {
+        "en": "Travel and purchase protections",
+        "zhHans": "旅行与购物保障"
+      },
+      "summary": {
+        "en": "Built-in coverage can include trip cancellation, interruption, rental-car damage, baggage, purchase protection, and extended warranty.",
+        "zhHans": "内置保障可包括旅行取消、中断、租车损失、行李、购物保障和延长保修。"
+      },
+      "details": {
+        "en": "Each coverage has separate eligibility rules, limits, exclusions, required payment methods, and claim deadlines. Review the current benefit guide.",
+        "zhHans": "每项保障都有独立的资格、额度、除外责任、付款方式和理赔期限，请查看最新权益指南。"
+      },
+      "category": "protection",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.chase.com/sapphire-cards/personal/preferred",
+      "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "chase-preferred-points-categories",
+      "cardIDs": ["chase-sapphire-preferred"],
+      "title": {
+        "en": "Elevated travel, dining, gas, grocery, and streaming points",
+        "zhHans": "旅行、餐饮、加油、网购杂货和流媒体加倍积分"
+      },
+      "summary": {
+        "en": "Earn elevated Ultimate Rewards rates in the categories listed on the current product page.",
+        "zhHans": "在官网列明的消费类别赚取更高倍数 Ultimate Rewards 积分。"
+      },
+      "details": {
+        "en": "Current categories include Chase Travel, worldwide dining, gas and EV charging, vacation homes, online groceries, selected streaming, and general travel. Merchant coding and exclusions apply.",
+        "zhHans": "现行类别包括 Chase Travel、全球餐饮、加油和充电、度假屋、网购杂货、指定流媒体及一般旅行消费，受商户编码和除外规则限制。"
+      },
+      "category": "points",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.chase.com/sapphire-cards/personal/preferred",
+      "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "venture-x-travel-credit",
+      "cardIDs": ["capital-one-venture-x"],
+      "title": {
+        "en": "$300 annual Capital One Travel credit",
+        "zhHans": "每年 $300 Capital One Travel 额度"
+      },
+      "summary": {
+        "en": "An annual credit for eligible bookings made through Capital One Travel.",
+        "zhHans": "通过 Capital One Travel 进行合资格预订时可使用年度旅行额度。"
+      },
+      "details": {
+        "en": "The credit is available to eligible primary account holders and expires at the next account-open anniversary if unused. See Capital One Travel terms for eligible bookings.",
+        "zhHans": "额度面向合资格主卡持有人，未使用部分会在下一个开户周年到期。合资格预订范围请查看 Capital One Travel 条款。"
+      },
+      "category": "travelCredit",
+      "cadence": "anniversary",
+      "isTrackable": true,
+      "valueCents": 30000,
+      "currencyCode": "USD",
+      "enrollmentRequired": false,
+      "sourceURL": "https://travel.capitalone.com/terms/",
+      "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "venture-x-anniversary-miles",
+      "cardIDs": ["capital-one-venture-x"],
+      "title": {
+        "en": "10,000 anniversary miles",
+        "zhHans": "每个持卡周年 10,000 里程"
+      },
+      "summary": {
+        "en": "Eligible cardholders receive 10,000 bonus miles after each account anniversary under current terms.",
+        "zhHans": "按现行条款，合资格持卡人在每个账户周年后可获得 10,000 奖励里程。"
+      },
+      "details": {
+        "en": "The account must remain eligible and in good standing. The issuer controls timing, eligibility, and the value of miles when redeemed.",
+        "zhHans": "账户需要保持合资格和正常状态。入账时间、资格以及里程兑换价值由发卡行决定。"
+      },
+      "category": "points",
+      "cadence": "anniversary",
+      "isTrackable": true,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.capitalone.com/credit-cards/venture-x/",
+      "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "venture-x-capital-one-lounge-access",
+      "cardIDs": ["capital-one-venture-x"],
+      "title": {
+        "en": "Capital One Lounge access",
+        "zhHans": "Capital One Lounge 贵宾室权益"
+      },
+      "summary": {
+        "en": "Eligible cardholders can access participating Capital One Lounge locations under current access rules.",
+        "zhHans": "合资格持卡人可按现行规则使用参与活动的 Capital One Lounge。"
+      },
+      "details": {
+        "en": "Present the eligible physical card or a digital lounge pass in the Capital One app. Guest rules, same-day travel requirements, and participating locations can change.",
+        "zhHans": "入场时需出示合资格实体卡或 Capital One App 中的电子贵宾室通行证。同行客人、当日乘机要求和参与地点可能变化。"
+      },
+      "category": "lounge",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.capitalone.com/credit-cards/venture-x/",
+      "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "venture-x-priority-pass-access",
+      "cardIDs": ["capital-one-venture-x"],
+      "title": {
+        "en": "Priority Pass lounge access",
+        "zhHans": "Priority Pass 贵宾室权益"
+      },
+      "summary": {
+        "en": "Eligible primary cardholders can use participating Priority Pass lounges after activating their complimentary membership.",
+        "zhHans": "合资格主卡持有人激活免费会员后，可使用参与活动的 Priority Pass 贵宾室。"
+      },
+      "details": {
+        "en": "Activation is required through the Capital One app. Participating lounges, guest fees, access rules, and membership eligibility can change.",
+        "zhHans": "需要通过 Capital One App 激活。参与贵宾室、同行客人费用、入场规则和会员资格可能变化。"
+      },
+      "category": "lounge",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": true,
+      "sourceURL": "https://www.capitalone.com/learn-grow/more-than-money/all-about-priority-pass-and-venture-x/",
+      "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "venture-x-trusted-traveler-credit",
+      "cardIDs": ["capital-one-venture-x"],
+      "title": {
+        "en": "Up to $120 Global Entry or TSA PreCheck credit",
+        "zhHans": "最高 $120 Global Entry 或 TSA PreCheck 报销"
+      },
+      "summary": {
+        "en": "A statement credit for one eligible Global Entry or TSA PreCheck application fee charged to the card.",
+        "zhHans": "使用该卡支付一笔合资格 Global Entry 或 TSA PreCheck 申请费，可获得账单报销。"
+      },
+      "details": {
+        "en": "The application credit is available once every four years under current terms. The charged application must be eligible and within the maximum amount.",
+        "zhHans": "按现行条款，每四年可使用一次。申请项目必须符合资格，且报销不超过最高额度。"
+      },
+      "category": "travelCredit",
+      "cadence": "fourYears",
+      "isTrackable": true,
+      "valueCents": 12000,
+      "currencyCode": "USD",
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.capitalone.com/credit-cards/venture-x/",
+      "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "venture-x-travel-protections",
+      "cardIDs": ["capital-one-venture-x"],
+      "title": {
+        "en": "Visa Infinite travel and purchase protections",
+        "zhHans": "Visa Infinite 旅行与购物保障"
+      },
+      "summary": {
+        "en": "The card's current benefit guide includes eligible travel, rental-car, phone, and purchase protections.",
+        "zhHans": "现行权益指南包含合资格旅行、租车、手机和购物等保障。"
+      },
+      "details": {
+        "en": "Benefits can vary by card network and account. Coverage limits, exclusions, required payment, and claim deadlines are controlled by the current Guide to Benefits.",
+        "zhHans": "权益可能因卡组织和账户而异，保障额度、除外责任、付款要求和理赔期限以最新 Guide to Benefits 为准。"
+      },
+      "category": "protection",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.capitalone.com/credit-cards/benefits-guide/",
+      "lastVerified": "2026-07-19T10:30:00Z"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+"action.cancel" = "Cancel";
+"action.done" = "Done";
+"action.ok" = "OK";
+
+"tab.cards" = "Cards";
+"tab.benefits" = "Benefits";
+"tab.settings" = "Settings";
+
+"cards.title" = "My Cards";
+"cards.add" = "Add Card";
+"cards.added" = "Added";
+"cards.notAdded" = "Not added";
+"cards.remove" = "Remove Card";
+"cards.remove.confirm" = "Remove this card from My Cards?";
+"cards.empty.title" = "No cards yet";
+"cards.empty.message" = "Add the credit cards you own to see all of their benefits in one place.";
+"cards.search.prompt" = "Search bank, card, or benefit";
+"cards.benefits.remaining" = "benefits remaining";
+
+"benefits.title" = "Benefits";
+"benefit.title" = "Benefit";
+"benefits.scope" = "Search scope";
+"benefits.scope.myCards" = "My Cards";
+"benefits.scope.allCards" = "All Cards";
+"benefits.search.prompt" = "Search lounge, travel credit, insurance...";
+"benefits.filter" = "Filter benefits";
+"benefit.details.title" = "Details";
+"benefit.cards.title" = "Available On";
+"benefit.usage.title" = "This Period";
+"benefit.status.used" = "Used";
+"benefit.mark.used" = "Mark Used";
+"benefit.mark.unused" = "Mark Unused";
+"benefit.cadence.label" = "Resets";
+"benefit.value.label" = "Value";
+"benefit.enrollment.label" = "Enrollment required";
+"benefit.verified.label" = "Last verified";
+"benefit.source.title" = "Official Source";
+"benefit.source.open" = "Open issuer terms";
+"benefit.source.disclaimer" = "Issuer terms control. Benefits and eligibility can change.";
+
+"benefit.category.all" = "All Categories";
+"benefit.category.travelCredit" = "Travel Credits";
+"benefit.category.lounge" = "Airport Lounges";
+"benefit.category.dining" = "Dining";
+"benefit.category.hotel" = "Hotels";
+"benefit.category.transportation" = "Transportation";
+"benefit.category.shopping" = "Shopping";
+"benefit.category.protection" = "Protection";
+"benefit.category.points" = "Points";
+
+"benefit.cadence.ongoing" = "Ongoing";
+"benefit.cadence.monthly" = "Monthly";
+"benefit.cadence.quarterly" = "Quarterly";
+"benefit.cadence.semiannual" = "Every six months";
+"benefit.cadence.annual" = "Annually";
+"benefit.cadence.anniversary" = "Each card anniversary";
+"benefit.cadence.fourYears" = "Every four years";
+
+"catalog.loading" = "Loading card catalog...";
+"catalog.failed.title" = "Catalog unavailable";
+"catalog.refresh.failed.title" = "Could not update catalog";
+"catalog.origin.bundled" = "Built-in catalog";
+"catalog.origin.cached" = "Downloaded cache";
+"catalog.origin.remote" = "Latest remote catalog";
+
+"wallet.import.title" = "Apple Wallet";
+"wallet.import.subtitle" = "Why cards must be added manually";
+"wallet.info.title" = "Wallet card lists are private";
+"wallet.info.message" = "Apple does not provide third-party apps with permission to read every payment card in Apple Wallet. BeniPin therefore uses manual card selection and never opens an Apple Pay purchase sheet to inspect your Wallet.";
+"wallet.info.privacy" = "BeniPin stores only the catalog IDs of cards you select. It does not request card numbers, expiration dates, security codes, transaction history, or account balances.";
+"wallet.available" = "Apple Wallet is available on this device";
+"wallet.unavailable" = "Apple Wallet is not available on this device";
+
+"settings.title" = "Settings";
+"settings.language.title" = "Language";
+"settings.language.system" = "System Default";
+"settings.language.english" = "English";
+"settings.language.chinese" = "简体中文";
+"settings.catalog.title" = "Benefit Catalog";
+"settings.catalog.updated" = "Generated";
+"settings.catalog.source" = "Loaded from";
+"settings.catalog.cards" = "Cards";
+"settings.catalog.benefits" = "Benefits";
+"settings.catalog.refresh" = "Check for Updates";
+"settings.catalog.refreshing" = "Checking...";
+"settings.wallet.title" = "Apple Wallet";
+"settings.wallet.explanation" = "Wallet access limitations";
+"settings.privacy.title" = "Privacy";
+"settings.privacy.local" = "Your card list and usage stay on this device";
+"settings.privacy.noSensitiveData" = "No card number or financial account data is stored";
+"settings.privacy.catalogRequest" = "Catalog update requests never include your selected cards or benefit usage.";
+"settings.data.reset" = "Delete Local Data";
+"settings.data.reset.confirm" = "Remove all selected cards and benefit usage from this device?";
+"settings.sources.title" = "Data Sources";
+"settings.sources.message" = "Benefit facts are summarized from official issuer pages and benefit guides, then reviewed before publication. BeniPin does not scrape US Credit Card Guide.";
+"settings.sources.repository" = "View catalog repository";
+"settings.disclaimer.title" = "Important";
+"settings.disclaimer.message" = "BeniPin is an organizational tool, not a bank or financial adviser. Always confirm eligibility and terms with your issuer before relying on a benefit.";
+
+"common.yes" = "Yes";
+"common.no" = "No";

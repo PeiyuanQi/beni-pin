@@ -1,0 +1,101 @@
+"action.cancel" = "取消";
+"action.done" = "完成";
+"action.ok" = "好";
+
+"tab.cards" = "卡片";
+"tab.benefits" = "权益";
+"tab.settings" = "设置";
+
+"cards.title" = "我的卡片";
+"cards.add" = "添加卡片";
+"cards.added" = "已添加";
+"cards.notAdded" = "未添加";
+"cards.remove" = "移除卡片";
+"cards.remove.confirm" = "要从“我的卡片”中移除这张卡吗？";
+"cards.empty.title" = "还没有卡片";
+"cards.empty.message" = "添加你持有的信用卡，即可集中查看和管理所有权益。";
+"cards.search.prompt" = "搜索银行、卡片或权益";
+"cards.benefits.remaining" = "项权益待使用";
+
+"benefits.title" = "权益";
+"benefit.title" = "权益详情";
+"benefits.scope" = "搜索范围";
+"benefits.scope.myCards" = "我的卡片";
+"benefits.scope.allCards" = "全部卡片";
+"benefits.search.prompt" = "搜索贵宾室、旅行报销、保险……";
+"benefits.filter" = "筛选权益";
+"benefit.details.title" = "详细说明";
+"benefit.cards.title" = "适用卡片";
+"benefit.usage.title" = "本周期状态";
+"benefit.status.used" = "已使用";
+"benefit.mark.used" = "标记已使用";
+"benefit.mark.unused" = "标记未使用";
+"benefit.cadence.label" = "重置周期";
+"benefit.value.label" = "额度";
+"benefit.enrollment.label" = "需要注册";
+"benefit.verified.label" = "最近核验";
+"benefit.source.title" = "官方来源";
+"benefit.source.open" = "查看发卡行条款";
+"benefit.source.disclaimer" = "最终以发卡行条款为准，权益和资格可能变化。";
+
+"benefit.category.all" = "全部类别";
+"benefit.category.travelCredit" = "旅行报销";
+"benefit.category.lounge" = "机场贵宾室";
+"benefit.category.dining" = "餐饮";
+"benefit.category.hotel" = "酒店";
+"benefit.category.transportation" = "出行";
+"benefit.category.shopping" = "购物";
+"benefit.category.protection" = "保险与保障";
+"benefit.category.points" = "积分";
+
+"benefit.cadence.ongoing" = "持续有效";
+"benefit.cadence.monthly" = "每月";
+"benefit.cadence.quarterly" = "每季度";
+"benefit.cadence.semiannual" = "每半年";
+"benefit.cadence.annual" = "每年";
+"benefit.cadence.anniversary" = "每个持卡周年";
+"benefit.cadence.fourYears" = "每四年";
+
+"catalog.loading" = "正在载入卡片目录……";
+"catalog.failed.title" = "无法载入目录";
+"catalog.refresh.failed.title" = "目录更新失败";
+"catalog.origin.bundled" = "App 内置目录";
+"catalog.origin.cached" = "已下载缓存";
+"catalog.origin.remote" = "最新远端目录";
+
+"wallet.import.title" = "Apple 钱包";
+"wallet.import.subtitle" = "为什么需要手动添加卡片";
+"wallet.info.title" = "钱包卡片列表属于隐私数据";
+"wallet.info.message" = "Apple 不允许第三方 App 获取 Apple 钱包中的全部支付卡列表。因此 BeniPin 使用手动选卡，也不会通过发起虚假 Apple Pay 交易来探测你的钱包。";
+"wallet.info.privacy" = "BeniPin 只保存你选择的卡片产品 ID，不会索取卡号、有效期、安全码、交易记录或账户余额。";
+"wallet.available" = "这台设备可以使用 Apple 钱包";
+"wallet.unavailable" = "这台设备无法使用 Apple 钱包";
+
+"settings.title" = "设置";
+"settings.language.title" = "语言";
+"settings.language.system" = "跟随系统";
+"settings.language.english" = "English";
+"settings.language.chinese" = "简体中文";
+"settings.catalog.title" = "权益目录";
+"settings.catalog.updated" = "生成时间";
+"settings.catalog.source" = "载入来源";
+"settings.catalog.cards" = "卡片数量";
+"settings.catalog.benefits" = "权益数量";
+"settings.catalog.refresh" = "检查更新";
+"settings.catalog.refreshing" = "正在检查……";
+"settings.wallet.title" = "Apple 钱包";
+"settings.wallet.explanation" = "了解钱包读取限制";
+"settings.privacy.title" = "隐私";
+"settings.privacy.local" = "卡片列表和使用状态仅保存在本机";
+"settings.privacy.noSensitiveData" = "不保存卡号或金融账户数据";
+"settings.privacy.catalogRequest" = "目录更新请求不会包含你选择的卡片或权益使用记录。";
+"settings.data.reset" = "删除本地数据";
+"settings.data.reset.confirm" = "要删除本机上的全部卡片选择和权益使用记录吗？";
+"settings.sources.title" = "数据来源";
+"settings.sources.message" = "权益事实来自发卡行官网和正式权益指南，由人工审核后发布。BeniPin 不会抓取 US Credit Card Guide。";
+"settings.sources.repository" = "查看目录仓库";
+"settings.disclaimer.title" = "重要说明";
+"settings.disclaimer.message" = "BeniPin 是整理工具，并非银行或财务顾问。使用权益前，请务必向发卡行确认资格和最新条款。";
+
+"common.yes" = "是";
+"common.no" = "否";
