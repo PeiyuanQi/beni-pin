@@ -71,7 +71,7 @@ struct BenefitDetailView: View {
             Section("benefit.cards.title") {
                 ForEach(cards) { card in
                     HStack(spacing: 12) {
-                        CardArtworkView(card: card, compact: true)
+                        CardArtworkView(card: card, language: language, compact: true)
                             .frame(width: 112)
                         VStack(alignment: .leading, spacing: 2) {
                             Text(card.name.value(for: language))

@@ -46,6 +46,15 @@ struct BenefitRow: View {
                 }
                 .font(.caption)
                 .foregroundStyle(.secondary)
+
+                HStack(spacing: 4) {
+                    Image(systemName: "clock")
+                        .accessibilityHidden(true)
+                    Text("benefit.checked")
+                    Text(benefit.lastVerified, format: .dateTime.year().month(.abbreviated).day())
+                }
+                .font(.caption2)
+                .foregroundStyle(.tertiary)
             }
         }
         .padding(.vertical, 4)

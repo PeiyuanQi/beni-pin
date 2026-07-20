@@ -9,8 +9,9 @@ The app stores only catalog product IDs and local usage state. It does not reque
 - Native SwiftUI app targeting iOS 17 and later.
 - English and Simplified Chinese UI plus bilingual catalog search.
 - Searchable manual card catalog grouped by issuer.
-- My Cards grid with neutral, original card artwork.
-- Benefit search by title, description, issuer, card family, and category.
+- Apple Wallet-style My Cards stack with neutral, original card artwork.
+- Benefit-first navigation with searchable, horizontally scrollable category filters.
+- Benefit search by title, description, issuer, card family, and category, with source verification dates shown in every row.
 - My Cards and All Cards search scopes.
 - Local used/unused tracking for monthly, quarterly, semiannual, annual, anniversary, and four-year benefits.
 - Bundled last-known-good catalog with validated remote JSON updates, ETag support, atomic cache replacement, pull-to-refresh, and opportunistic background refresh.

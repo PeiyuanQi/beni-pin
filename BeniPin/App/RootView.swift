@@ -23,35 +23,23 @@ struct RootView: View {
         let arguments = ProcessInfo.processInfo.arguments
         if let tabIndex = arguments.firstIndex(of: "-demoTab"), arguments.indices.contains(tabIndex + 1) {
             switch arguments[tabIndex + 1] {
-            case "benefits":
-                _selectedTab = State(initialValue: .benefits)
+            case "cards":
+                _selectedTab = State(initialValue: .cards)
             case "settings":
                 _selectedTab = State(initialValue: .settings)
             default:
-                _selectedTab = State(initialValue: .cards)
+                _selectedTab = State(initialValue: .benefits)
             }
         } else {
-            _selectedTab = State(initialValue: .cards)
+            _selectedTab = State(initialValue: .benefits)
         }
 #else
-        _selectedTab = State(initialValue: .cards)
+        _selectedTab = State(initialValue: .benefits)
 #endif
     }
 
     var body: some View {
         TabView(selection: $selectedTab) {
-            NavigationStack {
-                MyCardsView(language: language)
-            }
-            .tabItem {
-                Label {
-                    Text("tab.cards")
-                } icon: {
-                    Image(systemName: "creditcard.fill")
-                }
-            }
-            .tag(Tab.cards)
-
             NavigationStack {
                 BenefitSearchView(language: language)
             }
@@ -63,6 +51,18 @@ struct RootView: View {
                 }
             }
             .tag(Tab.benefits)
+
+            NavigationStack {
+                MyCardsView(language: language)
+            }
+            .tabItem {
+                Label {
+                    Text("tab.cards")
+                } icon: {
+                    Image(systemName: "creditcard.fill")
+                }
+            }
+            .tag(Tab.cards)
 
             NavigationStack {
                 SettingsView(language: language, languageRawValue: $languageRawValue)

@@ -2,6 +2,7 @@ import SwiftUI
 
 struct CardArtworkView: View {
     let card: CardProduct
+    let language: AppLanguage
     var compact = false
 
     var body: some View {
@@ -29,11 +30,20 @@ struct CardArtworkView: View {
 
             VStack(alignment: .leading, spacing: compact ? 4 : 10) {
                 HStack(alignment: .top) {
-                    Image(systemName: card.artwork.symbolName)
-                        .font(compact ? .caption : .title2)
-                        .foregroundStyle(Color(hex: card.artwork.accentHex))
-                        .accessibilityHidden(true)
+                    VStack(alignment: .leading, spacing: compact ? 1 : 3) {
+                        Text(card.issuer.uppercased())
+                            .font(compact ? .system(size: 7, weight: .semibold) : .caption2)
+                            .lineLimit(1)
+
+                        Text(card.name.value(for: language))
+                            .font(compact ? .caption2 : .headline)
+                            .fontWeight(.semibold)
+                            .lineLimit(compact ? 2 : 1)
+                            .minimumScaleFactor(0.72)
+                    }
+
                     Spacer(minLength: 8)
+
                     Text(card.network.displayName)
                         .font(compact ? .caption2 : .caption)
                         .fontWeight(.semibold)
@@ -43,15 +53,10 @@ struct CardArtworkView: View {
 
                 Spacer(minLength: 4)
 
-                Text(card.issuer.uppercased())
-                    .font(compact ? .caption2 : .caption)
-                    .fontWeight(.semibold)
-                    .lineLimit(1)
-                Text(card.name.en)
-                    .font(compact ? .caption : .headline)
-                    .fontWeight(.semibold)
-                    .lineLimit(2)
-                    .minimumScaleFactor(0.7)
+                Image(systemName: card.artwork.symbolName)
+                    .font(compact ? .caption : .title2)
+                    .foregroundStyle(Color(hex: card.artwork.accentHex))
+                    .accessibilityHidden(true)
             }
             .foregroundStyle(.white)
             .padding(compact ? 10 : 18)
@@ -64,6 +69,6 @@ struct CardArtworkView: View {
                 .strokeBorder(.white.opacity(0.18), lineWidth: 1)
         }
         .accessibilityElement(children: .ignore)
-        .accessibilityLabel("\(card.issuer), \(card.name.en)")
+        .accessibilityLabel("\(card.issuer), \(card.name.value(for: language))")
     }
 }

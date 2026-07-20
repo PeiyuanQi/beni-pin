@@ -23,6 +23,7 @@
 "benefits.scope.myCards" = "My Cards";
 "benefits.scope.allCards" = "All Cards";
 "benefits.search.prompt" = "Search lounge, travel credit, insurance...";
+"benefits.search.clear" = "Clear search";
 "benefits.filter" = "Filter benefits";
 "benefit.details.title" = "Details";
 "benefit.cards.title" = "Available On";
@@ -34,6 +35,7 @@
 "benefit.value.label" = "Value";
 "benefit.enrollment.label" = "Enrollment required";
 "benefit.verified.label" = "Last verified";
+"benefit.checked" = "Checked";
 "benefit.source.title" = "Official Source";
 "benefit.source.open" = "Open issuer terms";
 "benefit.source.disclaimer" = "Issuer terms control. Benefits and eligibility can change.";

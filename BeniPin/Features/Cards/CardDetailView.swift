@@ -18,7 +18,7 @@ struct CardDetailView: View {
         List {
             Section {
                 VStack(alignment: .leading, spacing: 14) {
-                    CardArtworkView(card: card)
+                    CardArtworkView(card: card, language: language)
                     VStack(alignment: .leading, spacing: 4) {
                         Text(card.name.value(for: language))
                             .font(.title2.bold())

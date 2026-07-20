@@ -23,6 +23,7 @@
 "benefits.scope.myCards" = "我的卡片";
 "benefits.scope.allCards" = "全部卡片";
 "benefits.search.prompt" = "搜索贵宾室、旅行报销、保险……";
+"benefits.search.clear" = "清除搜索";
 "benefits.filter" = "筛选权益";
 "benefit.details.title" = "详细说明";
 "benefit.cards.title" = "适用卡片";
@@ -34,6 +35,7 @@
 "benefit.value.label" = "额度";
 "benefit.enrollment.label" = "需要注册";
 "benefit.verified.label" = "最近核验";
+"benefit.checked" = "查询于";
 "benefit.source.title" = "官方来源";
 "benefit.source.open" = "查看发卡行条款";
 "benefit.source.disclaimer" = "最终以发卡行条款为准，权益和资格可能变化。";

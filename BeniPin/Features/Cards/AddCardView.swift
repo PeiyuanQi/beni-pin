@@ -45,7 +45,7 @@ struct AddCardView: View {
                                 cardCollection.toggle(card)
                             } label: {
                                 HStack(spacing: 12) {
-                                    CardArtworkView(card: card, compact: true)
+                                    CardArtworkView(card: card, language: language, compact: true)
                                         .frame(width: 104)
                                     VStack(alignment: .leading, spacing: 3) {
                                         Text(card.name.value(for: language))
