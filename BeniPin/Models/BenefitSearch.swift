@@ -14,11 +14,15 @@ enum BenefitSearch {
         category: BenefitCategory?,
         ownedCardIDs: Set<String>,
         ownedOnly: Bool,
+        excludedCategories: Set<BenefitCategory> = [],
         language: AppLanguage
     ) -> [BenefitSearchResult] {
         let normalizedQuery = normalize(query)
 
         return catalog.benefits.compactMap { benefit in
+            guard !excludedCategories.contains(benefit.category) else {
+                return nil
+            }
             guard category == nil || benefit.category == category else {
                 return nil
             }
@@ -70,6 +74,9 @@ enum BenefitSearch {
             let benefitText = catalog.benefits(for: card)
                 .map { "\($0.title.en) \($0.title.zhHans) \($0.summary.en) \($0.summary.zhHans)" }
                 .joined(separator: " ")
+            let earningRateText = card.earningRates
+                .map { "\($0.category.en) \($0.category.zhHans) \($0.details.en) \($0.details.zhHans) \($0.multiplierText)X" }
+                .joined(separator: " ")
             let searchableText = [
                 card.issuer,
                 card.name.en,
@@ -77,7 +84,8 @@ enum BenefitSearch {
                 card.family.en,
                 card.family.zhHans,
                 card.network.displayName,
-                benefitText
+                benefitText,
+                earningRateText
             ].joined(separator: " ")
             return normalize(searchableText).contains(normalizedQuery)
         }

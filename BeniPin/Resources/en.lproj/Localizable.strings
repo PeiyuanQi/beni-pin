@@ -19,9 +19,11 @@
 
 "benefits.title" = "Benefits";
 "benefit.title" = "Benefit";
-"benefits.scope" = "Search scope";
-"benefits.scope.myCards" = "My Cards";
-"benefits.scope.allCards" = "All Cards";
+"benefits.mode" = "Benefits view";
+"benefits.mode.benefits" = "Benefits";
+"benefits.mode.earningRates" = "Earning";
+"benefits.empty.cards.title" = "No cards selected";
+"benefits.empty.cards.message" = "Add cards in My Cards to see their benefits and earning rates.";
 "benefits.search.prompt" = "Search lounge, travel credit, insurance...";
 "benefits.search.clear" = "Clear search";
 "benefits.filter" = "Filter benefits";
@@ -39,6 +41,9 @@
 "benefit.source.title" = "Official Source";
 "benefit.source.open" = "Open issuer terms";
 "benefit.source.disclaimer" = "Issuer terms control. Benefits and eligibility can change.";
+
+"earnings.empty.title" = "Earning rates unavailable";
+"earnings.empty.message" = "The current catalog does not yet include earning rates for these cards.";
 
 "benefit.category.all" = "All Categories";
 "benefit.category.travelCredit" = "Travel Credits";

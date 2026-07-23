@@ -11,8 +11,40 @@ final class CatalogTests: XCTestCase {
 
         XCTAssertEqual(catalog.schemaVersion, 1)
         XCTAssertEqual(catalog.cards.count, 5)
-        XCTAssertEqual(catalog.benefits.count, 24)
+        XCTAssertEqual(catalog.benefits.count, 21)
+        XCTAssertEqual(catalog.cards.flatMap(\.earningRates).count, 23)
+        XCTAssertTrue(catalog.benefits.allSatisfy { $0.category != .points })
         XCTAssertNoThrow(try catalog.validate())
+    }
+
+    func testLegacyCardWithoutEarningRatesStillDecodes() throws {
+        let data = Data(
+            """
+            {
+              "id": "legacy-card",
+              "issuer": "Test Bank",
+              "name": {"en": "Legacy", "zhHans": "旧卡"},
+              "family": {"en": "Legacy", "zhHans": "旧卡"},
+              "network": "visa",
+              "artwork": {
+                "primaryHex": "000000",
+                "secondaryHex": "111111",
+                "accentHex": "FFFFFF",
+                "symbolName": "creditcard",
+                "remoteImageURL": null
+              },
+              "benefitIDs": [],
+              "sourceURLs": [],
+              "lastVerified": "2026-07-22T00:00:00Z"
+            }
+            """.utf8
+        )
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+
+        let card = try decoder.decode(CardProduct.self, from: data)
+
+        XCTAssertTrue(card.earningRates.isEmpty)
     }
 
     func testValidationRejectsMissingBenefitReference() throws {

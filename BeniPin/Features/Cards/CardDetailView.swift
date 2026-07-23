@@ -11,7 +11,7 @@ struct CardDetailView: View {
     @State private var confirmsRemoval = false
 
     private var benefits: [CardBenefit] {
-        catalogStore.catalog.benefits(for: card)
+        catalogStore.catalog.benefits(for: card).filter { $0.category != .points }
     }
 
     var body: some View {

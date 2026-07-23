@@ -73,4 +73,36 @@ final class BenefitSearchTests: XCTestCase {
         XCTAssertFalse(results.isEmpty)
         XCTAssertTrue(results.allSatisfy { $0.benefit.category == .lounge })
     }
+
+    func testBenefitsCanExcludeAConfiguredCategory() {
+        let baseline = BenefitSearch.results(
+            in: catalog,
+            query: "",
+            category: nil,
+            ownedCardIDs: ["amex-platinum"],
+            ownedOnly: true,
+            language: .english
+        )
+        let results = BenefitSearch.results(
+            in: catalog,
+            query: "",
+            category: nil,
+            ownedCardIDs: ["amex-platinum"],
+            ownedOnly: true,
+            excludedCategories: [.lounge],
+            language: .english
+        )
+
+        XCTAssertTrue(baseline.contains { $0.benefit.category == .lounge })
+        XCTAssertFalse(results.isEmpty)
+        XCTAssertTrue(results.allSatisfy { $0.benefit.category != .lounge })
+    }
+
+    func testCardSearchMatchesEarningRateInBothLanguages() {
+        let englishResults = BenefitSearch.cards(in: catalog, query: "supermarkets", language: .simplifiedChinese)
+        let chineseResults = BenefitSearch.cards(in: catalog, query: "美国超市", language: .english)
+
+        XCTAssertEqual(englishResults.map(\.id), ["amex-gold"])
+        XCTAssertEqual(chineseResults.map(\.id), ["amex-gold"])
+    }
 }

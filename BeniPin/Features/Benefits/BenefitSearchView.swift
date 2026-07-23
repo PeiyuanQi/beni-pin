@@ -1,17 +1,33 @@
 import SwiftUI
 
 struct BenefitSearchView: View {
+    private enum Mode: Hashable {
+        case benefits
+        case earningRates
+    }
+
     let language: AppLanguage
 
     @EnvironmentObject private var catalogStore: CatalogStore
     @EnvironmentObject private var cardCollection: UserCardCollection
+    @State private var mode = Mode.benefits
     @State private var query = ""
-    @State private var ownedOnly = true
     @State private var selectedCategory: BenefitCategory?
+
+    private var ownedCards: [CardProduct] {
+        catalogStore.catalog.cards
+            .filter { cardCollection.cardIDs.contains($0.id) }
+            .sorted { lhs, rhs in
+                lhs.name.value(for: language)
+                    .localizedCaseInsensitiveCompare(rhs.name.value(for: language)) == .orderedAscending
+            }
+    }
 
     private var availableCategories: [BenefitCategory] {
         BenefitCategory.allCases.filter { category in
-            catalogStore.catalog.benefits.contains { $0.category == category }
+            category != .points && catalogStore.catalog.benefits.contains { benefit in
+                benefit.category == category && !cardCollection.cardIDs.isDisjoint(with: benefit.cardIDs)
+            }
         }
     }
 
@@ -21,23 +37,39 @@ struct BenefitSearchView: View {
             query: query,
             category: selectedCategory,
             ownedCardIDs: cardCollection.cardIDs,
-            ownedOnly: ownedOnly,
+            ownedOnly: true,
+            excludedCategories: [.points],
             language: language
         )
     }
 
     var body: some View {
         VStack(spacing: 0) {
-            searchField
-            categoryFilter
-
-            Picker("benefits.scope", selection: $ownedOnly) {
-                Text("benefits.scope.myCards").tag(true)
-                Text("benefits.scope.allCards").tag(false)
+            Picker("benefits.mode", selection: $mode) {
+                Text("benefits.mode.benefits").tag(Mode.benefits)
+                Text("benefits.mode.earningRates").tag(Mode.earningRates)
             }
             .pickerStyle(.segmented)
-            .padding(.horizontal)
-            .padding(.bottom, 8)
+            .padding(.horizontal, 16)
+            .padding(.top, 8)
+            .padding(.bottom, 4)
+
+            switch mode {
+            case .benefits:
+                benefitsContent
+            case .earningRates:
+                earningRatesContent
+            }
+        }
+    }
+
+    @ViewBuilder
+    private var benefitsContent: some View {
+        if ownedCards.isEmpty {
+            emptyCardsView
+        } else {
+            searchField
+            categoryFilter
 
             if results.isEmpty {
                 ContentUnavailableView.search(text: query)
@@ -63,15 +95,60 @@ struct BenefitSearchView: View {
                 }
             }
         }
-        .onChange(of: cardCollection.cardIDs) { _, cardIDs in
-            if cardIDs.isEmpty {
-                ownedOnly = false
+    }
+
+    @ViewBuilder
+    private var earningRatesContent: some View {
+        if ownedCards.isEmpty {
+            emptyCardsView
+        } else if ownedCards.allSatisfy({ $0.earningRates.isEmpty }) {
+            ContentUnavailableView {
+                Label("earnings.empty.title", systemImage: "chart.bar.xaxis")
+            } description: {
+                Text("earnings.empty.message")
+            }
+        } else {
+            List {
+                ForEach(ownedCards) { card in
+                    if !card.earningRates.isEmpty {
+                        Section {
+                            ForEach(card.earningRates) { earningRate in
+                                Link(destination: earningRate.sourceURL) {
+                                    EarningRateRow(
+                                        earningRate: earningRate,
+                                        language: language
+                                    )
+                                }
+                                .buttonStyle(.plain)
+                            }
+                        } header: {
+                            VStack(alignment: .leading, spacing: 2) {
+                                Text(card.name.value(for: language))
+                                    .font(.headline)
+                                    .foregroundStyle(.primary)
+                                    .textCase(nil)
+                                Text(card.issuer)
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
+                                    .textCase(nil)
+                            }
+                            .padding(.vertical, 4)
+                        }
+                    }
+                }
+            }
+            .listStyle(.insetGrouped)
+            .refreshable {
+                await catalogStore.refresh()
             }
         }
-        .onAppear {
-            if cardCollection.cardIDs.isEmpty {
-                ownedOnly = false
-            }
+    }
+
+    private var emptyCardsView: some View {
+        ContentUnavailableView {
+            Label("benefits.empty.cards.title", systemImage: "creditcard")
+        } description: {
+            Text("benefits.empty.cards.message")
         }
     }
 
@@ -99,9 +176,9 @@ struct BenefitSearchView: View {
         }
         .padding(.horizontal, 14)
         .frame(height: 48)
-        .background(Color.secondary.opacity(0.12), in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+        .background(Color.secondary.opacity(0.12), in: RoundedRectangle(cornerRadius: 8, style: .continuous))
         .padding(.horizontal, 16)
-        .padding(.top, 8)
+        .padding(.top, 4)
         .padding(.bottom, 4)
     }
 
@@ -152,5 +229,47 @@ struct BenefitSearchView: View {
         }
         .buttonStyle(.plain)
         .accessibilityAddTraits(isSelected ? .isSelected : [])
+    }
+}
+
+private struct EarningRateRow: View {
+    let earningRate: CardEarningRate
+    let language: AppLanguage
+
+    var body: some View {
+        HStack(alignment: .top, spacing: 12) {
+            Text("\(earningRate.multiplierText)X")
+                .font(.title3.bold())
+                .foregroundStyle(Color(hex: "197466"))
+                .frame(width: 54, height: 38)
+                .background(Color(hex: "DDEFEA"), in: RoundedRectangle(cornerRadius: 8))
+
+            VStack(alignment: .leading, spacing: 4) {
+                HStack(alignment: .firstTextBaseline) {
+                    Text(earningRate.category.value(for: language))
+                        .font(.headline)
+                        .foregroundStyle(.primary)
+                    Spacer(minLength: 8)
+                    Image(systemName: "arrow.up.right")
+                        .font(.caption.weight(.semibold))
+                        .foregroundStyle(.tertiary)
+                        .accessibilityHidden(true)
+                }
+
+                Text(earningRate.details.value(for: language))
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+
+                HStack(spacing: 4) {
+                    Image(systemName: "clock")
+                        .accessibilityHidden(true)
+                    Text("benefit.checked")
+                    Text(earningRate.lastVerified, format: .dateTime.year().month(.abbreviated).day())
+                }
+                .font(.caption2)
+                .foregroundStyle(.tertiary)
+            }
+        }
+        .padding(.vertical, 4)
     }
 }

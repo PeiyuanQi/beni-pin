@@ -85,7 +85,7 @@ struct MyCardsView: View {
     }
 
     private func walletCard(_ card: CardProduct) -> some View {
-        let benefits = catalogStore.catalog.benefits(for: card)
+        let benefits = catalogStore.catalog.benefits(for: card).filter { $0.category != .points }
         let trackableBenefits = benefits.filter(\.isTrackable)
         let remaining = trackableBenefits.filter {
             !usageStore.isCompleted(cardID: card.id, benefit: $0)

@@ -19,9 +19,11 @@
 
 "benefits.title" = "权益";
 "benefit.title" = "权益详情";
-"benefits.scope" = "搜索范围";
-"benefits.scope.myCards" = "我的卡片";
-"benefits.scope.allCards" = "全部卡片";
+"benefits.mode" = "权益视图";
+"benefits.mode.benefits" = "权益";
+"benefits.mode.earningRates" = "消费积分";
+"benefits.empty.cards.title" = "还没有选择卡片";
+"benefits.empty.cards.message" = "请先在“我的卡片”添加卡片，再查看对应权益和消费积分。";
 "benefits.search.prompt" = "搜索贵宾室、旅行报销、保险……";
 "benefits.search.clear" = "清除搜索";
 "benefits.filter" = "筛选权益";
@@ -39,6 +41,9 @@
 "benefit.source.title" = "官方来源";
 "benefit.source.open" = "查看发卡行条款";
 "benefit.source.disclaimer" = "最终以发卡行条款为准，权益和资格可能变化。";
+
+"earnings.empty.title" = "暂无消费积分数据";
+"earnings.empty.message" = "当前目录尚未收录这些卡片的消费积分倍率。";
 
 "benefit.category.all" = "全部类别";
 "benefit.category.travelCredit" = "旅行报销";

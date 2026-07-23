@@ -29,6 +29,15 @@ struct CardCatalog: Codable, Equatable, Sendable {
         }
 
         for card in cards {
+            let earningRateIDs = Set(card.earningRates.map(\.id))
+            guard earningRateIDs.count == card.earningRates.count else {
+                throw CatalogValidationError.duplicateEarningRateID(card.id)
+            }
+
+            guard card.earningRates.allSatisfy({ $0.multiplier.isFinite && $0.multiplier > 0 }) else {
+                throw CatalogValidationError.invalidEarningRate(card.id)
+            }
+
             let missing = card.benefitIDs.filter { !benefitIDs.contains($0) }
             guard missing.isEmpty else {
                 throw CatalogValidationError.cardReferencesMissingBenefits(card.id, missing)
@@ -46,7 +55,6 @@ struct CardCatalog: Codable, Equatable, Sendable {
             guard missing.isEmpty else {
                 throw CatalogValidationError.benefitReferencesMissingCards(benefit.id, missing)
             }
-
 
             for cardID in benefit.cardIDs {
                 guard card(id: cardID)?.benefitIDs.contains(benefit.id) == true else {
@@ -76,9 +84,77 @@ struct CardProduct: Codable, Identifiable, Hashable, Sendable {
     let family: LocalizedCopy
     let network: PaymentNetwork
     let artwork: CardArtwork
+    let earningRates: [CardEarningRate]
     let benefitIDs: [String]
     let sourceURLs: [URL]
     let lastVerified: Date
+
+    init(
+        id: String,
+        issuer: String,
+        name: LocalizedCopy,
+        family: LocalizedCopy,
+        network: PaymentNetwork,
+        artwork: CardArtwork,
+        earningRates: [CardEarningRate] = [],
+        benefitIDs: [String],
+        sourceURLs: [URL],
+        lastVerified: Date
+    ) {
+        self.id = id
+        self.issuer = issuer
+        self.name = name
+        self.family = family
+        self.network = network
+        self.artwork = artwork
+        self.earningRates = earningRates
+        self.benefitIDs = benefitIDs
+        self.sourceURLs = sourceURLs
+        self.lastVerified = lastVerified
+    }
+
+    private enum CodingKeys: String, CodingKey {
+        case id
+        case issuer
+        case name
+        case family
+        case network
+        case artwork
+        case earningRates
+        case benefitIDs
+        case sourceURLs
+        case lastVerified
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        id = try container.decode(String.self, forKey: .id)
+        issuer = try container.decode(String.self, forKey: .issuer)
+        name = try container.decode(LocalizedCopy.self, forKey: .name)
+        family = try container.decode(LocalizedCopy.self, forKey: .family)
+        network = try container.decode(PaymentNetwork.self, forKey: .network)
+        artwork = try container.decode(CardArtwork.self, forKey: .artwork)
+        earningRates = try container.decodeIfPresent([CardEarningRate].self, forKey: .earningRates) ?? []
+        benefitIDs = try container.decode([String].self, forKey: .benefitIDs)
+        sourceURLs = try container.decode([URL].self, forKey: .sourceURLs)
+        lastVerified = try container.decode(Date.self, forKey: .lastVerified)
+    }
+}
+
+struct CardEarningRate: Codable, Identifiable, Hashable, Sendable {
+    let id: String
+    let category: LocalizedCopy
+    let details: LocalizedCopy
+    let multiplier: Double
+    let sourceURL: URL
+    let lastVerified: Date
+
+    var multiplierText: String {
+        if multiplier.rounded() == multiplier {
+            return String(Int(multiplier))
+        }
+        return multiplier.formatted(.number.precision(.fractionLength(0...2)))
+    }
 }
 
 struct CardArtwork: Codable, Hashable, Sendable {
@@ -167,6 +243,8 @@ enum CatalogValidationError: LocalizedError, Equatable {
     case unsupportedSchema(Int)
     case duplicateCardID
     case duplicateBenefitID
+    case duplicateEarningRateID(String)
+    case invalidEarningRate(String)
     case cardReferencesMissingBenefits(String, [String])
     case benefitReferencesMissingCards(String, [String])
     case inconsistentRelationship(String, String)
@@ -179,6 +257,10 @@ enum CatalogValidationError: LocalizedError, Equatable {
             return "The catalog contains duplicate card IDs."
         case .duplicateBenefitID:
             return "The catalog contains duplicate benefit IDs."
+        case let .duplicateEarningRateID(cardID):
+            return "Card \(cardID) contains duplicate earning-rate IDs."
+        case let .invalidEarningRate(cardID):
+            return "Card \(cardID) contains an invalid earning rate."
         case let .cardReferencesMissingBenefits(cardID, benefitIDs):
             return "Card \(cardID) references missing benefits: \(benefitIDs.joined(separator: ", "))."
         case let .benefitReferencesMissingCards(benefitID, cardIDs):

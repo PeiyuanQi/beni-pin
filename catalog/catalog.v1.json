@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-19T10:30:00Z",
+  "generatedAt": "2026-07-22T20:00:00Z",
   "cards": [
     {
       "id": "amex-platinum",
@@ -21,6 +21,41 @@
         "symbolName": "diamond.fill",
         "remoteImageURL": null
       },
+      "earningRates": [
+        {
+          "id": "amex-platinum-flights",
+          "category": {"en": "Flights", "zhHans": "机票"},
+          "details": {
+            "en": "Flights booked directly with airlines or through American Express Travel, on up to $500,000 in purchases per calendar year.",
+            "zhHans": "直接向航空公司或通过 American Express Travel 购买机票，每自然年合资格消费上限为 $500,000。"
+          },
+          "multiplier": 5,
+          "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/platinum/",
+          "lastVerified": "2026-07-22T20:00:00Z"
+        },
+        {
+          "id": "amex-platinum-prepaid-hotels",
+          "category": {"en": "Prepaid hotels", "zhHans": "预付酒店"},
+          "details": {
+            "en": "Eligible prepaid hotels booked through American Express Travel.",
+            "zhHans": "通过 American Express Travel 预订的合资格预付酒店。"
+          },
+          "multiplier": 5,
+          "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/platinum/",
+          "lastVerified": "2026-07-22T20:00:00Z"
+        },
+        {
+          "id": "amex-platinum-other-purchases",
+          "category": {"en": "Other eligible purchases", "zhHans": "其他合资格消费"},
+          "details": {
+            "en": "The standard rate for other eligible purchases.",
+            "zhHans": "其他合资格消费的基础积攒倍率。"
+          },
+          "multiplier": 1,
+          "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/platinum/",
+          "lastVerified": "2026-07-22T20:00:00Z"
+        }
+      ],
       "benefitIDs": [
         "amex-platinum-hotel-credit",
         "amex-platinum-uber-cash",
@@ -51,12 +86,79 @@
         "symbolName": "fork.knife",
         "remoteImageURL": null
       },
+      "earningRates": [
+        {
+          "id": "amex-gold-prepaid-hotels",
+          "category": {"en": "Prepaid hotels", "zhHans": "预付酒店"},
+          "details": {
+            "en": "Prepaid hotels booked through AmexTravel.com or the Amex Travel App.",
+            "zhHans": "通过 AmexTravel.com 或 Amex Travel App 预订的预付酒店。"
+          },
+          "multiplier": 5,
+          "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
+          "lastVerified": "2026-07-22T20:00:00Z"
+        },
+        {
+          "id": "amex-gold-restaurants",
+          "category": {"en": "Restaurants worldwide", "zhHans": "全球餐厅"},
+          "details": {
+            "en": "Up to $50,000 in eligible purchases per calendar year, then 1X.",
+            "zhHans": "每自然年前 $50,000 合资格消费为 4X，超过后为 1X。"
+          },
+          "multiplier": 4,
+          "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
+          "lastVerified": "2026-07-22T20:00:00Z"
+        },
+        {
+          "id": "amex-gold-us-supermarkets",
+          "category": {"en": "U.S. supermarkets", "zhHans": "美国超市"},
+          "details": {
+            "en": "Up to $25,000 in eligible purchases per calendar year, then 1X.",
+            "zhHans": "每自然年前 $25,000 合资格消费为 4X，超过后为 1X。"
+          },
+          "multiplier": 4,
+          "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
+          "lastVerified": "2026-07-22T20:00:00Z"
+        },
+        {
+          "id": "amex-gold-flights",
+          "category": {"en": "Flights", "zhHans": "机票"},
+          "details": {
+            "en": "Flights booked directly with airlines or through AmexTravel.com or the Amex Travel App.",
+            "zhHans": "直接向航空公司或通过 AmexTravel.com、Amex Travel App 购买机票。"
+          },
+          "multiplier": 3,
+          "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
+          "lastVerified": "2026-07-22T20:00:00Z"
+        },
+        {
+          "id": "amex-gold-rentals-cruises",
+          "category": {"en": "Prepaid car rentals and cruises", "zhHans": "预付租车与邮轮"},
+          "details": {
+            "en": "Eligible prepaid car rentals and cruises booked and paid through American Express Travel.",
+            "zhHans": "通过 American Express Travel 预订并支付的合资格预付租车和邮轮。"
+          },
+          "multiplier": 2,
+          "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
+          "lastVerified": "2026-07-22T20:00:00Z"
+        },
+        {
+          "id": "amex-gold-other-purchases",
+          "category": {"en": "Other eligible purchases", "zhHans": "其他合资格消费"},
+          "details": {
+            "en": "The standard rate for other eligible purchases.",
+            "zhHans": "其他合资格消费的基础积攒倍率。"
+          },
+          "multiplier": 1,
+          "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
+          "lastVerified": "2026-07-22T20:00:00Z"
+        }
+      ],
       "benefitIDs": [
         "amex-gold-uber-cash",
         "amex-gold-dining-credit",
         "amex-gold-dunkin-credit",
-        "amex-gold-hotel-collection-credit",
-        "amex-gold-points-categories"
+        "amex-gold-hotel-collection-credit"
       ],
       "sourceURLs": [
         "https://www.americanexpress.com/us/credit-cards/card/gold-card/"
@@ -82,6 +184,52 @@
         "symbolName": "airplane.departure",
         "remoteImageURL": null
       },
+      "earningRates": [
+        {
+          "id": "chase-reserve-chase-travel",
+          "category": {"en": "Chase Travel", "zhHans": "Chase Travel"},
+          "details": {
+            "en": "Flights, hotels, rental cars, cruises, activities, and tours booked through Chase Travel. Purchases covered by a statement credit may not earn points.",
+            "zhHans": "通过 Chase Travel 预订的机票、酒店、租车、邮轮、活动和行程；已获得账单报销的消费可能不赚取积分。"
+          },
+          "multiplier": 8,
+          "sourceURL": "https://www.chase.com/sapphire-cards/personal/reserve",
+          "lastVerified": "2026-07-22T20:00:00Z"
+        },
+        {
+          "id": "chase-reserve-direct-flights-hotels",
+          "category": {"en": "Flights and hotels booked direct", "zhHans": "直接预订机票与酒店"},
+          "details": {
+            "en": "Eligible bookings made directly with an airline or hotel.",
+            "zhHans": "直接向航空公司或酒店完成的合资格预订。"
+          },
+          "multiplier": 4,
+          "sourceURL": "https://www.chase.com/sapphire-cards/personal/reserve",
+          "lastVerified": "2026-07-22T20:00:00Z"
+        },
+        {
+          "id": "chase-reserve-dining",
+          "category": {"en": "Dining worldwide", "zhHans": "全球餐饮"},
+          "details": {
+            "en": "Eligible restaurant purchases, including qualifying takeout and delivery.",
+            "zhHans": "合资格餐厅消费，包括符合条件的外卖和配送。"
+          },
+          "multiplier": 3,
+          "sourceURL": "https://www.chase.com/sapphire-cards/personal/reserve",
+          "lastVerified": "2026-07-22T20:00:00Z"
+        },
+        {
+          "id": "chase-reserve-other-purchases",
+          "category": {"en": "Other purchases", "zhHans": "其他消费"},
+          "details": {
+            "en": "The standard rate for other purchases.",
+            "zhHans": "其他消费的基础积攒倍率。"
+          },
+          "multiplier": 1,
+          "sourceURL": "https://www.chase.com/sapphire-cards/personal/reserve",
+          "lastVerified": "2026-07-22T20:00:00Z"
+        }
+      ],
       "benefitIDs": [
         "chase-reserve-travel-credit",
         "chase-reserve-edit-credit",
@@ -113,11 +261,78 @@
         "symbolName": "suitcase.rolling.fill",
         "remoteImageURL": null
       },
+      "earningRates": [
+        {
+          "id": "chase-preferred-chase-travel",
+          "category": {"en": "Chase Travel", "zhHans": "Chase Travel"},
+          "details": {
+            "en": "Flights, hotels, rental cars, cruises, activities, and tours booked through Chase Travel. Hotel-credit purchases may not earn points.",
+            "zhHans": "通过 Chase Travel 预订的机票、酒店、租车、邮轮、活动和行程；使用酒店报销额度的消费可能不赚取积分。"
+          },
+          "multiplier": 5,
+          "sourceURL": "https://www.chase.com/sapphire-cards/personal/preferred",
+          "lastVerified": "2026-07-22T20:00:00Z"
+        },
+        {
+          "id": "chase-preferred-dining",
+          "category": {"en": "Dining worldwide", "zhHans": "全球餐饮"},
+          "details": {
+            "en": "Eligible restaurant purchases, including qualifying takeout and delivery.",
+            "zhHans": "合资格餐厅消费，包括符合条件的外卖和配送。"
+          },
+          "multiplier": 3,
+          "sourceURL": "https://www.chase.com/sapphire-cards/personal/preferred",
+          "lastVerified": "2026-07-22T20:00:00Z"
+        },
+        {
+          "id": "chase-preferred-gas-ev-vacation-homes",
+          "category": {"en": "Gas, EV charging, and vacation homes", "zhHans": "加油、充电与度假屋"},
+          "details": {
+            "en": "Eligible gas-station and EV-charging purchases plus qualifying vacation-home brands.",
+            "zhHans": "合资格加油站、车辆充电消费，以及符合条件的度假屋品牌。"
+          },
+          "multiplier": 3,
+          "sourceURL": "https://www.chase.com/sapphire-cards/personal/preferred",
+          "lastVerified": "2026-07-22T20:00:00Z"
+        },
+        {
+          "id": "chase-preferred-online-grocery-streaming",
+          "category": {"en": "Online grocery and streaming", "zhHans": "网购杂货与流媒体"},
+          "details": {
+            "en": "Eligible online grocery purchases and selected streaming services; exclusions apply.",
+            "zhHans": "合资格网购杂货和指定流媒体服务，适用除外规则。"
+          },
+          "multiplier": 3,
+          "sourceURL": "https://www.chase.com/sapphire-cards/personal/preferred",
+          "lastVerified": "2026-07-22T20:00:00Z"
+        },
+        {
+          "id": "chase-preferred-other-travel",
+          "category": {"en": "Other travel", "zhHans": "其他旅行消费"},
+          "details": {
+            "en": "Eligible travel purchases outside Chase Travel.",
+            "zhHans": "Chase Travel 以外的合资格旅行消费。"
+          },
+          "multiplier": 2,
+          "sourceURL": "https://www.chase.com/sapphire-cards/personal/preferred",
+          "lastVerified": "2026-07-22T20:00:00Z"
+        },
+        {
+          "id": "chase-preferred-other-purchases",
+          "category": {"en": "Other purchases", "zhHans": "其他消费"},
+          "details": {
+            "en": "The standard rate for other purchases.",
+            "zhHans": "其他消费的基础积攒倍率。"
+          },
+          "multiplier": 1,
+          "sourceURL": "https://www.chase.com/sapphire-cards/personal/preferred",
+          "lastVerified": "2026-07-22T20:00:00Z"
+        }
+      ],
       "benefitIDs": [
         "chase-preferred-hotel-credit",
         "chase-preferred-trusted-traveler-credit",
-        "chase-preferred-travel-protections",
-        "chase-preferred-points-categories"
+        "chase-preferred-travel-protections"
       ],
       "sourceURLs": [
         "https://www.chase.com/sapphire-cards/personal/preferred"
@@ -143,9 +358,54 @@
         "symbolName": "globe.americas.fill",
         "remoteImageURL": null
       },
+      "earningRates": [
+        {
+          "id": "venture-x-hotels-rental-cars",
+          "category": {"en": "Capital One Travel hotels and rental cars", "zhHans": "Capital One Travel 酒店与租车"},
+          "details": {
+            "en": "Hotels and rental cars booked through Capital One Travel.",
+            "zhHans": "通过 Capital One Travel 预订的酒店和租车。"
+          },
+          "multiplier": 10,
+          "sourceURL": "https://www.capitalone.com/learn-grow/money-management/capital-one-venture-vs-venture-x/",
+          "lastVerified": "2026-07-22T20:00:00Z"
+        },
+        {
+          "id": "venture-x-flights-rentals-activities",
+          "category": {"en": "Capital One Travel flights, vacation rentals, and activities", "zhHans": "Capital One Travel 机票、度假屋与活动"},
+          "details": {
+            "en": "Flights, vacation rentals, and activities booked through Capital One Travel.",
+            "zhHans": "通过 Capital One Travel 预订的机票、度假屋和活动。"
+          },
+          "multiplier": 5,
+          "sourceURL": "https://www.capitalone.com/learn-grow/money-management/capital-one-venture-vs-venture-x/",
+          "lastVerified": "2026-07-22T20:00:00Z"
+        },
+        {
+          "id": "venture-x-entertainment",
+          "category": {"en": "Capital One Entertainment", "zhHans": "Capital One Entertainment"},
+          "details": {
+            "en": "Eligible purchases made through the Capital One Entertainment ticketing platform.",
+            "zhHans": "通过 Capital One Entertainment 票务平台完成的合资格消费。"
+          },
+          "multiplier": 5,
+          "sourceURL": "https://www.capitalone.com/credit-cards/venture-x/",
+          "lastVerified": "2026-07-22T20:00:00Z"
+        },
+        {
+          "id": "venture-x-other-purchases",
+          "category": {"en": "Other purchases", "zhHans": "其他消费"},
+          "details": {
+            "en": "Unlimited miles on other purchases.",
+            "zhHans": "其他消费可按此基础倍率无限积攒里程。"
+          },
+          "multiplier": 2,
+          "sourceURL": "https://www.capitalone.com/learn-grow/money-management/capital-one-venture-vs-venture-x/",
+          "lastVerified": "2026-07-22T20:00:00Z"
+        }
+      ],
       "benefitIDs": [
         "venture-x-travel-credit",
-        "venture-x-anniversary-miles",
         "venture-x-capital-one-lounge-access",
         "venture-x-priority-pass-access",
         "venture-x-trusted-traveler-credit",
@@ -351,30 +611,6 @@
       "lastVerified": "2026-07-19T10:30:00Z"
     },
     {
-      "id": "amex-gold-points-categories",
-      "cardIDs": ["amex-gold"],
-      "title": {
-        "en": "Elevated dining and U.S. supermarket points",
-        "zhHans": "餐饮和美国超市加倍积分"
-      },
-      "summary": {
-        "en": "Earn elevated Membership Rewards rates on eligible restaurant and U.S. supermarket purchases, subject to annual caps.",
-        "zhHans": "在合资格餐厅和美国超市消费可赚取更高倍数 Membership Rewards 积分，并受年度消费上限限制。"
-      },
-      "details": {
-        "en": "The official product page lists 4X at restaurants worldwide on up to $50,000 per calendar year and 4X at U.S. supermarkets on up to $25,000 per calendar year, then 1X.",
-        "zhHans": "官网列明：全球餐厅消费每自然年前 $50,000 可得 4X，美国超市消费每自然年前 $25,000 可得 4X，超过后为 1X。"
-      },
-      "category": "points",
-      "cadence": "annual",
-      "isTrackable": false,
-      "valueCents": null,
-      "currencyCode": null,
-      "enrollmentRequired": false,
-      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
-      "lastVerified": "2026-07-19T10:30:00Z"
-    },
-    {
       "id": "chase-reserve-travel-credit",
       "cardIDs": ["chase-sapphire-reserve"],
       "title": {
@@ -567,30 +803,6 @@
       "lastVerified": "2026-07-19T10:30:00Z"
     },
     {
-      "id": "chase-preferred-points-categories",
-      "cardIDs": ["chase-sapphire-preferred"],
-      "title": {
-        "en": "Elevated travel, dining, gas, grocery, and streaming points",
-        "zhHans": "旅行、餐饮、加油、网购杂货和流媒体加倍积分"
-      },
-      "summary": {
-        "en": "Earn elevated Ultimate Rewards rates in the categories listed on the current product page.",
-        "zhHans": "在官网列明的消费类别赚取更高倍数 Ultimate Rewards 积分。"
-      },
-      "details": {
-        "en": "Current categories include Chase Travel, worldwide dining, gas and EV charging, vacation homes, online groceries, selected streaming, and general travel. Merchant coding and exclusions apply.",
-        "zhHans": "现行类别包括 Chase Travel、全球餐饮、加油和充电、度假屋、网购杂货、指定流媒体及一般旅行消费，受商户编码和除外规则限制。"
-      },
-      "category": "points",
-      "cadence": "ongoing",
-      "isTrackable": false,
-      "valueCents": null,
-      "currencyCode": null,
-      "enrollmentRequired": false,
-      "sourceURL": "https://www.chase.com/sapphire-cards/personal/preferred",
-      "lastVerified": "2026-07-19T10:30:00Z"
-    },
-    {
       "id": "venture-x-travel-credit",
       "cardIDs": ["capital-one-venture-x"],
       "title": {
@@ -612,30 +824,6 @@
       "currencyCode": "USD",
       "enrollmentRequired": false,
       "sourceURL": "https://travel.capitalone.com/terms/",
-      "lastVerified": "2026-07-19T10:30:00Z"
-    },
-    {
-      "id": "venture-x-anniversary-miles",
-      "cardIDs": ["capital-one-venture-x"],
-      "title": {
-        "en": "10,000 anniversary miles",
-        "zhHans": "每个持卡周年 10,000 里程"
-      },
-      "summary": {
-        "en": "Eligible cardholders receive 10,000 bonus miles after each account anniversary under current terms.",
-        "zhHans": "按现行条款，合资格持卡人在每个账户周年后可获得 10,000 奖励里程。"
-      },
-      "details": {
-        "en": "The account must remain eligible and in good standing. The issuer controls timing, eligibility, and the value of miles when redeemed.",
-        "zhHans": "账户需要保持合资格和正常状态。入账时间、资格以及里程兑换价值由发卡行决定。"
-      },
-      "category": "points",
-      "cadence": "anniversary",
-      "isTrackable": true,
-      "valueCents": null,
-      "currencyCode": null,
-      "enrollmentRequired": false,
-      "sourceURL": "https://www.capitalone.com/credit-cards/venture-x/",
       "lastVerified": "2026-07-19T10:30:00Z"
     },
     {

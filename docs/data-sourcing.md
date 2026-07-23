@@ -10,7 +10,7 @@ Use this priority order:
 4. Licensed commercial feed with explicit redistribution and image rights.
 5. Editorial sources only to discover a possible change that is then verified against an official source.
 
-Every published benefit must include a stable ID, applicable card IDs, English and Simplified Chinese summaries written for BeniPin, cadence, enrollment flag, official source URL, and `lastVerified` date.
+Every published benefit must include a stable ID, applicable card IDs, English and Simplified Chinese summaries written for BeniPin, cadence, enrollment flag, official source URL, and `lastVerified` date. Consumption earning rates are stored separately on each card with a stable rate ID, bilingual category and qualification details, multiplier, official source URL, and verification date.
 
 ## US Credit Card Guide
 
@@ -50,6 +50,8 @@ Recommended operating cadence:
 - review highly volatile statement credits at least monthly;
 - re-verify every active record before an App Store release;
 - publish only after a human confirms the applicable product version, network, effective date, amount, cadence, enrollment requirement, and exclusions.
+
+Card discovery in the app searches every product in the downloaded BeniPin catalog, including bilingual earning-rate text. Expanding beyond the starter set requires publishing additional issuer-verified card records; the app must not fall back to live searches of editorial websites.
 
 The app checks the reviewed GitHub Raw catalog on foreground launch and schedules an opportunistic `BGAppRefreshTask` no earlier than 24 hours later. iOS decides whether and when background work runs, so this is not a guaranteed cron schedule. Manual pull-to-refresh and Settings refresh are always available.
 
