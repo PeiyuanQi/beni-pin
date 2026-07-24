@@ -4,7 +4,17 @@
 
 "tab.cards" = "卡片";
 "tab.benefits" = "权益";
+"tab.articles" = "文章";
 "tab.settings" = "设置";
+
+"articles.title" = "文章";
+"articles.section.browse" = "浏览";
+"articles.section.directories" = "信用卡目录";
+"articles.latest" = "首页最新文章";
+"articles.creditCards" = "信用卡文章";
+"articles.businessCards" = "商业信用卡文章";
+"articles.cardDirectory" = "个人信用卡列表";
+"articles.businessCardDirectory" = "商业信用卡列表";
 
 "cards.title" = "我的卡片";
 "cards.add" = "添加卡片";
@@ -46,6 +56,16 @@
 
 "earnings.empty.title" = "暂无消费积分数据";
 "earnings.empty.message" = "当前目录尚未收录这些卡片的消费积分倍率。";
+"earnings.centsPerPoint.short" = "美分/点";
+"earnings.category.travel" = "旅行";
+"earnings.category.dining" = "餐饮";
+"earnings.category.groceries" = "超市杂货";
+"earnings.category.gasTransportation" = "加油与出行";
+"earnings.category.shopping" = "购物";
+"earnings.category.housing" = "住房";
+"earnings.category.rotating" = "轮换与自选";
+"earnings.category.mixed" = "混合类别";
+"earnings.category.other" = "日常与其他";
 
 "benefit.category.all" = "全部类别";
 "benefit.category.travelCredit" = "旅行报销";
@@ -85,6 +105,12 @@
 "settings.language.system" = "跟随系统";
 "settings.language.english" = "English";
 "settings.language.chinese" = "简体中文";
+"settings.pointValues.title" = "积分价值";
+"settings.pointValues.open" = "调整积分估值";
+"settings.pointValues.summary" = "消费积分会按照这里的每点美分估值，计算并排序等效回报率。";
+"settings.pointValues.disclaimer" = "估值并非保证兑换价值，请根据自己的兑换方式调整。";
+"settings.pointValues.source" = "查看 2026 年 7 月估值来源";
+"settings.pointValues.reset" = "恢复默认估值";
 "settings.catalog.title" = "权益目录";
 "settings.catalog.updated" = "生成时间";
 "settings.catalog.source" = "载入来源";
@@ -95,11 +121,11 @@
 "settings.wallet.title" = "Apple 钱包";
 "settings.wallet.explanation" = "了解钱包读取限制";
 "settings.privacy.title" = "隐私";
-"settings.privacy.local" = "卡片列表和使用状态仅保存在本机";
+"settings.privacy.local" = "卡片列表、使用状态和积分估值仅保存在本机";
 "settings.privacy.noSensitiveData" = "不保存卡号或金融账户数据";
 "settings.privacy.catalogRequest" = "目录更新请求不会包含你选择的卡片或权益使用记录。";
 "settings.data.reset" = "删除本地数据";
-"settings.data.reset.confirm" = "要删除本机上的全部卡片选择和权益使用记录吗？";
+"settings.data.reset.confirm" = "要删除本机上的全部卡片选择和权益使用记录，并恢复默认积分估值吗？";
 "settings.sources.title" = "数据来源";
 "settings.sources.message" = "权益事实来自发卡行官网和正式权益指南，由人工审核后发布。BeniPin 不会抓取 US Credit Card Guide。";
 "settings.sources.repository" = "查看目录仓库";

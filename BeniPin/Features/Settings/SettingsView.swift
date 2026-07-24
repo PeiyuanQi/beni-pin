@@ -7,7 +7,9 @@ struct SettingsView: View {
     @EnvironmentObject private var catalogStore: CatalogStore
     @EnvironmentObject private var cardCollection: UserCardCollection
     @EnvironmentObject private var usageStore: BenefitUsageStore
+    @EnvironmentObject private var pointValuationStore: PointValuationStore
     @State private var showsWalletInfo = false
+    @State private var showsPointValues = false
     @State private var confirmsDataReset = false
 
     var body: some View {
@@ -18,6 +20,18 @@ struct SettingsView: View {
                     Text("settings.language.english").tag(AppLanguage.english.rawValue)
                     Text("settings.language.chinese").tag(AppLanguage.simplifiedChinese.rawValue)
                 }
+            }
+
+            Section("settings.pointValues.title") {
+                NavigationLink {
+                    PointValuationSettingsView(language: language)
+                } label: {
+                    Label("settings.pointValues.open", systemImage: "chart.line.uptrend.xyaxis")
+                }
+
+                Text("settings.pointValues.summary")
+                    .font(.footnote)
+                    .foregroundStyle(.secondary)
             }
 
             Section("settings.catalog.title") {
@@ -84,6 +98,16 @@ struct SettingsView: View {
             }
         }
         .navigationTitle("settings.title")
+        .navigationDestination(isPresented: $showsPointValues) {
+            PointValuationSettingsView(language: language)
+        }
+        .task {
+#if DEBUG
+            if ProcessInfo.processInfo.arguments.contains("-demoPointValues") {
+                showsPointValues = true
+            }
+#endif
+        }
         .sheet(isPresented: $showsWalletInfo) {
             WalletInfoView()
         }
@@ -91,8 +115,66 @@ struct SettingsView: View {
             Button("settings.data.reset", role: .destructive) {
                 cardCollection.removeAll()
                 usageStore.removeAll()
+                pointValuationStore.resetToDefaults()
             }
             Button("action.cancel", role: .cancel) {}
         }
+    }
+}
+
+private struct PointValuationSettingsView: View {
+    let language: AppLanguage
+
+    @EnvironmentObject private var pointValuationStore: PointValuationStore
+
+    var body: some View {
+        List {
+            Section {
+                ForEach(RewardValueCatalog.programs) { program in
+                    Stepper(
+                        value: Binding(
+                            get: { pointValuationStore.centsPerPoint(for: program.id) },
+                            set: { pointValuationStore.setCentsPerPoint($0, for: program.id) }
+                        ),
+                        in: 0.05...10,
+                        step: 0.05
+                    ) {
+                        HStack(spacing: 12) {
+                            Text(program.name.value(for: language))
+                                .foregroundStyle(.primary)
+
+                            Spacer(minLength: 8)
+
+                            HStack(spacing: 2) {
+                                Text(
+                                    pointValuationStore.centsPerPoint(for: program.id),
+                                    format: .number.precision(.fractionLength(0...2))
+                                )
+                                .monospacedDigit()
+                                Text("earnings.centsPerPoint.short")
+                            }
+                            .font(.subheadline.weight(.semibold))
+                            .foregroundStyle(Color(hex: "197466"))
+                        }
+                    }
+                }
+            } footer: {
+                Text("settings.pointValues.disclaimer")
+            }
+
+            Section {
+                Link(destination: RewardValueCatalog.valuationSourceURL) {
+                    Label("settings.pointValues.source", systemImage: "arrow.up.right.square")
+                }
+
+                Button {
+                    pointValuationStore.resetToDefaults()
+                } label: {
+                    Label("settings.pointValues.reset", systemImage: "arrow.counterclockwise")
+                }
+            }
+        }
+        .navigationTitle("settings.pointValues.title")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-23T22:30:00Z",
+  "generatedAt": "2026-07-24T06:20:00Z",
   "cards": [
     {
       "id": "amex-platinum",
@@ -694,6 +694,109 @@
       "benefitIDs": ["citi-strata-elite-hotel-benefit", "citi-strata-reserve-hotel-benefits", "citi-strata-elite-splurge-credit", "citi-strata-elite-blacklane-credit", "citi-strata-elite-priority-pass", "citi-strata-elite-admirals-club-passes", "citi-strata-elite-trusted-traveler-credit", "citi-strata-elite-protections"],
       "sourceURLs": ["https://www.citi.com/credit-cards/citi-strata-elite-credit-card", "https://www.cardbenefits.citi.com/-/media/CPP/Files/LegalDocs/SOAPI/PID920_CITI_STRATA_ELITE_CRE388_GTPB_0625_TAGGED.PDF"],
       "lastVerified": "2026-07-23T22:30:00Z"
+    },
+    {
+      "id": "boa-air-france-klm",
+      "issuer": "Bank of America",
+      "name": {"en": "Air France KLM Visa Signature Credit Card", "zhHans": "Air France KLM Visa Signature 联名卡"},
+      "family": {"en": "Air France KLM Flying Blue", "zhHans": "Air France KLM Flying Blue 联名卡"},
+      "searchAliases": ["boa air france klm", "bank of america air france", "air france credit card", "klm credit card", "flying blue card", "air france world elite mastercard", "法航荷航信用卡"],
+      "network": "visa",
+      "artwork": {"primaryHex": "F5F6F8", "secondaryHex": "15255A", "accentHex": "D7263D", "symbolName": "airplane.circle.fill", "remoteImageURL": null},
+      "earningRates": [
+        {"id": "boa-air-france-airlines", "category": {"en": "Air France, KLM, and SkyTeam airlines", "zhHans": "Air France、KLM 与 SkyTeam 航空公司"}, "details": {"en": "Eligible Air France, KLM Royal Dutch Airlines, and SkyTeam member airline purchases.", "zhHans": "Air France、KLM Royal Dutch Airlines 及 SkyTeam 成员航空公司的合资格消费。"}, "multiplier": 3, "sourceURL": "https://www.bankofamerica.com/credit-cards/products/air-france-credit-card/", "lastVerified": "2026-07-24T06:20:00Z"},
+        {"id": "boa-air-france-dining", "category": {"en": "Dining", "zhHans": "餐饮"}, "details": {"en": "Eligible dining purchases.", "zhHans": "合资格餐饮消费。"}, "multiplier": 3, "sourceURL": "https://www.bankofamerica.com/credit-cards/products/air-france-credit-card/", "lastVerified": "2026-07-24T06:20:00Z"},
+        {"id": "boa-air-france-other-purchases", "category": {"en": "Other purchases", "zhHans": "其他消费"}, "details": {"en": "The standard rate for other eligible purchases.", "zhHans": "其他合资格消费的基础积攒倍率。"}, "multiplier": 1.5, "sourceURL": "https://www.bankofamerica.com/credit-cards/products/air-france-credit-card/", "lastVerified": "2026-07-24T06:20:00Z"}
+      ],
+      "benefitIDs": [],
+      "sourceURLs": ["https://www.bankofamerica.com/credit-cards/products/air-france-credit-card/"],
+      "lastVerified": "2026-07-24T06:20:00Z"
+    },
+    {
+      "id": "barclays-hawaiian-airlines",
+      "issuer": "Barclays",
+      "name": {"en": "Hawaiian Airlines World Elite Mastercard", "zhHans": "Hawaiian Airlines World Elite Mastercard 联名卡"},
+      "family": {"en": "Hawaiian Airlines", "zhHans": "Hawaiian Airlines 联名卡"},
+      "searchAliases": ["barclays hawaiian airlines", "hawaiian airlines card", "hawaiian mastercard", "bank of hawaii mastercard", "hawaiian world elite", "夏威夷航空信用卡"],
+      "network": "mastercard",
+      "artwork": {"primaryHex": "5C2A83", "secondaryHex": "23103B", "accentHex": "F4B3CB", "symbolName": "airplane.departure", "remoteImageURL": null},
+      "earningRates": [
+        {"id": "barclays-hawaiian-airlines-purchases", "category": {"en": "Hawaiian Airlines purchases", "zhHans": "Hawaiian Airlines 消费"}, "details": {"en": "Eligible purchases made directly with Hawaiian Airlines.", "zhHans": "直接向 Hawaiian Airlines 完成的合资格消费。"}, "multiplier": 3, "sourceURL": "https://www.hawaiianairlines.com/hawaiianmiles2/credit-card", "lastVerified": "2026-07-24T06:20:00Z"},
+        {"id": "barclays-hawaiian-gas-dining-grocery", "category": {"en": "Gas, dining, and eligible grocery stores", "zhHans": "加油、餐饮与合资格杂货店"}, "details": {"en": "Eligible gas-station, dining, and grocery-store purchases.", "zhHans": "合资格加油站、餐饮及杂货店消费。"}, "multiplier": 2, "sourceURL": "https://www.hawaiianairlines.com/hawaiianmiles2/credit-card", "lastVerified": "2026-07-24T06:20:00Z"},
+        {"id": "barclays-hawaiian-other-purchases", "category": {"en": "Other purchases", "zhHans": "其他消费"}, "details": {"en": "The standard rate for other eligible purchases.", "zhHans": "其他合资格消费的基础积攒倍率。"}, "multiplier": 1, "sourceURL": "https://www.hawaiianairlines.com/hawaiianmiles2/credit-card", "lastVerified": "2026-07-24T06:20:00Z"}
+      ],
+      "benefitIDs": ["barclays-hawaiian-free-bags", "barclays-hawaiian-companion-discount"],
+      "sourceURLs": ["https://www.hawaiianairlines.com/hawaiianmiles2/credit-card"],
+      "lastVerified": "2026-07-24T06:20:00Z"
+    },
+    {
+      "id": "chase-world-of-hyatt-business",
+      "issuer": "Chase",
+      "name": {"en": "World of Hyatt Business Credit Card", "zhHans": "World of Hyatt 凯悦商业信用卡"},
+      "family": {"en": "World of Hyatt", "zhHans": "World of Hyatt 凯悦联名卡"},
+      "searchAliases": ["chase world of hyatt business", "hyatt business", "chase hyatt business", "world of hyatt biz", "凯悦商业信用卡"],
+      "network": "visa",
+      "artwork": {"primaryHex": "7A8794", "secondaryHex": "252D34", "accentHex": "E7EAED", "symbolName": "building.2.fill", "remoteImageURL": null},
+      "earningRates": [
+        {"id": "chase-hyatt-business-hyatt", "category": {"en": "Hyatt hotels", "zhHans": "Hyatt 酒店"}, "details": {"en": "Eligible purchases at participating Hyatt hotels and resorts; World of Hyatt base points are separate.", "zhHans": "参与活动的 Hyatt 酒店及度假村合资格消费；World of Hyatt 基础积分另行计算。"}, "multiplier": 4, "sourceURL": "https://creditcards.chase.com/business-credit-cards/world-of-hyatt/hyatt-business-card", "lastVerified": "2026-07-24T06:20:00Z"},
+        {"id": "chase-hyatt-business-top-categories", "category": {"en": "Top three eligible business categories each quarter", "zhHans": "每季度消费最高的三个合资格商业类别"}, "details": {"en": "The top three eligible categories each quarter among dining, shipping, direct airline tickets, local transit and commuting, social media and search advertising, car rentals, gas, and internet, cable, and phone services.", "zhHans": "每季度在餐饮、运输、航空公司直购机票、本地交通与通勤、社交媒体与搜索广告、租车、加油以及网络、有线电视和电话服务中，消费最高的三个合资格类别。"}, "multiplier": 2, "sourceURL": "https://creditcards.chase.com/business-credit-cards/world-of-hyatt/hyatt-business-card", "lastVerified": "2026-07-24T06:20:00Z"},
+        {"id": "chase-hyatt-business-fitness", "category": {"en": "Fitness clubs and gyms", "zhHans": "健身俱乐部与健身房"}, "details": {"en": "Eligible fitness-club and gym-membership purchases.", "zhHans": "合资格健身俱乐部和健身房会员消费。"}, "multiplier": 2, "sourceURL": "https://creditcards.chase.com/business-credit-cards/world-of-hyatt/hyatt-business-card", "lastVerified": "2026-07-24T06:20:00Z"},
+        {"id": "chase-hyatt-business-other-purchases", "category": {"en": "Other purchases", "zhHans": "其他消费"}, "details": {"en": "The standard rate for other eligible purchases.", "zhHans": "其他合资格消费的基础积攒倍率。"}, "multiplier": 1, "sourceURL": "https://creditcards.chase.com/business-credit-cards/world-of-hyatt/hyatt-business-card", "lastVerified": "2026-07-24T06:20:00Z"}
+      ],
+      "benefitIDs": ["chase-hyatt-business-credit", "chase-hyatt-business-discoverist"],
+      "sourceURLs": ["https://creditcards.chase.com/business-credit-cards/world-of-hyatt/hyatt-business-card", "https://www.chase.com/personal/credit-cards/hyatt/world-hyatt-business/exclusive-benefits"],
+      "lastVerified": "2026-07-24T06:20:00Z"
+    },
+    {
+      "id": "chase-freedom-flex",
+      "issuer": "Chase",
+      "name": {"en": "Freedom Flex", "zhHans": "Freedom Flex 自由灵活卡"},
+      "family": {"en": "Chase Freedom", "zhHans": "Chase Freedom 自由卡系列"},
+      "searchAliases": ["chase freedom flex", "freedom flex", "cff", "chase cff", "自由灵活卡"],
+      "network": "mastercard",
+      "artwork": {"primaryHex": "4C78A8", "secondaryHex": "17395A", "accentHex": "E5EDF6", "symbolName": "square.grid.2x2.fill", "remoteImageURL": null},
+      "earningRates": [
+        {"id": "chase-freedom-flex-quarterly", "category": {"en": "Activated quarterly bonus categories", "zhHans": "已激活的季度奖励类别"}, "details": {"en": "Up to $1,500 in combined purchases in the current quarterly bonus categories after activation.", "zhHans": "激活后，当季度奖励类别合计前 $1,500 消费适用。"}, "multiplier": 5, "unit": "percent", "sourceURL": "https://creditcards.chase.com/cash-back-credit-cards/freedom/flex", "lastVerified": "2026-07-24T06:20:00Z"},
+        {"id": "chase-freedom-flex-chase-travel", "category": {"en": "Chase Travel", "zhHans": "Chase Travel"}, "details": {"en": "Eligible travel purchased through Chase Travel.", "zhHans": "通过 Chase Travel 购买的合资格旅行消费。"}, "multiplier": 5, "unit": "percent", "sourceURL": "https://creditcards.chase.com/cash-back-credit-cards/freedom/flex", "lastVerified": "2026-07-24T06:20:00Z"},
+        {"id": "chase-freedom-flex-dining", "category": {"en": "Dining", "zhHans": "餐饮"}, "details": {"en": "Eligible restaurant purchases, including takeout and eligible delivery services.", "zhHans": "合资格餐厅消费，包括外卖和符合条件的配送服务。"}, "multiplier": 3, "unit": "percent", "sourceURL": "https://creditcards.chase.com/cash-back-credit-cards/freedom/flex", "lastVerified": "2026-07-24T06:20:00Z"},
+        {"id": "chase-freedom-flex-drugstores", "category": {"en": "Drugstores", "zhHans": "药店"}, "details": {"en": "Eligible drugstore purchases.", "zhHans": "合资格药店消费。"}, "multiplier": 3, "unit": "percent", "sourceURL": "https://creditcards.chase.com/cash-back-credit-cards/freedom/flex", "lastVerified": "2026-07-24T06:20:00Z"},
+        {"id": "chase-freedom-flex-other-purchases", "category": {"en": "Other purchases", "zhHans": "其他消费"}, "details": {"en": "The standard rate for other eligible purchases.", "zhHans": "其他合资格消费的基础返现比例。"}, "multiplier": 1, "unit": "percent", "sourceURL": "https://creditcards.chase.com/cash-back-credit-cards/freedom/flex", "lastVerified": "2026-07-24T06:20:00Z"}
+      ],
+      "benefitIDs": ["chase-freedom-flex-doordash-discount"],
+      "sourceURLs": ["https://creditcards.chase.com/cash-back-credit-cards/freedom/flex"],
+      "lastVerified": "2026-07-24T06:20:00Z"
+    },
+    {
+      "id": "capital-one-spark-cash",
+      "issuer": "Capital One",
+      "name": {"en": "Spark Cash", "zhHans": "Spark Cash 商业返现卡"},
+      "family": {"en": "Capital One Spark Business", "zhHans": "Capital One Spark 商业卡系列"},
+      "searchAliases": ["capital one spark cash", "spark 2 cash", "spark cash business", "c1 spark cash", "第一资本 spark cash"],
+      "network": "mastercard",
+      "artwork": {"primaryHex": "35383B", "secondaryHex": "101214", "accentHex": "D8B46A", "symbolName": "dollarsign.circle.fill", "remoteImageURL": null},
+      "earningRates": [
+        {"id": "capital-one-spark-cash-business-travel", "category": {"en": "Hotels and rental cars through Capital One Business Travel", "zhHans": "通过 Capital One Business Travel 预订酒店与租车"}, "details": {"en": "Eligible hotels and rental cars booked through Capital One Business Travel.", "zhHans": "通过 Capital One Business Travel 预订的合资格酒店和租车消费。"}, "multiplier": 5, "unit": "percent", "sourceURL": "https://www.capitalone.com/small-business/credit-cards/spark-cash/", "lastVerified": "2026-07-24T06:20:00Z"},
+        {"id": "capital-one-spark-cash-other-purchases", "category": {"en": "Every purchase", "zhHans": "所有消费"}, "details": {"en": "Unlimited cash back on eligible purchases without category restrictions.", "zhHans": "所有合资格消费均可无限积攒返现，不设类别限制。"}, "multiplier": 2, "unit": "percent", "sourceURL": "https://www.capitalone.com/small-business/credit-cards/spark-cash/", "lastVerified": "2026-07-24T06:20:00Z"}
+      ],
+      "benefitIDs": ["capital-one-spark-cash-protections"],
+      "sourceURLs": ["https://www.capitalone.com/small-business/credit-cards/spark-cash/", "https://www.mastercard.com/us/en/personal/find-a-card/credit-card/issuers/capital-one.html"],
+      "lastVerified": "2026-07-24T06:20:00Z"
+    },
+    {
+      "id": "capital-one-spark-cash-plus",
+      "issuer": "Capital One",
+      "name": {"en": "Spark Cash Plus", "zhHans": "Spark Cash Plus 商业签账卡"},
+      "family": {"en": "Capital One Spark Business", "zhHans": "Capital One Spark 商业卡系列"},
+      "searchAliases": ["capital one spark cash plus", "spark 2 cash plus", "spark cash plus business", "c1 spark cash plus", "第一资本 spark cash plus"],
+      "network": "mastercard",
+      "artwork": {"primaryHex": "1D2329", "secondaryHex": "080B0E", "accentHex": "B8C6D1", "symbolName": "plus.circle.fill", "remoteImageURL": null},
+      "earningRates": [
+        {"id": "capital-one-spark-cash-plus-business-travel", "category": {"en": "Hotels, vacation rentals, and rental cars through Capital One Business Travel", "zhHans": "通过 Capital One Business Travel 预订酒店、度假住宿与租车"}, "details": {"en": "Eligible hotels, vacation rentals, and rental cars booked through Capital One Business Travel.", "zhHans": "通过 Capital One Business Travel 预订的合资格酒店、度假住宿和租车消费。"}, "multiplier": 5, "unit": "percent", "sourceURL": "https://www.capitalone.com/small-business/credit-cards/spark-cash-plus/", "lastVerified": "2026-07-24T06:20:00Z"},
+        {"id": "capital-one-spark-cash-plus-other-purchases", "category": {"en": "Every purchase", "zhHans": "所有消费"}, "details": {"en": "Unlimited cash back on eligible purchases without category restrictions.", "zhHans": "所有合资格消费均可无限积攒返现，不设类别限制。"}, "multiplier": 2, "unit": "percent", "sourceURL": "https://www.capitalone.com/small-business/credit-cards/spark-cash-plus/", "lastVerified": "2026-07-24T06:20:00Z"}
+      ],
+      "benefitIDs": ["capital-one-spark-cash-plus-fee-refund"],
+      "sourceURLs": ["https://www.capitalone.com/small-business/credit-cards/spark-cash-plus/"],
+      "lastVerified": "2026-07-24T06:20:00Z"
     }
   ],
   "benefits": [
@@ -1542,6 +1645,69 @@
       "details": {"en": "Coverage depends on payment, covered events, limits, exclusions, documentation, and claim deadlines in the current benefit guide.", "zhHans": "保障取决于最新权益指南中的付款要求、承保事件、额度、除外责任、证明文件和理赔期限。"},
       "category": "protection", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
       "sourceURL": "https://www.cardbenefits.citi.com/-/media/CPP/Files/LegalDocs/SOAPI/PID920_CITI_STRATA_ELITE_CRE388_GTPB_0625_TAGGED.PDF", "lastVerified": "2026-07-23T22:30:00Z"
+    },
+    {
+      "id": "barclays-hawaiian-free-bags",
+      "cardIDs": ["barclays-hawaiian-airlines"],
+      "title": {"en": "Two free checked bags", "zhHans": "两件免费托运行李"},
+      "summary": {"en": "The primary cardmember can receive two free checked bags on eligible Hawaiian Airlines flights purchased directly with the card.", "zhHans": "主卡持有人使用该卡直接购买合资格 Hawaiian Airlines 航班时，可获得两件免费托运行李。"},
+      "details": {"en": "The primary cardmember's loyalty number, direct booking, card payment, itinerary, and baggage restrictions in the current terms apply.", "zhHans": "需符合现行条款中的主卡会员号码、直接预订、卡片付款、行程和行李限制。"},
+      "category": "transportation", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "sourceURL": "https://www.hawaiianairlines.com/hawaiianmiles2/credit-card", "lastVerified": "2026-07-24T06:20:00Z"
+    },
+    {
+      "id": "barclays-hawaiian-companion-discount",
+      "cardIDs": ["barclays-hawaiian-airlines"],
+      "title": {"en": "$100 annual companion discount", "zhHans": "每年 $100 同行票折扣"},
+      "summary": {"en": "A $100 companion discount is provided each account anniversary for eligible roundtrip coach travel between Hawaii and the continental United States.", "zhHans": "每个账户周年可获得 $100 同行票折扣，用于 Hawaii 与美国本土之间的合资格往返经济舱旅行。"},
+      "details": {"en": "Issuance, eligible routes, fare class, taxes, booking, expiration, and account-status requirements follow current terms.", "zhHans": "发放、适用航线、舱位、税费、预订、有效期和账户状态要求以现行条款为准。"},
+      "category": "transportation", "cadence": "anniversary", "isTrackable": true, "valueCents": 10000, "currencyCode": "USD", "enrollmentRequired": false,
+      "sourceURL": "https://www.hawaiianairlines.com/hawaiianmiles2/credit-card", "lastVerified": "2026-07-24T06:20:00Z"
+    },
+    {
+      "id": "chase-hyatt-business-credit",
+      "cardIDs": ["chase-world-of-hyatt-business"],
+      "title": {"en": "Up to $100 in annual Hyatt statement credits", "zhHans": "每年最高 $100 Hyatt 账单报销"},
+      "summary": {"en": "Earn a $50 statement credit on up to two qualifying Hyatt purchases of $50 or more each anniversary year.", "zhHans": "每个持卡周年，最多两笔满 $50 的 Hyatt 合资格消费可各获 $50 账单报销。"},
+      "details": {"en": "Eligible properties, transaction minimums, merchant processing, posting, account status, and exclusions follow current Chase terms.", "zhHans": "适用酒店、单笔消费门槛、商户入账方式、到账时间、账户状态和除外规则以 Chase 最新条款为准。"},
+      "category": "hotel", "cadence": "anniversary", "isTrackable": true, "valueCents": 10000, "currencyCode": "USD", "enrollmentRequired": false,
+      "sourceURL": "https://www.chase.com/personal/credit-cards/hyatt/world-hyatt-business/exclusive-benefits", "lastVerified": "2026-07-24T06:20:00Z"
+    },
+    {
+      "id": "chase-hyatt-business-discoverist",
+      "cardIDs": ["chase-world-of-hyatt-business"],
+      "title": {"en": "World of Hyatt Discoverist status", "zhHans": "World of Hyatt Discoverist 会籍"},
+      "summary": {"en": "The authorizing officer receives Discoverist status while the eligible card account remains open and in good standing.", "zhHans": "合资格卡片账户保持开立且状态正常期间，授权负责人可获得 Discoverist 会籍。"},
+      "details": {"en": "Account linking, fulfillment timing, employee upgrade awards, status duration, and program benefits follow current World of Hyatt and Chase terms.", "zhHans": "账户关联、发放时间、员工会籍升级奖励、会籍期限和计划权益以最新 World of Hyatt 与 Chase 条款为准。"},
+      "category": "hotel", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "sourceURL": "https://www.chase.com/personal/credit-cards/hyatt/world-hyatt-business/exclusive-benefits", "lastVerified": "2026-07-24T06:20:00Z"
+    },
+    {
+      "id": "chase-freedom-flex-doordash-discount",
+      "cardIDs": ["chase-freedom-flex"],
+      "title": {"en": "Up to $10 quarterly DoorDash discount", "zhHans": "每季度最高 $10 DoorDash 折扣"},
+      "summary": {"en": "Enrolled DashPass members can receive up to $10 off one qualifying non-restaurant DoorDash order each calendar quarter through December 31, 2027.", "zhHans": "已加入 DashPass 的持卡人，在 2027 年 12 月 31 日前每自然季度可对一笔合资格 DoorDash 非餐厅订单减免最高 $10。"},
+      "details": {"en": "DashPass activation, qualifying merchants and orders, payment method, expiration, account status, and current promotional terms apply.", "zhHans": "DashPass 激活、合资格商户与订单、付款方式、有效期、账户状态和现行促销条款均适用。"},
+      "category": "shopping", "cadence": "quarterly", "isTrackable": true, "valueCents": 1000, "currencyCode": "USD", "enrollmentRequired": true,
+      "sourceURL": "https://creditcards.chase.com/cash-back-credit-cards/freedom/flex", "lastVerified": "2026-07-24T06:20:00Z"
+    },
+    {
+      "id": "capital-one-spark-cash-protections",
+      "cardIDs": ["capital-one-spark-cash"],
+      "title": {"en": "Business purchase protection features", "zhHans": "商业消费保障功能"},
+      "summary": {"en": "Eligible card purchases can receive the fraud protection and extended-warranty features described in the current benefit materials.", "zhHans": "合资格卡片消费可获得现行权益资料所述的欺诈保障和延长保修功能。"},
+      "details": {"en": "Coverage requires use of the eligible card and is subject to covered events, limits, exclusions, documentation, and claim deadlines.", "zhHans": "保障需使用合资格卡片支付，并受承保事件、额度、除外责任、证明文件和理赔期限限制。"},
+      "category": "protection", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "sourceURL": "https://www.capitalone.com/small-business/credit-cards/spark-cash/", "lastVerified": "2026-07-24T06:20:00Z"
+    },
+    {
+      "id": "capital-one-spark-cash-plus-fee-refund",
+      "cardIDs": ["capital-one-spark-cash-plus"],
+      "title": {"en": "$150 annual fee refund after $150,000 spend", "zhHans": "年度消费 $150,000 后返还 $150 年费"},
+      "summary": {"en": "The $150 annual fee is refunded each year after at least $150,000 in qualifying net purchases by the membership anniversary date.", "zhHans": "在会员周年日前完成至少 $150,000 合资格净消费后，每年可返还 $150 年费。"},
+      "details": {"en": "Net-purchase calculation, anniversary timing, statement-credit posting, returns, account status, and exclusions follow current Capital One terms.", "zhHans": "净消费计算、周年时间、账单退款到账、退货、账户状态和除外规则以 Capital One 最新条款为准。"},
+      "category": "shopping", "cadence": "anniversary", "isTrackable": true, "valueCents": 15000, "currencyCode": "USD", "enrollmentRequired": false,
+      "sourceURL": "https://www.capitalone.com/small-business/credit-cards/spark-cash-plus/", "lastVerified": "2026-07-24T06:20:00Z"
     }
   ]
 }

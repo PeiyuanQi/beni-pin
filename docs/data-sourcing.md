@@ -12,6 +12,12 @@ Use this priority order:
 
 Every published benefit must include a stable ID, applicable card IDs, English and Simplified Chinese summaries written for BeniPin, cadence, enrollment flag, official source URL, and `lastVerified` date. Consumption earning rates are stored separately on each card with a stable rate ID, bilingual category and qualification details, multiplier, official source URL, and verification date.
 
+## Point Valuations
+
+Earning-rate comparison converts rewards into an estimated return percentage. Cash-back cards use their published percentage directly. Points and miles use a local cents-per-point map keyed by rewards program, while separate stable-ID maps assign each supported card to its program and each earning rate to a comparison category.
+
+The bundled defaults use The Points Guy's July 2026 monthly valuations as a consistent cross-program benchmark: <https://thepointsguy.com/loyalty-programs/monthly-valuations/>. These estimates are editorial opinions rather than issuer-guaranteed redemption values. They are not downloaded or refreshed automatically, and users can override every value locally in Settings. Overrides never leave the device and can be reset to the bundled defaults.
+
 ## US Credit Card Guide
 
 Do not scrape or republish US Credit Card Guide without a written agreement.
@@ -27,6 +33,8 @@ A future agreement would need to cover commercial use, automated access, transla
 ## Update Architecture
 
 The iOS app is a catalog consumer, not a scraper.
+
+The Articles tab is a navigation surface only. Its list contains direct links to the site's homepage, credit-card article categories, and card directories, and opens them in the system browser. It does not embed the site, request an article feed, copy titles or excerpts, cache pages, or infer catalog records at runtime.
 
 ```text
 approved issuer sources
@@ -53,6 +61,8 @@ Recommended operating cadence:
 
 Card discovery in the app searches every product in the downloaded BeniPin catalog, including bilingual earning-rate text and curated product aliases. Expanding the catalog requires publishing additional issuer-verified card records; the app must not fall back to live searches of editorial websites.
 
+Editorial pages may identify a candidate card for review. A candidate is added only after a human verifies the current product identity, availability, earning rates, and benefits against an official issuer or loyalty-program source.
+
 The app checks the reviewed GitHub Raw catalog on foreground launch and schedules an opportunistic `BGAppRefreshTask` no earlier than 24 hours later. iOS decides whether and when background work runs, so this is not a guaranteed cron schedule. Manual pull-to-refresh and Settings refresh are always available.
 
 ## Current Official Sources
@@ -75,6 +85,12 @@ The app checks the reviewed GitHub Raw catalog on foreground launch and schedule
 - Citi Strata: <https://www.citi.com/credit-cards/citi-strata-credit-card>
 - Citi Strata Premier: <https://www.citi.com/credit-cards/citi-strata-premier-credit-card>
 - Citi Strata Elite: <https://www.citi.com/credit-cards/citi-strata-elite-credit-card>
+- Bank of America Air France KLM: <https://www.bankofamerica.com/credit-cards/products/air-france-credit-card/>
+- Hawaiian Airlines World Elite Mastercard: <https://www.hawaiianairlines.com/hawaiianmiles2/credit-card>
+- Chase World of Hyatt Business: <https://creditcards.chase.com/business-credit-cards/world-of-hyatt/hyatt-business-card>
+- Chase Freedom Flex: <https://creditcards.chase.com/cash-back-credit-cards/freedom/flex>
+- Capital One Spark Cash: <https://www.capitalone.com/small-business/credit-cards/spark-cash/>
+- Capital One Spark Cash Plus: <https://www.capitalone.com/small-business/credit-cards/spark-cash-plus/>
 
 The discontinued Deserve EDU record is retained only so existing cardholders can find their legacy product. Its historical earning rate is sourced from the archived official cardholder agreement published by the Consumer Financial Protection Bureau: <https://files.consumerfinance.gov/a/assets/credit-card-agreements/pdf/Celtic_Bank/Deserve_EDU_Cardholder_Agreement.pdf>. The current Deserve site no longer offers that card: <https://deserve.com/>.
 

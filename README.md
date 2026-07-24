@@ -2,7 +2,7 @@
 
 BeniPin is a privacy-first native iOS app for organizing U.S. credit-card benefits. It supports English and Simplified Chinese, lets users add cards by issuer or product, searches benefits for selected cards, compares card earning rates, and tracks whether recurring benefits were used in the current period.
 
-The app stores only catalog product IDs and local usage state. It does not request or store card numbers, expiration dates, security codes, balances, or transactions.
+The app stores only catalog product IDs, local usage state, and app preferences such as point-value overrides. It does not request or store card numbers, expiration dates, security codes, balances, or transactions.
 
 ## Current MVP
 
@@ -11,11 +11,13 @@ The app stores only catalog product IDs and local usage state. It does not reque
 - Searchable manual card catalog grouped by issuer.
 - Apple Wallet-style My Cards stack with neutral, original card artwork.
 - Benefit-first navigation with searchable, horizontally scrollable category filters.
-- Separate Benefits and Earning views for selected cards; points-earning rates do not appear as benefits.
+- Separate Benefits and Earning views for selected cards; earning rates are grouped by purchase category and ranked by estimated return.
+- Locally editable cents-per-point valuations for supported rewards programs, with cash-back rates compared directly as percentages.
+- Articles tab with direct system-browser links to US Credit Card Guide's current homepage, card-article categories, and directories.
 - Benefit search by title, description, issuer, card family, and category, with source verification dates shown in every row.
 - Local used/unused tracking for monthly, quarterly, semiannual, annual, anniversary, and four-year benefits.
 - Bundled last-known-good catalog with validated remote JSON updates, ETag support, atomic cache replacement, pull-to-refresh, and opportunistic background refresh.
-- Twenty card products, 59 benefits, and 91 earning-rate records summarized from official issuer and program sources.
+- Twenty-six card products, 66 benefits, and 110 earning-rate records summarized from official issuer and program sources.
 
 Apple does not provide a public permission flow that lets a normal third-party app enumerate all payment cards in Apple Wallet. BeniPin explains that limitation and uses manual selection rather than a fake Apple Pay transaction or misleading Wallet authorization flow. See [Product Boundaries](docs/product-boundaries.md).
 
@@ -63,6 +65,8 @@ Update workflow:
 5. Review the diff before publishing to `main`.
 
 Automated scraping of US Credit Card Guide is intentionally not implemented because its terms prohibit unlicensed scraping and its content license is not suitable for this product. See [Data Sourcing](docs/data-sourcing.md).
+
+The Articles tab does not embed, copy, cache, or parse editorial content. It opens selected US Credit Card Guide listing pages in the system browser. Cards discovered through those lists enter BeniPin only after manual verification against official issuer or program sources.
 
 ## Repository Layout
 

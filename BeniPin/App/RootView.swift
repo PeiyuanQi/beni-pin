@@ -4,6 +4,7 @@ struct RootView: View {
     private enum Tab: Hashable {
         case cards
         case benefits
+        case articles
         case settings
     }
 
@@ -25,6 +26,8 @@ struct RootView: View {
             switch arguments[tabIndex + 1] {
             case "cards":
                 _selectedTab = State(initialValue: .cards)
+            case "articles":
+                _selectedTab = State(initialValue: .articles)
             case "settings":
                 _selectedTab = State(initialValue: .settings)
             default:
@@ -63,6 +66,18 @@ struct RootView: View {
                 }
             }
             .tag(Tab.cards)
+
+            NavigationStack {
+                ArticleBrowserView()
+            }
+            .tabItem {
+                Label {
+                    Text("tab.articles")
+                } icon: {
+                    Image(systemName: "newspaper.fill")
+                }
+            }
+            .tag(Tab.articles)
 
             NavigationStack {
                 SettingsView(language: language, languageRawValue: $languageRawValue)
@@ -109,6 +124,88 @@ struct RootView: View {
         } message: {
             if let refreshMessage = catalogStore.refreshMessage {
                 Text(refreshMessage)
+            }
+        }
+    }
+}
+
+private struct ArticleBrowserView: View {
+    private struct Destination: Identifiable {
+        let id: String
+        let titleKey: LocalizedStringKey
+        let symbolName: String
+        let url: URL
+    }
+
+    private let articleDestinations = [
+        Destination(
+            id: "latest",
+            titleKey: "articles.latest",
+            symbolName: "clock",
+            url: URL(string: "https://www.uscreditcardguide.com/zh/")!
+        ),
+        Destination(
+            id: "credit-cards",
+            titleKey: "articles.creditCards",
+            symbolName: "creditcard",
+            url: URL(string: "https://www.uscreditcardguide.com/category/credit-cards/")!
+        ),
+        Destination(
+            id: "business-cards",
+            titleKey: "articles.businessCards",
+            symbolName: "briefcase",
+            url: URL(string: "https://www.uscreditcardguide.com/category/biz-card/")!
+        )
+    ]
+
+    private let directoryDestinations = [
+        Destination(
+            id: "card-directory",
+            titleKey: "articles.cardDirectory",
+            symbolName: "list.bullet.rectangle",
+            url: URL(string: "https://www.uscreditcardguide.com/credit-cards/")!
+        ),
+        Destination(
+            id: "business-card-directory",
+            titleKey: "articles.businessCardDirectory",
+            symbolName: "building.2",
+            url: URL(string: "https://www.uscreditcardguide.com/small-business-credit-cards/")!
+        )
+    ]
+
+    var body: some View {
+        List {
+            destinationSection("articles.section.browse", destinations: articleDestinations)
+            destinationSection("articles.section.directories", destinations: directoryDestinations)
+        }
+        .navigationTitle("articles.title")
+    }
+
+    private func destinationSection(
+        _ titleKey: LocalizedStringKey,
+        destinations: [Destination]
+    ) -> some View {
+        Section(titleKey) {
+            ForEach(destinations) { destination in
+                Link(destination: destination.url) {
+                    HStack(spacing: 12) {
+                        Image(systemName: destination.symbolName)
+                            .font(.body.weight(.semibold))
+                            .foregroundStyle(.tint)
+                            .frame(width: 28, height: 28)
+                            .accessibilityHidden(true)
+
+                        Text(destination.titleKey)
+                            .foregroundStyle(.primary)
+
+                        Spacer(minLength: 12)
+
+                        Image(systemName: "arrow.up.right.square")
+                            .foregroundStyle(.secondary)
+                            .accessibilityHidden(true)
+                    }
+                    .frame(minHeight: 36)
+                }
             }
         }
     }

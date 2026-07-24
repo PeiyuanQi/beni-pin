@@ -4,7 +4,17 @@
 
 "tab.cards" = "Cards";
 "tab.benefits" = "Benefits";
+"tab.articles" = "Articles";
 "tab.settings" = "Settings";
+
+"articles.title" = "Articles";
+"articles.section.browse" = "Browse";
+"articles.section.directories" = "Card Directories";
+"articles.latest" = "Latest Articles";
+"articles.creditCards" = "Credit Card Articles";
+"articles.businessCards" = "Business Card Articles";
+"articles.cardDirectory" = "Personal Card Directory";
+"articles.businessCardDirectory" = "Business Card Directory";
 
 "cards.title" = "My Cards";
 "cards.add" = "Add Card";
@@ -46,6 +56,16 @@
 
 "earnings.empty.title" = "Earning rates unavailable";
 "earnings.empty.message" = "The current catalog does not yet include earning rates for these cards.";
+"earnings.centsPerPoint.short" = "¢/point";
+"earnings.category.travel" = "Travel";
+"earnings.category.dining" = "Dining";
+"earnings.category.groceries" = "Groceries";
+"earnings.category.gasTransportation" = "Gas & Transit";
+"earnings.category.shopping" = "Shopping";
+"earnings.category.housing" = "Housing";
+"earnings.category.rotating" = "Rotating & Choice";
+"earnings.category.mixed" = "Mixed Categories";
+"earnings.category.other" = "Everyday & Other";
 
 "benefit.category.all" = "All Categories";
 "benefit.category.travelCredit" = "Travel Credits";
@@ -85,6 +105,12 @@
 "settings.language.system" = "System Default";
 "settings.language.english" = "English";
 "settings.language.chinese" = "简体中文";
+"settings.pointValues.title" = "Point Values";
+"settings.pointValues.open" = "Edit rewards valuations";
+"settings.pointValues.summary" = "Earning rates use these cents-per-point estimates to calculate and rank estimated returns.";
+"settings.pointValues.disclaimer" = "Values are estimates, not guaranteed redemption rates. Adjust them to match how you redeem rewards.";
+"settings.pointValues.source" = "View July 2026 valuation source";
+"settings.pointValues.reset" = "Restore Default Values";
 "settings.catalog.title" = "Benefit Catalog";
 "settings.catalog.updated" = "Generated";
 "settings.catalog.source" = "Loaded from";
@@ -95,11 +121,11 @@
 "settings.wallet.title" = "Apple Wallet";
 "settings.wallet.explanation" = "Wallet access limitations";
 "settings.privacy.title" = "Privacy";
-"settings.privacy.local" = "Your card list and usage stay on this device";
+"settings.privacy.local" = "Your card list, usage, and point values stay on this device";
 "settings.privacy.noSensitiveData" = "No card number or financial account data is stored";
 "settings.privacy.catalogRequest" = "Catalog update requests never include your selected cards or benefit usage.";
 "settings.data.reset" = "Delete Local Data";
-"settings.data.reset.confirm" = "Remove all selected cards and benefit usage from this device?";
+"settings.data.reset.confirm" = "Remove all selected cards and benefit usage, and restore default point values?";
 "settings.sources.title" = "Data Sources";
 "settings.sources.message" = "Benefit facts are summarized from official issuer pages and benefit guides, then reviewed before publication. BeniPin does not scrape US Credit Card Guide.";
 "settings.sources.repository" = "View catalog repository";

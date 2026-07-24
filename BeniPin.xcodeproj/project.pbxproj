@@ -39,6 +39,7 @@
 		E49D9FB11FBC15EFC85DAE99 /* catalog.v1.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C76A9E2A8BE3B5CBE9D129C /* catalog.v1.json */; };
 		E5F3B8C9D0A14234B6C7D8E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4E2A7B8C9F04123A5B6C7D8 /* Assets.xcassets */; };
 		F4EB6C07950FF8F2BD70F060 /* CardCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401414A5C44735A6B8AEAEF1 /* CardCatalog.swift */; };
+		F8A1C2D3E4F5061728394051 /* RewardValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A1C2D3E4F5061728394052 /* RewardValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		E028161DB1BE31E927447822 /* Color+Hex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Color+Hex.swift"; path = "Utilities/Color+Hex.swift"; sourceTree = "<group>"; };
 		E943980087E339D5AFDA2F1F /* BenefitSearchView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BenefitSearchView.swift; path = Features/Benefits/BenefitSearchView.swift; sourceTree = "<group>"; };
 		EE5AA18CDEC4ABB123A9A34A /* WalletCapability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WalletCapability.swift; path = Services/WalletCapability.swift; sourceTree = "<group>"; };
+		F8A1C2D3E4F5061728394052 /* RewardValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RewardValue.swift; path = Models/RewardValue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 				9CF34D57895DED61D0CC7729 /* AppLanguage.swift */,
 				94C35FB6D69198E0E38D8D8A /* BenefitSearch.swift */,
 				401414A5C44735A6B8AEAEF1 /* CardCatalog.swift */,
+				F8A1C2D3E4F5061728394052 /* RewardValue.swift */,
 				0F9F27ACDAAC0B35055C7239 /* LocalizedCopy.swift */,
 				3E47657596E83C19F5523875 /* BackgroundRefreshCoordinator.swift */,
 				C0BCC763844F2AF84B2262AC /* BenefitUsageStore.swift */,
@@ -306,6 +309,7 @@
 				2E0791732F317AD17A886954 /* AppLanguage.swift in Sources */,
 				7AD7C0D55DF6AD56DDB56A31 /* BenefitSearch.swift in Sources */,
 				F4EB6C07950FF8F2BD70F060 /* CardCatalog.swift in Sources */,
+				F8A1C2D3E4F5061728394051 /* RewardValue.swift in Sources */,
 				B8AA4077A452CDC929D6C667 /* LocalizedCopy.swift in Sources */,
 				444BE9C78388D74552F12EF0 /* BackgroundRefreshCoordinator.swift in Sources */,
 				BB9DE6AF5126CCD72F52CD73 /* BenefitUsageStore.swift in Sources */,

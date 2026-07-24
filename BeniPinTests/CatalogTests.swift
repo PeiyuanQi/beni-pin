@@ -10,13 +10,15 @@ final class CatalogTests: XCTestCase {
         let catalog = try loadStarterCatalog()
 
         XCTAssertEqual(catalog.schemaVersion, 1)
-        XCTAssertEqual(catalog.cards.count, 20)
-        XCTAssertEqual(catalog.benefits.count, 59)
-        XCTAssertEqual(catalog.cards.flatMap(\.earningRates).count, 91)
+        XCTAssertEqual(catalog.cards.count, 26)
+        XCTAssertEqual(catalog.benefits.count, 66)
+        XCTAssertEqual(catalog.cards.flatMap(\.earningRates).count, 110)
         XCTAssertTrue(catalog.benefits.allSatisfy { $0.category != .points })
         XCTAssertEqual(catalog.card(id: "deserve-edu")?.availability, .discontinued)
         XCTAssertEqual(catalog.card(id: "discover-it-cash-back")?.network, .discover)
         XCTAssertEqual(catalog.card(id: "citi-strata-elite")?.network, .mastercard)
+        XCTAssertEqual(catalog.card(id: "boa-air-france-klm")?.network, .visa)
+        XCTAssertEqual(catalog.card(id: "chase-world-of-hyatt-business")?.network, .visa)
         XCTAssertEqual(
             catalog.card(id: "chase-freedom-unlimited")?.earningRates.last?.displayText,
             "1.5%"
@@ -78,6 +80,50 @@ final class CatalogTests: XCTestCase {
         XCTAssertEqual(rate.displayText, "3X")
     }
 
+    func testRewardValueMapsCoverCurrentCatalog() throws {
+        let catalog = try loadStarterCatalog()
+        let earningRateIDs = Set(catalog.cards.flatMap(\.earningRates).map(\.id))
+        let multiplierCardIDs = Set(
+            catalog.cards
+                .filter { card in card.earningRates.contains { $0.unit == .multiplier } }
+                .map(\.id)
+        )
+
+        XCTAssertEqual(Set(RewardValueCatalog.earningCategoryByRateID.keys), earningRateIDs)
+        XCTAssertEqual(Set(RewardValueCatalog.rewardProgramByCardID.keys), multiplierCardIDs)
+        XCTAssertEqual(
+            Set(RewardValueCatalog.defaultCentsPerPointByProgram.keys),
+            Set(RewardValueCatalog.programs.map(\.id))
+        )
+    }
+
+    func testEffectiveReturnUsesPointValueOrCashPercentage() throws {
+        let catalog = try loadStarterCatalog()
+        let gold = try XCTUnwrap(catalog.card(id: "amex-gold"))
+        let goldDining = try XCTUnwrap(gold.earningRates.first { $0.id == "amex-gold-restaurants" })
+        let freedom = try XCTUnwrap(catalog.card(id: "chase-freedom-unlimited"))
+        let freedomDining = try XCTUnwrap(
+            freedom.earningRates.first { $0.id == "freedom-unlimited-dining" }
+        )
+
+        XCTAssertEqual(
+            RewardValueCatalog.effectiveReturnPercent(
+                for: goldDining,
+                card: gold,
+                centsPerPoint: { _ in 2 }
+            ),
+            8
+        )
+        XCTAssertEqual(
+            RewardValueCatalog.effectiveReturnPercent(
+                for: freedomDining,
+                card: freedom,
+                centsPerPoint: { _ in 9 }
+            ),
+            3
+        )
+    }
+
     func testValidationRejectsMissingBenefitReference() throws {
         let card = CardProduct(
             id: "test-card",
@@ -127,7 +173,7 @@ final class CatalogTests: XCTestCase {
         let snapshot = try await repository.loadBestAvailable()
 
         XCTAssertEqual(snapshot.origin, .bundled)
-        XCTAssertEqual(snapshot.catalog.cards.count, 20)
+        XCTAssertEqual(snapshot.catalog.cards.count, 26)
     }
 
     func testValidationRejectsOneWayCardBenefitRelationship() throws {

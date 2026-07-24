@@ -69,6 +69,27 @@ final class UserStateTests: XCTestCase {
         XCTAssertTrue(store.completedKeys.isEmpty)
     }
 
+    @MainActor
+    func testPointValuationOverridesPersistAndReset() {
+        let (defaults, suiteName) = makeDefaults()
+        defer { defaults.removePersistentDomain(forName: suiteName) }
+        let storageKey = "point-values"
+        let store = PointValuationStore(defaults: defaults, storageKey: storageKey)
+
+        store.setCentsPerPoint(1.25, for: "amex-membership-rewards")
+
+        let reloaded = PointValuationStore(defaults: defaults, storageKey: storageKey)
+        XCTAssertEqual(reloaded.centsPerPoint(for: "amex-membership-rewards"), 1.25)
+
+        reloaded.resetToDefaults()
+
+        XCTAssertTrue(reloaded.overrides.isEmpty)
+        XCTAssertEqual(
+            reloaded.centsPerPoint(for: "amex-membership-rewards"),
+            RewardValueCatalog.defaultCentsPerPointByProgram["amex-membership-rewards"]
+        )
+    }
+
     private func makeDefaults() -> (UserDefaults, String) {
         let suiteName = "BeniPinTests.\(UUID().uuidString)"
         return (UserDefaults(suiteName: suiteName)!, suiteName)

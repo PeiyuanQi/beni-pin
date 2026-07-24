@@ -30,6 +30,7 @@ let package = Package(
                 "Models/BenefitSearch.swift",
                 "Models/CardCatalog.swift",
                 "Models/LocalizedCopy.swift",
+                "Models/RewardValue.swift",
                 "Services/BenefitUsageStore.swift",
                 "Services/CatalogRepository.swift",
                 "Services/UserCardCollection.swift"

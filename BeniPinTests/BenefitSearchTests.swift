@@ -114,7 +114,7 @@ final class BenefitSearchTests: XCTestCase {
             ("Chase United Club", ["chase-united-club"]),
             ("CFU", ["chase-freedom-unlimited"]),
             ("Chase Sapphire Preferred", ["chase-sapphire-preferred"]),
-            ("Chase Hyatt", ["chase-world-of-hyatt"]),
+            ("Chase Hyatt", ["chase-world-of-hyatt", "chase-world-of-hyatt-business"]),
             ("Chase IHG", ["chase-ihg-premier"]),
             ("Deserve", ["deserve-edu"]),
             ("Discover", ["discover-it-cash-back"]),
@@ -125,6 +125,12 @@ final class BenefitSearchTests: XCTestCase {
             ("Citi Strata Card", ["citi-strata"]),
             ("Citi Strata Premier", ["citi-strata-premier"]),
             ("Citi Strata Elite", ["citi-strata-elite"]),
+            ("Air France KLM", ["boa-air-france-klm"]),
+            ("Hawaiian Airlines", ["barclays-hawaiian-airlines"]),
+            ("Hyatt Business", ["chase-world-of-hyatt-business"]),
+            ("CFF", ["chase-freedom-flex"]),
+            ("Spark Cash", ["capital-one-spark-cash", "capital-one-spark-cash-plus"]),
+            ("Spark Cash Plus", ["capital-one-spark-cash-plus"]),
         ]
 
         for expectation in expectations {
