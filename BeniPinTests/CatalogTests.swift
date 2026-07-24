@@ -6,14 +6,20 @@ import XCTest
 #endif
 
 final class CatalogTests: XCTestCase {
-    func testStarterCatalogDecodesAndValidates() throws {
+    func testBundledCatalogDecodesAndValidates() throws {
         let catalog = try loadStarterCatalog()
 
         XCTAssertEqual(catalog.schemaVersion, 1)
-        XCTAssertEqual(catalog.cards.count, 5)
-        XCTAssertEqual(catalog.benefits.count, 21)
-        XCTAssertEqual(catalog.cards.flatMap(\.earningRates).count, 23)
+        XCTAssertEqual(catalog.cards.count, 17)
+        XCTAssertEqual(catalog.benefits.count, 49)
+        XCTAssertEqual(catalog.cards.flatMap(\.earningRates).count, 74)
         XCTAssertTrue(catalog.benefits.allSatisfy { $0.category != .points })
+        XCTAssertEqual(catalog.card(id: "deserve-edu")?.availability, .discontinued)
+        XCTAssertEqual(catalog.card(id: "discover-it-cash-back")?.network, .discover)
+        XCTAssertEqual(
+            catalog.card(id: "chase-freedom-unlimited")?.earningRates.last?.displayText,
+            "1.5%"
+        )
         XCTAssertNoThrow(try catalog.validate())
     }
 
@@ -45,6 +51,30 @@ final class CatalogTests: XCTestCase {
         let card = try decoder.decode(CardProduct.self, from: data)
 
         XCTAssertTrue(card.earningRates.isEmpty)
+        XCTAssertTrue(card.searchAliases.isEmpty)
+        XCTAssertEqual(card.availability, .active)
+    }
+
+    func testLegacyEarningRateWithoutUnitDefaultsToMultiplier() throws {
+        let data = Data(
+            """
+            {
+              "id": "legacy-rate",
+              "category": {"en": "Dining", "zhHans": "餐饮"},
+              "details": {"en": "Legacy rate", "zhHans": "历史倍率"},
+              "multiplier": 3,
+              "sourceURL": "https://example.com",
+              "lastVerified": "2026-07-22T00:00:00Z"
+            }
+            """.utf8
+        )
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+
+        let rate = try decoder.decode(CardEarningRate.self, from: data)
+
+        XCTAssertEqual(rate.unit, .multiplier)
+        XCTAssertEqual(rate.displayText, "3X")
     }
 
     func testValidationRejectsMissingBenefitReference() throws {
@@ -96,7 +126,7 @@ final class CatalogTests: XCTestCase {
         let snapshot = try await repository.loadBestAvailable()
 
         XCTAssertEqual(snapshot.origin, .bundled)
-        XCTAssertEqual(snapshot.catalog.cards.count, 5)
+        XCTAssertEqual(snapshot.catalog.cards.count, 17)
     }
 
     func testValidationRejectsOneWayCardBenefitRelationship() throws {

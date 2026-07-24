@@ -82,6 +82,8 @@ struct CardProduct: Codable, Identifiable, Hashable, Sendable {
     let issuer: String
     let name: LocalizedCopy
     let family: LocalizedCopy
+    let searchAliases: [String]
+    let availability: CardAvailability
     let network: PaymentNetwork
     let artwork: CardArtwork
     let earningRates: [CardEarningRate]
@@ -94,6 +96,8 @@ struct CardProduct: Codable, Identifiable, Hashable, Sendable {
         issuer: String,
         name: LocalizedCopy,
         family: LocalizedCopy,
+        searchAliases: [String] = [],
+        availability: CardAvailability = .active,
         network: PaymentNetwork,
         artwork: CardArtwork,
         earningRates: [CardEarningRate] = [],
@@ -105,6 +109,8 @@ struct CardProduct: Codable, Identifiable, Hashable, Sendable {
         self.issuer = issuer
         self.name = name
         self.family = family
+        self.searchAliases = searchAliases
+        self.availability = availability
         self.network = network
         self.artwork = artwork
         self.earningRates = earningRates
@@ -118,6 +124,8 @@ struct CardProduct: Codable, Identifiable, Hashable, Sendable {
         case issuer
         case name
         case family
+        case searchAliases
+        case availability
         case network
         case artwork
         case earningRates
@@ -132,6 +140,8 @@ struct CardProduct: Codable, Identifiable, Hashable, Sendable {
         issuer = try container.decode(String.self, forKey: .issuer)
         name = try container.decode(LocalizedCopy.self, forKey: .name)
         family = try container.decode(LocalizedCopy.self, forKey: .family)
+        searchAliases = try container.decodeIfPresent([String].self, forKey: .searchAliases) ?? []
+        availability = try container.decodeIfPresent(CardAvailability.self, forKey: .availability) ?? .active
         network = try container.decode(PaymentNetwork.self, forKey: .network)
         artwork = try container.decode(CardArtwork.self, forKey: .artwork)
         earningRates = try container.decodeIfPresent([CardEarningRate].self, forKey: .earningRates) ?? []
@@ -146,8 +156,48 @@ struct CardEarningRate: Codable, Identifiable, Hashable, Sendable {
     let category: LocalizedCopy
     let details: LocalizedCopy
     let multiplier: Double
+    let unit: EarningRateUnit
     let sourceURL: URL
     let lastVerified: Date
+
+    init(
+        id: String,
+        category: LocalizedCopy,
+        details: LocalizedCopy,
+        multiplier: Double,
+        unit: EarningRateUnit = .multiplier,
+        sourceURL: URL,
+        lastVerified: Date
+    ) {
+        self.id = id
+        self.category = category
+        self.details = details
+        self.multiplier = multiplier
+        self.unit = unit
+        self.sourceURL = sourceURL
+        self.lastVerified = lastVerified
+    }
+
+    private enum CodingKeys: String, CodingKey {
+        case id
+        case category
+        case details
+        case multiplier
+        case unit
+        case sourceURL
+        case lastVerified
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        id = try container.decode(String.self, forKey: .id)
+        category = try container.decode(LocalizedCopy.self, forKey: .category)
+        details = try container.decode(LocalizedCopy.self, forKey: .details)
+        multiplier = try container.decode(Double.self, forKey: .multiplier)
+        unit = try container.decodeIfPresent(EarningRateUnit.self, forKey: .unit) ?? .multiplier
+        sourceURL = try container.decode(URL.self, forKey: .sourceURL)
+        lastVerified = try container.decode(Date.self, forKey: .lastVerified)
+    }
 
     var multiplierText: String {
         if multiplier.rounded() == multiplier {
@@ -155,6 +205,20 @@ struct CardEarningRate: Codable, Identifiable, Hashable, Sendable {
         }
         return multiplier.formatted(.number.precision(.fractionLength(0...2)))
     }
+
+    var displayText: String {
+        switch unit {
+        case .multiplier:
+            "\(multiplierText)X"
+        case .percent:
+            "\(multiplierText)%"
+        }
+    }
+}
+
+enum EarningRateUnit: String, Codable, Sendable {
+    case multiplier
+    case percent
 }
 
 struct CardArtwork: Codable, Hashable, Sendable {
@@ -183,15 +247,26 @@ struct CardBenefit: Codable, Identifiable, Hashable, Sendable {
 
 enum PaymentNetwork: String, Codable, CaseIterable, Sendable {
     case americanExpress
+    case discover
     case mastercard
     case visa
 
     var displayName: String {
         switch self {
         case .americanExpress: "American Express"
+        case .discover: "Discover"
         case .mastercard: "Mastercard"
         case .visa: "Visa"
         }
+    }
+}
+
+enum CardAvailability: String, Codable, Sendable {
+    case active
+    case discontinued
+
+    var localizationKey: String {
+        "card.availability.\(rawValue)"
     }
 }
 

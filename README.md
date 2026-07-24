@@ -15,7 +15,7 @@ The app stores only catalog product IDs and local usage state. It does not reque
 - Benefit search by title, description, issuer, card family, and category, with source verification dates shown in every row.
 - Local used/unused tracking for monthly, quarterly, semiannual, annual, anniversary, and four-year benefits.
 - Bundled last-known-good catalog with validated remote JSON updates, ETag support, atomic cache replacement, pull-to-refresh, and opportunistic background refresh.
-- Five starter card products, 21 benefits, and 23 earning-rate records summarized from official issuer sources.
+- Seventeen card products, 49 benefits, and 74 earning-rate records summarized from official issuer and program sources.
 
 Apple does not provide a public permission flow that lets a normal third-party app enumerate all payment cards in Apple Wallet. BeniPin explains that limitation and uses manual selection rather than a fake Apple Pay transaction or misleading Wallet authorization flow. See [Product Boundaries](docs/product-boundaries.md).
 

@@ -105,4 +105,33 @@ final class BenefitSearchTests: XCTestCase {
         XCTAssertEqual(englishResults.map(\.id), ["amex-gold"])
         XCTAssertEqual(chineseResults.map(\.id), ["amex-gold"])
     }
+
+    func testRequestedCardNamesAndAliasesAreSearchable() {
+        let expectations: [(query: String, cardIDs: Set<String>)] = [
+            ("Chase United Club", ["chase-united-club"]),
+            ("CFU", ["chase-freedom-unlimited"]),
+            ("Chase Sapphire Preferred", ["chase-sapphire-preferred"]),
+            ("Chase Hyatt", ["chase-world-of-hyatt"]),
+            ("Chase IHG", ["chase-ihg-premier"]),
+            ("Deserve", ["deserve-edu"]),
+            ("Discover", ["discover-it-cash-back"]),
+            ("Bilt", ["bilt-blue", "bilt-obsidian", "bilt-palladium"]),
+            ("Amex Marriott Brilliant", ["amex-marriott-bonvoy-brilliant"]),
+            ("Alaska BOA ATOMS", ["boa-atmos-ascent", "boa-atmos-summit"]),
+        ]
+
+        for expectation in expectations {
+            let results = BenefitSearch.cards(
+                in: catalog,
+                query: expectation.query,
+                language: .english
+            )
+
+            XCTAssertEqual(
+                Set(results.map(\.id)),
+                expectation.cardIDs,
+                "Unexpected results for \(expectation.query)"
+            )
+        }
+    }
 }

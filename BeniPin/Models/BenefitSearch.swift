@@ -70,23 +70,31 @@ enum BenefitSearch {
             return catalog.cards.sorted(by: cardSort(language: language))
         }
 
-        return catalog.cards.filter { card in
-            let benefitText = catalog.benefits(for: card)
-                .map { "\($0.title.en) \($0.title.zhHans) \($0.summary.en) \($0.summary.zhHans)" }
-                .joined(separator: " ")
-            let earningRateText = card.earningRates
-                .map { "\($0.category.en) \($0.category.zhHans) \($0.details.en) \($0.details.zhHans) \($0.multiplierText)X" }
-                .joined(separator: " ")
-            let searchableText = [
+        let identityMatches = catalog.cards.filter { card in
+            let identityText = [
                 card.issuer,
                 card.name.en,
                 card.name.zhHans,
                 card.family.en,
                 card.family.zhHans,
-                card.network.displayName,
-                benefitText,
-                earningRateText
+                card.searchAliases.joined(separator: " "),
+                card.network.displayName
             ].joined(separator: " ")
+            return normalize(identityText).contains(normalizedQuery)
+        }
+
+        if !identityMatches.isEmpty {
+            return identityMatches.sorted(by: cardSort(language: language))
+        }
+
+        return catalog.cards.filter { card in
+            let benefitText = catalog.benefits(for: card)
+                .map { "\($0.title.en) \($0.title.zhHans) \($0.summary.en) \($0.summary.zhHans)" }
+                .joined(separator: " ")
+            let earningRateText = card.earningRates
+                .map { "\($0.category.en) \($0.category.zhHans) \($0.details.en) \($0.details.zhHans) \($0.displayText)" }
+                .joined(separator: " ")
+            let searchableText = [benefitText, earningRateText].joined(separator: " ")
             return normalize(searchableText).contains(normalizedQuery)
         }
         .sorted(by: cardSort(language: language))

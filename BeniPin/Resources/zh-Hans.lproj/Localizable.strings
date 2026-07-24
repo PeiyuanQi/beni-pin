@@ -10,6 +10,8 @@
 "cards.add" = "添加卡片";
 "cards.added" = "已添加";
 "cards.notAdded" = "未添加";
+"card.availability.active" = "可申请";
+"card.availability.discontinued" = "已停止申请";
 "cards.remove" = "移除卡片";
 "cards.remove.confirm" = "要从“我的卡片”中移除这张卡吗？";
 "cards.empty.title" = "还没有卡片";

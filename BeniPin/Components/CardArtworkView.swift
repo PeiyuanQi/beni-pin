@@ -38,8 +38,8 @@ struct CardArtworkView: View {
                         Text(card.name.value(for: language))
                             .font(compact ? .caption2 : .headline)
                             .fontWeight(.semibold)
-                            .lineLimit(compact ? 2 : 1)
-                            .minimumScaleFactor(0.72)
+                            .lineLimit(2)
+                            .minimumScaleFactor(compact ? 0.72 : 0.65)
                     }
 
                     Spacer(minLength: 8)

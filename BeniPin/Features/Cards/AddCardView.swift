@@ -54,6 +54,14 @@ struct AddCardView: View {
                                         Text(card.family.value(for: language))
                                             .font(.subheadline)
                                             .foregroundStyle(.secondary)
+                                        if card.availability == .discontinued {
+                                            Label(
+                                                LocalizedStringKey(card.availability.localizationKey),
+                                                systemImage: "clock.arrow.circlepath"
+                                            )
+                                            .font(.caption)
+                                            .foregroundStyle(.orange)
+                                        }
                                     }
                                     Spacer(minLength: 6)
                                     Image(systemName: cardCollection.contains(card) ? "checkmark.circle.fill" : "plus.circle")

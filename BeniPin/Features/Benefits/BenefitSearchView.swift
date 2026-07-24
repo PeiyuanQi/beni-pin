@@ -238,7 +238,7 @@ private struct EarningRateRow: View {
 
     var body: some View {
         HStack(alignment: .top, spacing: 12) {
-            Text("\(earningRate.multiplierText)X")
+            Text(earningRate.displayText)
                 .font(.title3.bold())
                 .foregroundStyle(Color(hex: "197466"))
                 .frame(width: 54, height: 38)

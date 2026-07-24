@@ -10,6 +10,8 @@
 "cards.add" = "Add Card";
 "cards.added" = "Added";
 "cards.notAdded" = "Not added";
+"card.availability.active" = "Available";
+"card.availability.discontinued" = "No longer available";
 "cards.remove" = "Remove Card";
 "cards.remove.confirm" = "Remove this card from My Cards?";
 "cards.empty.title" = "No cards yet";

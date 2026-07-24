@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-22T20:00:00Z",
+  "generatedAt": "2026-07-23T20:00:00Z",
   "cards": [
     {
       "id": "amex-platinum",
@@ -415,6 +415,226 @@
         "https://www.capitalone.com/credit-cards/venture-x/"
       ],
       "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "chase-united-club",
+      "issuer": "Chase",
+      "name": {"en": "United Club Card", "zhHans": "United Club 联名卡"},
+      "family": {"en": "United MileagePlus", "zhHans": "United MileagePlus 联名卡"},
+      "searchAliases": ["chase united club", "united club infinite", "ua club", "美联航 club 卡"],
+      "network": "visa",
+      "artwork": {"primaryHex": "183A5A", "secondaryHex": "071C2C", "accentHex": "7DC5E8", "symbolName": "airplane", "remoteImageURL": null},
+      "earningRates": [
+        {"id": "united-club-united-purchases", "category": {"en": "Eligible United purchases", "zhHans": "合资格 United 消费"}, "details": {"en": "United tickets and eligible purchases made directly with United.", "zhHans": "直接向 United 购买的机票及其他合资格消费。"}, "multiplier": 5, "sourceURL": "https://creditcards.chase.com/travel-credit-cards/united/club-infinite", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "united-club-other-travel", "category": {"en": "Other travel", "zhHans": "其他旅行消费"}, "details": {"en": "Eligible travel purchases outside the 5X United category.", "zhHans": "不属于 United 5X 类别的合资格旅行消费。"}, "multiplier": 2, "sourceURL": "https://creditcards.chase.com/travel-credit-cards/united/club-infinite", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "united-club-dining", "category": {"en": "Dining", "zhHans": "餐饮"}, "details": {"en": "Restaurants, takeout, and eligible delivery services.", "zhHans": "餐厅、外带及合资格外送服务。"}, "multiplier": 2, "sourceURL": "https://creditcards.chase.com/travel-credit-cards/united/club-infinite", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "united-club-other-purchases", "category": {"en": "Other purchases", "zhHans": "其他消费"}, "details": {"en": "The standard rate for other eligible purchases.", "zhHans": "其他合资格消费的基础积攒倍率。"}, "multiplier": 1, "sourceURL": "https://creditcards.chase.com/travel-credit-cards/united/club-infinite", "lastVerified": "2026-07-23T20:00:00Z"}
+      ],
+      "benefitIDs": ["united-club-membership", "united-club-checked-bags", "united-club-trusted-traveler-credit", "united-club-award-discounts"],
+      "sourceURLs": ["https://creditcards.chase.com/travel-credit-cards/united/club-infinite"],
+      "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "chase-freedom-unlimited",
+      "issuer": "Chase",
+      "name": {"en": "Freedom Unlimited", "zhHans": "Freedom Unlimited 自由无限卡"},
+      "family": {"en": "Freedom", "zhHans": "Freedom 返现系列"},
+      "searchAliases": ["cfu", "chase freedom unlimited", "freedom unlimited card", "大通自由无限"],
+      "network": "visa",
+      "artwork": {"primaryHex": "156B70", "secondaryHex": "0A3035", "accentHex": "A7E0D8", "symbolName": "infinity", "remoteImageURL": null},
+      "earningRates": [
+        {"id": "freedom-unlimited-chase-travel", "category": {"en": "Chase Travel", "zhHans": "Chase Travel"}, "details": {"en": "Travel purchased through Chase Travel.", "zhHans": "通过 Chase Travel 购买的旅行产品。"}, "multiplier": 5, "unit": "percent", "sourceURL": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "freedom-unlimited-dining", "category": {"en": "Dining", "zhHans": "餐饮"}, "details": {"en": "Restaurants, takeout, and eligible delivery services.", "zhHans": "餐厅、外带及合资格外送服务。"}, "multiplier": 3, "unit": "percent", "sourceURL": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "freedom-unlimited-drugstores", "category": {"en": "Drugstores", "zhHans": "药店"}, "details": {"en": "Eligible drugstore purchases.", "zhHans": "合资格药店消费。"}, "multiplier": 3, "unit": "percent", "sourceURL": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "freedom-unlimited-other-purchases", "category": {"en": "Other purchases", "zhHans": "其他消费"}, "details": {"en": "Unlimited cash back on other purchases.", "zhHans": "其他消费可获得无限返现。"}, "multiplier": 1.5, "unit": "percent", "sourceURL": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited", "lastVerified": "2026-07-23T20:00:00Z"}
+      ],
+      "benefitIDs": ["freedom-unlimited-purchase-protection", "freedom-unlimited-trip-cancellation"],
+      "sourceURLs": ["https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited"],
+      "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "chase-world-of-hyatt",
+      "issuer": "Chase",
+      "name": {"en": "World of Hyatt Credit Card", "zhHans": "World of Hyatt 凯悦联名卡"},
+      "family": {"en": "World of Hyatt", "zhHans": "World of Hyatt 联名卡"},
+      "searchAliases": ["chase hyatt", "hyatt card", "world of hyatt", "大通凯悦卡"],
+      "network": "visa",
+      "artwork": {"primaryHex": "315B4F", "secondaryHex": "142D29", "accentHex": "BFD9C9", "symbolName": "building.2.fill", "remoteImageURL": null},
+      "earningRates": [
+        {"id": "hyatt-card-hyatt", "category": {"en": "Hyatt hotels and experiences", "zhHans": "Hyatt 酒店与体验"}, "details": {"en": "Qualifying purchases at participating Hyatt properties and World of Hyatt Experiences.", "zhHans": "参与活动的 Hyatt 酒店及 World of Hyatt Experiences 合资格消费。"}, "multiplier": 4, "sourceURL": "https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "hyatt-card-dining", "category": {"en": "Dining", "zhHans": "餐饮"}, "details": {"en": "Eligible restaurant purchases.", "zhHans": "合资格餐厅消费。"}, "multiplier": 2, "sourceURL": "https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "hyatt-card-travel-fitness", "category": {"en": "Airlines, transit, and fitness", "zhHans": "航空、通勤与健身"}, "details": {"en": "Airline tickets purchased directly, local transit and commuting, and fitness club or gym memberships.", "zhHans": "直接向航空公司购买的机票、本地交通与通勤，以及健身俱乐部或健身房会员费。"}, "multiplier": 2, "sourceURL": "https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "hyatt-card-other-purchases", "category": {"en": "Other purchases", "zhHans": "其他消费"}, "details": {"en": "The standard rate for other eligible purchases.", "zhHans": "其他合资格消费的基础积攒倍率。"}, "multiplier": 1, "sourceURL": "https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card", "lastVerified": "2026-07-23T20:00:00Z"}
+      ],
+      "benefitIDs": ["hyatt-card-anniversary-night", "hyatt-card-spend-free-night", "hyatt-card-tier-nights"],
+      "sourceURLs": ["https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card"],
+      "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "chase-ihg-premier",
+      "issuer": "Chase",
+      "name": {"en": "IHG One Rewards Premier", "zhHans": "IHG One Rewards Premier 联名卡"},
+      "family": {"en": "IHG One Rewards", "zhHans": "IHG One Rewards 联名卡"},
+      "searchAliases": ["chase ihg", "ihg premier", "ihg one rewards premier", "大通 ihg 卡"],
+      "network": "mastercard",
+      "artwork": {"primaryHex": "5D315C", "secondaryHex": "2A142C", "accentHex": "E6C8DE", "symbolName": "bed.double.fill", "remoteImageURL": null},
+      "earningRates": [
+        {"id": "ihg-premier-ihg", "category": {"en": "IHG hotels and resorts", "zhHans": "IHG 酒店与度假村"}, "details": {"en": "Qualifying purchases at hotels participating in IHG One Rewards.", "zhHans": "参与 IHG One Rewards 的酒店合资格消费。"}, "multiplier": 10, "sourceURL": "https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "ihg-premier-travel-dining-gas", "category": {"en": "Travel, dining, and gas", "zhHans": "旅行、餐饮与加油"}, "details": {"en": "Eligible travel outside IHG, dining, and gas-station purchases.", "zhHans": "IHG 以外的合资格旅行、餐饮及加油站消费。"}, "multiplier": 5, "sourceURL": "https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "ihg-premier-other-purchases", "category": {"en": "Other purchases", "zhHans": "其他消费"}, "details": {"en": "The standard rate for other eligible purchases.", "zhHans": "其他合资格消费的基础积攒倍率。"}, "multiplier": 3, "sourceURL": "https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier", "lastVerified": "2026-07-23T20:00:00Z"}
+      ],
+      "benefitIDs": ["ihg-premier-anniversary-night", "ihg-premier-platinum-status", "ihg-premier-fourth-night-free"],
+      "sourceURLs": ["https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier"],
+      "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "deserve-edu",
+      "issuer": "Celtic Bank / Deserve",
+      "name": {"en": "Deserve EDU Mastercard (legacy)", "zhHans": "Deserve EDU Mastercard（历史产品）"},
+      "family": {"en": "Deserve", "zhHans": "Deserve"},
+      "searchAliases": ["deserve", "deserve edu", "deserve student card", "deserve 学生卡"],
+      "availability": "discontinued",
+      "network": "mastercard",
+      "artwork": {"primaryHex": "2C5E54", "secondaryHex": "142D29", "accentHex": "C4E4D7", "symbolName": "graduationcap.fill", "remoteImageURL": null},
+      "earningRates": [
+        {"id": "deserve-edu-other-purchases", "category": {"en": "Eligible purchases", "zhHans": "合资格消费"}, "details": {"en": "The archived cardholder agreement described 1% cash back on eligible net purchases. This card is no longer open to new applicants.", "zhHans": "历史持卡协议载明合资格净消费可获得 1% 返现；该卡目前已停止接受新申请。"}, "multiplier": 1, "unit": "percent", "sourceURL": "https://files.consumerfinance.gov/a/assets/credit-card-agreements/pdf/Celtic_Bank/Deserve_EDU_Cardholder_Agreement.pdf", "lastVerified": "2026-07-23T20:00:00Z"}
+      ],
+      "benefitIDs": [],
+      "sourceURLs": ["https://deserve.com/", "https://files.consumerfinance.gov/a/assets/credit-card-agreements/pdf/Celtic_Bank/Deserve_EDU_Cardholder_Agreement.pdf"],
+      "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "discover-it-cash-back",
+      "issuer": "Discover",
+      "name": {"en": "Discover it Cash Back", "zhHans": "Discover it Cash Back 返现卡"},
+      "family": {"en": "Discover it", "zhHans": "Discover it 系列"},
+      "searchAliases": ["discover", "discover it", "discover cash back", "discover 返现卡"],
+      "network": "discover",
+      "artwork": {"primaryHex": "E66B25", "secondaryHex": "5B2A12", "accentHex": "FFF0D7", "symbolName": "circle.grid.2x2.fill", "remoteImageURL": null},
+      "earningRates": [
+        {"id": "discover-it-quarterly-categories", "category": {"en": "Quarterly rotating categories", "zhHans": "季度轮换类别"}, "details": {"en": "5% cash back in activated quarterly categories, up to the published quarterly purchase maximum, then 1%.", "zhHans": "激活后，季度轮换类别在公布的季度消费上限内可获 5% 返现，超过后为 1%。"}, "multiplier": 5, "unit": "percent", "sourceURL": "https://www.discover.com/credit-cards/cash-back/it-card/", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "discover-it-other-purchases", "category": {"en": "Other purchases", "zhHans": "其他消费"}, "details": {"en": "Unlimited cash back on other purchases.", "zhHans": "其他消费可获得无限返现。"}, "multiplier": 1, "unit": "percent", "sourceURL": "https://www.discover.com/credit-cards/cash-back/it-card/", "lastVerified": "2026-07-23T20:00:00Z"}
+      ],
+      "benefitIDs": ["discover-rewards-no-expiration"],
+      "sourceURLs": ["https://www.discover.com/credit-cards/cash-back/it-card/"],
+      "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "bilt-blue",
+      "issuer": "Bilt / Column N.A.",
+      "name": {"en": "Bilt Blue Card", "zhHans": "Bilt Blue 蓝卡"},
+      "family": {"en": "Bilt Card 2.0", "zhHans": "Bilt Card 2.0 系列"},
+      "searchAliases": ["bilt", "bilt blue", "bilt card", "bilt rent card", "bilt 房租卡"],
+      "network": "mastercard",
+      "artwork": {"primaryHex": "376C8C", "secondaryHex": "162F40", "accentHex": "C9E6F5", "symbolName": "house.fill", "remoteImageURL": null},
+      "earningRates": [
+        {"id": "bilt-blue-housing", "category": {"en": "Housing payments", "zhHans": "住房付款"}, "details": {"en": "Up to 1.25X on eligible housing payments when current qualification terms are met.", "zhHans": "满足现行资格条件时，合资格住房付款最高可积攒 1.25X。"}, "multiplier": 1.25, "sourceURL": "https://www.bilt.com/card/blue", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "bilt-blue-bilt-dining", "category": {"en": "Bilt Dining", "zhHans": "Bilt Dining"}, "details": {"en": "Up to 4X at participating Bilt Dining restaurants under current terms.", "zhHans": "按现行条款，在参与 Bilt Dining 的餐厅最高可积攒 4X。"}, "multiplier": 4, "sourceURL": "https://www.bilt.com/card/blue", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "bilt-blue-hotels", "category": {"en": "Hotels through Bilt Travel", "zhHans": "Bilt Travel 酒店"}, "details": {"en": "Eligible hotel bookings made through Bilt Travel.", "zhHans": "通过 Bilt Travel 完成的合资格酒店预订。"}, "multiplier": 3, "sourceURL": "https://www.bilt.com/card/blue", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "bilt-blue-lyft", "category": {"en": "Lyft rides", "zhHans": "Lyft 行程"}, "details": {"en": "Eligible Lyft rides when the card and Bilt account are linked as required.", "zhHans": "按要求绑定卡片与 Bilt 账户后的合资格 Lyft 行程。"}, "multiplier": 3, "sourceURL": "https://www.bilt.com/card/blue", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "bilt-blue-flights", "category": {"en": "Flights through Bilt Travel", "zhHans": "Bilt Travel 机票"}, "details": {"en": "Eligible flight bookings made through Bilt Travel.", "zhHans": "通过 Bilt Travel 完成的合资格机票预订。"}, "multiplier": 2, "sourceURL": "https://www.bilt.com/card/blue", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "bilt-blue-other-purchases", "category": {"en": "Other purchases", "zhHans": "其他消费"}, "details": {"en": "The standard rate for other eligible purchases.", "zhHans": "其他合资格消费的基础积攒倍率。"}, "multiplier": 1, "sourceURL": "https://www.bilt.com/card/blue", "lastVerified": "2026-07-23T20:00:00Z"}
+      ],
+      "benefitIDs": ["bilt-housing-no-transaction-fee"],
+      "sourceURLs": ["https://www.bilt.com/card/blue", "https://www.bilt.com/terms/bilt-card-offer-terms"],
+      "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "bilt-obsidian",
+      "issuer": "Bilt / Column N.A.",
+      "name": {"en": "Bilt Obsidian Card", "zhHans": "Bilt Obsidian 黑曜卡"},
+      "family": {"en": "Bilt Card 2.0", "zhHans": "Bilt Card 2.0 系列"},
+      "searchAliases": ["bilt", "bilt obsidian", "bilt card", "bilt black card", "bilt 房租卡"],
+      "network": "mastercard",
+      "artwork": {"primaryHex": "303336", "secondaryHex": "101214", "accentHex": "D6D9DB", "symbolName": "building.columns.fill", "remoteImageURL": null},
+      "earningRates": [
+        {"id": "bilt-obsidian-housing", "category": {"en": "Housing payments", "zhHans": "住房付款"}, "details": {"en": "Up to 1.25X on eligible housing payments when current qualification terms are met.", "zhHans": "满足现行资格条件时，合资格住房付款最高可积攒 1.25X。"}, "multiplier": 1.25, "sourceURL": "https://www.bilt.com/card/obsidian", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "bilt-obsidian-hotels", "category": {"en": "Hotels through Bilt Travel", "zhHans": "Bilt Travel 酒店"}, "details": {"en": "Eligible hotel bookings made through Bilt Travel.", "zhHans": "通过 Bilt Travel 完成的合资格酒店预订。"}, "multiplier": 4, "sourceURL": "https://www.bilt.com/card/obsidian", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "bilt-obsidian-choice-category", "category": {"en": "Dining or grocery choice category", "zhHans": "餐饮或杂货自选类别"}, "details": {"en": "3X in the selected dining or grocery category; grocery purchases are subject to the published annual cap.", "zhHans": "自选餐饮或杂货类别可积攒 3X；杂货消费受公布的年度上限限制。"}, "multiplier": 3, "sourceURL": "https://www.bilt.com/card/obsidian", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "bilt-obsidian-bilt-dining", "category": {"en": "Bilt Dining", "zhHans": "Bilt Dining"}, "details": {"en": "Up to 6X at participating Bilt Dining restaurants under current terms.", "zhHans": "按现行条款，在参与 Bilt Dining 的餐厅最高可积攒 6X。"}, "multiplier": 6, "sourceURL": "https://www.bilt.com/card/obsidian", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "bilt-obsidian-flights", "category": {"en": "Flights through Bilt Travel", "zhHans": "Bilt Travel 机票"}, "details": {"en": "Eligible flight bookings made through Bilt Travel.", "zhHans": "通过 Bilt Travel 完成的合资格机票预订。"}, "multiplier": 3, "sourceURL": "https://www.bilt.com/card/obsidian", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "bilt-obsidian-other-travel", "category": {"en": "Other travel", "zhHans": "其他旅行消费"}, "details": {"en": "Eligible travel purchases outside the higher-rate Bilt Travel categories.", "zhHans": "不属于较高倍率 Bilt Travel 类别的合资格旅行消费。"}, "multiplier": 2, "sourceURL": "https://www.bilt.com/card/obsidian", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "bilt-obsidian-lyft", "category": {"en": "Lyft rides", "zhHans": "Lyft 行程"}, "details": {"en": "Eligible Lyft rides when the card and Bilt account are linked as required.", "zhHans": "按要求绑定卡片与 Bilt 账户后的合资格 Lyft 行程。"}, "multiplier": 3, "sourceURL": "https://www.bilt.com/card/obsidian", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "bilt-obsidian-other-purchases", "category": {"en": "Other purchases", "zhHans": "其他消费"}, "details": {"en": "The standard rate for other eligible purchases.", "zhHans": "其他合资格消费的基础积攒倍率。"}, "multiplier": 1, "sourceURL": "https://www.bilt.com/card/obsidian", "lastVerified": "2026-07-23T20:00:00Z"}
+      ],
+      "benefitIDs": ["bilt-housing-no-transaction-fee", "bilt-obsidian-hotel-credit"],
+      "sourceURLs": ["https://www.bilt.com/card/obsidian", "https://www.bilt.com/terms/bilt-card-offer-terms"],
+      "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "bilt-palladium",
+      "issuer": "Bilt / Column N.A.",
+      "name": {"en": "Bilt Palladium Card", "zhHans": "Bilt Palladium 钯金卡"},
+      "family": {"en": "Bilt Card 2.0", "zhHans": "Bilt Card 2.0 系列"},
+      "searchAliases": ["bilt", "bilt palladium", "bilt premium card", "bilt card", "bilt 房租卡"],
+      "network": "mastercard",
+      "artwork": {"primaryHex": "B6B8B7", "secondaryHex": "555958", "accentHex": "F6F7F6", "symbolName": "sparkles", "remoteImageURL": null},
+      "earningRates": [
+        {"id": "bilt-palladium-housing", "category": {"en": "Housing payments", "zhHans": "住房付款"}, "details": {"en": "Up to 1.25X on eligible housing payments when current qualification terms are met.", "zhHans": "满足现行资格条件时，合资格住房付款最高可积攒 1.25X。"}, "multiplier": 1.25, "sourceURL": "https://www.bilt.com/card/palladium", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "bilt-palladium-bilt-dining", "category": {"en": "Bilt Dining", "zhHans": "Bilt Dining"}, "details": {"en": "Up to 5X at participating Bilt Dining restaurants under current terms.", "zhHans": "按现行条款，在参与 Bilt Dining 的餐厅最高可积攒 5X。"}, "multiplier": 5, "sourceURL": "https://www.bilt.com/card/palladium", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "bilt-palladium-hotels", "category": {"en": "Hotels through Bilt Travel", "zhHans": "Bilt Travel 酒店"}, "details": {"en": "Eligible hotel bookings made through Bilt Travel.", "zhHans": "通过 Bilt Travel 完成的合资格酒店预订。"}, "multiplier": 4, "sourceURL": "https://www.bilt.com/card/palladium", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "bilt-palladium-lyft", "category": {"en": "Lyft rides", "zhHans": "Lyft 行程"}, "details": {"en": "Eligible Lyft rides when the card and Bilt account are linked as required.", "zhHans": "按要求绑定卡片与 Bilt 账户后的合资格 Lyft 行程。"}, "multiplier": 4, "sourceURL": "https://www.bilt.com/card/palladium", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "bilt-palladium-flights", "category": {"en": "Flights through Bilt Travel", "zhHans": "Bilt Travel 机票"}, "details": {"en": "Eligible flight bookings made through Bilt Travel.", "zhHans": "通过 Bilt Travel 完成的合资格机票预订。"}, "multiplier": 3, "sourceURL": "https://www.bilt.com/card/palladium", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "bilt-palladium-other-purchases", "category": {"en": "Other purchases", "zhHans": "其他消费"}, "details": {"en": "The standard rate for other eligible purchases.", "zhHans": "其他合资格消费的基础积攒倍率。"}, "multiplier": 2, "sourceURL": "https://www.bilt.com/card/palladium", "lastVerified": "2026-07-23T20:00:00Z"}
+      ],
+      "benefitIDs": ["bilt-housing-no-transaction-fee", "bilt-palladium-bilt-cash", "bilt-palladium-hotel-credit", "bilt-palladium-priority-pass"],
+      "sourceURLs": ["https://www.bilt.com/card/palladium", "https://www.bilt.com/terms/bilt-card-offer-terms"],
+      "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "amex-marriott-bonvoy-brilliant",
+      "issuer": "American Express",
+      "name": {"en": "Marriott Bonvoy Brilliant American Express Card", "zhHans": "Marriott Bonvoy Brilliant 美国运通卡"},
+      "family": {"en": "Marriott Bonvoy", "zhHans": "Marriott Bonvoy 联名卡"},
+      "searchAliases": ["amex marriott brilliant", "marriott brilliant", "bonvoy brilliant", "万豪 brilliant"],
+      "network": "americanExpress",
+      "artwork": {"primaryHex": "313335", "secondaryHex": "121416", "accentHex": "D7D9D7", "symbolName": "building.2.crop.circle.fill", "remoteImageURL": null},
+      "earningRates": [
+        {"id": "marriott-brilliant-marriott", "category": {"en": "Participating Marriott Bonvoy hotels", "zhHans": "参与 Marriott Bonvoy 的酒店"}, "details": {"en": "Eligible purchases at hotels participating in Marriott Bonvoy.", "zhHans": "参与 Marriott Bonvoy 的酒店合资格消费。"}, "multiplier": 6, "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/marriott-bonvoy-brilliant/", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "marriott-brilliant-restaurants", "category": {"en": "Restaurants worldwide", "zhHans": "全球餐厅"}, "details": {"en": "Eligible restaurant purchases worldwide.", "zhHans": "全球合资格餐厅消费。"}, "multiplier": 3, "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/marriott-bonvoy-brilliant/", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "marriott-brilliant-flights", "category": {"en": "Flights booked directly", "zhHans": "直接预订机票"}, "details": {"en": "Flights booked directly with airlines.", "zhHans": "直接向航空公司购买的机票。"}, "multiplier": 3, "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/marriott-bonvoy-brilliant/", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "marriott-brilliant-other-purchases", "category": {"en": "Other purchases", "zhHans": "其他消费"}, "details": {"en": "The standard rate for other eligible purchases.", "zhHans": "其他合资格消费的基础积攒倍率。"}, "multiplier": 2, "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/marriott-bonvoy-brilliant/", "lastVerified": "2026-07-23T20:00:00Z"}
+      ],
+      "benefitIDs": ["marriott-brilliant-dining-credit", "marriott-brilliant-free-night", "marriott-brilliant-platinum-status"],
+      "sourceURLs": ["https://www.americanexpress.com/us/credit-cards/card/marriott-bonvoy-brilliant/"],
+      "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "boa-atmos-ascent",
+      "issuer": "Bank of America",
+      "name": {"en": "Atmos Rewards Ascent Visa Signature", "zhHans": "Atmos Rewards Ascent Visa Signature 联名卡"},
+      "family": {"en": "Alaska Airlines Atmos Rewards", "zhHans": "Alaska Airlines Atmos Rewards 联名卡"},
+      "searchAliases": ["alaska boa atoms", "alaska boa atmos", "alaska airlines card", "atmos ascent", "bank of america alaska", "阿拉斯加航空卡"],
+      "network": "visa",
+      "artwork": {"primaryHex": "165B70", "secondaryHex": "0A2B38", "accentHex": "9ADAD7", "symbolName": "mountain.2.fill", "remoteImageURL": null},
+      "earningRates": [
+        {"id": "atmos-ascent-airlines", "category": {"en": "Alaska Airlines and Hawaiian Airlines", "zhHans": "Alaska Airlines 与 Hawaiian Airlines"}, "details": {"en": "Eligible purchases made directly with Alaska Airlines or Hawaiian Airlines.", "zhHans": "直接向 Alaska Airlines 或 Hawaiian Airlines 完成的合资格消费。"}, "multiplier": 3, "sourceURL": "https://www.bankofamerica.com/credit-cards/products/alaska-airlines-credit-card/", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "atmos-ascent-everyday", "category": {"en": "Gas, EV charging, streaming, cable, and local transit", "zhHans": "加油、充电、流媒体、有线电视与本地交通"}, "details": {"en": "Eligible gas, EV charging, cable, streaming, local transit, and rideshare purchases.", "zhHans": "合资格加油、车辆充电、有线电视、流媒体、本地交通及网约车消费。"}, "multiplier": 2, "sourceURL": "https://www.bankofamerica.com/credit-cards/products/alaska-airlines-credit-card/", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "atmos-ascent-rent", "category": {"en": "Eligible rent through Bilt", "zhHans": "通过 Bilt 支付的合资格房租"}, "details": {"en": "Eligible rent payments made through Bilt, on up to $50,000 in purchases per calendar year under current terms.", "zhHans": "按现行条款，通过 Bilt 支付的合资格房租每自然年前 $50,000 可积攒奖励。"}, "multiplier": 3, "sourceURL": "https://www.alaskaair.com/atmosrewards/content/partners/earn-everyday", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "atmos-ascent-other-purchases", "category": {"en": "Other purchases", "zhHans": "其他消费"}, "details": {"en": "The standard rate for other eligible purchases.", "zhHans": "其他合资格消费的基础积攒倍率。"}, "multiplier": 1, "sourceURL": "https://www.bankofamerica.com/credit-cards/products/alaska-airlines-credit-card/", "lastVerified": "2026-07-23T20:00:00Z"}
+      ],
+      "benefitIDs": ["atmos-card-free-checked-bag", "atmos-ascent-companion-fare", "atmos-ascent-lounge-discount"],
+      "sourceURLs": ["https://www.bankofamerica.com/credit-cards/products/alaska-airlines-credit-card/", "https://www.alaskaair.com/atmosrewards/content/partners/earn-everyday"],
+      "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "boa-atmos-summit",
+      "issuer": "Bank of America",
+      "name": {"en": "Atmos Rewards Summit Visa Infinite", "zhHans": "Atmos Rewards Summit Visa Infinite 联名卡"},
+      "family": {"en": "Alaska Airlines Atmos Rewards", "zhHans": "Alaska Airlines Atmos Rewards 联名卡"},
+      "searchAliases": ["alaska boa atoms", "alaska boa atmos", "alaska airlines premium card", "atmos summit", "bank of america alaska", "阿拉斯加航空高端卡"],
+      "network": "visa",
+      "artwork": {"primaryHex": "253B46", "secondaryHex": "0D1A20", "accentHex": "C3D9D8", "symbolName": "mountain.2.circle.fill", "remoteImageURL": null},
+      "earningRates": [
+        {"id": "atmos-summit-airlines", "category": {"en": "Alaska Airlines and Hawaiian Airlines", "zhHans": "Alaska Airlines 与 Hawaiian Airlines"}, "details": {"en": "Eligible purchases made directly with Alaska Airlines or Hawaiian Airlines.", "zhHans": "直接向 Alaska Airlines 或 Hawaiian Airlines 完成的合资格消费。"}, "multiplier": 3, "sourceURL": "https://www.bankofamerica.com/credit-cards/products/alaska-airlines-infinite-credit-card/", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "atmos-summit-dining", "category": {"en": "Dining", "zhHans": "餐饮"}, "details": {"en": "Eligible dining purchases.", "zhHans": "合资格餐饮消费。"}, "multiplier": 3, "sourceURL": "https://www.bankofamerica.com/credit-cards/products/alaska-airlines-infinite-credit-card/", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "atmos-summit-foreign-purchases", "category": {"en": "Foreign purchases", "zhHans": "境外消费"}, "details": {"en": "Eligible purchases processed outside the United States.", "zhHans": "在美国境外处理的合资格消费。"}, "multiplier": 3, "sourceURL": "https://www.bankofamerica.com/credit-cards/products/alaska-airlines-infinite-credit-card/", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "atmos-summit-rent", "category": {"en": "Eligible rent through Bilt", "zhHans": "通过 Bilt 支付的合资格房租"}, "details": {"en": "Eligible rent payments made through Bilt, on up to $50,000 in purchases per calendar year under current terms.", "zhHans": "按现行条款，通过 Bilt 支付的合资格房租每自然年前 $50,000 可积攒奖励。"}, "multiplier": 3, "sourceURL": "https://www.alaskaair.com/atmosrewards/content/partners/earn-everyday", "lastVerified": "2026-07-23T20:00:00Z"},
+        {"id": "atmos-summit-other-purchases", "category": {"en": "Other purchases", "zhHans": "其他消费"}, "details": {"en": "The standard rate for other eligible purchases.", "zhHans": "其他合资格消费的基础积攒倍率。"}, "multiplier": 1, "sourceURL": "https://www.bankofamerica.com/credit-cards/products/alaska-airlines-infinite-credit-card/", "lastVerified": "2026-07-23T20:00:00Z"}
+      ],
+      "benefitIDs": ["atmos-card-free-checked-bag", "atmos-summit-companion-award", "atmos-summit-lounge-passes", "atmos-summit-trusted-traveler-credit", "atmos-summit-delay-credit"],
+      "sourceURLs": ["https://www.bankofamerica.com/credit-cards/products/alaska-airlines-infinite-credit-card/", "https://www.alaskaair.com/atmosrewards/content/partners/earn-everyday"],
+      "lastVerified": "2026-07-23T20:00:00Z"
     }
   ],
   "benefits": [
@@ -921,6 +1141,258 @@
       "enrollmentRequired": false,
       "sourceURL": "https://www.capitalone.com/credit-cards/benefits-guide/",
       "lastVerified": "2026-07-19T10:30:00Z"
+    },
+    {
+      "id": "united-club-membership",
+      "cardIDs": ["chase-united-club"],
+      "title": {"en": "United Club membership", "zhHans": "United Club 会员资格"},
+      "summary": {"en": "The primary cardmember receives a United Club membership while the account remains eligible.", "zhHans": "账户保持合资格状态期间，主卡持有人可获得 United Club 会员资格。"},
+      "details": {"en": "Access rules, eligible locations, guests, and same-day travel requirements are governed by the current United Club terms.", "zhHans": "适用地点、同行客人及当日乘机要求以最新 United Club 条款为准。"},
+      "category": "lounge", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/travel-credit-cards/united/club-infinite", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "united-club-checked-bags",
+      "cardIDs": ["chase-united-club"],
+      "title": {"en": "First and second checked bags free", "zhHans": "第一及第二件托运行李免费"},
+      "summary": {"en": "The primary cardmember and one companion on the same eligible United reservation can receive two free checked bags each.", "zhHans": "主卡持有人及同一合资格 United 预订中的一名同行者，每人可免费托运两件行李。"},
+      "details": {"en": "The MileagePlus number must be attached to the reservation and the ticket must meet the current card-payment requirements.", "zhHans": "预订需关联 MileagePlus 号码，且机票付款方式需符合现行卡片条款。"},
+      "category": "transportation", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/travel-credit-cards/united/club-infinite", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "united-club-trusted-traveler-credit",
+      "cardIDs": ["chase-united-club"],
+      "title": {"en": "Up to $120 trusted-traveler application credit", "zhHans": "最高 $120 快速通关申请费报销"},
+      "summary": {"en": "A statement credit for an eligible Global Entry, TSA PreCheck, or NEXUS application charged to the card.", "zhHans": "使用该卡支付合资格 Global Entry、TSA PreCheck 或 NEXUS 申请费，可获得账单报销。"},
+      "details": {"en": "The credit is available once every four years under current terms.", "zhHans": "按现行条款，该额度每四年可使用一次。"},
+      "category": "travelCredit", "cadence": "fourYears", "isTrackable": true, "valueCents": 12000, "currencyCode": "USD", "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/travel-credit-cards/united/club-infinite", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "united-club-award-discounts",
+      "cardIDs": ["chase-united-club"],
+      "title": {"en": "Two 10,000-mile award discounts", "zhHans": "两次 10,000 里程奖励机票折扣"},
+      "summary": {"en": "Cardmembers can earn up to two 10,000-mile United award discounts after reaching the published annual purchase thresholds.", "zhHans": "达到公布的年度消费门槛后，持卡人最多可获得两次 United 奖励机票 10,000 里程折扣。"},
+      "details": {"en": "Each discount currently requires a separate $20,000 purchase increment in a calendar year; redemption restrictions apply.", "zhHans": "按现行条款，每次折扣需在一个自然年内完成一个独立的 $20,000 消费增量，并受兑换限制。"},
+      "category": "travelCredit", "cadence": "annual", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/travel-credit-cards/united/club-infinite", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "freedom-unlimited-purchase-protection",
+      "cardIDs": ["chase-freedom-unlimited"],
+      "title": {"en": "Purchase protection", "zhHans": "购物保障"},
+      "summary": {"en": "Eligible new purchases can be covered against damage or theft for the period and limits in the current benefit guide.", "zhHans": "合资格新购商品可按现行权益指南规定的期限和额度获得损坏或失窃保障。"},
+      "details": {"en": "Coverage limits, exclusions, required payment, documentation, and claim deadlines apply.", "zhHans": "适用保障额度、除外责任、付款要求、证明文件及理赔期限。"},
+      "category": "protection", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "freedom-unlimited-trip-cancellation",
+      "cardIDs": ["chase-freedom-unlimited"],
+      "title": {"en": "Trip cancellation and interruption coverage", "zhHans": "旅行取消与中断保障"},
+      "summary": {"en": "Eligible prepaid, nonrefundable passenger fares can receive trip cancellation or interruption coverage.", "zhHans": "合资格预付且不可退款的客运票价可获得旅行取消或中断保障。"},
+      "details": {"en": "Covered reasons, travelers, payment requirements, exclusions, limits, and claim deadlines are defined by the current benefit guide.", "zhHans": "承保原因、旅行者、付款要求、除外责任、额度和理赔期限以最新权益指南为准。"},
+      "category": "protection", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "hyatt-card-anniversary-night",
+      "cardIDs": ["chase-world-of-hyatt"],
+      "title": {"en": "Annual Category 1-4 free-night award", "zhHans": "每年 Category 1-4 免费住宿奖励"},
+      "summary": {"en": "One free-night award valid at participating Category 1-4 Hyatt hotels is issued after each cardmember anniversary.", "zhHans": "每个持卡周年后，可获得一晚适用于参与活动的 Hyatt Category 1-4 酒店的免费住宿奖励。"},
+      "details": {"en": "The award has an expiration date and is subject to availability and World of Hyatt redemption terms.", "zhHans": "奖励设有有效期，并受房态和 World of Hyatt 兑换条款限制。"},
+      "category": "hotel", "cadence": "anniversary", "isTrackable": true, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "hyatt-card-spend-free-night",
+      "cardIDs": ["chase-world-of-hyatt"],
+      "title": {"en": "Extra Category 1-4 free night after $15,000", "zhHans": "消费 $15,000 后额外 Category 1-4 免费住宿"},
+      "summary": {"en": "An additional Category 1-4 free-night award can be earned after $15,000 in eligible calendar-year purchases.", "zhHans": "每自然年完成 $15,000 合资格消费后，可额外获得一晚 Category 1-4 免费住宿奖励。"},
+      "details": {"en": "Purchase eligibility, timing, expiration, and hotel availability follow the current card and World of Hyatt terms.", "zhHans": "消费资格、发放时间、有效期和酒店房态以最新卡片及 World of Hyatt 条款为准。"},
+      "category": "hotel", "cadence": "annual", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "hyatt-card-tier-nights",
+      "cardIDs": ["chase-world-of-hyatt"],
+      "title": {"en": "Five annual tier-qualifying night credits", "zhHans": "每年 5 晚会籍资格房晚"},
+      "summary": {"en": "Five tier-qualifying night credits are provided each calendar year toward World of Hyatt status.", "zhHans": "每个自然年提供 5 晚会籍资格房晚，用于 World of Hyatt 会籍进度。"},
+      "details": {"en": "Posting timing and status qualification remain subject to World of Hyatt program terms.", "zhHans": "入账时间和会籍资格仍受 World of Hyatt 计划条款约束。"},
+      "category": "hotel", "cadence": "annual", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "ihg-premier-anniversary-night",
+      "cardIDs": ["chase-ihg-premier"],
+      "title": {"en": "Annual 40,000-point anniversary night", "zhHans": "每年 40,000 积分周年住宿奖励"},
+      "summary": {"en": "One anniversary night valid at participating IHG hotels priced at 40,000 points or less is issued each account anniversary.", "zhHans": "每个账户周年可获得一晚适用于参与 IHG 酒店且价格不超过 40,000 积分的周年住宿奖励。"},
+      "details": {"en": "The certificate expires and is subject to availability; current terms may allow points to be added for higher-priced nights.", "zhHans": "奖励设有有效期并受房态限制；现行条款可能允许补充积分兑换更高价格的住宿。"},
+      "category": "hotel", "cadence": "anniversary", "isTrackable": true, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "ihg-premier-platinum-status",
+      "cardIDs": ["chase-ihg-premier"],
+      "title": {"en": "IHG One Rewards Platinum Elite status", "zhHans": "IHG One Rewards Platinum Elite 会籍"},
+      "summary": {"en": "The primary cardmember receives IHG One Rewards Platinum Elite status while the account remains eligible.", "zhHans": "账户保持合资格状态期间，主卡持有人可获得 IHG One Rewards Platinum Elite 会籍。"},
+      "details": {"en": "Status benefits, participating properties, and qualification timing follow current IHG One Rewards terms.", "zhHans": "会籍权益、参与酒店和资格生效时间以最新 IHG One Rewards 条款为准。"},
+      "category": "hotel", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "ihg-premier-fourth-night-free",
+      "cardIDs": ["chase-ihg-premier"],
+      "title": {"en": "Fourth reward night free", "zhHans": "奖励住宿第四晚免费"},
+      "summary": {"en": "When points are redeemed for four or more consecutive nights, every fourth night in the eligible stay costs zero points.", "zhHans": "使用积分连续兑换四晚或以上的合资格住宿时，每第四晚所需积分为零。"},
+      "details": {"en": "The benefit applies to qualifying standard reward-night stays and is controlled by current IHG redemption terms.", "zhHans": "该权益适用于符合条件的标准奖励住宿，并以最新 IHG 兑换条款为准。"},
+      "category": "hotel", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "discover-rewards-no-expiration",
+      "cardIDs": ["discover-it-cash-back"],
+      "title": {"en": "Cash back rewards do not expire", "zhHans": "返现奖励不会过期"},
+      "summary": {"en": "Earned cash back rewards do not expire while Discover maintains the rewards balance under current terms.", "zhHans": "按现行条款，只要 Discover 保留奖励余额，已获得的返现奖励不会过期。"},
+      "details": {"en": "Redemption options and treatment after account closure remain subject to Discover's current rewards terms.", "zhHans": "兑换方式以及账户关闭后的处理仍以 Discover 最新奖励条款为准。"},
+      "category": "shopping", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "sourceURL": "https://www.discover.com/credit-cards/cash-back/it-card/", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "bilt-housing-no-transaction-fee",
+      "cardIDs": ["bilt-blue", "bilt-obsidian", "bilt-palladium"],
+      "title": {"en": "No Bilt transaction fee on eligible housing payments", "zhHans": "合资格住房付款免 Bilt 交易费"},
+      "summary": {"en": "Eligible rent and other supported housing payments can be made through Bilt without Bilt charging a card transaction fee.", "zhHans": "通过 Bilt 支付合资格房租及其他支持的住房款项时，Bilt 不收取信用卡交易费。"},
+      "details": {"en": "Supported payment types, landlord acceptance, limits, and account qualification follow current Bilt terms.", "zhHans": "支持的付款类型、房东接受方式、限额和账户资格以最新 Bilt 条款为准。"},
+      "category": "shopping", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "sourceURL": "https://www.bilt.com/card", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "bilt-obsidian-hotel-credit",
+      "cardIDs": ["bilt-obsidian"],
+      "title": {"en": "$50 semiannual Bilt Travel hotel credit", "zhHans": "每半年 $50 Bilt Travel 酒店额度"},
+      "summary": {"en": "Up to $100 per year, split into two $50 periods, for eligible hotel bookings through Bilt Travel.", "zhHans": "每年最高 $100，分为两个 $50 周期，用于通过 Bilt Travel 完成的合资格酒店预订。"},
+      "details": {"en": "Unused credit does not carry between benefit periods; booking and minimum-stay requirements may apply.", "zhHans": "未使用额度不会跨周期结转，并可能适用预订及最低入住要求。"},
+      "category": "hotel", "cadence": "semiannual", "isTrackable": true, "valueCents": 5000, "currencyCode": "USD", "enrollmentRequired": false,
+      "sourceURL": "https://www.bilt.com/card/obsidian", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "bilt-palladium-bilt-cash",
+      "cardIDs": ["bilt-palladium"],
+      "title": {"en": "$200 annual Bilt Cash", "zhHans": "每年 $200 Bilt Cash"},
+      "summary": {"en": "The card provides $200 in annual Bilt Cash under current terms.", "zhHans": "按现行条款，该卡每年提供 $200 Bilt Cash。"},
+      "details": {"en": "Eligible uses, issuance timing, expiration, and exclusions follow current Bilt Cash terms.", "zhHans": "合资格用途、发放时间、有效期和除外规则以最新 Bilt Cash 条款为准。"},
+      "category": "shopping", "cadence": "annual", "isTrackable": true, "valueCents": 20000, "currencyCode": "USD", "enrollmentRequired": false,
+      "sourceURL": "https://www.bilt.com/card/palladium", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "bilt-palladium-hotel-credit",
+      "cardIDs": ["bilt-palladium"],
+      "title": {"en": "$200 semiannual Bilt Travel hotel credit", "zhHans": "每半年 $200 Bilt Travel 酒店额度"},
+      "summary": {"en": "Up to $400 per year, split into two $200 periods, for eligible hotel bookings through Bilt Travel.", "zhHans": "每年最高 $400，分为两个 $200 周期，用于通过 Bilt Travel 完成的合资格酒店预订。"},
+      "details": {"en": "Unused credit does not carry between benefit periods; booking and minimum-stay requirements may apply.", "zhHans": "未使用额度不会跨周期结转，并可能适用预订及最低入住要求。"},
+      "category": "hotel", "cadence": "semiannual", "isTrackable": true, "valueCents": 20000, "currencyCode": "USD", "enrollmentRequired": false,
+      "sourceURL": "https://www.bilt.com/card/palladium", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "bilt-palladium-priority-pass",
+      "cardIDs": ["bilt-palladium"],
+      "title": {"en": "Priority Pass lounge membership", "zhHans": "Priority Pass 贵宾室会员"},
+      "summary": {"en": "Eligible cardmembers can enroll in the included Priority Pass membership for participating airport lounges.", "zhHans": "合资格持卡人可注册随卡提供的 Priority Pass 会员，以使用参与活动的机场贵宾室。"},
+      "details": {"en": "Enrollment is required; participating locations, guest access, visit limits, and fees follow current terms.", "zhHans": "需要注册；参与地点、同行客人、使用次数和费用以最新条款为准。"},
+      "category": "lounge", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": true,
+      "sourceURL": "https://www.bilt.com/card/palladium", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "marriott-brilliant-dining-credit",
+      "cardIDs": ["amex-marriott-bonvoy-brilliant"],
+      "title": {"en": "Up to $25 monthly dining credit", "zhHans": "每月最高 $25 餐饮报销"},
+      "summary": {"en": "Up to $300 per calendar year in statement credits, provided as up to $25 monthly, for eligible restaurant purchases worldwide.", "zhHans": "全球合资格餐厅消费每月最高可报销 $25，每自然年最高 $300。"},
+      "details": {"en": "Only eligible restaurant charges in each monthly period qualify; unused credit does not carry forward.", "zhHans": "仅各月周期内的合资格餐厅消费可获报销，未使用额度不会结转。"},
+      "category": "dining", "cadence": "monthly", "isTrackable": true, "valueCents": 2500, "currencyCode": "USD", "enrollmentRequired": false,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/marriott-bonvoy-brilliant/", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "marriott-brilliant-free-night",
+      "cardIDs": ["amex-marriott-bonvoy-brilliant"],
+      "title": {"en": "Annual free-night award up to 85,000 points", "zhHans": "每年最高 85,000 积分免费住宿奖励"},
+      "summary": {"en": "One free-night award worth up to 85,000 Marriott Bonvoy points is issued after each card renewal month.", "zhHans": "每次续卡月份后，可获得一晚最高价值 85,000 Marriott Bonvoy 积分的免费住宿奖励。"},
+      "details": {"en": "The award expires and is subject to availability; current terms may allow points to be added for a higher redemption price.", "zhHans": "奖励设有有效期并受房态限制；现行条款可能允许补充积分兑换更高价格的住宿。"},
+      "category": "hotel", "cadence": "anniversary", "isTrackable": true, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/marriott-bonvoy-brilliant/", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "marriott-brilliant-platinum-status",
+      "cardIDs": ["amex-marriott-bonvoy-brilliant"],
+      "title": {"en": "Marriott Bonvoy Platinum Elite status", "zhHans": "Marriott Bonvoy Platinum Elite 会籍"},
+      "summary": {"en": "The primary cardmember receives Marriott Bonvoy Platinum Elite status while the account remains eligible.", "zhHans": "账户保持合资格状态期间，主卡持有人可获得 Marriott Bonvoy Platinum Elite 会籍。"},
+      "details": {"en": "Status benefits, participating properties, and account-linking requirements follow current Marriott Bonvoy and card terms.", "zhHans": "会籍权益、参与酒店和账户关联要求以最新 Marriott Bonvoy 及卡片条款为准。"},
+      "category": "hotel", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/marriott-bonvoy-brilliant/", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "atmos-card-free-checked-bag",
+      "cardIDs": ["boa-atmos-ascent", "boa-atmos-summit"],
+      "title": {"en": "Free checked bag and preferred boarding", "zhHans": "免费托运行李与优先登机"},
+      "summary": {"en": "The primary cardholder and eligible companions on the same reservation can receive a free checked bag and preferred boarding.", "zhHans": "主卡持有人及同一预订中的合资格同行者可获得免费托运行李和优先登机。"},
+      "details": {"en": "The Atmos Rewards number must be attached and the ticket must meet current card-payment and itinerary requirements; companion limits apply.", "zhHans": "预订需关联 Atmos Rewards 号码，且机票付款方式与行程需符合现行要求；同行人数受限。"},
+      "category": "transportation", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "sourceURL": "https://www.bankofamerica.com/credit-cards/products/alaska-airlines-credit-card/", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "atmos-ascent-companion-fare",
+      "cardIDs": ["boa-atmos-ascent"],
+      "title": {"en": "Annual $99 Companion Fare after $6,000 spend", "zhHans": "年度消费 $6,000 后获得 $99 同行票"},
+      "summary": {"en": "A $99 base-fare Companion Fare can be earned after meeting the current annual purchase requirement.", "zhHans": "达到现行年度消费要求后，可获得一张基础票价 $99 的同行票。"},
+      "details": {"en": "Taxes and fees apply. Qualification, eligible routes, booking class, expiration, and purchase requirements follow current terms.", "zhHans": "需另付税费；资格、适用航线、舱位、有效期和消费要求以最新条款为准。"},
+      "category": "transportation", "cadence": "anniversary", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "sourceURL": "https://www.bankofamerica.com/credit-cards/products/alaska-airlines-credit-card/", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "atmos-ascent-lounge-discount",
+      "cardIDs": ["boa-atmos-ascent"],
+      "title": {"en": "$100 Alaska Lounge+ membership discount", "zhHans": "$100 Alaska Lounge+ 贵宾室会员折扣"},
+      "summary": {"en": "Eligible cardholders can receive a $100 discount on an annual Alaska Lounge+ membership.", "zhHans": "合资格持卡人购买年度 Alaska Lounge+ 贵宾室会员时可享 $100 折扣。"},
+      "details": {"en": "The membership purchase and account must meet current Alaska Lounge and card eligibility terms.", "zhHans": "会员购买和账户需符合最新 Alaska Lounge 及卡片资格条款。"},
+      "category": "lounge", "cadence": "annual", "isTrackable": true, "valueCents": 10000, "currencyCode": "USD", "enrollmentRequired": false,
+      "sourceURL": "https://www.bankofamerica.com/credit-cards/products/alaska-airlines-credit-card/", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "atmos-summit-companion-award",
+      "cardIDs": ["boa-atmos-summit"],
+      "title": {"en": "Annual 25,000-point Global Companion Award", "zhHans": "每年 25,000 积分全球同行奖励"},
+      "summary": {"en": "An annual Global Companion Award can cover up to 25,000 points of an eligible companion award itinerary.", "zhHans": "年度全球同行奖励可抵扣合资格同行奖励行程最多 25,000 积分。"},
+      "details": {"en": "Issuance, eligible itineraries, taxes, expiration, and any purchase requirements follow current Atmos Rewards terms.", "zhHans": "发放、适用行程、税费、有效期及任何消费要求以最新 Atmos Rewards 条款为准。"},
+      "category": "transportation", "cadence": "anniversary", "isTrackable": true, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "sourceURL": "https://www.bankofamerica.com/credit-cards/products/alaska-airlines-infinite-credit-card/", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "atmos-summit-lounge-passes",
+      "cardIDs": ["boa-atmos-summit"],
+      "title": {"en": "Two Alaska Lounge passes each quarter", "zhHans": "每季度两张 Alaska Lounge 通行证"},
+      "summary": {"en": "Two Alaska Lounge passes are provided each quarter, for up to eight passes per year under current terms.", "zhHans": "按现行条款，每季度提供两张 Alaska Lounge 通行证，每年最多八张。"},
+      "details": {"en": "Pass issuance, expiration, participating lounges, same-day travel, and guest rules apply.", "zhHans": "通行证发放、有效期、参与贵宾室、当日乘机和同行客人规则均适用。"},
+      "category": "lounge", "cadence": "quarterly", "isTrackable": true, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "sourceURL": "https://www.bankofamerica.com/credit-cards/products/alaska-airlines-infinite-credit-card/", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "atmos-summit-trusted-traveler-credit",
+      "cardIDs": ["boa-atmos-summit"],
+      "title": {"en": "Up to $120 trusted-traveler application credit", "zhHans": "最高 $120 快速通关申请费报销"},
+      "summary": {"en": "A statement credit for an eligible Global Entry, TSA PreCheck, or NEXUS application charged to the card.", "zhHans": "使用该卡支付合资格 Global Entry、TSA PreCheck 或 NEXUS 申请费，可获得账单报销。"},
+      "details": {"en": "The credit is available once every four years under current terms.", "zhHans": "按现行条款，该额度每四年可使用一次。"},
+      "category": "travelCredit", "cadence": "fourYears", "isTrackable": true, "valueCents": 12000, "currencyCode": "USD", "enrollmentRequired": false,
+      "sourceURL": "https://www.bankofamerica.com/credit-cards/products/alaska-airlines-infinite-credit-card/", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "atmos-summit-delay-credit",
+      "cardIDs": ["boa-atmos-summit"],
+      "title": {"en": "Instant flight-delay credit", "zhHans": "航班延误即时额度"},
+      "summary": {"en": "Eligible Alaska Airlines flight delays can trigger a $50 credit for qualifying same-day expenses under current terms.", "zhHans": "按现行条款，合资格 Alaska Airlines 航班延误可触发 $50 额度，用于符合条件的当日支出。"},
+      "details": {"en": "Eligible delays, ticket payment, itinerary, notice, expense types, timing, and redemption restrictions apply.", "zhHans": "适用延误、机票付款、行程、通知、支出类型、时间及兑换限制。"},
+      "category": "travelCredit", "cadence": "ongoing", "isTrackable": false, "valueCents": 5000, "currencyCode": "USD", "enrollmentRequired": false,
+      "sourceURL": "https://www.bankofamerica.com/credit-cards/products/alaska-airlines-infinite-credit-card/", "lastVerified": "2026-07-23T20:00:00Z"
     }
   ]
 }

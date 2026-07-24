@@ -25,6 +25,14 @@ struct CardDetailView: View {
                         Text("\(card.issuer) · \(card.family.value(for: language))")
                             .font(.subheadline)
                             .foregroundStyle(.secondary)
+                        if card.availability == .discontinued {
+                            Label(
+                                LocalizedStringKey(card.availability.localizationKey),
+                                systemImage: "clock.arrow.circlepath"
+                            )
+                            .font(.caption)
+                            .foregroundStyle(.orange)
+                        }
                     }
                 }
                 .padding(.vertical, 8)

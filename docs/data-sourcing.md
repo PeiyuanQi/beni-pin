@@ -51,16 +51,27 @@ Recommended operating cadence:
 - re-verify every active record before an App Store release;
 - publish only after a human confirms the applicable product version, network, effective date, amount, cadence, enrollment requirement, and exclusions.
 
-Card discovery in the app searches every product in the downloaded BeniPin catalog, including bilingual earning-rate text. Expanding beyond the starter set requires publishing additional issuer-verified card records; the app must not fall back to live searches of editorial websites.
+Card discovery in the app searches every product in the downloaded BeniPin catalog, including bilingual earning-rate text and curated product aliases. Expanding the catalog requires publishing additional issuer-verified card records; the app must not fall back to live searches of editorial websites.
 
 The app checks the reviewed GitHub Raw catalog on foreground launch and schedules an opportunistic `BGAppRefreshTask` no earlier than 24 hours later. iOS decides whether and when background work runs, so this is not a guaranteed cron schedule. Manual pull-to-refresh and Settings refresh are always available.
 
-## Starter Official Sources
+## Current Official Sources
 
 - American Express Platinum: <https://www.americanexpress.com/us/credit-cards/card/platinum/>
 - American Express Gold: <https://www.americanexpress.com/us/credit-cards/card/gold-card/>
 - Chase Sapphire Reserve: <https://www.chase.com/sapphire-cards/personal/reserve>
 - Chase Sapphire Preferred: <https://www.chase.com/sapphire-cards/personal/preferred>
 - Capital One Venture X: <https://www.capitalone.com/credit-cards/venture-x/>
+- Chase United Club: <https://creditcards.chase.com/travel-credit-cards/united/club-infinite>
+- Chase Freedom Unlimited: <https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited>
+- Chase World of Hyatt: <https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card>
+- Chase IHG One Rewards Premier: <https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier>
+- Discover it Cash Back: <https://www.discover.com/credit-cards/cash-back/it-card/>
+- Bilt card lineup: <https://www.bilt.com/card>
+- American Express Marriott Bonvoy Brilliant: <https://www.americanexpress.com/us/credit-cards/card/marriott-bonvoy-brilliant/>
+- Bank of America Atmos Rewards Ascent: <https://www.bankofamerica.com/credit-cards/products/alaska-airlines-credit-card/>
+- Bank of America Atmos Rewards Summit: <https://www.bankofamerica.com/credit-cards/products/alaska-airlines-infinite-credit-card/>
+
+The discontinued Deserve EDU record is retained only so existing cardholders can find their legacy product. Its historical earning rate is sourced from the archived official cardholder agreement published by the Consumer Financial Protection Bureau: <https://files.consumerfinance.gov/a/assets/credit-card-agreements/pdf/Celtic_Bank/Deserve_EDU_Cardholder_Agreement.pdf>. The current Deserve site no longer offers that card: <https://deserve.com/>.
 
 Issuer terms control whenever a BeniPin summary differs from current issuer material.
