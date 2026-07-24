@@ -68,7 +68,7 @@
 		573F589A31BCC2288BF0AC8A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5C14128CABDEED72DAD85ABA /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "Resources/zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		6962303F61DFDBF33047A447 /* WalletInfoView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WalletInfoView.swift; path = Features/Cards/WalletInfoView.swift; sourceTree = "<group>"; };
-		7C76A9E2A8BE3B5CBE9D129C /* catalog.v1.json */ = {isa = PBXFileReference; includeInIndex = 1; path = catalog.v1.json; sourceTree = "<group>"; };
+		7C76A9E2A8BE3B5CBE9D129C /* catalog.v1.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; path = catalog.v1.json; sourceTree = "<group>"; };
 		926EBC2EDB9093AF08DA87EA /* BenefitDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BenefitDetailView.swift; path = Features/Benefits/BenefitDetailView.swift; sourceTree = "<group>"; };
 		94C35FB6D69198E0E38D8D8A /* BenefitSearch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BenefitSearch.swift; path = Models/BenefitSearch.swift; sourceTree = "<group>"; };
 		9627DDFE16A5235A60184CEA /* UserStateTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserStateTests.swift; sourceTree = "<group>"; };
@@ -124,7 +124,6 @@
 				25B53788DDEDC6E516D3F043 /* CatalogTests.swift */,
 				9627DDFE16A5235A60184CEA /* UserStateTests.swift */,
 			);
-			name = BeniPinTests;
 			path = BeniPinTests;
 			sourceTree = "<group>";
 		};
@@ -177,7 +176,6 @@
 				D4E2A7B8C9F04123A5B6C7D8 /* Assets.xcassets */,
 				101E8657BBDFFD6097FDA749 /* Localizable.strings */,
 			);
-			name = BeniPin;
 			path = BeniPin;
 			sourceTree = "<group>";
 		};
@@ -245,6 +243,15 @@
 			attributes = {
 				LastSwiftUpdateCheck = 2660;
 				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					CCBDFE30D27E4AE38DBB4126 = {
+						DevelopmentTeam = 3K24ZFVEUS;
+						ProvisioningStyle = Automatic;
+					};
+					FAFC011C18FA3A141256AE43 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 5591985BEABE5EB4E2940061 /* Build configuration list for PBXProject "BeniPin" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -256,8 +263,6 @@
 				Base,
 			);
 			mainGroup = 73B9A0A472294D66047E7E7D;
-			minimizedProjectReferenceProxies = 0;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 9B50846F64FF42364CAAEA2E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -360,16 +365,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3K24ZFVEUS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = BeniPin/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 0.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.peiyuanqi.benipin;
+				PRODUCT_BUNDLE_IDENTIFIER = me.peiyuanqi.benipin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -429,8 +437,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -461,16 +468,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3K24ZFVEUS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = BeniPin/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 0.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.peiyuanqi.benipin;
+				PRODUCT_BUNDLE_IDENTIFIER = me.peiyuanqi.benipin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
