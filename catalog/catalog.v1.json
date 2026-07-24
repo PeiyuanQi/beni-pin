@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-23T20:00:00Z",
+  "generatedAt": "2026-07-23T22:30:00Z",
   "cards": [
     {
       "id": "amex-platinum",
@@ -635,6 +635,65 @@
       "benefitIDs": ["atmos-card-free-checked-bag", "atmos-summit-companion-award", "atmos-summit-lounge-passes", "atmos-summit-trusted-traveler-credit", "atmos-summit-delay-credit"],
       "sourceURLs": ["https://www.bankofamerica.com/credit-cards/products/alaska-airlines-infinite-credit-card/", "https://www.alaskaair.com/atmosrewards/content/partners/earn-everyday"],
       "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "citi-strata",
+      "issuer": "Citi",
+      "name": {"en": "Citi Strata Card", "zhHans": "Citi Strata 卡"},
+      "family": {"en": "Citi Strata / ThankYou Rewards", "zhHans": "Citi Strata ThankYou 积分系列"},
+      "searchAliases": ["citi strata", "strata card", "citi thankyou", "花旗 strata", "花旗 strata 卡"],
+      "network": "mastercard",
+      "artwork": {"primaryHex": "176B73", "secondaryHex": "0B353B", "accentHex": "D9F1EE", "symbolName": "slider.horizontal.3", "remoteImageURL": null},
+      "earningRates": [
+        {"id": "citi-strata-citi-travel", "category": {"en": "Hotels, car rentals, and attractions through Citi Travel", "zhHans": "通过 Citi Travel 预订酒店、租车与景点"}, "details": {"en": "Eligible hotels, car rentals, and attractions booked through cititravel.com.", "zhHans": "通过 cititravel.com 预订的合资格酒店、租车和景点消费。"}, "multiplier": 5, "sourceURL": "https://www.citi.com/credit-cards/citi-strata-credit-card", "lastVerified": "2026-07-23T22:30:00Z"},
+        {"id": "citi-strata-supermarkets", "category": {"en": "Supermarkets", "zhHans": "超市"}, "details": {"en": "Eligible supermarket purchases.", "zhHans": "合资格超市消费。"}, "multiplier": 3, "sourceURL": "https://www.citi.com/credit-cards/citi-strata-credit-card", "lastVerified": "2026-07-23T22:30:00Z"},
+        {"id": "citi-strata-transit-gas", "category": {"en": "Select transit, gas stations, and EV charging", "zhHans": "指定交通、加油站与电动车充电"}, "details": {"en": "Eligible purchases in Citi's current select-transit, gas-station, and EV-charging categories.", "zhHans": "Citi 现行指定交通、加油站和电动车充电类别中的合资格消费。"}, "multiplier": 3, "sourceURL": "https://www.citi.com/credit-cards/citi-strata-credit-card", "lastVerified": "2026-07-23T22:30:00Z"},
+        {"id": "citi-strata-self-select", "category": {"en": "Self-Select Category", "zhHans": "自选类别"}, "details": {"en": "One eligible Self-Select Category; streaming is the default and the selection can currently be changed once per calendar quarter.", "zhHans": "一个合资格自选类别；默认为流媒体，按现行条款每自然季度可更改一次。"}, "multiplier": 3, "sourceURL": "https://www.citi.com/credit-cards/citi-strata-credit-card", "lastVerified": "2026-07-23T22:30:00Z"},
+        {"id": "citi-strata-restaurants", "category": {"en": "Restaurants", "zhHans": "餐厅"}, "details": {"en": "Eligible restaurant purchases.", "zhHans": "合资格餐厅消费。"}, "multiplier": 2, "sourceURL": "https://www.citi.com/credit-cards/citi-strata-credit-card", "lastVerified": "2026-07-23T22:30:00Z"},
+        {"id": "citi-strata-other-purchases", "category": {"en": "Other purchases", "zhHans": "其他消费"}, "details": {"en": "The standard rate for other eligible purchases.", "zhHans": "其他合资格消费的基础积攒倍率。"}, "multiplier": 1, "sourceURL": "https://www.citi.com/credit-cards/citi-strata-credit-card", "lastVerified": "2026-07-23T22:30:00Z"}
+      ],
+      "benefitIDs": [],
+      "sourceURLs": ["https://www.citi.com/credit-cards/citi-strata-credit-card"],
+      "lastVerified": "2026-07-23T22:30:00Z"
+    },
+    {
+      "id": "citi-strata-premier",
+      "issuer": "Citi",
+      "name": {"en": "Citi Strata Premier Card", "zhHans": "Citi Strata Premier 卡"},
+      "family": {"en": "Citi Strata / ThankYou Rewards", "zhHans": "Citi Strata ThankYou 积分系列"},
+      "searchAliases": ["citi strata premier", "citi premier", "strata premier", "citi thankyou premier", "花旗 strata premier"],
+      "network": "mastercard",
+      "artwork": {"primaryHex": "173D5E", "secondaryHex": "0A2034", "accentHex": "D8B76A", "symbolName": "airplane.circle.fill", "remoteImageURL": null},
+      "earningRates": [
+        {"id": "citi-strata-premier-citi-travel", "category": {"en": "Hotels, car rentals, and attractions through Citi Travel", "zhHans": "通过 Citi Travel 预订酒店、租车与景点"}, "details": {"en": "Eligible hotels, car rentals, and attractions booked through Citi Travel.", "zhHans": "通过 Citi Travel 预订的合资格酒店、租车和景点消费。"}, "multiplier": 10, "sourceURL": "https://www.citi.com/credit-cards/citi-strata-premier-credit-card", "lastVerified": "2026-07-23T22:30:00Z"},
+        {"id": "citi-strata-premier-air-hotels", "category": {"en": "Air travel and other hotels", "zhHans": "航空出行与其他酒店"}, "details": {"en": "Eligible air-travel purchases and hotel purchases outside the 10X Citi Travel category.", "zhHans": "合资格航空出行消费，以及不属于 Citi Travel 10X 类别的酒店消费。"}, "multiplier": 3, "sourceURL": "https://www.citi.com/credit-cards/citi-strata-premier-credit-card", "lastVerified": "2026-07-23T22:30:00Z"},
+        {"id": "citi-strata-premier-restaurants", "category": {"en": "Restaurants", "zhHans": "餐厅"}, "details": {"en": "Eligible restaurant purchases.", "zhHans": "合资格餐厅消费。"}, "multiplier": 3, "sourceURL": "https://www.citi.com/credit-cards/citi-strata-premier-credit-card", "lastVerified": "2026-07-23T22:30:00Z"},
+        {"id": "citi-strata-premier-supermarkets", "category": {"en": "Supermarkets", "zhHans": "超市"}, "details": {"en": "Eligible supermarket purchases.", "zhHans": "合资格超市消费。"}, "multiplier": 3, "sourceURL": "https://www.citi.com/credit-cards/citi-strata-premier-credit-card", "lastVerified": "2026-07-23T22:30:00Z"},
+        {"id": "citi-strata-premier-gas", "category": {"en": "Gas stations and EV charging", "zhHans": "加油站与电动车充电"}, "details": {"en": "Eligible gas-station and EV-charging purchases.", "zhHans": "合资格加油站和电动车充电消费。"}, "multiplier": 3, "sourceURL": "https://www.citi.com/credit-cards/citi-strata-premier-credit-card", "lastVerified": "2026-07-23T22:30:00Z"},
+        {"id": "citi-strata-premier-other-purchases", "category": {"en": "Other purchases", "zhHans": "其他消费"}, "details": {"en": "The standard rate for other eligible purchases.", "zhHans": "其他合资格消费的基础积攒倍率。"}, "multiplier": 1, "sourceURL": "https://www.citi.com/credit-cards/citi-strata-premier-credit-card", "lastVerified": "2026-07-23T22:30:00Z"}
+      ],
+      "benefitIDs": ["citi-strata-premier-hotel-benefit", "citi-strata-reserve-hotel-benefits", "citi-strata-premier-travel-protections"],
+      "sourceURLs": ["https://www.citi.com/credit-cards/citi-strata-premier-credit-card", "https://www.cardbenefits.citi.com/-/media/CPP/Files/LegalDocs/SOAPI/PID89_Strata_Premier_CRE131_GTPB_0524_tagged.pdf"],
+      "lastVerified": "2026-07-23T22:30:00Z"
+    },
+    {
+      "id": "citi-strata-elite",
+      "issuer": "Citi",
+      "name": {"en": "Citi Strata Elite Card", "zhHans": "Citi Strata Elite 卡"},
+      "family": {"en": "Citi Strata / ThankYou Rewards", "zhHans": "Citi Strata ThankYou 积分系列"},
+      "searchAliases": ["citi strata elite", "strata elite", "citi elite", "citi thankyou elite", "花旗 strata elite", "花旗高端旅行卡"],
+      "network": "mastercard",
+      "artwork": {"primaryHex": "242424", "secondaryHex": "090909", "accentHex": "C8A96B", "symbolName": "crown.fill", "remoteImageURL": null},
+      "earningRates": [
+        {"id": "citi-strata-elite-citi-travel", "category": {"en": "Hotels, car rentals, and attractions through Citi Travel", "zhHans": "通过 Citi Travel 预订酒店、租车与景点"}, "details": {"en": "Eligible hotels, car rentals, and attractions booked through Citi Travel.", "zhHans": "通过 Citi Travel 预订的合资格酒店、租车和景点消费。"}, "multiplier": 12, "sourceURL": "https://www.citi.com/credit-cards/citi-strata-elite-credit-card", "lastVerified": "2026-07-23T22:30:00Z"},
+        {"id": "citi-strata-elite-air-travel", "category": {"en": "Air travel through Citi Travel", "zhHans": "通过 Citi Travel 预订机票"}, "details": {"en": "Eligible air-travel purchases booked through Citi Travel.", "zhHans": "通过 Citi Travel 预订的合资格航空出行消费。"}, "multiplier": 6, "sourceURL": "https://www.citi.com/credit-cards/citi-strata-elite-credit-card", "lastVerified": "2026-07-23T22:30:00Z"},
+        {"id": "citi-strata-elite-citi-nights", "category": {"en": "Restaurants during Citi Nights", "zhHans": "Citi Nights 时段餐厅消费"}, "details": {"en": "Eligible restaurant purchases on Friday and Saturday from 6 p.m. to 6 a.m. Eastern Time under current Citi Nights terms.", "zhHans": "按现行 Citi Nights 条款，美东时间周五和周六晚 6 点至次日早 6 点的合资格餐厅消费。"}, "multiplier": 6, "sourceURL": "https://www.citi.com/credit-cards/citi-strata-elite-credit-card", "lastVerified": "2026-07-23T22:30:00Z"},
+        {"id": "citi-strata-elite-restaurants", "category": {"en": "Restaurants outside Citi Nights", "zhHans": "Citi Nights 以外的餐厅消费"}, "details": {"en": "Eligible restaurant purchases outside the current Citi Nights window.", "zhHans": "现行 Citi Nights 时段以外的合资格餐厅消费。"}, "multiplier": 3, "sourceURL": "https://www.citi.com/credit-cards/citi-strata-elite-credit-card", "lastVerified": "2026-07-23T22:30:00Z"},
+        {"id": "citi-strata-elite-other-purchases", "category": {"en": "Other purchases", "zhHans": "其他消费"}, "details": {"en": "The standard rate for other eligible purchases.", "zhHans": "其他合资格消费的基础积攒倍率。"}, "multiplier": 1.5, "sourceURL": "https://www.citi.com/credit-cards/citi-strata-elite-credit-card", "lastVerified": "2026-07-23T22:30:00Z"}
+      ],
+      "benefitIDs": ["citi-strata-elite-hotel-benefit", "citi-strata-reserve-hotel-benefits", "citi-strata-elite-splurge-credit", "citi-strata-elite-blacklane-credit", "citi-strata-elite-priority-pass", "citi-strata-elite-admirals-club-passes", "citi-strata-elite-trusted-traveler-credit", "citi-strata-elite-protections"],
+      "sourceURLs": ["https://www.citi.com/credit-cards/citi-strata-elite-credit-card", "https://www.cardbenefits.citi.com/-/media/CPP/Files/LegalDocs/SOAPI/PID920_CITI_STRATA_ELITE_CRE388_GTPB_0625_TAGGED.PDF"],
+      "lastVerified": "2026-07-23T22:30:00Z"
     }
   ],
   "benefits": [
@@ -1393,6 +1452,96 @@
       "details": {"en": "Eligible delays, ticket payment, itinerary, notice, expense types, timing, and redemption restrictions apply.", "zhHans": "适用延误、机票付款、行程、通知、支出类型、时间及兑换限制。"},
       "category": "travelCredit", "cadence": "ongoing", "isTrackable": false, "valueCents": 5000, "currencyCode": "USD", "enrollmentRequired": false,
       "sourceURL": "https://www.bankofamerica.com/credit-cards/products/alaska-airlines-infinite-credit-card/", "lastVerified": "2026-07-23T20:00:00Z"
+    },
+    {
+      "id": "citi-strata-premier-hotel-benefit",
+      "cardIDs": ["citi-strata-premier"],
+      "title": {"en": "$100 annual hotel benefit", "zhHans": "每年 $100 酒店优惠"},
+      "summary": {"en": "$100 off one eligible hotel stay of $500 or more, excluding taxes and fees, booked through Citi Travel each calendar year.", "zhHans": "每自然年通过 Citi Travel 预订一次税费前满 $500 的合资格酒店住宿，可减免 $100。"},
+      "details": {"en": "The benefit applies instantly at booking to one qualifying stay made through cititravel.com or the published phone channel; current booking and exclusion terms apply.", "zhHans": "通过 cititravel.com 或公布的电话渠道预订一次符合条件的住宿时即时抵扣；适用现行预订要求和除外条款。"},
+      "category": "hotel", "cadence": "annual", "isTrackable": true, "valueCents": 10000, "currencyCode": "USD", "enrollmentRequired": false,
+      "sourceURL": "https://www.citi.com/credit-cards/citi-strata-premier-credit-card", "lastVerified": "2026-07-23T22:30:00Z"
+    },
+    {
+      "id": "citi-strata-reserve-hotel-benefits",
+      "cardIDs": ["citi-strata-premier", "citi-strata-elite"],
+      "title": {"en": "The Reserve by Citi Travel hotel benefits", "zhHans": "The Reserve by Citi Travel 酒店礼遇"},
+      "summary": {"en": "Eligible Reserve hotel rates include daily breakfast for two, Wi-Fi, and a property-specific $100 experience credit.", "zhHans": "预订合资格 The Reserve 酒店价格，可享双人每日早餐、Wi-Fi 及酒店指定的 $100 体验额度。"},
+      "details": {"en": "Early check-in, late checkout, and room upgrades may also be available subject to availability; a Reserve Hotel rate must be selected at checkout.", "zhHans": "视供应情况还可能提供提前入住、延迟退房和房型升级；结账时必须选择 Reserve Hotel 价格。"},
+      "category": "hotel", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "sourceURL": "https://www.citi.com/credit-cards/citi-strata-all-cards", "lastVerified": "2026-07-23T22:30:00Z"
+    },
+    {
+      "id": "citi-strata-premier-travel-protections",
+      "cardIDs": ["citi-strata-premier"],
+      "title": {"en": "Travel protection package", "zhHans": "旅行保障组合"},
+      "summary": {"en": "Eligible trips can receive trip cancellation and interruption, trip delay, lost or damaged luggage, and car-rental coverage.", "zhHans": "合资格行程可获得旅行取消与中断、行程延误、行李遗失或损坏以及租车保障。"},
+      "details": {"en": "Coverage depends on payment, covered events, limits, exclusions, documentation, and claim deadlines in the current benefit guide.", "zhHans": "保障取决于最新权益指南中的付款要求、承保事件、额度、除外责任、证明文件和理赔期限。"},
+      "category": "protection", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "sourceURL": "https://www.cardbenefits.citi.com/-/media/CPP/Files/LegalDocs/SOAPI/PID89_Strata_Premier_CRE131_GTPB_0524_tagged.pdf", "lastVerified": "2026-07-23T22:30:00Z"
+    },
+    {
+      "id": "citi-strata-elite-hotel-benefit",
+      "cardIDs": ["citi-strata-elite"],
+      "title": {"en": "Up to $300 annual hotel benefit", "zhHans": "每年最高 $300 酒店优惠"},
+      "summary": {"en": "Up to $300 off one eligible hotel stay of two nights or more booked through Citi Travel each calendar year.", "zhHans": "每自然年通过 Citi Travel 预订一次至少两晚的合资格酒店住宿，可减免最高 $300。"},
+      "details": {"en": "The benefit applies to one qualifying prepaid hotel booking under current Citi Travel terms; taxes, fees, booking channels, and exclusions apply.", "zhHans": "该权益适用于符合现行 Citi Travel 条款的一次合资格预付酒店预订；税费、预订渠道和除外规则均适用。"},
+      "category": "hotel", "cadence": "annual", "isTrackable": true, "valueCents": 30000, "currencyCode": "USD", "enrollmentRequired": false,
+      "sourceURL": "https://www.citi.com/credit-cards/citi-strata-elite-credit-card", "lastVerified": "2026-07-23T22:30:00Z"
+    },
+    {
+      "id": "citi-strata-elite-splurge-credit",
+      "cardIDs": ["citi-strata-elite"],
+      "title": {"en": "Up to $200 annual Splurge Credit", "zhHans": "每年最高 $200 Splurge 报销"},
+      "summary": {"en": "Up to $200 in annual statement credits for eligible purchases with up to two selected participating brands.", "zhHans": "在最多两个自选参与品牌完成合资格消费，每年可获得最高 $200 账单报销。"},
+      "details": {"en": "Brand selection, eligible purchases, exclusions, merchant processing, and changes to participating brands follow current Citi terms.", "zhHans": "品牌选择、合资格消费、除外规则、商户入账方式及参与品牌变更以 Citi 最新条款为准。"},
+      "category": "shopping", "cadence": "annual", "isTrackable": true, "valueCents": 20000, "currencyCode": "USD", "enrollmentRequired": true,
+      "sourceURL": "https://www.citi.com/credit-cards/citi-strata-elite-credit-card", "lastVerified": "2026-07-23T22:30:00Z"
+    },
+    {
+      "id": "citi-strata-elite-blacklane-credit",
+      "cardIDs": ["citi-strata-elite"],
+      "title": {"en": "$100 semiannual Blacklane credit", "zhHans": "每半年 $100 Blacklane 报销"},
+      "summary": {"en": "Up to $200 per calendar year for eligible Blacklane purchases, split into two $100 half-year periods.", "zhHans": "每自然年合资格 Blacklane 消费最高可报销 $200，分为两个每半年 $100 的周期。"},
+      "details": {"en": "The current periods are January through June and July through December; unused credit does not carry between periods.", "zhHans": "现行周期为 1 月至 6 月及 7 月至 12 月；未使用额度不会跨周期结转。"},
+      "category": "transportation", "cadence": "semiannual", "isTrackable": true, "valueCents": 10000, "currencyCode": "USD", "enrollmentRequired": false,
+      "sourceURL": "https://www.citi.com/credit-cards/citi-strata-elite-credit-card", "lastVerified": "2026-07-23T22:30:00Z"
+    },
+    {
+      "id": "citi-strata-elite-priority-pass",
+      "cardIDs": ["citi-strata-elite"],
+      "title": {"en": "Priority Pass Select membership", "zhHans": "Priority Pass Select 会员"},
+      "summary": {"en": "Eligible cardmembers can enroll in the included Priority Pass Select membership for participating airport lounges.", "zhHans": "合资格持卡人可注册随卡提供的 Priority Pass Select 会员，以使用参与活动的机场贵宾室。"},
+      "details": {"en": "Enrollment is required; participating locations, guest access, visit rules, and fees follow current program terms.", "zhHans": "需要注册；参与地点、同行客人、使用规则和费用以最新计划条款为准。"},
+      "category": "lounge", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": true,
+      "sourceURL": "https://www.citi.com/credit-cards/citi-strata-elite-credit-card", "lastVerified": "2026-07-23T22:30:00Z"
+    },
+    {
+      "id": "citi-strata-elite-admirals-club-passes",
+      "cardIDs": ["citi-strata-elite"],
+      "title": {"en": "Four annual Admirals Club passes", "zhHans": "每年四张 Admirals Club 通行证"},
+      "summary": {"en": "Four Admirals Club Citi Strata Elite passes are provided each calendar year under current terms.", "zhHans": "按现行条款，每自然年提供四张 Admirals Club Citi Strata Elite 通行证。"},
+      "details": {"en": "Pass issuance, expiration, participating lounges, same-day travel, access, and guest rules apply.", "zhHans": "通行证发放、有效期、参与贵宾室、当日乘机、使用资格和同行客人规则均适用。"},
+      "category": "lounge", "cadence": "annual", "isTrackable": true, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "sourceURL": "https://www.citi.com/credit-cards/citi-strata-elite-credit-card", "lastVerified": "2026-07-23T22:30:00Z"
+    },
+    {
+      "id": "citi-strata-elite-trusted-traveler-credit",
+      "cardIDs": ["citi-strata-elite"],
+      "title": {"en": "Up to $120 trusted-traveler application credit", "zhHans": "最高 $120 快速通关申请费报销"},
+      "summary": {"en": "A statement credit for an eligible Global Entry or TSA PreCheck application charged to the card.", "zhHans": "使用该卡支付合资格 Global Entry 或 TSA PreCheck 申请费，可获得账单报销。"},
+      "details": {"en": "The credit is available once every four years under current terms; eligible programs and application channels may change.", "zhHans": "按现行条款，该额度每四年可使用一次；合资格计划及申请渠道可能调整。"},
+      "category": "travelCredit", "cadence": "fourYears", "isTrackable": true, "valueCents": 12000, "currencyCode": "USD", "enrollmentRequired": false,
+      "sourceURL": "https://www.citi.com/credit-cards/citi-strata-elite-credit-card", "lastVerified": "2026-07-23T22:30:00Z"
+    },
+    {
+      "id": "citi-strata-elite-protections",
+      "cardIDs": ["citi-strata-elite"],
+      "title": {"en": "Travel and shopping protection package", "zhHans": "旅行与购物保障组合"},
+      "summary": {"en": "Eligible purchases and trips can receive the travel and shopping protections described in the current benefit guide.", "zhHans": "合资格消费和行程可获得最新权益指南所列的旅行及购物保障。"},
+      "details": {"en": "Coverage depends on payment, covered events, limits, exclusions, documentation, and claim deadlines in the current benefit guide.", "zhHans": "保障取决于最新权益指南中的付款要求、承保事件、额度、除外责任、证明文件和理赔期限。"},
+      "category": "protection", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "sourceURL": "https://www.cardbenefits.citi.com/-/media/CPP/Files/LegalDocs/SOAPI/PID920_CITI_STRATA_ELITE_CRE388_GTPB_0625_TAGGED.PDF", "lastVerified": "2026-07-23T22:30:00Z"
     }
   ]
 }

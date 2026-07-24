@@ -102,7 +102,10 @@ final class BenefitSearchTests: XCTestCase {
         let englishResults = BenefitSearch.cards(in: catalog, query: "supermarkets", language: .simplifiedChinese)
         let chineseResults = BenefitSearch.cards(in: catalog, query: "美国超市", language: .english)
 
-        XCTAssertEqual(englishResults.map(\.id), ["amex-gold"])
+        XCTAssertEqual(
+            Set(englishResults.map(\.id)),
+            ["amex-gold", "citi-strata", "citi-strata-premier"]
+        )
         XCTAssertEqual(chineseResults.map(\.id), ["amex-gold"])
     }
 
@@ -118,6 +121,10 @@ final class BenefitSearchTests: XCTestCase {
             ("Bilt", ["bilt-blue", "bilt-obsidian", "bilt-palladium"]),
             ("Amex Marriott Brilliant", ["amex-marriott-bonvoy-brilliant"]),
             ("Alaska BOA ATOMS", ["boa-atmos-ascent", "boa-atmos-summit"]),
+            ("Citi Strata", ["citi-strata", "citi-strata-premier", "citi-strata-elite"]),
+            ("Citi Strata Card", ["citi-strata"]),
+            ("Citi Strata Premier", ["citi-strata-premier"]),
+            ("Citi Strata Elite", ["citi-strata-elite"]),
         ]
 
         for expectation in expectations {

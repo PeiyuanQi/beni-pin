@@ -10,12 +10,13 @@ final class CatalogTests: XCTestCase {
         let catalog = try loadStarterCatalog()
 
         XCTAssertEqual(catalog.schemaVersion, 1)
-        XCTAssertEqual(catalog.cards.count, 17)
-        XCTAssertEqual(catalog.benefits.count, 49)
-        XCTAssertEqual(catalog.cards.flatMap(\.earningRates).count, 74)
+        XCTAssertEqual(catalog.cards.count, 20)
+        XCTAssertEqual(catalog.benefits.count, 59)
+        XCTAssertEqual(catalog.cards.flatMap(\.earningRates).count, 91)
         XCTAssertTrue(catalog.benefits.allSatisfy { $0.category != .points })
         XCTAssertEqual(catalog.card(id: "deserve-edu")?.availability, .discontinued)
         XCTAssertEqual(catalog.card(id: "discover-it-cash-back")?.network, .discover)
+        XCTAssertEqual(catalog.card(id: "citi-strata-elite")?.network, .mastercard)
         XCTAssertEqual(
             catalog.card(id: "chase-freedom-unlimited")?.earningRates.last?.displayText,
             "1.5%"
@@ -126,7 +127,7 @@ final class CatalogTests: XCTestCase {
         let snapshot = try await repository.loadBestAvailable()
 
         XCTAssertEqual(snapshot.origin, .bundled)
-        XCTAssertEqual(snapshot.catalog.cards.count, 17)
+        XCTAssertEqual(snapshot.catalog.cards.count, 20)
     }
 
     func testValidationRejectsOneWayCardBenefitRelationship() throws {

@@ -71,6 +71,10 @@ The app checks the reviewed GitHub Raw catalog on foreground launch and schedule
 - American Express Marriott Bonvoy Brilliant: <https://www.americanexpress.com/us/credit-cards/card/marriott-bonvoy-brilliant/>
 - Bank of America Atmos Rewards Ascent: <https://www.bankofamerica.com/credit-cards/products/alaska-airlines-credit-card/>
 - Bank of America Atmos Rewards Summit: <https://www.bankofamerica.com/credit-cards/products/alaska-airlines-infinite-credit-card/>
+- Citi Strata card lineup: <https://www.citi.com/credit-cards/citi-strata-all-cards>
+- Citi Strata: <https://www.citi.com/credit-cards/citi-strata-credit-card>
+- Citi Strata Premier: <https://www.citi.com/credit-cards/citi-strata-premier-credit-card>
+- Citi Strata Elite: <https://www.citi.com/credit-cards/citi-strata-elite-credit-card>
 
 The discontinued Deserve EDU record is retained only so existing cardholders can find their legacy product. Its historical earning rate is sourced from the archived official cardholder agreement published by the Consumer Financial Protection Bureau: <https://files.consumerfinance.gov/a/assets/credit-card-agreements/pdf/Celtic_Bank/Deserve_EDU_Cardholder_Agreement.pdf>. The current Deserve site no longer offers that card: <https://deserve.com/>.
 
