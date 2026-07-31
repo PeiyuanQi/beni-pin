@@ -126,6 +126,9 @@
 "settings.privacy.catalogRequest" = "目录更新请求不会包含你选择的卡片或权益使用记录。";
 "settings.data.reset" = "删除本地数据";
 "settings.data.reset.confirm" = "要删除本机上的全部卡片选择和权益使用记录，并恢复默认积分估值吗？";
+"settings.help.title" = "帮助与政策";
+"settings.privacy.policy" = "隐私政策";
+"settings.support.open" = "支持";
 "settings.sources.title" = "数据来源";
 "settings.sources.message" = "权益事实来自发卡行官网和正式权益指南，由人工审核后发布。BeniPin 不会抓取 US Credit Card Guide。";
 "settings.sources.repository" = "查看目录仓库";

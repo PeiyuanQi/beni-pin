@@ -1,5 +1,10 @@
 import SwiftUI
 
+private enum BeniPinWebsite {
+    static let privacyURL = URL(string: "https://peiyuanqi.me/projects/benipin/privacy/")!
+    static let supportURL = URL(string: "https://peiyuanqi.me/projects/benipin/support/")!
+}
+
 struct SettingsView: View {
     let language: AppLanguage
     @Binding var languageRawValue: String
@@ -80,6 +85,16 @@ struct SettingsView: View {
 
                 Button("settings.data.reset", role: .destructive) {
                     confirmsDataReset = true
+                }
+            }
+
+            Section("settings.help.title") {
+                Link(destination: BeniPinWebsite.privacyURL) {
+                    Label("settings.privacy.policy", systemImage: "hand.raised")
+                }
+
+                Link(destination: BeniPinWebsite.supportURL) {
+                    Label("settings.support.open", systemImage: "questionmark.circle")
                 }
             }
 

@@ -126,6 +126,9 @@
 "settings.privacy.catalogRequest" = "Catalog update requests never include your selected cards or benefit usage.";
 "settings.data.reset" = "Delete Local Data";
 "settings.data.reset.confirm" = "Remove all selected cards and benefit usage, and restore default point values?";
+"settings.help.title" = "Help & Policies";
+"settings.privacy.policy" = "Privacy Policy";
+"settings.support.open" = "Support";
 "settings.sources.title" = "Data Sources";
 "settings.sources.message" = "Benefit facts are summarized from official issuer pages and benefit guides, then reviewed before publication. BeniPin does not scrape US Credit Card Guide.";
 "settings.sources.repository" = "View catalog repository";
