@@ -25,7 +25,10 @@ struct CardDetailView: View {
                         Text("\(card.issuer) · \(card.family.value(for: language))")
                             .font(.subheadline)
                             .foregroundStyle(.secondary)
-                        if card.availability == .discontinued {
+                        Text(LocalizedStringKey(card.productType.localizationKey))
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                        if card.availability != .active {
                             Label(
                                 LocalizedStringKey(card.availability.localizationKey),
                                 systemImage: "clock.arrow.circlepath"
@@ -38,6 +41,26 @@ struct CardDetailView: View {
                 .padding(.vertical, 8)
                 .listRowInsets(EdgeInsets())
                 .listRowBackground(Color.clear)
+            }
+
+            if let offer = card.welcomeOffer {
+                Section("card.offer.title") {
+                    Text(offer.headline.value(for: language))
+                        .font(.headline)
+                    Text(offer.details.value(for: language))
+                        .foregroundStyle(.secondary)
+                    if let expiresAt = offer.expiresAt {
+                        LabeledContent("card.offer.expires") {
+                            Text(expiresAt, format: .dateTime.year().month().day())
+                        }
+                    }
+                    Link(destination: offer.sourceURL) {
+                        Label("card.offer.source", systemImage: "arrow.up.right.square")
+                    }
+                    Text("card.offer.disclaimer")
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
+                }
             }
 
             Section("benefits.title") {

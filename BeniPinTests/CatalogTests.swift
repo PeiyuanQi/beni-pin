@@ -10,10 +10,14 @@ final class CatalogTests: XCTestCase {
         let catalog = try loadStarterCatalog()
 
         XCTAssertEqual(catalog.schemaVersion, 1)
-        XCTAssertEqual(catalog.cards.count, 26)
-        XCTAssertEqual(catalog.benefits.count, 66)
-        XCTAssertEqual(catalog.cards.flatMap(\.earningRates).count, 110)
+        XCTAssertEqual(catalog.cards.count, 30)
+        XCTAssertEqual(catalog.benefits.count, 104)
+        XCTAssertEqual(catalog.cards.flatMap(\.earningRates).count, 125)
         XCTAssertTrue(catalog.benefits.allSatisfy { $0.category != .points })
+        XCTAssertEqual(catalog.card(id: "amex-platinum")?.welcomeOffer?.headline.en, "Earn as high as 175,000 Membership Rewards points")
+        XCTAssertEqual(catalog.card(id: "x-money-card")?.productType, .debit)
+        XCTAssertEqual(catalog.card(id: "x-money-card")?.availability, .limited)
+        XCTAssertEqual(catalog.migrations.resolvedCardID("x-card"), "x-money-card")
         XCTAssertEqual(catalog.card(id: "deserve-edu")?.availability, .discontinued)
         XCTAssertEqual(catalog.card(id: "discover-it-cash-back")?.network, .discover)
         XCTAssertEqual(catalog.card(id: "citi-strata-elite")?.network, .mastercard)
@@ -173,7 +177,7 @@ final class CatalogTests: XCTestCase {
         let snapshot = try await repository.loadBestAvailable()
 
         XCTAssertEqual(snapshot.origin, .bundled)
-        XCTAssertEqual(snapshot.catalog.cards.count, 26)
+        XCTAssertEqual(snapshot.catalog.cards.count, 30)
     }
 
     func testValidationRejectsOneWayCardBenefitRelationship() throws {
@@ -221,6 +225,47 @@ final class CatalogTests: XCTestCase {
                 error as? CatalogValidationError,
                 .inconsistentRelationship(card.id, benefit.id)
             )
+        }
+    }
+
+    func testValidationRejectsDuplicateCardIdentity() throws {
+        let first = CardProduct(
+            id: "first",
+            issuer: "Test Bank",
+            name: LocalizedCopy(en: "Same Card", zhHans: "同一卡片"),
+            family: LocalizedCopy(en: "Test", zhHans: "测试"),
+            network: .visa,
+            artwork: CardArtwork(
+                primaryHex: "000000",
+                secondaryHex: "111111",
+                accentHex: "FFFFFF",
+                symbolName: "creditcard",
+                remoteImageURL: nil
+            ),
+            benefitIDs: [],
+            sourceURLs: [],
+            lastVerified: Date()
+        )
+        let duplicate = CardProduct(
+            id: "second",
+            issuer: "test bank",
+            name: LocalizedCopy(en: "same card", zhHans: "同一卡片"),
+            family: LocalizedCopy(en: "Test", zhHans: "测试"),
+            network: .visa,
+            artwork: first.artwork,
+            benefitIDs: [],
+            sourceURLs: [],
+            lastVerified: Date()
+        )
+        let catalog = CardCatalog(
+            schemaVersion: 1,
+            generatedAt: Date(),
+            cards: [first, duplicate],
+            benefits: []
+        )
+
+        XCTAssertThrowsError(try catalog.validate()) { error in
+            XCTAssertEqual(error as? CatalogValidationError, .duplicateCardIdentity)
         }
     }
 

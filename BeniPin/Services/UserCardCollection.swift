@@ -42,6 +42,14 @@ final class UserCardCollection: ObservableObject {
         persist()
     }
 
+    func migrate(using catalog: CardCatalog) {
+        let migratedCardIDs = Set(cardIDs.map(catalog.migrations.resolvedCardID))
+
+        guard migratedCardIDs != cardIDs else { return }
+        cardIDs = migratedCardIDs
+        persist()
+    }
+
     private func persist() {
         guard let data = try? JSONEncoder().encode(cardIDs) else { return }
         defaults.set(data, forKey: storageKey)

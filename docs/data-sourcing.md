@@ -18,18 +18,6 @@ Earning-rate comparison converts rewards into an estimated return percentage. Ca
 
 The bundled defaults use The Points Guy's July 2026 monthly valuations as a consistent cross-program benchmark: <https://thepointsguy.com/loyalty-programs/monthly-valuations/>. These estimates are editorial opinions rather than issuer-guaranteed redemption values. They are not downloaded or refreshed automatically, and users can override every value locally in Settings. Overrides never leave the device and can be reset to the bundled defaults.
 
-## US Credit Card Guide
-
-Do not scrape or republish US Credit Card Guide without a written agreement.
-
-Its current terms explicitly prohibit unlicensed scraping, data mining, data extraction, and data harvesting. The site's CC BY-NC-ND 4.0 notice permits unchanged redistribution only for noncommercial use; it does not grant the commercial, translation, or adaptation rights this app would require. Public RSS, sitemap, REST, or robots access does not override those terms.
-
-- Terms: <https://www.uscreditcardguide.com/terms-of-service-us-credit-card-guide/>
-- Robots: <https://www.uscreditcardguide.com/robots.txt>
-- App: <https://www.uscreditcardguide.com/ios-android-app/>
-
-A future agreement would need to cover commercial use, automated access, translation and rewriting, caching, in-app display, attribution, images, update service levels, termination, and retained-data handling.
-
 ## Update Architecture
 
 The iOS app is a catalog consumer, not a scraper.
@@ -68,8 +56,11 @@ The app checks the reviewed GitHub Raw catalog on foreground launch and schedule
 ## Current Official Sources
 
 - American Express Platinum: <https://www.americanexpress.com/us/credit-cards/card/platinum/>
+- American Express Delta SkyMiles Gold: <https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-gold-american-express-card/>
+- American Express Delta SkyMiles Platinum: <https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-platinum-american-express-card/>
 - American Express Gold: <https://www.americanexpress.com/us/credit-cards/card/gold-card/>
 - Chase Sapphire Reserve: <https://www.chase.com/sapphire-cards/personal/reserve>
+- Chase Sapphire Reserve for Business: <https://creditcards.chase.com/business-credit-cards/sapphire/reserve>
 - Chase Sapphire Preferred: <https://www.chase.com/sapphire-cards/personal/preferred>
 - Capital One Venture X: <https://www.capitalone.com/credit-cards/venture-x/>
 - Chase United Club: <https://creditcards.chase.com/travel-credit-cards/united/club-infinite>
@@ -91,6 +82,7 @@ The app checks the reviewed GitHub Raw catalog on foreground launch and schedule
 - Chase Freedom Flex: <https://creditcards.chase.com/cash-back-credit-cards/freedom/flex>
 - Capital One Spark Cash: <https://www.capitalone.com/small-business/credit-cards/spark-cash/>
 - Capital One Spark Cash Plus: <https://www.capitalone.com/small-business/credit-cards/spark-cash-plus/>
+- X Money and the X Card: <https://money.x.com/en>
 
 The discontinued Deserve EDU record is retained only so existing cardholders can find their legacy product. Its historical earning rate is sourced from the archived official cardholder agreement published by the Consumer Financial Protection Bureau: <https://files.consumerfinance.gov/a/assets/credit-card-agreements/pdf/Celtic_Bank/Deserve_EDU_Cardholder_Agreement.pdf>. The current Deserve site no longer offers that card: <https://deserve.com/>.
 

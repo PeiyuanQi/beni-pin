@@ -5,12 +5,45 @@ struct CardCatalog: Codable, Equatable, Sendable {
     let generatedAt: Date
     let cards: [CardProduct]
     let benefits: [CardBenefit]
+    let migrations: CatalogMigrations
+
+    init(
+        schemaVersion: Int,
+        generatedAt: Date,
+        cards: [CardProduct],
+        benefits: [CardBenefit],
+        migrations: CatalogMigrations = .empty
+    ) {
+        self.schemaVersion = schemaVersion
+        self.generatedAt = generatedAt
+        self.cards = cards
+        self.benefits = benefits
+        self.migrations = migrations
+    }
+
+    private enum CodingKeys: String, CodingKey {
+        case schemaVersion
+        case generatedAt
+        case cards
+        case benefits
+        case migrations
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        schemaVersion = try container.decode(Int.self, forKey: .schemaVersion)
+        generatedAt = try container.decode(Date.self, forKey: .generatedAt)
+        cards = try container.decode([CardProduct].self, forKey: .cards)
+        benefits = try container.decode([CardBenefit].self, forKey: .benefits)
+        migrations = try container.decodeIfPresent(CatalogMigrations.self, forKey: .migrations) ?? .empty
+    }
 
     static let empty = CardCatalog(
         schemaVersion: 1,
         generatedAt: .distantPast,
         cards: [],
-        benefits: []
+        benefits: [],
+        migrations: .empty
     )
 
     func validate() throws {
@@ -24,8 +57,19 @@ struct CardCatalog: Codable, Equatable, Sendable {
         guard cardIDs.count == cards.count else {
             throw CatalogValidationError.duplicateCardID
         }
+        let cardIdentities = Set(cards.map(\.deduplicationIdentity))
+        guard cardIdentities.count == cards.count else {
+            throw CatalogValidationError.duplicateCardIdentity
+        }
         guard benefitIDs.count == benefits.count else {
             throw CatalogValidationError.duplicateBenefitID
+        }
+
+        guard migrations.cardIDs.values.allSatisfy(cardIDs.contains) else {
+            throw CatalogValidationError.invalidCardMigrationTarget
+        }
+        guard migrations.benefitIDs.values.allSatisfy(benefitIDs.contains) else {
+            throw CatalogValidationError.invalidBenefitMigrationTarget
         }
 
         for card in cards {
@@ -77,6 +121,46 @@ struct CardCatalog: Codable, Equatable, Sendable {
     }
 }
 
+struct CatalogMigrations: Codable, Equatable, Sendable {
+    let cardIDs: [String: String]
+    let benefitIDs: [String: String]
+
+    static let empty = CatalogMigrations(cardIDs: [:], benefitIDs: [:])
+
+    init(cardIDs: [String: String] = [:], benefitIDs: [String: String] = [:]) {
+        self.cardIDs = cardIDs
+        self.benefitIDs = benefitIDs
+    }
+
+    private enum CodingKeys: String, CodingKey {
+        case cardIDs
+        case benefitIDs
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        cardIDs = try container.decodeIfPresent([String: String].self, forKey: .cardIDs) ?? [:]
+        benefitIDs = try container.decodeIfPresent([String: String].self, forKey: .benefitIDs) ?? [:]
+    }
+
+    func resolvedCardID(_ id: String) -> String {
+        resolvedID(id, using: cardIDs)
+    }
+
+    func resolvedBenefitID(_ id: String) -> String {
+        resolvedID(id, using: benefitIDs)
+    }
+
+    private func resolvedID(_ id: String, using replacements: [String: String]) -> String {
+        var result = id
+        var visited: Set<String> = []
+        while let replacement = replacements[result], visited.insert(result).inserted {
+            result = replacement
+        }
+        return result
+    }
+}
+
 struct CardProduct: Codable, Identifiable, Hashable, Sendable {
     let id: String
     let issuer: String
@@ -84,9 +168,11 @@ struct CardProduct: Codable, Identifiable, Hashable, Sendable {
     let family: LocalizedCopy
     let searchAliases: [String]
     let availability: CardAvailability
+    let productType: CardProductType
     let network: PaymentNetwork
     let artwork: CardArtwork
     let earningRates: [CardEarningRate]
+    let welcomeOffer: CardWelcomeOffer?
     let benefitIDs: [String]
     let sourceURLs: [URL]
     let lastVerified: Date
@@ -98,9 +184,11 @@ struct CardProduct: Codable, Identifiable, Hashable, Sendable {
         family: LocalizedCopy,
         searchAliases: [String] = [],
         availability: CardAvailability = .active,
+        productType: CardProductType = .credit,
         network: PaymentNetwork,
         artwork: CardArtwork,
         earningRates: [CardEarningRate] = [],
+        welcomeOffer: CardWelcomeOffer? = nil,
         benefitIDs: [String],
         sourceURLs: [URL],
         lastVerified: Date
@@ -111,9 +199,11 @@ struct CardProduct: Codable, Identifiable, Hashable, Sendable {
         self.family = family
         self.searchAliases = searchAliases
         self.availability = availability
+        self.productType = productType
         self.network = network
         self.artwork = artwork
         self.earningRates = earningRates
+        self.welcomeOffer = welcomeOffer
         self.benefitIDs = benefitIDs
         self.sourceURLs = sourceURLs
         self.lastVerified = lastVerified
@@ -126,9 +216,11 @@ struct CardProduct: Codable, Identifiable, Hashable, Sendable {
         case family
         case searchAliases
         case availability
+        case productType
         case network
         case artwork
         case earningRates
+        case welcomeOffer
         case benefitIDs
         case sourceURLs
         case lastVerified
@@ -142,13 +234,30 @@ struct CardProduct: Codable, Identifiable, Hashable, Sendable {
         family = try container.decode(LocalizedCopy.self, forKey: .family)
         searchAliases = try container.decodeIfPresent([String].self, forKey: .searchAliases) ?? []
         availability = try container.decodeIfPresent(CardAvailability.self, forKey: .availability) ?? .active
+        productType = try container.decodeIfPresent(CardProductType.self, forKey: .productType) ?? .credit
         network = try container.decode(PaymentNetwork.self, forKey: .network)
         artwork = try container.decode(CardArtwork.self, forKey: .artwork)
         earningRates = try container.decodeIfPresent([CardEarningRate].self, forKey: .earningRates) ?? []
+        welcomeOffer = try container.decodeIfPresent(CardWelcomeOffer.self, forKey: .welcomeOffer)
         benefitIDs = try container.decode([String].self, forKey: .benefitIDs)
         sourceURLs = try container.decode([URL].self, forKey: .sourceURLs)
         lastVerified = try container.decode(Date.self, forKey: .lastVerified)
     }
+
+    fileprivate var deduplicationIdentity: String {
+        let folded = [issuer, name.en, productType.rawValue]
+            .joined(separator: "|")
+            .folding(options: [.caseInsensitive, .diacriticInsensitive, .widthInsensitive], locale: .current)
+        return String(folded.filter { $0.isLetter || $0.isNumber })
+    }
+}
+
+struct CardWelcomeOffer: Codable, Hashable, Sendable {
+    let headline: LocalizedCopy
+    let details: LocalizedCopy
+    let expiresAt: Date?
+    let sourceURL: URL
+    let lastVerified: Date
 }
 
 struct CardEarningRate: Codable, Identifiable, Hashable, Sendable {
@@ -263,6 +372,7 @@ enum PaymentNetwork: String, Codable, CaseIterable, Sendable {
 
 enum CardAvailability: String, Codable, Sendable {
     case active
+    case limited
     case discontinued
 
     var localizationKey: String {
@@ -270,13 +380,29 @@ enum CardAvailability: String, Codable, Sendable {
     }
 }
 
+enum CardProductType: String, Codable, Sendable {
+    case credit
+    case debit
+
+    var localizationKey: String {
+        "card.productType.\(rawValue)"
+    }
+}
+
 enum BenefitCategory: String, Codable, CaseIterable, Identifiable, Sendable {
     case travelCredit
+    case airline
     case lounge
     case dining
     case hotel
     case transportation
     case shopping
+    case entertainment
+    case wellness
+    case housing
+    case business
+    case rewards
+    case accountFees
     case protection
     case points
 
@@ -289,11 +415,18 @@ enum BenefitCategory: String, Codable, CaseIterable, Identifiable, Sendable {
     var symbolName: String {
         switch self {
         case .travelCredit: "airplane"
+        case .airline: "airplane.circle"
         case .lounge: "sofa"
         case .dining: "fork.knife"
         case .hotel: "bed.double"
         case .transportation: "tram.fill"
         case .shopping: "bag"
+        case .entertainment: "play.tv"
+        case .wellness: "figure.run"
+        case .housing: "house"
+        case .business: "briefcase"
+        case .rewards: "giftcard"
+        case .accountFees: "banknote"
         case .protection: "shield.checkered"
         case .points: "sparkles"
         }
@@ -317,7 +450,10 @@ enum BenefitCadence: String, Codable, CaseIterable, Sendable {
 enum CatalogValidationError: LocalizedError, Equatable {
     case unsupportedSchema(Int)
     case duplicateCardID
+    case duplicateCardIdentity
     case duplicateBenefitID
+    case invalidCardMigrationTarget
+    case invalidBenefitMigrationTarget
     case duplicateEarningRateID(String)
     case invalidEarningRate(String)
     case cardReferencesMissingBenefits(String, [String])
@@ -330,8 +466,14 @@ enum CatalogValidationError: LocalizedError, Equatable {
             return "Unsupported catalog schema version \(version)."
         case .duplicateCardID:
             return "The catalog contains duplicate card IDs."
+        case .duplicateCardIdentity:
+            return "The catalog contains duplicate card products."
         case .duplicateBenefitID:
             return "The catalog contains duplicate benefit IDs."
+        case .invalidCardMigrationTarget:
+            return "The catalog contains a card migration with a missing target."
+        case .invalidBenefitMigrationTarget:
+            return "The catalog contains a benefit migration with a missing target."
         case let .duplicateEarningRateID(cardID):
             return "Card \(cardID) contains duplicate earning-rate IDs."
         case let .invalidEarningRate(cardID):

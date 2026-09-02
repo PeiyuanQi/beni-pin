@@ -21,11 +21,18 @@
 "cards.added" = "已添加";
 "cards.notAdded" = "未添加";
 "card.availability.active" = "可申请";
+"card.availability.limited" = "限量开放";
 "card.availability.discontinued" = "已停止申请";
+"card.productType.credit" = "信用卡";
+"card.productType.debit" = "借记卡";
+"card.offer.title" = "当前开卡奖励";
+"card.offer.expires" = "截止日期";
+"card.offer.source" = "查看官方奖励条款";
+"card.offer.disclaimer" = "开卡奖励可能因申请人而异并随时调整，请以你申请页面实际显示的条件为准。";
 "cards.remove" = "移除卡片";
 "cards.remove.confirm" = "要从“我的卡片”中移除这张卡吗？";
 "cards.empty.title" = "还没有卡片";
-"cards.empty.message" = "添加你持有的信用卡，即可集中查看和管理所有权益。";
+"cards.empty.message" = "添加你持有的支付卡，即可集中查看和管理所有权益。";
 "cards.search.prompt" = "搜索银行、卡片或权益";
 "cards.benefits.remaining" = "项权益待使用";
 
@@ -69,11 +76,18 @@
 
 "benefit.category.all" = "全部类别";
 "benefit.category.travelCredit" = "旅行报销";
+"benefit.category.airline" = "航空";
 "benefit.category.lounge" = "机场贵宾室";
 "benefit.category.dining" = "餐饮";
 "benefit.category.hotel" = "酒店";
 "benefit.category.transportation" = "出行";
 "benefit.category.shopping" = "购物";
+"benefit.category.entertainment" = "娱乐";
+"benefit.category.wellness" = "健康健身";
+"benefit.category.housing" = "住房";
+"benefit.category.business" = "商业服务";
+"benefit.category.rewards" = "奖励计划";
+"benefit.category.accountFees" = "账户与费用";
 "benefit.category.protection" = "保险与保障";
 "benefit.category.points" = "积分";
 

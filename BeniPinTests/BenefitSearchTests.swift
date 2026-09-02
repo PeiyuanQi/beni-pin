@@ -104,9 +104,9 @@ final class BenefitSearchTests: XCTestCase {
 
         XCTAssertEqual(
             Set(englishResults.map(\.id)),
-            ["amex-gold", "citi-strata", "citi-strata-premier"]
+            ["amex-delta-gold", "amex-delta-platinum", "amex-gold", "citi-strata", "citi-strata-premier"]
         )
-        XCTAssertEqual(chineseResults.map(\.id), ["amex-gold"])
+        XCTAssertEqual(Set(chineseResults.map(\.id)), ["amex-delta-gold", "amex-delta-platinum", "amex-gold"])
     }
 
     func testRequestedCardNamesAndAliasesAreSearchable() {
@@ -131,6 +131,11 @@ final class BenefitSearchTests: XCTestCase {
             ("CFF", ["chase-freedom-flex"]),
             ("Spark Cash", ["capital-one-spark-cash", "capital-one-spark-cash-plus"]),
             ("Spark Cash Plus", ["capital-one-spark-cash-plus"]),
+            ("Delta Gold", ["amex-delta-gold"]),
+            ("Delta Platinum", ["amex-delta-platinum"]),
+            ("Chase Sapphire Reserve for Business", ["chase-sapphire-reserve-business"]),
+            ("X Money", ["x-money-card"]),
+            ("借记卡", ["x-money-card"]),
         ]
 
         for expectation in expectations {

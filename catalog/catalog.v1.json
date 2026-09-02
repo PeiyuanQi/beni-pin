@@ -1,6 +1,18 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-24T06:20:00Z",
+  "generatedAt": "2026-09-02T00:00:00Z",
+  "migrations": {
+    "cardIDs": {
+      "american-express-platinum": "amex-platinum",
+      "amex-the-platinum-card": "amex-platinum",
+      "amex-delta-skymiles-gold": "amex-delta-gold",
+      "amex-delta-skymiles-platinum": "amex-delta-platinum",
+      "chase-sapphire-reserve-business-card": "chase-sapphire-reserve-business",
+      "x-money": "x-money-card",
+      "x-card": "x-money-card"
+    },
+    "benefitIDs": {}
+  },
   "cards": [
     {
       "id": "amex-platinum",
@@ -60,12 +72,34 @@
         "amex-platinum-hotel-credit",
         "amex-platinum-uber-cash",
         "amex-platinum-airline-fee-credit",
-        "amex-platinum-lounge-access"
+        "amex-platinum-lounge-access",
+        "amex-platinum-lululemon-credit",
+        "amex-platinum-resy-credit",
+        "amex-platinum-digital-entertainment-credit",
+        "amex-platinum-uber-one-credit",
+        "amex-platinum-oura-credit",
+        "amex-platinum-clear-credit",
+        "amex-platinum-saks-credit",
+        "amex-platinum-walmart-plus",
+        "amex-platinum-equinox-credit"
       ],
       "sourceURLs": [
         "https://www.americanexpress.com/us/credit-cards/card/platinum/"
       ],
-      "lastVerified": "2026-07-19T10:30:00Z"
+      "lastVerified": "2026-07-19T10:30:00Z",
+      "welcomeOffer": {
+        "headline": {
+          "en": "Earn as high as 175,000 Membership Rewards points",
+          "zhHans": "最高可获 175,000 Membership Rewards 积分"
+        },
+        "details": {
+          "en": "Spend $12,000 in the first 6 months. American Express says the welcome offer can be as high as 175,000 points; confirm the exact offer and eligibility shown to you.",
+          "zhHans": "开卡前 6 个月消费 $12,000。美国运通标注奖励最高可达 175,000 积分；请以你申请时实际看到的奖励和资格条款为准。"
+        },
+        "expiresAt": null,
+        "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/platinum/",
+        "lastVerified": "2026-09-02T00:00:00Z"
+      }
     },
     {
       "id": "amex-gold",
@@ -797,6 +831,387 @@
       "benefitIDs": ["capital-one-spark-cash-plus-fee-refund"],
       "sourceURLs": ["https://www.capitalone.com/small-business/credit-cards/spark-cash-plus/"],
       "lastVerified": "2026-07-24T06:20:00Z"
+    },
+    {
+      "id": "amex-delta-gold",
+      "issuer": "American Express",
+      "name": {
+        "en": "Delta SkyMiles Gold American Express Card",
+        "zhHans": "美国运通 Delta SkyMiles Gold 卡"
+      },
+      "family": {
+        "en": "Delta SkyMiles",
+        "zhHans": "Delta SkyMiles 达美里程"
+      },
+      "searchAliases": [
+        "Delta Gold",
+        "Delta SkyMiles Gold",
+        "Amex Delta Gold",
+        "达美金卡",
+        "AS HIGH AS 80k + $250"
+      ],
+      "availability": "active",
+      "productType": "credit",
+      "network": "americanExpress",
+      "artwork": {
+        "primaryHex": "B6862C",
+        "secondaryHex": "4B2410",
+        "accentHex": "FFE0A3",
+        "symbolName": "airplane.departure",
+        "remoteImageURL": null
+      },
+      "earningRates": [
+        {
+          "id": "amex-delta-gold-dining",
+          "category": {"en": "Dining", "zhHans": "餐饮"},
+          "details": {
+            "en": "U.S. restaurants, including takeout and delivery.",
+            "zhHans": "美国餐厅消费，包括外带和外送。"
+          },
+          "multiplier": 2,
+          "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-gold-american-express-card/",
+          "lastVerified": "2026-09-02T00:00:00Z"
+        },
+        {
+          "id": "amex-delta-gold-supermarkets",
+          "category": {"en": "U.S. supermarkets", "zhHans": "美国超市"},
+          "details": {
+            "en": "Purchases at U.S. supermarkets.",
+            "zhHans": "美国超市消费。"
+          },
+          "multiplier": 2,
+          "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-gold-american-express-card/",
+          "lastVerified": "2026-09-02T00:00:00Z"
+        },
+        {
+          "id": "amex-delta-gold-delta",
+          "category": {"en": "Delta purchases", "zhHans": "Delta 消费"},
+          "details": {
+            "en": "Purchases made directly with Delta.",
+            "zhHans": "直接向 Delta 购买的消费。"
+          },
+          "multiplier": 2,
+          "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-gold-american-express-card/",
+          "lastVerified": "2026-09-02T00:00:00Z"
+        },
+        {
+          "id": "amex-delta-gold-other-purchases",
+          "category": {"en": "Other eligible purchases", "zhHans": "其他合资格消费"},
+          "details": {
+            "en": "The standard rate for other eligible purchases.",
+            "zhHans": "其他合资格消费的基础倍率。"
+          },
+          "multiplier": 1,
+          "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-gold-american-express-card/",
+          "lastVerified": "2026-09-02T00:00:00Z"
+        }
+      ],
+      "welcomeOffer": {
+        "headline": {
+          "en": "Earn 50,000 bonus miles and a $250 statement credit",
+          "zhHans": "获得 50,000 奖励里程和 $250 账单抵扣"
+        },
+        "details": {
+          "en": "Spend $3,000 in the first 6 months. The public offer shown by American Express ends November 4, 2026; personalized offers may differ.",
+          "zhHans": "开卡前 6 个月消费 $3,000。美国运通当前公开 offer 截止 2026 年 11 月 4 日；个性化 offer 可能不同。"
+        },
+        "expiresAt": "2026-11-04T12:00:00Z",
+        "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-gold-american-express-card/",
+        "lastVerified": "2026-09-02T00:00:00Z"
+      },
+      "benefitIDs": [
+        "delta-gold-flight-credit",
+        "delta-gold-rideshare-credit",
+        "delta-gold-delta-stays-credit",
+        "delta-gold-checked-bags",
+        "delta-gold-takeoff-15"
+      ],
+      "sourceURLs": [
+        "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-gold-american-express-card/"
+      ],
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "amex-delta-platinum",
+      "issuer": "American Express",
+      "name": {
+        "en": "Delta SkyMiles Platinum American Express Card",
+        "zhHans": "美国运通 Delta SkyMiles Platinum 卡"
+      },
+      "family": {
+        "en": "Delta SkyMiles",
+        "zhHans": "Delta SkyMiles 达美里程"
+      },
+      "searchAliases": [
+        "Delta Platinum",
+        "Delta SkyMiles Platinum",
+        "Amex Delta Platinum",
+        "达美白金卡",
+        "AS HIGH AS 90k + $300"
+      ],
+      "availability": "active",
+      "productType": "credit",
+      "network": "americanExpress",
+      "artwork": {
+        "primaryHex": "5A6672",
+        "secondaryHex": "18242D",
+        "accentHex": "DCE6ED",
+        "symbolName": "airplane.departure",
+        "remoteImageURL": null
+      },
+      "earningRates": [
+        {
+          "id": "amex-delta-platinum-delta",
+          "category": {"en": "Delta purchases", "zhHans": "Delta 消费"},
+          "details": {
+            "en": "Purchases made directly with Delta.",
+            "zhHans": "直接向 Delta 购买的消费。"
+          },
+          "multiplier": 3,
+          "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-platinum-american-express-card/",
+          "lastVerified": "2026-09-02T00:00:00Z"
+        },
+        {
+          "id": "amex-delta-platinum-hotels",
+          "category": {"en": "Hotels", "zhHans": "酒店"},
+          "details": {
+            "en": "Purchases made directly with hotels.",
+            "zhHans": "直接向酒店购买的消费。"
+          },
+          "multiplier": 3,
+          "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-platinum-american-express-card/",
+          "lastVerified": "2026-09-02T00:00:00Z"
+        },
+        {
+          "id": "amex-delta-platinum-dining",
+          "category": {"en": "Dining", "zhHans": "餐饮"},
+          "details": {
+            "en": "U.S. restaurants, including takeout and delivery.",
+            "zhHans": "美国餐厅消费，包括外带和外送。"
+          },
+          "multiplier": 2,
+          "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-platinum-american-express-card/",
+          "lastVerified": "2026-09-02T00:00:00Z"
+        },
+        {
+          "id": "amex-delta-platinum-supermarkets",
+          "category": {"en": "U.S. supermarkets", "zhHans": "美国超市"},
+          "details": {
+            "en": "Purchases at U.S. supermarkets.",
+            "zhHans": "美国超市消费。"
+          },
+          "multiplier": 2,
+          "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-platinum-american-express-card/",
+          "lastVerified": "2026-09-02T00:00:00Z"
+        },
+        {
+          "id": "amex-delta-platinum-other-purchases",
+          "category": {"en": "Other eligible purchases", "zhHans": "其他合资格消费"},
+          "details": {
+            "en": "The standard rate for other eligible purchases.",
+            "zhHans": "其他合资格消费的基础倍率。"
+          },
+          "multiplier": 1,
+          "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-platinum-american-express-card/",
+          "lastVerified": "2026-09-02T00:00:00Z"
+        }
+      ],
+      "welcomeOffer": {
+        "headline": {
+          "en": "Earn 60,000 bonus miles and a $300 statement credit",
+          "zhHans": "获得 60,000 奖励里程和 $300 账单抵扣"
+        },
+        "details": {
+          "en": "Spend $4,000 in the first 6 months. The public offer shown by American Express ends November 4, 2026; personalized offers may differ.",
+          "zhHans": "开卡前 6 个月消费 $4,000。美国运通当前公开 offer 截止 2026 年 11 月 4 日；个性化 offer 可能不同。"
+        },
+        "expiresAt": "2026-11-04T12:00:00Z",
+        "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-platinum-american-express-card/",
+        "lastVerified": "2026-09-02T00:00:00Z"
+      },
+      "benefitIDs": [
+        "delta-platinum-companion-certificate",
+        "delta-platinum-mqd-headstart",
+        "delta-platinum-mqd-boost",
+        "delta-platinum-takeoff-15",
+        "delta-platinum-rideshare-credit",
+        "delta-platinum-resy-credit",
+        "delta-platinum-delta-stays-credit",
+        "delta-platinum-checked-bags"
+      ],
+      "sourceURLs": [
+        "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-platinum-american-express-card/"
+      ],
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "chase-sapphire-reserve-business",
+      "issuer": "Chase",
+      "name": {
+        "en": "Sapphire Reserve for Business",
+        "zhHans": "Sapphire Reserve for Business 商业卡"
+      },
+      "family": {
+        "en": "Ultimate Rewards",
+        "zhHans": "Ultimate Rewards"
+      },
+      "searchAliases": [
+        "Chase Sapphire Reserve for Business",
+        "Sapphire Reserve Business",
+        "Chase Business Reserve",
+        "200k business Sapphire"
+      ],
+      "availability": "active",
+      "productType": "credit",
+      "network": "visa",
+      "artwork": {
+        "primaryHex": "1B2E4B",
+        "secondaryHex": "080F1D",
+        "accentHex": "C5D3E3",
+        "symbolName": "briefcase.fill",
+        "remoteImageURL": null
+      },
+      "earningRates": [
+        {
+          "id": "chase-reserve-business-chase-travel",
+          "category": {"en": "Chase Travel", "zhHans": "Chase Travel"},
+          "details": {
+            "en": "Purchases through Chase Travel, including The Edit.",
+            "zhHans": "通过 Chase Travel（包括 The Edit）预订的消费。"
+          },
+          "multiplier": 8,
+          "sourceURL": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
+          "lastVerified": "2026-09-02T00:00:00Z"
+        },
+        {
+          "id": "chase-reserve-business-lyft",
+          "category": {"en": "Lyft", "zhHans": "Lyft"},
+          "details": {
+            "en": "Lyft rides through September 30, 2027.",
+            "zhHans": "截至 2027 年 9 月 30 日的 Lyft 行程。"
+          },
+          "multiplier": 5,
+          "sourceURL": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
+          "lastVerified": "2026-09-02T00:00:00Z"
+        },
+        {
+          "id": "chase-reserve-business-direct-flights-hotels",
+          "category": {"en": "Flights and hotels booked direct", "zhHans": "直接预订的机票与酒店"},
+          "details": {
+            "en": "Flights and hotels booked directly with the provider.",
+            "zhHans": "直接向供应商预订的机票和酒店。"
+          },
+          "multiplier": 4,
+          "sourceURL": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
+          "lastVerified": "2026-09-02T00:00:00Z"
+        },
+        {
+          "id": "chase-reserve-business-advertising",
+          "category": {"en": "Social media and search advertising", "zhHans": "社交媒体与搜索广告"},
+          "details": {
+            "en": "Eligible social media and search engine advertising purchases.",
+            "zhHans": "合资格的社交媒体和搜索引擎广告消费。"
+          },
+          "multiplier": 3,
+          "sourceURL": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
+          "lastVerified": "2026-09-02T00:00:00Z"
+        },
+        {
+          "id": "chase-reserve-business-other-purchases",
+          "category": {"en": "Other eligible purchases", "zhHans": "其他合资格消费"},
+          "details": {
+            "en": "The standard rate for other eligible purchases.",
+            "zhHans": "其他合资格消费的基础倍率。"
+          },
+          "multiplier": 1,
+          "sourceURL": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
+          "lastVerified": "2026-09-02T00:00:00Z"
+        }
+      ],
+      "welcomeOffer": {
+        "headline": {
+          "en": "Earn 200,000 Ultimate Rewards points",
+          "zhHans": "获得 200,000 Ultimate Rewards 积分"
+        },
+        "details": {
+          "en": "Spend $30,000 in the first 6 months from account opening. Chase eligibility rules apply.",
+          "zhHans": "开户后前 6 个月消费 $30,000。以 Chase 的奖励资格规则为准。"
+        },
+        "expiresAt": null,
+        "sourceURL": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
+        "lastVerified": "2026-09-02T00:00:00Z"
+      },
+      "benefitIDs": [
+        "chase-reserve-business-travel-credit",
+        "chase-reserve-business-select-hotels-credit",
+        "chase-reserve-business-lounge-access",
+        "chase-reserve-business-edit-credit",
+        "chase-reserve-business-edit-benefits",
+        "chase-reserve-business-trusted-traveler-credit",
+        "chase-reserve-business-ihg-status",
+        "chase-reserve-business-google-workspace-credit",
+        "chase-reserve-business-ziprecruiter-credit",
+        "chase-reserve-business-lyft-credit",
+        "chase-reserve-business-doordash-dashpass",
+        "chase-reserve-business-doordash-promos",
+        "chase-reserve-business-gift-card-credit"
+      ],
+      "sourceURLs": [
+        "https://creditcards.chase.com/business-credit-cards/sapphire/reserve"
+      ],
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "x-money-card",
+      "issuer": "X Payments / Cross River Bank",
+      "name": {
+        "en": "𝕏 Card",
+        "zhHans": "𝕏 Card"
+      },
+      "family": {
+        "en": "X Money",
+        "zhHans": "X Money"
+      },
+      "searchAliases": [
+        "X Money",
+        "X Card",
+        "Twitter Money",
+        "X 借记卡"
+      ],
+      "availability": "limited",
+      "productType": "debit",
+      "network": "visa",
+      "artwork": {
+        "primaryHex": "2D2D2D",
+        "secondaryHex": "050505",
+        "accentHex": "E8E8E8",
+        "symbolName": "xmark",
+        "remoteImageURL": null
+      },
+      "earningRates": [
+        {
+          "id": "x-card-eligible-purchases",
+          "category": {"en": "Eligible purchases", "zhHans": "合资格消费"},
+          "details": {
+            "en": "Earn 3% cash back on eligible purchases made with the 𝕏 Card; exclusions apply.",
+            "zhHans": "使用 𝕏 Card 的合资格消费可获得 3% 返现；部分交易不符合资格。"
+          },
+          "multiplier": 3,
+          "unit": "percent",
+          "sourceURL": "https://money.x.com/i/cashback-rewards-terms",
+          "lastVerified": "2026-09-02T00:00:00Z"
+        }
+      ],
+      "benefitIDs": [
+        "x-card-atm-fee-reimbursement",
+        "x-card-no-foreign-transaction-fee",
+        "x-card-security-controls"
+      ],
+      "sourceURLs": [
+        "https://money.x.com/en",
+        "https://money.x.com/i/cashback-rewards-terms"
+      ],
+      "lastVerified": "2026-09-02T00:00:00Z"
     }
   ],
   "benefits": [
@@ -863,7 +1278,7 @@
         "en": "Select a qualifying airline before using the benefit. Eligible incidental charges can include items such as checked-bag fees and in-flight refreshments; airfare is generally excluded.",
         "zhHans": "使用前需选择一家合资格航空公司。符合条件的费用可包括托运行李和机上餐饮等杂费，机票通常不在报销范围内。"
       },
-      "category": "travelCredit",
+      "category": "airline",
       "cadence": "annual",
       "isTrackable": true,
       "valueCents": 20000,
@@ -1319,7 +1734,7 @@
       "title": {"en": "First and second checked bags free", "zhHans": "第一及第二件托运行李免费"},
       "summary": {"en": "The primary cardmember and one companion on the same eligible United reservation can receive two free checked bags each.", "zhHans": "主卡持有人及同一合资格 United 预订中的一名同行者，每人可免费托运两件行李。"},
       "details": {"en": "The MileagePlus number must be attached to the reservation and the ticket must meet the current card-payment requirements.", "zhHans": "预订需关联 MileagePlus 号码，且机票付款方式需符合现行卡片条款。"},
-      "category": "transportation", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "category": "airline", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
       "sourceURL": "https://creditcards.chase.com/travel-credit-cards/united/club-infinite", "lastVerified": "2026-07-23T20:00:00Z"
     },
     {
@@ -1337,7 +1752,7 @@
       "title": {"en": "Two 10,000-mile award discounts", "zhHans": "两次 10,000 里程奖励机票折扣"},
       "summary": {"en": "Cardmembers can earn up to two 10,000-mile United award discounts after reaching the published annual purchase thresholds.", "zhHans": "达到公布的年度消费门槛后，持卡人最多可获得两次 United 奖励机票 10,000 里程折扣。"},
       "details": {"en": "Each discount currently requires a separate $20,000 purchase increment in a calendar year; redemption restrictions apply.", "zhHans": "按现行条款，每次折扣需在一个自然年内完成一个独立的 $20,000 消费增量，并受兑换限制。"},
-      "category": "travelCredit", "cadence": "annual", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "category": "airline", "cadence": "annual", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
       "sourceURL": "https://creditcards.chase.com/travel-credit-cards/united/club-infinite", "lastVerified": "2026-07-23T20:00:00Z"
     },
     {
@@ -1418,7 +1833,7 @@
       "title": {"en": "Cash back rewards do not expire", "zhHans": "返现奖励不会过期"},
       "summary": {"en": "Earned cash back rewards do not expire while Discover maintains the rewards balance under current terms.", "zhHans": "按现行条款，只要 Discover 保留奖励余额，已获得的返现奖励不会过期。"},
       "details": {"en": "Redemption options and treatment after account closure remain subject to Discover's current rewards terms.", "zhHans": "兑换方式以及账户关闭后的处理仍以 Discover 最新奖励条款为准。"},
-      "category": "shopping", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "category": "rewards", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
       "sourceURL": "https://www.discover.com/credit-cards/cash-back/it-card/", "lastVerified": "2026-07-23T20:00:00Z"
     },
     {
@@ -1427,7 +1842,7 @@
       "title": {"en": "No Bilt transaction fee on eligible housing payments", "zhHans": "合资格住房付款免 Bilt 交易费"},
       "summary": {"en": "Eligible rent and other supported housing payments can be made through Bilt without Bilt charging a card transaction fee.", "zhHans": "通过 Bilt 支付合资格房租及其他支持的住房款项时，Bilt 不收取信用卡交易费。"},
       "details": {"en": "Supported payment types, landlord acceptance, limits, and account qualification follow current Bilt terms.", "zhHans": "支持的付款类型、房东接受方式、限额和账户资格以最新 Bilt 条款为准。"},
-      "category": "shopping", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "category": "housing", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
       "sourceURL": "https://www.bilt.com/card", "lastVerified": "2026-07-23T20:00:00Z"
     },
     {
@@ -1445,7 +1860,7 @@
       "title": {"en": "$200 annual Bilt Cash", "zhHans": "每年 $200 Bilt Cash"},
       "summary": {"en": "The card provides $200 in annual Bilt Cash under current terms.", "zhHans": "按现行条款，该卡每年提供 $200 Bilt Cash。"},
       "details": {"en": "Eligible uses, issuance timing, expiration, and exclusions follow current Bilt Cash terms.", "zhHans": "合资格用途、发放时间、有效期和除外规则以最新 Bilt Cash 条款为准。"},
-      "category": "shopping", "cadence": "annual", "isTrackable": true, "valueCents": 20000, "currencyCode": "USD", "enrollmentRequired": false,
+      "category": "rewards", "cadence": "annual", "isTrackable": true, "valueCents": 20000, "currencyCode": "USD", "enrollmentRequired": false,
       "sourceURL": "https://www.bilt.com/card/palladium", "lastVerified": "2026-07-23T20:00:00Z"
     },
     {
@@ -1499,7 +1914,7 @@
       "title": {"en": "Free checked bag and preferred boarding", "zhHans": "免费托运行李与优先登机"},
       "summary": {"en": "The primary cardholder and eligible companions on the same reservation can receive a free checked bag and preferred boarding.", "zhHans": "主卡持有人及同一预订中的合资格同行者可获得免费托运行李和优先登机。"},
       "details": {"en": "The Atmos Rewards number must be attached and the ticket must meet current card-payment and itinerary requirements; companion limits apply.", "zhHans": "预订需关联 Atmos Rewards 号码，且机票付款方式与行程需符合现行要求；同行人数受限。"},
-      "category": "transportation", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "category": "airline", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
       "sourceURL": "https://www.bankofamerica.com/credit-cards/products/alaska-airlines-credit-card/", "lastVerified": "2026-07-23T20:00:00Z"
     },
     {
@@ -1508,7 +1923,7 @@
       "title": {"en": "Annual $99 Companion Fare after $6,000 spend", "zhHans": "年度消费 $6,000 后获得 $99 同行票"},
       "summary": {"en": "A $99 base-fare Companion Fare can be earned after meeting the current annual purchase requirement.", "zhHans": "达到现行年度消费要求后，可获得一张基础票价 $99 的同行票。"},
       "details": {"en": "Taxes and fees apply. Qualification, eligible routes, booking class, expiration, and purchase requirements follow current terms.", "zhHans": "需另付税费；资格、适用航线、舱位、有效期和消费要求以最新条款为准。"},
-      "category": "transportation", "cadence": "anniversary", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "category": "airline", "cadence": "anniversary", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
       "sourceURL": "https://www.bankofamerica.com/credit-cards/products/alaska-airlines-credit-card/", "lastVerified": "2026-07-23T20:00:00Z"
     },
     {
@@ -1526,7 +1941,7 @@
       "title": {"en": "Annual 25,000-point Global Companion Award", "zhHans": "每年 25,000 积分全球同行奖励"},
       "summary": {"en": "An annual Global Companion Award can cover up to 25,000 points of an eligible companion award itinerary.", "zhHans": "年度全球同行奖励可抵扣合资格同行奖励行程最多 25,000 积分。"},
       "details": {"en": "Issuance, eligible itineraries, taxes, expiration, and any purchase requirements follow current Atmos Rewards terms.", "zhHans": "发放、适用行程、税费、有效期及任何消费要求以最新 Atmos Rewards 条款为准。"},
-      "category": "transportation", "cadence": "anniversary", "isTrackable": true, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "category": "airline", "cadence": "anniversary", "isTrackable": true, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
       "sourceURL": "https://www.bankofamerica.com/credit-cards/products/alaska-airlines-infinite-credit-card/", "lastVerified": "2026-07-23T20:00:00Z"
     },
     {
@@ -1553,7 +1968,7 @@
       "title": {"en": "Instant flight-delay credit", "zhHans": "航班延误即时额度"},
       "summary": {"en": "Eligible Alaska Airlines flight delays can trigger a $50 credit for qualifying same-day expenses under current terms.", "zhHans": "按现行条款，合资格 Alaska Airlines 航班延误可触发 $50 额度，用于符合条件的当日支出。"},
       "details": {"en": "Eligible delays, ticket payment, itinerary, notice, expense types, timing, and redemption restrictions apply.", "zhHans": "适用延误、机票付款、行程、通知、支出类型、时间及兑换限制。"},
-      "category": "travelCredit", "cadence": "ongoing", "isTrackable": false, "valueCents": 5000, "currencyCode": "USD", "enrollmentRequired": false,
+      "category": "airline", "cadence": "ongoing", "isTrackable": false, "valueCents": 5000, "currencyCode": "USD", "enrollmentRequired": false,
       "sourceURL": "https://www.bankofamerica.com/credit-cards/products/alaska-airlines-infinite-credit-card/", "lastVerified": "2026-07-23T20:00:00Z"
     },
     {
@@ -1652,7 +2067,7 @@
       "title": {"en": "Two free checked bags", "zhHans": "两件免费托运行李"},
       "summary": {"en": "The primary cardmember can receive two free checked bags on eligible Hawaiian Airlines flights purchased directly with the card.", "zhHans": "主卡持有人使用该卡直接购买合资格 Hawaiian Airlines 航班时，可获得两件免费托运行李。"},
       "details": {"en": "The primary cardmember's loyalty number, direct booking, card payment, itinerary, and baggage restrictions in the current terms apply.", "zhHans": "需符合现行条款中的主卡会员号码、直接预订、卡片付款、行程和行李限制。"},
-      "category": "transportation", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
+      "category": "airline", "cadence": "ongoing", "isTrackable": false, "valueCents": null, "currencyCode": null, "enrollmentRequired": false,
       "sourceURL": "https://www.hawaiianairlines.com/hawaiianmiles2/credit-card", "lastVerified": "2026-07-24T06:20:00Z"
     },
     {
@@ -1661,7 +2076,7 @@
       "title": {"en": "$100 annual companion discount", "zhHans": "每年 $100 同行票折扣"},
       "summary": {"en": "A $100 companion discount is provided each account anniversary for eligible roundtrip coach travel between Hawaii and the continental United States.", "zhHans": "每个账户周年可获得 $100 同行票折扣，用于 Hawaii 与美国本土之间的合资格往返经济舱旅行。"},
       "details": {"en": "Issuance, eligible routes, fare class, taxes, booking, expiration, and account-status requirements follow current terms.", "zhHans": "发放、适用航线、舱位、税费、预订、有效期和账户状态要求以现行条款为准。"},
-      "category": "transportation", "cadence": "anniversary", "isTrackable": true, "valueCents": 10000, "currencyCode": "USD", "enrollmentRequired": false,
+      "category": "airline", "cadence": "anniversary", "isTrackable": true, "valueCents": 10000, "currencyCode": "USD", "enrollmentRequired": false,
       "sourceURL": "https://www.hawaiianairlines.com/hawaiianmiles2/credit-card", "lastVerified": "2026-07-24T06:20:00Z"
     },
     {
@@ -1688,7 +2103,7 @@
       "title": {"en": "Up to $10 quarterly DoorDash discount", "zhHans": "每季度最高 $10 DoorDash 折扣"},
       "summary": {"en": "Enrolled DashPass members can receive up to $10 off one qualifying non-restaurant DoorDash order each calendar quarter through December 31, 2027.", "zhHans": "已加入 DashPass 的持卡人，在 2027 年 12 月 31 日前每自然季度可对一笔合资格 DoorDash 非餐厅订单减免最高 $10。"},
       "details": {"en": "DashPass activation, qualifying merchants and orders, payment method, expiration, account status, and current promotional terms apply.", "zhHans": "DashPass 激活、合资格商户与订单、付款方式、有效期、账户状态和现行促销条款均适用。"},
-      "category": "shopping", "cadence": "quarterly", "isTrackable": true, "valueCents": 1000, "currencyCode": "USD", "enrollmentRequired": true,
+      "category": "dining", "cadence": "quarterly", "isTrackable": true, "valueCents": 1000, "currencyCode": "USD", "enrollmentRequired": true,
       "sourceURL": "https://creditcards.chase.com/cash-back-credit-cards/freedom/flex", "lastVerified": "2026-07-24T06:20:00Z"
     },
     {
@@ -1706,8 +2121,996 @@
       "title": {"en": "$150 annual fee refund after $150,000 spend", "zhHans": "年度消费 $150,000 后返还 $150 年费"},
       "summary": {"en": "The $150 annual fee is refunded each year after at least $150,000 in qualifying net purchases by the membership anniversary date.", "zhHans": "在会员周年日前完成至少 $150,000 合资格净消费后，每年可返还 $150 年费。"},
       "details": {"en": "Net-purchase calculation, anniversary timing, statement-credit posting, returns, account status, and exclusions follow current Capital One terms.", "zhHans": "净消费计算、周年时间、账单退款到账、退货、账户状态和除外规则以 Capital One 最新条款为准。"},
-      "category": "shopping", "cadence": "anniversary", "isTrackable": true, "valueCents": 15000, "currencyCode": "USD", "enrollmentRequired": false,
+      "category": "accountFees", "cadence": "anniversary", "isTrackable": true, "valueCents": 15000, "currencyCode": "USD", "enrollmentRequired": false,
       "sourceURL": "https://www.capitalone.com/small-business/credit-cards/spark-cash-plus/", "lastVerified": "2026-07-24T06:20:00Z"
+    },
+    {
+      "id": "amex-platinum-lululemon-credit",
+      "cardIDs": [
+        "amex-platinum"
+      ],
+      "title": {
+        "en": "$75 quarterly lululemon credit",
+        "zhHans": "每季度 $75 lululemon 抵扣"
+      },
+      "summary": {
+        "en": "Get up to $75 in statement credits each quarter for eligible lululemon purchases.",
+        "zhHans": "每季度合资格 lululemon 消费最高可获 $75 账单抵扣。"
+      },
+      "details": {
+        "en": "Enrollment is required. The credit is available in January-March, April-June, July-September, and October-December periods.",
+        "zhHans": "需要注册。抵扣按 1-3 月、4-6 月、7-9 月和 10-12 月四个周期发放。"
+      },
+      "category": "shopping",
+      "cadence": "quarterly",
+      "isTrackable": true,
+      "valueCents": 7500,
+      "currencyCode": "USD",
+      "enrollmentRequired": true,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/platinum/",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "amex-platinum-resy-credit",
+      "cardIDs": [
+        "amex-platinum"
+      ],
+      "title": {
+        "en": "$100 quarterly Resy credit",
+        "zhHans": "每季度 $100 Resy 抵扣"
+      },
+      "summary": {
+        "en": "Get up to $100 in statement credits each quarter at eligible U.S. Resy restaurants.",
+        "zhHans": "每季度在合资格美国 Resy 餐厅消费最高可获 $100 账单抵扣。"
+      },
+      "details": {
+        "en": "Enrollment is required. Eligible purchases must be made at qualifying U.S. Resy restaurants.",
+        "zhHans": "需要注册。合资格消费必须在符合条件的美国 Resy 餐厅完成。"
+      },
+      "category": "dining",
+      "cadence": "quarterly",
+      "isTrackable": true,
+      "valueCents": 10000,
+      "currencyCode": "USD",
+      "enrollmentRequired": true,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/platinum/",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "amex-platinum-digital-entertainment-credit",
+      "cardIDs": [
+        "amex-platinum"
+      ],
+      "title": {
+        "en": "$25 monthly digital entertainment credit",
+        "zhHans": "每月 $25 数字娱乐抵扣"
+      },
+      "summary": {
+        "en": "Get up to $25 in monthly statement credits for eligible digital entertainment services.",
+        "zhHans": "合资格数字娱乐服务每月最高可获 $25 账单抵扣。"
+      },
+      "details": {
+        "en": "Enrollment is required. Participating services and eligible billing arrangements are defined by current American Express terms.",
+        "zhHans": "需要注册。参与服务和合资格扣款方式以美国运通现行条款为准。"
+      },
+      "category": "entertainment",
+      "cadence": "monthly",
+      "isTrackable": true,
+      "valueCents": 2500,
+      "currencyCode": "USD",
+      "enrollmentRequired": true,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/platinum/",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "amex-platinum-uber-one-credit",
+      "cardIDs": [
+        "amex-platinum"
+      ],
+      "title": {
+        "en": "$120 annual Uber One credit",
+        "zhHans": "每年 $120 Uber One 抵扣"
+      },
+      "summary": {
+        "en": "Receive up to $120 in annual statement credits for an eligible auto-renewing Uber One membership.",
+        "zhHans": "合资格自动续费 Uber One 会员每年最高可获 $120 账单抵扣。"
+      },
+      "details": {
+        "en": "Enrollment and an eligible Platinum Card must be linked to the Uber account. Current terms define eligible memberships and billing.",
+        "zhHans": "需要注册，并将合资格白金卡关联到 Uber 账户。会员资格和扣款方式以现行条款为准。"
+      },
+      "category": "transportation",
+      "cadence": "annual",
+      "isTrackable": true,
+      "valueCents": 12000,
+      "currencyCode": "USD",
+      "enrollmentRequired": true,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/platinum/",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "amex-platinum-oura-credit",
+      "cardIDs": [
+        "amex-platinum"
+      ],
+      "title": {
+        "en": "$200 annual Oura Ring credit",
+        "zhHans": "每年 $200 Oura Ring 抵扣"
+      },
+      "summary": {
+        "en": "Get up to $200 in annual statement credits for eligible Oura Ring purchases or membership.",
+        "zhHans": "合资格 Oura Ring 购买或会员消费每年最高可获 $200 账单抵扣。"
+      },
+      "details": {
+        "en": "Enrollment and eligible Oura billing are required. Product and membership eligibility can change.",
+        "zhHans": "需要注册并使用合资格的 Oura 扣款方式。产品和会员资格可能调整。"
+      },
+      "category": "wellness",
+      "cadence": "annual",
+      "isTrackable": true,
+      "valueCents": 20000,
+      "currencyCode": "USD",
+      "enrollmentRequired": true,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/platinum/",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "amex-platinum-clear-credit",
+      "cardIDs": [
+        "amex-platinum"
+      ],
+      "title": {
+        "en": "Up to $219 annual CLEAR+ credit",
+        "zhHans": "每年最高 $219 CLEAR+ 抵扣"
+      },
+      "summary": {
+        "en": "Receive an annual statement credit toward an eligible CLEAR+ membership.",
+        "zhHans": "合资格 CLEAR+ 会员每年可获得账单抵扣。"
+      },
+      "details": {
+        "en": "Enrollment and eligible payment arrangements are required. The amount follows the current CLEAR+ membership price and American Express terms.",
+        "zhHans": "需要注册并按现行条款使用合资格付款方式。抵扣金额取决于当前 CLEAR+ 会员价格和美国运通条款。"
+      },
+      "category": "travelCredit",
+      "cadence": "annual",
+      "isTrackable": true,
+      "valueCents": 21900,
+      "currencyCode": "USD",
+      "enrollmentRequired": true,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/platinum/",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "amex-platinum-saks-credit",
+      "cardIDs": [
+        "amex-platinum"
+      ],
+      "title": {
+        "en": "$50 Saks Fifth Avenue credit each half-year",
+        "zhHans": "每半年 $50 Saks Fifth Avenue 抵扣"
+      },
+      "summary": {
+        "en": "Get up to $50 in statement credits each half-year for eligible Saks Fifth Avenue purchases.",
+        "zhHans": "每半年合资格 Saks Fifth Avenue 消费最高可获 $50 账单抵扣。"
+      },
+      "details": {
+        "en": "Enrollment is required. The two periods are January-June and July-December.",
+        "zhHans": "需要注册。两个周期分别为 1-6 月和 7-12 月。"
+      },
+      "category": "shopping",
+      "cadence": "semiannual",
+      "isTrackable": true,
+      "valueCents": 5000,
+      "currencyCode": "USD",
+      "enrollmentRequired": true,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/platinum/",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "amex-platinum-walmart-plus",
+      "cardIDs": [
+        "amex-platinum"
+      ],
+      "title": {
+        "en": "Walmart+ membership credit",
+        "zhHans": "Walmart+ 会员抵扣"
+      },
+      "summary": {
+        "en": "Receive a monthly statement credit toward an eligible Walmart+ membership.",
+        "zhHans": "合资格 Walmart+ 会员每月可获得账单抵扣。"
+      },
+      "details": {
+        "en": "Enrollment and an eligible monthly or annual Walmart+ membership are required. The credit value follows the current membership price.",
+        "zhHans": "需要注册并使用合资格的月付或年付 Walmart+ 会员。抵扣金额取决于当前会员价格。"
+      },
+      "category": "shopping",
+      "cadence": "monthly",
+      "isTrackable": true,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": true,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/platinum/",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "amex-platinum-equinox-credit",
+      "cardIDs": [
+        "amex-platinum"
+      ],
+      "title": {
+        "en": "$300 annual Equinox credit",
+        "zhHans": "每年 $300 Equinox 抵扣"
+      },
+      "summary": {
+        "en": "Get up to $300 in annual statement credits for eligible Equinox memberships or Equinox+ digital subscriptions.",
+        "zhHans": "合资格 Equinox 会员或 Equinox+ 数字订阅每年最高可获 $300 账单抵扣。"
+      },
+      "details": {
+        "en": "Enrollment is required. Eligible Equinox products and billing arrangements follow current American Express terms.",
+        "zhHans": "需要注册。合资格 Equinox 产品和扣款方式以美国运通现行条款为准。"
+      },
+      "category": "wellness",
+      "cadence": "annual",
+      "isTrackable": true,
+      "valueCents": 30000,
+      "currencyCode": "USD",
+      "enrollmentRequired": true,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/platinum/",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "delta-gold-flight-credit",
+      "cardIDs": [
+        "amex-delta-gold"
+      ],
+      "title": {
+        "en": "$200 Delta Flight Credit after $10,000 spend",
+        "zhHans": "消费 $10,000 后获得 $200 Delta 航班抵扣"
+      },
+      "summary": {
+        "en": "Receive a $200 Delta Flight Credit after $10,000 in calendar-year purchases.",
+        "zhHans": "每自然年消费满 $10,000 后可获得 $200 Delta 航班抵扣。"
+      },
+      "details": {
+        "en": "The credit is earned after the calendar-year spending threshold is met and can be used toward future eligible Delta travel.",
+        "zhHans": "达到自然年消费门槛后获得，可用于未来合资格的 Delta 旅行。"
+      },
+      "category": "airline",
+      "cadence": "annual",
+      "isTrackable": true,
+      "valueCents": 20000,
+      "currencyCode": "USD",
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-gold-american-express-card/",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "delta-gold-rideshare-credit",
+      "cardIDs": [
+        "amex-delta-gold"
+      ],
+      "title": {
+        "en": "$10 monthly rideshare credit after first renewal",
+        "zhHans": "首次续卡后每月 $10 网约车抵扣"
+      },
+      "summary": {
+        "en": "After the first renewal, receive up to $10 in monthly statement credits for eligible U.S. rideshare purchases.",
+        "zhHans": "首次续卡后，合资格美国网约车消费每月最高可获 $10 账单抵扣。"
+      },
+      "details": {
+        "en": "Enrollment is required. The benefit is available after the first card renewal and does not roll over.",
+        "zhHans": "需要注册。权益在首次续卡后生效，额度不会结转。"
+      },
+      "category": "transportation",
+      "cadence": "monthly",
+      "isTrackable": true,
+      "valueCents": 1000,
+      "currencyCode": "USD",
+      "enrollmentRequired": true,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-gold-american-express-card/",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "delta-gold-delta-stays-credit",
+      "cardIDs": [
+        "amex-delta-gold"
+      ],
+      "title": {
+        "en": "$100 annual Delta Stays credit",
+        "zhHans": "每年 $100 Delta Stays 抵扣"
+      },
+      "summary": {
+        "en": "Receive up to $100 back each year on prepaid hotels or vacation rentals booked through Delta Stays.",
+        "zhHans": "通过 Delta Stays 预订预付酒店或度假租赁，每年最高可获 $100 抵扣。"
+      },
+      "details": {
+        "en": "Eligible bookings must be made through Delta Stays on delta.com with the card.",
+        "zhHans": "合资格预订必须使用本卡通过 delta.com 的 Delta Stays 完成。"
+      },
+      "category": "hotel",
+      "cadence": "annual",
+      "isTrackable": true,
+      "valueCents": 10000,
+      "currencyCode": "USD",
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-gold-american-express-card/",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "delta-gold-checked-bags",
+      "cardIDs": [
+        "amex-delta-gold"
+      ],
+      "title": {
+        "en": "First checked bag free, plus second bag on domestic Delta flights",
+        "zhHans": "首件托运行李免费，国内 Delta 航班第二件也免费"
+      },
+      "summary": {
+        "en": "The first checked bag is free on Delta flights worldwide; the second bag is free on domestic Delta flights under current terms.",
+        "zhHans": "按现行条款，全球 Delta 航班首件托运行李免费，国内 Delta 航班第二件也免费。"
+      },
+      "details": {
+        "en": "The benefit applies to eligible passengers on the same reservation and is subject to Delta restrictions.",
+        "zhHans": "适用于同一预订中的合资格乘客，并受 Delta 限制条件约束。"
+      },
+      "category": "airline",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-gold-american-express-card/",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "delta-gold-takeoff-15",
+      "cardIDs": [
+        "amex-delta-gold"
+      ],
+      "title": {
+        "en": "15% off eligible Delta award travel",
+        "zhHans": "合资格 Delta 里程票立减 15%"
+      },
+      "summary": {
+        "en": "Receive 15% off eligible Delta award travel booked through delta.com or the Fly Delta app.",
+        "zhHans": "通过 delta.com 或 Fly Delta App 预订合资格 Delta 里程票可享 15% 折扣。"
+      },
+      "details": {
+        "en": "Partner-operated flights, taxes, fees, and other exclusions apply.",
+        "zhHans": "合作航司执飞航班、税费和其他排除项目不适用。"
+      },
+      "category": "airline",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-gold-american-express-card/",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "delta-platinum-companion-certificate",
+      "cardIDs": [
+        "amex-delta-platinum"
+      ],
+      "title": {
+        "en": "Annual Delta Companion Certificate",
+        "zhHans": "每年 Delta Companion Certificate"
+      },
+      "summary": {
+        "en": "Receive a companion certificate after each card renewal for an eligible Delta round-trip flight.",
+        "zhHans": "每次续卡后获得一张可用于合资格 Delta 往返航班的同行证书。"
+      },
+      "details": {
+        "en": "Taxes, fees, fare classes, destinations, and booking restrictions apply.",
+        "zhHans": "需支付税费，并受舱等、目的地和预订限制约束。"
+      },
+      "category": "airline",
+      "cadence": "anniversary",
+      "isTrackable": true,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-platinum-american-express-card/",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "delta-platinum-mqd-headstart",
+      "cardIDs": [
+        "amex-delta-platinum"
+      ],
+      "title": {
+        "en": "$2,500 MQD Headstart",
+        "zhHans": "$2,500 MQD Headstart"
+      },
+      "summary": {
+        "en": "Receive $2,500 Medallion Qualification Dollars each Medallion Qualification Year.",
+        "zhHans": "每个 Medallion 资格年度获得 $2,500 Medallion Qualification Dollars。"
+      },
+      "details": {
+        "en": "MQD terms and status qualification rules are set by Delta and can change.",
+        "zhHans": "MQD 和会籍资格规则由 Delta 制定，可能发生变化。"
+      },
+      "category": "airline",
+      "cadence": "annual",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-platinum-american-express-card/",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "delta-platinum-mqd-boost",
+      "cardIDs": [
+        "amex-delta-platinum"
+      ],
+      "title": {
+        "en": "MQD Boost",
+        "zhHans": "MQD 消费加速"
+      },
+      "summary": {
+        "en": "Earn $1 Medallion Qualification Dollar for each $20 in eligible card purchases.",
+        "zhHans": "每 $20 合资格本卡消费可获得 $1 Medallion Qualification Dollar。"
+      },
+      "details": {
+        "en": "Status qualification and eligible-purchase rules follow Delta's current terms.",
+        "zhHans": "会籍资格和合资格消费规则以 Delta 现行条款为准。"
+      },
+      "category": "airline",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-platinum-american-express-card/",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "delta-platinum-takeoff-15",
+      "cardIDs": [
+        "amex-delta-platinum"
+      ],
+      "title": {
+        "en": "15% off eligible Delta award travel",
+        "zhHans": "合资格 Delta 里程票立减 15%"
+      },
+      "summary": {
+        "en": "Receive 15% off eligible Delta award travel booked through delta.com or the Fly Delta app.",
+        "zhHans": "通过 delta.com 或 Fly Delta App 预订合资格 Delta 里程票可享 15% 折扣。"
+      },
+      "details": {
+        "en": "Partner-operated flights, taxes, fees, and other exclusions apply.",
+        "zhHans": "合作航司执飞航班、税费和其他排除项目不适用。"
+      },
+      "category": "airline",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-platinum-american-express-card/",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "delta-platinum-rideshare-credit",
+      "cardIDs": [
+        "amex-delta-platinum"
+      ],
+      "title": {
+        "en": "$10 monthly rideshare credit",
+        "zhHans": "每月 $10 网约车抵扣"
+      },
+      "summary": {
+        "en": "Receive up to $10 in monthly statement credits for eligible U.S. rideshare purchases.",
+        "zhHans": "合资格美国网约车消费每月最高可获 $10 账单抵扣。"
+      },
+      "details": {
+        "en": "Enrollment is required and the credit does not roll over.",
+        "zhHans": "需要注册，额度不会结转。"
+      },
+      "category": "transportation",
+      "cadence": "monthly",
+      "isTrackable": true,
+      "valueCents": 1000,
+      "currencyCode": "USD",
+      "enrollmentRequired": true,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-platinum-american-express-card/",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "delta-platinum-resy-credit",
+      "cardIDs": [
+        "amex-delta-platinum"
+      ],
+      "title": {
+        "en": "$10 monthly Resy credit",
+        "zhHans": "每月 $10 Resy 抵扣"
+      },
+      "summary": {
+        "en": "Receive up to $10 in monthly statement credits at eligible U.S. Resy restaurants.",
+        "zhHans": "每月在合资格美国 Resy 餐厅消费最高可获 $10 账单抵扣。"
+      },
+      "details": {
+        "en": "Eligible purchases and enrollment requirements follow current American Express terms.",
+        "zhHans": "合资格消费和注册要求以美国运通现行条款为准。"
+      },
+      "category": "dining",
+      "cadence": "monthly",
+      "isTrackable": true,
+      "valueCents": 1000,
+      "currencyCode": "USD",
+      "enrollmentRequired": true,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-platinum-american-express-card/",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "delta-platinum-delta-stays-credit",
+      "cardIDs": [
+        "amex-delta-platinum"
+      ],
+      "title": {
+        "en": "$150 annual Delta Stays credit",
+        "zhHans": "每年 $150 Delta Stays 抵扣"
+      },
+      "summary": {
+        "en": "Receive up to $150 back each year on prepaid hotels or vacation rentals booked through Delta Stays.",
+        "zhHans": "通过 Delta Stays 预订预付酒店或度假租赁，每年最高可获 $150 抵扣。"
+      },
+      "details": {
+        "en": "Eligible bookings must be made through Delta Stays on delta.com with the card.",
+        "zhHans": "合资格预订必须使用本卡通过 delta.com 的 Delta Stays 完成。"
+      },
+      "category": "hotel",
+      "cadence": "annual",
+      "isTrackable": true,
+      "valueCents": 15000,
+      "currencyCode": "USD",
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-platinum-american-express-card/",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "delta-platinum-checked-bags",
+      "cardIDs": [
+        "amex-delta-platinum"
+      ],
+      "title": {
+        "en": "First checked bag free, plus second bag on domestic Delta flights",
+        "zhHans": "首件托运行李免费，国内 Delta 航班第二件也免费"
+      },
+      "summary": {
+        "en": "The first checked bag is free on Delta flights worldwide; the second bag is free on domestic Delta flights under current terms.",
+        "zhHans": "按现行条款，全球 Delta 航班首件托运行李免费，国内 Delta 航班第二件也免费。"
+      },
+      "details": {
+        "en": "The benefit applies to eligible passengers on the same reservation and is subject to Delta restrictions.",
+        "zhHans": "适用于同一预订中的合资格乘客，并受 Delta 限制条件约束。"
+      },
+      "category": "airline",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-platinum-american-express-card/",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "chase-reserve-business-travel-credit",
+      "cardIDs": [
+        "chase-sapphire-reserve-business"
+      ],
+      "title": {
+        "en": "$300 annual travel credit",
+        "zhHans": "每年 $300 旅行抵扣"
+      },
+      "summary": {
+        "en": "Receive up to $300 in statement credits each anniversary year on eligible travel purchases.",
+        "zhHans": "每个持卡周年年在合资格旅行消费上最高可获 $300 账单抵扣。"
+      },
+      "details": {
+        "en": "Qualifying purchases do not earn points under current Chase terms.",
+        "zhHans": "按 Chase 现行条款，符合条件的消费不会获得积分。"
+      },
+      "category": "travelCredit",
+      "cadence": "anniversary",
+      "isTrackable": true,
+      "valueCents": 30000,
+      "currencyCode": "USD",
+      "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "chase-reserve-business-select-hotels-credit",
+      "cardIDs": [
+        "chase-sapphire-reserve-business"
+      ],
+      "title": {
+        "en": "$250 select Chase Travel hotel credit",
+        "zhHans": "$250 指定 Chase Travel 酒店抵扣"
+      },
+      "summary": {
+        "en": "Receive up to $250 in statement credits through December 31, 2026 on eligible prepaid Chase Travel hotel bookings.",
+        "zhHans": "截至 2026 年 12 月 31 日，合资格的 Chase Travel 预付酒店订单最高可获 $250 抵扣。"
+      },
+      "details": {
+        "en": "A two-night minimum and listed participating hotel brands apply. Qualifying purchases do not earn points.",
+        "zhHans": "需至少入住两晚，并受参与酒店品牌限制。符合条件的消费不会获得积分。"
+      },
+      "category": "hotel",
+      "cadence": "annual",
+      "isTrackable": true,
+      "valueCents": 25000,
+      "currencyCode": "USD",
+      "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "chase-reserve-business-lounge-access",
+      "cardIDs": [
+        "chase-sapphire-reserve-business"
+      ],
+      "title": {
+        "en": "Sapphire Reserve Lounge Network access",
+        "zhHans": "Sapphire Reserve 贵宾室网络"
+      },
+      "summary": {
+        "en": "Access Chase Sapphire Lounges and Priority Pass lounges with up to two guests under current terms.",
+        "zhHans": "按现行条款可携最多两位客人进入 Chase Sapphire 贵宾室和 Priority Pass 贵宾室。"
+      },
+      "details": {
+        "en": "Employee Cardmembers have separate restrictions; participating locations and guest rules can change.",
+        "zhHans": "员工卡持卡人有单独限制，参与地点和客人规则可能变化。"
+      },
+      "category": "lounge",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": true,
+      "sourceURL": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "chase-reserve-business-edit-credit",
+      "cardIDs": [
+        "chase-sapphire-reserve-business"
+      ],
+      "title": {
+        "en": "$500 annual The Edit credit",
+        "zhHans": "每年 $500 The Edit 抵扣"
+      },
+      "summary": {
+        "en": "Receive up to $500 in automatic annual statement credits for eligible The Edit bookings.",
+        "zhHans": "合资格 The Edit 预订每年自动获得最高 $500 账单抵扣。"
+      },
+      "details": {
+        "en": "The maximum credit is $250 per transaction and a two-night minimum applies.",
+        "zhHans": "每笔交易最高抵扣 $250，且需至少入住两晚。"
+      },
+      "category": "hotel",
+      "cadence": "annual",
+      "isTrackable": true,
+      "valueCents": 50000,
+      "currencyCode": "USD",
+      "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "chase-reserve-business-edit-benefits",
+      "cardIDs": [
+        "chase-sapphire-reserve-business"
+      ],
+      "title": {
+        "en": "The Edit hotel stay benefits",
+        "zhHans": "The Edit 酒店入住礼遇"
+      },
+      "summary": {
+        "en": "Eligible The Edit stays can include property credits, breakfast, and room upgrades when available.",
+        "zhHans": "合资格 The Edit 入住可享酒店额度、早餐和视房态提供的升级等礼遇。"
+      },
+      "details": {
+        "en": "Benefits vary by property and availability and are provided under current Chase Travel terms.",
+        "zhHans": "礼遇因酒店和房态而异，以 Chase Travel 现行条款为准。"
+      },
+      "category": "hotel",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "chase-reserve-business-trusted-traveler-credit",
+      "cardIDs": [
+        "chase-sapphire-reserve-business"
+      ],
+      "title": {
+        "en": "$120 Global Entry, TSA PreCheck, or NEXUS credit",
+        "zhHans": "$120 Global Entry、TSA PreCheck 或 NEXUS 抵扣"
+      },
+      "summary": {
+        "en": "Receive one statement credit of up to $120 every four years for an eligible application fee.",
+        "zhHans": "每四年可获得一次最高 $120 的合资格申请费账单抵扣。"
+      },
+      "details": {
+        "en": "The credit applies to an eligible application fee charged to the card.",
+        "zhHans": "抵扣适用于由本卡支付的合资格申请费。"
+      },
+      "category": "travelCredit",
+      "cadence": "fourYears",
+      "isTrackable": true,
+      "valueCents": 12000,
+      "currencyCode": "USD",
+      "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "chase-reserve-business-ihg-status",
+      "cardIDs": [
+        "chase-sapphire-reserve-business"
+      ],
+      "title": {
+        "en": "IHG One Rewards Platinum Elite status",
+        "zhHans": "IHG One Rewards Platinum Elite 会籍"
+      },
+      "summary": {
+        "en": "Receive complimentary IHG One Rewards Platinum Elite status through December 31, 2027 under current terms.",
+        "zhHans": "按现行条款，IHG One Rewards Platinum Elite 会籍有效至 2027 年 12 月 31 日。"
+      },
+      "details": {
+        "en": "The status benefit is not available to Employee Cardmembers under current Chase terms.",
+        "zhHans": "按 Chase 现行条款，员工卡持卡人不享有该会籍权益。"
+      },
+      "category": "hotel",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": true,
+      "sourceURL": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "chase-reserve-business-google-workspace-credit",
+      "cardIDs": [
+        "chase-sapphire-reserve-business"
+      ],
+      "title": {
+        "en": "$200 annual Google Workspace credit",
+        "zhHans": "每年 $200 Google Workspace 抵扣"
+      },
+      "summary": {
+        "en": "Receive up to $200 in annual statement credits on eligible Google Workspace purchases.",
+        "zhHans": "合资格 Google Workspace 消费每年最高可获 $200 账单抵扣。"
+      },
+      "details": {
+        "en": "Purchases must be made directly with Google Workspace under current Chase terms.",
+        "zhHans": "按 Chase 现行条款，消费必须直接向 Google Workspace 支付。"
+      },
+      "category": "business",
+      "cadence": "annual",
+      "isTrackable": true,
+      "valueCents": 20000,
+      "currencyCode": "USD",
+      "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "chase-reserve-business-ziprecruiter-credit",
+      "cardIDs": [
+        "chase-sapphire-reserve-business"
+      ],
+      "title": {
+        "en": "$400 annual ZipRecruiter credit",
+        "zhHans": "每年 $400 ZipRecruiter 抵扣"
+      },
+      "summary": {
+        "en": "Receive up to $200 in statement credits each half-year on eligible ZipRecruiter purchases.",
+        "zhHans": "每半年合资格 ZipRecruiter 消费最高可获 $200 账单抵扣。"
+      },
+      "details": {
+        "en": "The two periods are January-June and July-December.",
+        "zhHans": "两个周期分别为 1-6 月和 7-12 月。"
+      },
+      "category": "business",
+      "cadence": "semiannual",
+      "isTrackable": true,
+      "valueCents": 20000,
+      "currencyCode": "USD",
+      "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "chase-reserve-business-lyft-credit",
+      "cardIDs": [
+        "chase-sapphire-reserve-business"
+      ],
+      "title": {
+        "en": "$10 monthly Lyft credit",
+        "zhHans": "每月 $10 Lyft 抵扣"
+      },
+      "summary": {
+        "en": "Receive up to $10 in monthly Lyft in-app credits through September 30, 2027.",
+        "zhHans": "截至 2027 年 9 月 30 日，每月可获得最高 $10 Lyft App 内抵扣。"
+      },
+      "details": {
+        "en": "Lyft membership and activation requirements apply under current Chase terms.",
+        "zhHans": "以 Chase 现行条款中的 Lyft 会员和激活要求为准。"
+      },
+      "category": "transportation",
+      "cadence": "monthly",
+      "isTrackable": true,
+      "valueCents": 1000,
+      "currencyCode": "USD",
+      "enrollmentRequired": true,
+      "sourceURL": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "chase-reserve-business-doordash-dashpass",
+      "cardIDs": [
+        "chase-sapphire-reserve-business"
+      ],
+      "title": {
+        "en": "12 months of complimentary DashPass",
+        "zhHans": "12 个月 DashPass 会员"
+      },
+      "summary": {
+        "en": "Activate by December 31, 2027 to receive 12 months of complimentary DashPass.",
+        "zhHans": "在 2027 年 12 月 31 日前激活，可获得 12 个月 DashPass 会员。"
+      },
+      "details": {
+        "en": "Activation and eligible account requirements apply. This benefit covers membership value, not every order charge.",
+        "zhHans": "需要按要求激活并满足账户条件；该权益覆盖会员价值，不代表所有订单费用都免除。"
+      },
+      "category": "dining",
+      "cadence": "annual",
+      "isTrackable": true,
+      "valueCents": 12000,
+      "currencyCode": "USD",
+      "enrollmentRequired": true,
+      "sourceURL": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "chase-reserve-business-doordash-promos",
+      "cardIDs": [
+        "chase-sapphire-reserve-business"
+      ],
+      "title": {
+        "en": "$25 monthly DoorDash promos",
+        "zhHans": "每月 $25 DoorDash 优惠"
+      },
+      "summary": {
+        "en": "DashPass members can receive up to $25 in monthly DoorDash promos through December 31, 2027.",
+        "zhHans": "截至 2027 年 12 月 31 日，DashPass 会员每月可获得最高 $25 DoorDash 优惠。"
+      },
+      "details": {
+        "en": "Promos include restaurant, grocery, and retail components under current Chase terms.",
+        "zhHans": "优惠可能包括餐厅、杂货和零售部分，以 Chase 现行条款为准。"
+      },
+      "category": "dining",
+      "cadence": "monthly",
+      "isTrackable": true,
+      "valueCents": 2500,
+      "currencyCode": "USD",
+      "enrollmentRequired": true,
+      "sourceURL": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "chase-reserve-business-gift-card-credit",
+      "cardIDs": [
+        "chase-sapphire-reserve-business"
+      ],
+      "title": {
+        "en": "$100 annual curated gift card credit",
+        "zhHans": "每年 $100 精选礼品卡抵扣"
+      },
+      "summary": {
+        "en": "Receive up to $50 in statement credits each half-year on purchases from the curated gift-card collection.",
+        "zhHans": "精选礼品卡消费每半年最高可获 $50 账单抵扣。"
+      },
+      "details": {
+        "en": "The two periods are January-June and July-December, and eligible gift cards are limited to the curated collection.",
+        "zhHans": "两个周期分别为 1-6 月和 7-12 月，且仅限精选礼品卡集合。"
+      },
+      "category": "shopping",
+      "cadence": "semiannual",
+      "isTrackable": true,
+      "valueCents": 5000,
+      "currencyCode": "USD",
+      "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "x-card-atm-fee-reimbursement",
+      "cardIDs": [
+        "x-money-card"
+      ],
+      "title": {
+        "en": "Global ATM fee reimbursement",
+        "zhHans": "全球 ATM 手续费返还"
+      },
+      "summary": {
+        "en": "Eligible ATM fees are reimbursed within three calendar days under current X Money terms.",
+        "zhHans": "按 X Money 现行条款，合资格 ATM 手续费会在三个自然日内返还。"
+      },
+      "details": {
+        "en": "ATM operators may charge fees; reimbursement timing and eligibility follow the current X Money terms.",
+        "zhHans": "ATM 运营方仍可能收取费用，返还时间和资格以 X Money 现行条款为准。"
+      },
+      "category": "accountFees",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://money.x.com/en",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "x-card-no-foreign-transaction-fee",
+      "cardIDs": [
+        "x-money-card"
+      ],
+      "title": {
+        "en": "No foreign transaction fees",
+        "zhHans": "免外币交易手续费"
+      },
+      "summary": {
+        "en": "Use the 𝕏 Card anywhere Visa is accepted without foreign transaction fees under current terms.",
+        "zhHans": "按现行条款，𝕏 Card 可在 Visa 受理处使用且不收外币交易手续费。"
+      },
+      "details": {
+        "en": "Merchant acceptance, exchange rates, and other account terms still apply.",
+        "zhHans": "仍受商户受理范围、汇率和其他账户条款约束。"
+      },
+      "category": "accountFees",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://money.x.com/en",
+      "lastVerified": "2026-09-02T00:00:00Z"
+    },
+    {
+      "id": "x-card-security-controls",
+      "cardIDs": [
+        "x-money-card"
+      ],
+      "title": {
+        "en": "Passkeys and custom transaction limits",
+        "zhHans": "Passkey 与自定义交易限额"
+      },
+      "summary": {
+        "en": "X Money includes passkeys, custom transaction limits, and privacy controls for the account and card.",
+        "zhHans": "X Money 提供 Passkey、自定义交易限额和隐私控制。"
+      },
+      "details": {
+        "en": "Security features are account controls, not a promise that every transaction is fraud-proof.",
+        "zhHans": "安全功能属于账户控制，不代表所有交易都绝对不会发生欺诈。"
+      },
+      "category": "protection",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://money.x.com/en",
+      "lastVerified": "2026-09-02T00:00:00Z"
     }
   ]
 }

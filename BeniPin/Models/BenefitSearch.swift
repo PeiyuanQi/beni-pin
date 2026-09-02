@@ -78,7 +78,11 @@ enum BenefitSearch {
                 card.family.en,
                 card.family.zhHans,
                 card.searchAliases.joined(separator: " "),
-                card.network.displayName
+                card.network.displayName,
+                card.productType == .credit ? "credit card 信用卡" : "debit card 借记卡",
+                card.welcomeOffer.map {
+                    "\($0.headline.en) \($0.headline.zhHans) \($0.details.en) \($0.details.zhHans)"
+                } ?? ""
             ].joined(separator: " ")
             return normalize(identityText).contains(normalizedQuery)
         }

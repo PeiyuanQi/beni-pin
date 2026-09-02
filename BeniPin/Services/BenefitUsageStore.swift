@@ -46,6 +46,21 @@ final class BenefitUsageStore: ObservableObject {
         persist()
     }
 
+    func migrate(using catalog: CardCatalog) {
+        let migratedKeys = Set(completedKeys.compactMap { storedKey -> String? in
+            let components = storedKey.split(separator: "|", maxSplits: 2, omittingEmptySubsequences: false)
+            guard components.count == 3 else { return storedKey }
+
+            let cardID = catalog.migrations.resolvedCardID(String(components[0]))
+            let benefitID = catalog.migrations.resolvedBenefitID(String(components[1]))
+            return "\(cardID)|\(benefitID)|\(components[2])"
+        })
+
+        guard migratedKeys != completedKeys else { return }
+        completedKeys = migratedKeys
+        persist()
+    }
+
     func periodKey(for benefit: CardBenefit, on date: Date = Date()) -> String {
         let components = calendar.dateComponents([.year, .month], from: date)
         let year = components.year ?? 0

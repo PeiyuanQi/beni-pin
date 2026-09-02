@@ -54,7 +54,10 @@ struct AddCardView: View {
                                         Text(card.family.value(for: language))
                                             .font(.subheadline)
                                             .foregroundStyle(.secondary)
-                                        if card.availability == .discontinued {
+                                        Text(LocalizedStringKey(card.productType.localizationKey))
+                                            .font(.caption)
+                                            .foregroundStyle(.secondary)
+                                        if card.availability != .active {
                                             Label(
                                                 LocalizedStringKey(card.availability.localizationKey),
                                                 systemImage: "clock.arrow.circlepath"

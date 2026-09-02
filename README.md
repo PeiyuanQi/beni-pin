@@ -1,6 +1,6 @@
 # BeniPin
 
-BeniPin is a privacy-first native iOS app for organizing U.S. credit-card benefits. It supports English and Simplified Chinese, lets users add cards by issuer or product, searches benefits for selected cards, compares card earning rates, and tracks whether recurring benefits were used in the current period.
+BeniPin is a privacy-first native iOS app for organizing U.S. payment-card benefits. It supports English and Simplified Chinese, lets users add cards by issuer or product, searches benefits for selected cards, compares card earning rates, and tracks whether recurring benefits were used in the current period.
 
 The app stores only catalog product IDs, local usage state, and app preferences such as point-value overrides. It does not request or store card numbers, expiration dates, security codes, balances, or transactions.
 
@@ -8,8 +8,8 @@ The app stores only catalog product IDs, local usage state, and app preferences 
 
 - Native SwiftUI app targeting iOS 17 and later.
 - English and Simplified Chinese UI plus bilingual catalog search.
-- Searchable manual card catalog grouped by issuer.
-- Apple Wallet-style My Cards stack with neutral, original card artwork.
+- Searchable manual payment-card catalog grouped by issuer, including credit cards and the limited-rollout X Money debit card.
+- Apple Wallet-style My Cards stack with neutral, original card artwork. The renderer supports licensed remote artwork when a future catalog record provides it.
 - Benefit-first navigation with searchable, horizontally scrollable category filters.
 - Separate Benefits and Earning views for selected cards; earning rates are grouped by purchase category and ranked by estimated return.
 - Locally editable cents-per-point valuations for supported rewards programs, with cash-back rates compared directly as percentages.
@@ -17,7 +17,9 @@ The app stores only catalog product IDs, local usage state, and app preferences 
 - Benefit search by title, description, issuer, card family, and category, with source verification dates shown in every row.
 - Local used/unused tracking for monthly, quarterly, semiannual, annual, anniversary, and four-year benefits.
 - Bundled last-known-good catalog with validated remote JSON updates, ETag support, atomic cache replacement, pull-to-refresh, and opportunistic background refresh.
-- Twenty-six card products, 66 benefits, and 110 earning-rate records summarized from official issuer and program sources.
+- Thirty card products, 104 benefits, and 125 earning-rate records summarized from official issuer and program sources.
+- Time-sensitive welcome offers are stored separately from recurring benefits, with official source links, verification dates, optional expiration dates, and a personalized-offer disclaimer.
+- Catalog-provided ID migrations preserve selected cards and benefit usage state when a product or benefit identifier changes.
 
 Apple does not provide a public permission flow that lets a normal third-party app enumerate all payment cards in Apple Wallet. BeniPin explains that limitation and uses manual selection rather than a fake Apple Pay transaction or misleading Wallet authorization flow. See [Product Boundaries](docs/product-boundaries.md).
 
@@ -61,10 +63,13 @@ Update workflow:
 1. Verify facts against official issuer product pages or benefit guides.
 2. Rewrite concise English and Chinese summaries; do not copy editorial wording.
 3. Update `lastVerified`, `generatedAt`, source URLs, and stable IDs.
-4. Run the core tests and generic device build above.
-5. Review the diff before publishing to `main`.
+4. When an ID must change, add an explicit mapping under the catalog's `migrations` object so local selections and usage state follow the replacement.
+5. Run the core tests and generic device build above.
+6. Review the diff before publishing to `main`.
 
 Automated scraping of US Credit Card Guide is intentionally not implemented because its terms prohibit unlicensed scraping and its content license is not suitable for this product. See [Data Sourcing](docs/data-sourcing.md).
+
+Issuer and editorial card images are not bundled or hot-linked without a license that permits commercial in-app display. The catalog's optional `remoteImageURL` is reserved for approved assets; otherwise the app renders original neutral artwork.
 
 The Articles tab does not embed, copy, cache, or parse editorial content. It opens selected US Credit Card Guide listing pages in the system browser. Cards discovered through those lists enter BeniPin only after manual verification against official issuer or program sources.
 

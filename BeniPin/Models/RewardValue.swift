@@ -75,6 +75,11 @@ enum RewardValueCatalog {
             defaultCentsPerPoint: 1.9
         ),
         RewardProgram(
+            id: "delta-skymiles",
+            name: LocalizedCopy(en: "Delta SkyMiles", zhHans: "Delta SkyMiles 达美里程"),
+            defaultCentsPerPoint: 1.2
+        ),
+        RewardProgram(
             id: "flying-blue",
             name: LocalizedCopy(en: "Flying Blue", zhHans: "Flying Blue"),
             defaultCentsPerPoint: 1.55
@@ -108,7 +113,10 @@ enum RewardValueCatalog {
     static let rewardProgramByCardID: [String: String] = [
         "amex-platinum": "amex-membership-rewards",
         "amex-gold": "amex-membership-rewards",
+        "amex-delta-gold": "delta-skymiles",
+        "amex-delta-platinum": "delta-skymiles",
         "chase-sapphire-reserve": "chase-ultimate-rewards",
+        "chase-sapphire-reserve-business": "chase-ultimate-rewards",
         "chase-sapphire-preferred": "chase-ultimate-rewards",
         "capital-one-venture-x": "capital-one-miles",
         "chase-united-club": "united-mileageplus",
@@ -138,10 +146,24 @@ enum RewardValueCatalog {
         "amex-gold-flights": .travel,
         "amex-gold-rentals-cruises": .travel,
         "amex-gold-other-purchases": .other,
+        "amex-delta-gold-dining": .dining,
+        "amex-delta-gold-supermarkets": .groceries,
+        "amex-delta-gold-delta": .travel,
+        "amex-delta-gold-other-purchases": .other,
+        "amex-delta-platinum-delta": .travel,
+        "amex-delta-platinum-hotels": .travel,
+        "amex-delta-platinum-dining": .dining,
+        "amex-delta-platinum-supermarkets": .groceries,
+        "amex-delta-platinum-other-purchases": .other,
         "chase-reserve-chase-travel": .travel,
         "chase-reserve-direct-flights-hotels": .travel,
         "chase-reserve-dining": .dining,
         "chase-reserve-other-purchases": .other,
+        "chase-reserve-business-chase-travel": .travel,
+        "chase-reserve-business-lyft": .gasTransportation,
+        "chase-reserve-business-direct-flights-hotels": .travel,
+        "chase-reserve-business-advertising": .shopping,
+        "chase-reserve-business-other-purchases": .other,
         "chase-preferred-chase-travel": .travel,
         "chase-preferred-dining": .dining,
         "chase-preferred-gas-ev-vacation-homes": .mixed,
@@ -238,7 +260,8 @@ enum RewardValueCatalog {
         "capital-one-spark-cash-business-travel": .travel,
         "capital-one-spark-cash-other-purchases": .other,
         "capital-one-spark-cash-plus-business-travel": .travel,
-        "capital-one-spark-cash-plus-other-purchases": .other
+        "capital-one-spark-cash-plus-other-purchases": .other,
+        "x-card-eligible-purchases": .other
     ]
 
     static func category(for earningRate: CardEarningRate) -> EarningCategory {

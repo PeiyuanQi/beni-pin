@@ -13,20 +13,38 @@ struct CardArtworkView: View {
                 endPoint: .bottomTrailing
             )
 
+            if let remoteImageURL = card.artwork.remoteImageURL {
+                AsyncImage(url: remoteImageURL) { phase in
+                    switch phase {
+                    case let .success(image):
+                        image
+                            .resizable()
+                            .scaledToFit()
+                            .padding(compact ? 2 : 4)
+                    default:
+                        fallbackArtwork
+                    }
+                }
+            } else {
+                fallbackArtwork
+            }
+        }
+        .aspectRatio(1.586, contentMode: .fit)
+        .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
+        .overlay {
+            RoundedRectangle(cornerRadius: 8, style: .continuous)
+                .strokeBorder(.white.opacity(0.18), lineWidth: 1)
+        }
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("\(card.issuer), \(card.name.value(for: language))")
+    }
+
+    private var fallbackArtwork: some View {
+        ZStack {
             Circle()
                 .fill(Color.white.opacity(0.08))
                 .frame(width: compact ? 70 : 170)
                 .offset(x: compact ? 42 : 110, y: compact ? -28 : -70)
-
-            if let remoteImageURL = card.artwork.remoteImageURL {
-                AsyncImage(url: remoteImageURL) { phase in
-                    if case let .success(image) = phase {
-                        image
-                            .resizable()
-                            .scaledToFill()
-                    }
-                }
-            }
 
             VStack(alignment: .leading, spacing: compact ? 4 : 10) {
                 HStack(alignment: .top) {
@@ -62,13 +80,5 @@ struct CardArtworkView: View {
             .padding(compact ? 10 : 18)
             .shadow(color: .black.opacity(0.18), radius: 8, y: 3)
         }
-        .aspectRatio(1.586, contentMode: .fit)
-        .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
-        .overlay {
-            RoundedRectangle(cornerRadius: 8, style: .continuous)
-                .strokeBorder(.white.opacity(0.18), lineWidth: 1)
-        }
-        .accessibilityElement(children: .ignore)
-        .accessibilityLabel("\(card.issuer), \(card.name.value(for: language))")
     }
 }

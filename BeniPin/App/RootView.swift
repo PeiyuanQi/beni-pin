@@ -13,6 +13,7 @@ struct RootView: View {
 
     @EnvironmentObject private var catalogStore: CatalogStore
     @EnvironmentObject private var cardCollection: UserCardCollection
+    @EnvironmentObject private var usageStore: BenefitUsageStore
     @State private var hasStarted = false
     @State private var selectedTab: Tab
 
@@ -95,9 +96,25 @@ struct RootView: View {
             guard !hasStarted else { return }
             hasStarted = true
             await catalogStore.start()
+            migrateLocalData()
 #if DEBUG
             if ProcessInfo.processInfo.arguments.contains("-demoData") {
-                let demoCardIDs = ["amex-platinum", "chase-sapphire-reserve", "capital-one-venture-x"]
+                let arguments = ProcessInfo.processInfo.arguments
+                let defaultDemoCardIDs = [
+                    "amex-delta-gold",
+                    "amex-delta-platinum",
+                    "chase-sapphire-reserve-business",
+                    "x-money-card"
+                ]
+                let demoCardIDs: [String]
+                if let idsIndex = arguments.firstIndex(of: "-demoCardIDs"),
+                   arguments.indices.contains(idsIndex + 1) {
+                    demoCardIDs = arguments[idsIndex + 1]
+                        .split(separator: ",")
+                        .map(String.init)
+                } else {
+                    demoCardIDs = defaultDemoCardIDs
+                }
                 for cardID in demoCardIDs {
                     if let card = catalogStore.catalog.card(id: cardID) {
                         cardCollection.add(card)
@@ -108,6 +125,9 @@ struct RootView: View {
         }
         .onReceive(NotificationCenter.default.publisher(for: .catalogDidRefresh)) { _ in
             Task { await catalogStore.reloadLocalCatalog() }
+        }
+        .onChange(of: catalogStore.catalog.generatedAt) {
+            migrateLocalData()
         }
         .alert(
             "catalog.refresh.failed.title",
@@ -126,6 +146,12 @@ struct RootView: View {
                 Text(refreshMessage)
             }
         }
+    }
+
+    private func migrateLocalData() {
+        guard catalogStore.phase == .ready else { return }
+        cardCollection.migrate(using: catalogStore.catalog)
+        usageStore.migrate(using: catalogStore.catalog)
     }
 }
 

@@ -21,11 +21,18 @@
 "cards.added" = "Added";
 "cards.notAdded" = "Not added";
 "card.availability.active" = "Available";
+"card.availability.limited" = "Limited rollout";
 "card.availability.discontinued" = "No longer available";
+"card.productType.credit" = "Credit card";
+"card.productType.debit" = "Debit card";
+"card.offer.title" = "Current Welcome Offer";
+"card.offer.expires" = "Offer ends";
+"card.offer.source" = "Open official offer terms";
+"card.offer.disclaimer" = "Offers can be personalized and may change. Confirm the exact offer shown to you before applying.";
 "cards.remove" = "Remove Card";
 "cards.remove.confirm" = "Remove this card from My Cards?";
 "cards.empty.title" = "No cards yet";
-"cards.empty.message" = "Add the credit cards you own to see all of their benefits in one place.";
+"cards.empty.message" = "Add the payment cards you own to see all of their benefits in one place.";
 "cards.search.prompt" = "Search bank, card, or benefit";
 "cards.benefits.remaining" = "benefits remaining";
 
@@ -69,11 +76,18 @@
 
 "benefit.category.all" = "All Categories";
 "benefit.category.travelCredit" = "Travel Credits";
+"benefit.category.airline" = "Airline";
 "benefit.category.lounge" = "Airport Lounges";
 "benefit.category.dining" = "Dining";
 "benefit.category.hotel" = "Hotels";
 "benefit.category.transportation" = "Transportation";
 "benefit.category.shopping" = "Shopping";
+"benefit.category.entertainment" = "Entertainment";
+"benefit.category.wellness" = "Wellness";
+"benefit.category.housing" = "Housing";
+"benefit.category.business" = "Business";
+"benefit.category.rewards" = "Rewards";
+"benefit.category.accountFees" = "Account & Fees";
 "benefit.category.protection" = "Protection";
 "benefit.category.points" = "Points";
 

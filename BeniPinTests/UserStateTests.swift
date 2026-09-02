@@ -57,6 +57,32 @@ final class UserStateTests: XCTestCase {
     }
 
     @MainActor
+    func testCardCollectionMigratesLegacyIDsWithoutDeletingUnknownCards() throws {
+        let (defaults, suiteName) = makeDefaults()
+        defer { defaults.removePersistentDomain(forName: suiteName) }
+        let storageKey = "cards"
+        let storedIDs: Set<String> = ["legacy-card", "missing-card"]
+        defaults.set(try JSONEncoder().encode(storedIDs), forKey: storageKey)
+        let card = makeCard()
+        let catalog = CardCatalog(
+            schemaVersion: 1,
+            generatedAt: Date(),
+            cards: [card],
+            benefits: [],
+            migrations: CatalogMigrations(cardIDs: ["legacy-card": card.id])
+        )
+        let collection = UserCardCollection(defaults: defaults, storageKey: storageKey)
+
+        collection.migrate(using: catalog)
+
+        XCTAssertEqual(collection.cardIDs, [card.id, "missing-card"])
+        XCTAssertEqual(
+            UserCardCollection(defaults: defaults, storageKey: storageKey).cardIDs,
+            [card.id, "missing-card"]
+        )
+    }
+
+    @MainActor
     func testNonTrackableBenefitCannotBeCompleted() {
         let (defaults, suiteName) = makeDefaults()
         defer { defaults.removePersistentDomain(forName: suiteName) }
@@ -67,6 +93,41 @@ final class UserStateTests: XCTestCase {
 
         XCTAssertFalse(store.isCompleted(cardID: "test-card", benefit: benefit))
         XCTAssertTrue(store.completedKeys.isEmpty)
+    }
+
+    @MainActor
+    func testBenefitUsageMigratesCardAndBenefitIDs() throws {
+        let (defaults, suiteName) = makeDefaults()
+        defer { defaults.removePersistentDomain(forName: suiteName) }
+        let storageKey = "usage"
+        defaults.set(
+            try JSONEncoder().encode(Set(["old-card|old-benefit|2026-09", "missing|missing|2026-09"])),
+            forKey: storageKey
+        )
+        let card = makeCard()
+        let benefit = makeBenefit(cadence: .monthly)
+        let catalog = CardCatalog(
+            schemaVersion: 1,
+            generatedAt: Date(),
+            cards: [card],
+            benefits: [benefit],
+            migrations: CatalogMigrations(
+                cardIDs: ["old-card": card.id],
+                benefitIDs: ["old-benefit": benefit.id]
+            )
+        )
+        let store = BenefitUsageStore(defaults: defaults, storageKey: storageKey)
+
+        store.migrate(using: catalog)
+
+        XCTAssertEqual(
+            store.completedKeys,
+            ["test-card|test-benefit|2026-09", "missing|missing|2026-09"]
+        )
+        XCTAssertEqual(
+            BenefitUsageStore(defaults: defaults, storageKey: storageKey).completedKeys,
+            ["test-card|test-benefit|2026-09", "missing|missing|2026-09"]
+        )
     }
 
     @MainActor
