@@ -45,6 +45,31 @@ enum RewardValueCatalog {
 
     static let programs: [RewardProgram] = [
         RewardProgram(
+            id: "british-airways-avios",
+            name: LocalizedCopy(en: "British Airways Avios", zhHans: "英国航空 Avios"),
+            defaultCentsPerPoint: 1
+        ),
+        RewardProgram(
+            id: "iberia-avios",
+            name: LocalizedCopy(en: "Iberia Avios", zhHans: "伊比利亚航空 Avios"),
+            defaultCentsPerPoint: 1
+        ),
+        RewardProgram(
+            id: "aerclub-avios",
+            name: LocalizedCopy(en: "AerClub Avios", zhHans: "爱尔兰航空 Avios"),
+            defaultCentsPerPoint: 1
+        ),
+        RewardProgram(
+            id: "korean-air-skypass",
+            name: LocalizedCopy(en: "Korean Air SKYPASS", zhHans: "大韩航空 SKYPASS"),
+            defaultCentsPerPoint: 1
+        ),
+        RewardProgram(
+            id: "boa-travel-rewards",
+            name: LocalizedCopy(en: "Bank of America Travel Rewards", zhHans: "美国银行旅行奖励"),
+            defaultCentsPerPoint: 1
+        ),
+        RewardProgram(
             id: "amex-membership-rewards",
             name: LocalizedCopy(en: "Amex Membership Rewards", zhHans: "Amex Membership Rewards"),
             defaultCentsPerPoint: 2
@@ -106,6 +131,12 @@ enum RewardValueCatalog {
     )
 
     static let rewardProgramByCardID: [String: String] = [
+        "chase-british-airways": "british-airways-avios",
+        "chase-iberia": "iberia-avios",
+        "chase-aer-lingus": "aerclub-avios",
+        "us-bank-skypass-select": "korean-air-skypass",
+        "chase-ihg-premier-business": "ihg-one-rewards",
+        "boa-travel-rewards": "boa-travel-rewards",
         "amex-platinum": "amex-membership-rewards",
         "amex-gold": "amex-membership-rewards",
         "chase-sapphire-reserve": "chase-ultimate-rewards",
@@ -129,6 +160,29 @@ enum RewardValueCatalog {
     ]
 
     static let earningCategoryByRateID: [String: EarningCategory] = [
+        "chase-british-airways-airlines": .travel,
+        "chase-british-airways-hotels": .travel,
+        "chase-british-airways-other-purchases": .other,
+        "chase-iberia-airlines": .travel,
+        "chase-iberia-hotels": .travel,
+        "chase-iberia-other-purchases": .other,
+        "chase-aer-lingus-airlines": .travel,
+        "chase-aer-lingus-hotels": .travel,
+        "chase-aer-lingus-other-purchases": .other,
+        "us-bank-skypass-select-korean-air": .travel,
+        "us-bank-skypass-select-other-airlines": .travel,
+        "us-bank-skypass-select-hotels-car-rentals": .travel,
+        "us-bank-skypass-select-dining": .dining,
+        "us-bank-skypass-select-other-purchases": .other,
+        "chase-ihg-premier-business-ihg": .travel,
+        "chase-ihg-premier-business-travel-dining-gas-business": .mixed,
+        "chase-ihg-premier-business-other-purchases": .other,
+        "boa-customized-choice": .rotating,
+        "boa-customized-grocery-wholesale": .groceries,
+        "boa-customized-other-purchases": .other,
+        "boa-unlimited-other-purchases": .other,
+        "boa-travel-center": .travel,
+        "boa-travel-other-purchases": .other,
         "amex-platinum-flights": .travel,
         "amex-platinum-prepaid-hotels": .travel,
         "amex-platinum-other-purchases": .other,

@@ -75,7 +75,7 @@
 "benefit.category.transportation" = "Transportation";
 "benefit.category.shopping" = "Shopping";
 "benefit.category.protection" = "Protection";
-"benefit.category.points" = "Points";
+"benefit.category.points" = "Points & miles bonuses";
 
 "benefit.cadence.ongoing" = "Ongoing";
 "benefit.cadence.monthly" = "Monthly";
@@ -108,7 +108,7 @@
 "settings.pointValues.title" = "Point Values";
 "settings.pointValues.open" = "Edit rewards valuations";
 "settings.pointValues.summary" = "Earning rates use these cents-per-point estimates to calculate and rank estimated returns.";
-"settings.pointValues.disclaimer" = "Values are estimates, not guaranteed redemption rates. Adjust them to match how you redeem rewards.";
+"settings.pointValues.disclaimer" = "Avios and SKYPASS start at an editable 1¢ assumption. Bank of America Travel Rewards uses 1¢ for eligible travel/dining credits. Other defaults use the July 2026 benchmark below. These are estimates, not guaranteed cash values.";
 "settings.pointValues.source" = "View July 2026 valuation source";
 "settings.pointValues.reset" = "Restore Default Values";
 "settings.catalog.title" = "Benefit Catalog";

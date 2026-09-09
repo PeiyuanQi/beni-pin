@@ -44,6 +44,22 @@ final class BenefitSearchTests: XCTestCase {
         XCTAssertEqual(Set(englishResults.map(\.id)), Set(chineseResults.map(\.id)))
     }
 
+    func testRecurringAviosBonusIsSearchableInBothLanguages() {
+        for language in [AppLanguage.english, .simplifiedChinese] {
+            for query in ["anniversary", "周年"] {
+                let results = BenefitSearch.results(
+                    in: catalog,
+                    query: query,
+                    category: .points,
+                    ownedCardIDs: ["chase-british-airways"],
+                    ownedOnly: true,
+                    language: language
+                )
+                XCTAssertEqual(results.map(\.id), ["chase-british-airways-anniversary-avios"])
+            }
+        }
+    }
+
     func testOwnedOnlyScopeExcludesOtherCards() {
         let results = BenefitSearch.results(
             in: catalog,
@@ -113,9 +129,25 @@ final class BenefitSearchTests: XCTestCase {
         let expectations: [(query: String, cardIDs: Set<String>)] = [
             ("Chase United Club", ["chase-united-club"]),
             ("CFU", ["chase-freedom-unlimited"]),
+            ("Chase BA", ["chase-british-airways"]),
+            ("Chase IB", ["chase-iberia"]),
+            ("Chase EI", ["chase-aer-lingus"]),
+            ("英国航空", ["chase-british-airways"]),
+            ("伊比利亚航空", ["chase-iberia"]),
+            ("爱尔兰航空", ["chase-aer-lingus"]),
+            ("US Bank Korean Air", ["us-bank-skypass-select"]),
+            ("大韩航空", ["us-bank-skypass-select"]),
+            ("Chase IHG Premier Business", ["chase-ihg-premier-business"]),
+            ("洲际商业卡", ["chase-ihg-premier-business"]),
+            ("BoA Customized Cash Rewards", ["boa-customized-cash-rewards"]),
+            ("BoA Unlimited Cash Rewards", ["boa-unlimited-cash-rewards"]),
+            ("BoA Travel Rewards", ["boa-travel-rewards"]),
+            ("自选返现", ["boa-customized-cash-rewards"]),
+            ("无限返现", ["boa-unlimited-cash-rewards"]),
+            ("美国银行旅行奖励", ["boa-travel-rewards"]),
             ("Chase Sapphire Preferred", ["chase-sapphire-preferred"]),
             ("Chase Hyatt", ["chase-world-of-hyatt", "chase-world-of-hyatt-business"]),
-            ("Chase IHG", ["chase-ihg-premier"]),
+            ("Chase IHG", ["chase-ihg-premier", "chase-ihg-premier-business"]),
             ("Deserve", ["deserve-edu"]),
             ("Discover", ["discover-it-cash-back"]),
             ("Bilt", ["bilt-blue", "bilt-obsidian", "bilt-palladium"]),
@@ -139,6 +171,12 @@ final class BenefitSearchTests: XCTestCase {
                 query: expectation.query,
                 language: .english
             )
+            let chineseResults = BenefitSearch.cards(
+                in: catalog,
+                query: expectation.query,
+                language: .simplifiedChinese
+            )
+            XCTAssertEqual(Set(results.map(\.id)), Set(chineseResults.map(\.id)))
 
             XCTAssertEqual(
                 Set(results.map(\.id)),

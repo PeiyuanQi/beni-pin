@@ -37,7 +37,7 @@ struct BenefitSearchView: View {
 
     private var availableCategories: [BenefitCategory] {
         BenefitCategory.allCases.filter { category in
-            category != .points && catalogStore.catalog.benefits.contains { benefit in
+            catalogStore.catalog.benefits.contains { benefit in
                 benefit.category == category && !cardCollection.cardIDs.isDisjoint(with: benefit.cardIDs)
             }
         }
@@ -50,7 +50,6 @@ struct BenefitSearchView: View {
             category: selectedCategory,
             ownedCardIDs: cardCollection.cardIDs,
             ownedOnly: true,
-            excludedCategories: [.points],
             language: language
         )
     }

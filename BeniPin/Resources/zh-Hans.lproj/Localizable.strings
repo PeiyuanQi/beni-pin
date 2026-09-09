@@ -75,7 +75,7 @@
 "benefit.category.transportation" = "出行";
 "benefit.category.shopping" = "购物";
 "benefit.category.protection" = "保险与保障";
-"benefit.category.points" = "积分";
+"benefit.category.points" = "积分与里程奖励";
 
 "benefit.cadence.ongoing" = "持续有效";
 "benefit.cadence.monthly" = "每月";
@@ -108,7 +108,7 @@
 "settings.pointValues.title" = "积分价值";
 "settings.pointValues.open" = "调整积分估值";
 "settings.pointValues.summary" = "消费积分会按照这里的每点美分估值，计算并排序等效回报率。";
-"settings.pointValues.disclaimer" = "估值并非保证兑换价值，请根据自己的兑换方式调整。";
+"settings.pointValues.disclaimer" = "Avios 和 SKYPASS 默认按可调整的 1 美分估算。美国银行旅行奖励按合资格旅行及餐饮抵扣的每积分 1 美分计算。其他默认值使用下方 2026 年 7 月参考估值。估算并非保证现金价值。";
 "settings.pointValues.source" = "查看 2026 年 7 月估值来源";
 "settings.pointValues.reset" = "恢复默认估值";
 "settings.catalog.title" = "权益目录";

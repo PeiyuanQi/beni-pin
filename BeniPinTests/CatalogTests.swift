@@ -10,10 +10,9 @@ final class CatalogTests: XCTestCase {
         let catalog = try loadStarterCatalog()
 
         XCTAssertEqual(catalog.schemaVersion, 1)
-        XCTAssertEqual(catalog.cards.count, 26)
-        XCTAssertEqual(catalog.benefits.count, 66)
-        XCTAssertEqual(catalog.cards.flatMap(\.earningRates).count, 110)
-        XCTAssertTrue(catalog.benefits.allSatisfy { $0.category != .points })
+        XCTAssertEqual(catalog.cards.count, 34)
+        XCTAssertEqual(catalog.benefits.count, 102)
+        XCTAssertEqual(catalog.cards.flatMap(\.earningRates).count, 133)
         XCTAssertEqual(catalog.card(id: "deserve-edu")?.availability, .discontinued)
         XCTAssertEqual(catalog.card(id: "discover-it-cash-back")?.network, .discover)
         XCTAssertEqual(catalog.card(id: "citi-strata-elite")?.network, .mastercard)
@@ -24,6 +23,28 @@ final class CatalogTests: XCTestCase {
             "1.5%"
         )
         XCTAssertNoThrow(try catalog.validate())
+    }
+
+    func testBankOfAmericaReturnsRespectRewardUnitsAndValuationOverrides() throws {
+        let catalog = try loadStarterCatalog()
+        let cash = try XCTUnwrap(catalog.card(id: "boa-unlimited-cash-rewards"))
+        let cashRate = try XCTUnwrap(cash.earningRates.first)
+        let travel = try XCTUnwrap(catalog.card(id: "boa-travel-rewards"))
+        let travelRate = try XCTUnwrap(travel.earningRates.last)
+        let program = try XCTUnwrap(RewardValueCatalog.program(for: travel))
+
+        XCTAssertEqual(cashRate.unit, .percent)
+        XCTAssertEqual(travelRate.unit, .multiplier)
+        XCTAssertEqual(program.defaultCentsPerPoint, 1)
+        XCTAssertEqual(RewardValueCatalog.effectiveReturnPercent(
+            for: cashRate, card: cash, centsPerPoint: { _ in 0.6 }
+        ), 1.5)
+        XCTAssertEqual(RewardValueCatalog.effectiveReturnPercent(
+            for: travelRate, card: travel, centsPerPoint: { _ in program.defaultCentsPerPoint }
+        ), 1.5)
+        XCTAssertEqual(RewardValueCatalog.effectiveReturnPercent(
+            for: travelRate, card: travel, centsPerPoint: { _ in 0.6 }
+        ), 0.9, accuracy: 0.0001)
     }
 
     func testLegacyCardWithoutEarningRatesStillDecodes() throws {
@@ -173,7 +194,7 @@ final class CatalogTests: XCTestCase {
         let snapshot = try await repository.loadBestAvailable()
 
         XCTAssertEqual(snapshot.origin, .bundled)
-        XCTAssertEqual(snapshot.catalog.cards.count, 26)
+        XCTAssertEqual(snapshot.catalog.cards.count, 34)
     }
 
     func testValidationRejectsOneWayCardBenefitRelationship() throws {

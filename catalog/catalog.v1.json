@@ -1,7 +1,634 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-24T06:20:00Z",
+  "generatedAt": "2026-09-09T06:00:00Z",
   "cards": [
+    {
+      "id": "chase-british-airways",
+      "issuer": "Chase",
+      "name": {
+        "en": "British Airways Visa Signature",
+        "zhHans": "英国航空 Visa Signature 联名卡"
+      },
+      "family": {
+        "en": "British Airways Club",
+        "zhHans": "英国航空 Avios"
+      },
+      "searchAliases": [
+        "Chase BA",
+        "Chase British Airways",
+        "大通英航",
+        "英国航空 BA"
+      ],
+      "network": "visa",
+      "artwork": {
+        "primaryHex": "233D72",
+        "secondaryHex": "142A35",
+        "accentHex": "F2E5BD",
+        "symbolName": "airplane",
+        "remoteImageURL": null
+      },
+      "earningRates": [
+        {
+          "id": "chase-british-airways-airlines",
+          "category": {
+            "en": "Partner airline flights",
+            "zhHans": "合作航司机票"
+          },
+          "details": {
+            "en": "Direct flight purchases from British Airways, Iberia, Aer Lingus, and LEVEL.",
+            "zhHans": "直接向 British Airways、Iberia、Aer Lingus 及 LEVEL 购买机票。"
+          },
+          "multiplier": 3,
+          "sourceURL": "https://creditcards.chase.com/travel-credit-cards/avios/british-airways",
+          "lastVerified": "2026-09-09T06:00:00Z"
+        },
+        {
+          "id": "chase-british-airways-hotels",
+          "category": {
+            "en": "Hotels booked direct",
+            "zhHans": "直接预订酒店"
+          },
+          "details": {
+            "en": "Accommodations purchased directly from hotels.",
+            "zhHans": "直接向酒店购买住宿。"
+          },
+          "multiplier": 2,
+          "sourceURL": "https://creditcards.chase.com/travel-credit-cards/avios/british-airways",
+          "lastVerified": "2026-09-09T06:00:00Z"
+        },
+        {
+          "id": "chase-british-airways-other-purchases",
+          "category": {
+            "en": "Other purchases",
+            "zhHans": "其他消费"
+          },
+          "details": {
+            "en": "Other eligible net purchases.",
+            "zhHans": "其他合资格净消费。"
+          },
+          "multiplier": 1,
+          "sourceURL": "https://creditcards.chase.com/travel-credit-cards/avios/british-airways",
+          "lastVerified": "2026-09-09T06:00:00Z"
+        }
+      ],
+      "benefitIDs": [
+        "chase-british-airways-anniversary-avios",
+        "chase-british-airways-doordash-quarterly",
+        "chase-british-airways-reward-flight-credit",
+        "chase-british-airways-travel-together",
+        "chase-british-airways-flight-discount",
+        "chase-british-airways-no-foreign-fee"
+      ],
+      "sourceURLs": [
+        "https://creditcards.chase.com/travel-credit-cards/avios/british-airways"
+      ],
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-iberia",
+      "issuer": "Chase",
+      "name": {
+        "en": "Iberia Visa Signature",
+        "zhHans": "伊比利亚航空 Visa Signature 联名卡"
+      },
+      "family": {
+        "en": "Iberia Club",
+        "zhHans": "伊比利亚航空 Avios"
+      },
+      "searchAliases": [
+        "Chase IB",
+        "Chase Iberia",
+        "大通伊比利亚"
+      ],
+      "network": "visa",
+      "artwork": {
+        "primaryHex": "AB2A30",
+        "secondaryHex": "142A35",
+        "accentHex": "F2E5BD",
+        "symbolName": "airplane",
+        "remoteImageURL": null
+      },
+      "earningRates": [
+        {
+          "id": "chase-iberia-airlines",
+          "category": {
+            "en": "Partner airline flights",
+            "zhHans": "合作航司机票"
+          },
+          "details": {
+            "en": "Direct flight purchases from British Airways, Iberia, Aer Lingus, and LEVEL.",
+            "zhHans": "直接向 British Airways、Iberia、Aer Lingus 及 LEVEL 购买机票。"
+          },
+          "multiplier": 3,
+          "sourceURL": "https://creditcards.chase.com/travel-credit-cards/avios/iberia",
+          "lastVerified": "2026-09-09T06:00:00Z"
+        },
+        {
+          "id": "chase-iberia-hotels",
+          "category": {
+            "en": "Hotels booked direct",
+            "zhHans": "直接预订酒店"
+          },
+          "details": {
+            "en": "Accommodations purchased directly from hotels.",
+            "zhHans": "直接向酒店购买住宿。"
+          },
+          "multiplier": 2,
+          "sourceURL": "https://creditcards.chase.com/travel-credit-cards/avios/iberia",
+          "lastVerified": "2026-09-09T06:00:00Z"
+        },
+        {
+          "id": "chase-iberia-other-purchases",
+          "category": {
+            "en": "Other purchases",
+            "zhHans": "其他消费"
+          },
+          "details": {
+            "en": "Other eligible net purchases.",
+            "zhHans": "其他合资格净消费。"
+          },
+          "multiplier": 1,
+          "sourceURL": "https://creditcards.chase.com/travel-credit-cards/avios/iberia",
+          "lastVerified": "2026-09-09T06:00:00Z"
+        }
+      ],
+      "benefitIDs": [
+        "chase-iberia-anniversary-avios",
+        "chase-iberia-doordash-quarterly",
+        "chase-iberia-flight-voucher",
+        "chase-iberia-flight-discount",
+        "chase-iberia-no-foreign-fee"
+      ],
+      "sourceURLs": [
+        "https://creditcards.chase.com/travel-credit-cards/avios/iberia"
+      ],
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-aer-lingus",
+      "issuer": "Chase",
+      "name": {
+        "en": "Aer Lingus Visa Signature",
+        "zhHans": "爱尔兰航空 Visa Signature 联名卡"
+      },
+      "family": {
+        "en": "AerClub",
+        "zhHans": "爱尔兰航空 Avios"
+      },
+      "searchAliases": [
+        "Chase EI",
+        "Chase Aer Lingus",
+        "大通爱尔兰航空"
+      ],
+      "network": "visa",
+      "artwork": {
+        "primaryHex": "167066",
+        "secondaryHex": "142A35",
+        "accentHex": "F2E5BD",
+        "symbolName": "airplane",
+        "remoteImageURL": null
+      },
+      "earningRates": [
+        {
+          "id": "chase-aer-lingus-airlines",
+          "category": {
+            "en": "Partner airline flights",
+            "zhHans": "合作航司机票"
+          },
+          "details": {
+            "en": "Direct flight purchases from British Airways, Iberia, Aer Lingus, and LEVEL.",
+            "zhHans": "直接向 British Airways、Iberia、Aer Lingus 及 LEVEL 购买机票。"
+          },
+          "multiplier": 3,
+          "sourceURL": "https://creditcards.chase.com/travel-credit-cards/avios/aer-lingus",
+          "lastVerified": "2026-09-09T06:00:00Z"
+        },
+        {
+          "id": "chase-aer-lingus-hotels",
+          "category": {
+            "en": "Hotels booked direct",
+            "zhHans": "直接预订酒店"
+          },
+          "details": {
+            "en": "Accommodations purchased directly from hotels.",
+            "zhHans": "直接向酒店购买住宿。"
+          },
+          "multiplier": 2,
+          "sourceURL": "https://creditcards.chase.com/travel-credit-cards/avios/aer-lingus",
+          "lastVerified": "2026-09-09T06:00:00Z"
+        },
+        {
+          "id": "chase-aer-lingus-other-purchases",
+          "category": {
+            "en": "Other purchases",
+            "zhHans": "其他消费"
+          },
+          "details": {
+            "en": "Other eligible net purchases.",
+            "zhHans": "其他合资格净消费。"
+          },
+          "multiplier": 1,
+          "sourceURL": "https://creditcards.chase.com/travel-credit-cards/avios/aer-lingus",
+          "lastVerified": "2026-09-09T06:00:00Z"
+        }
+      ],
+      "benefitIDs": [
+        "chase-aer-lingus-anniversary-avios",
+        "chase-aer-lingus-doordash-quarterly",
+        "chase-aer-lingus-companion-ticket",
+        "chase-aer-lingus-priority-boarding",
+        "chase-aer-lingus-no-foreign-fee"
+      ],
+      "sourceURLs": [
+        "https://creditcards.chase.com/travel-credit-cards/avios/aer-lingus"
+      ],
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "us-bank-skypass-select",
+      "issuer": "U.S. Bank",
+      "name": {
+        "en": "SKYPASS Select Visa Signature",
+        "zhHans": "大韩航空 SKYPASS Select 联名卡"
+      },
+      "family": {
+        "en": "Korean Air SKYPASS",
+        "zhHans": "大韩航空 SKYPASS"
+      },
+      "searchAliases": [
+        "US Bank Korean Air",
+        "US Bank SKYPASS Select",
+        "KE Select",
+        "全美银行 大韩航空"
+      ],
+      "network": "visa",
+      "artwork": {
+        "primaryHex": "334C6B",
+        "secondaryHex": "142A35",
+        "accentHex": "F2E5BD",
+        "symbolName": "airplane.departure",
+        "remoteImageURL": null
+      },
+      "earningRates": [
+        {
+          "id": "us-bank-skypass-select-korean-air",
+          "category": {
+            "en": "Korean Air tickets",
+            "zhHans": "大韩航空机票"
+          },
+          "details": {
+            "en": "Eligible Korean Air ticket purchases.",
+            "zhHans": "合资格大韩航空机票消费。"
+          },
+          "multiplier": 3,
+          "sourceURL": "https://www.skypassvisa.com/credit/visaSelectCard.do",
+          "lastVerified": "2026-09-09T06:00:00Z"
+        },
+        {
+          "id": "us-bank-skypass-select-other-airlines",
+          "category": {
+            "en": "Other airlines",
+            "zhHans": "其他航空公司"
+          },
+          "details": {
+            "en": "Eligible purchases with other airlines.",
+            "zhHans": "其他航空公司的合资格消费。"
+          },
+          "multiplier": 2,
+          "sourceURL": "https://www.skypassvisa.com/credit/visaSelectCard.do",
+          "lastVerified": "2026-09-09T06:00:00Z"
+        },
+        {
+          "id": "us-bank-skypass-select-hotels-car-rentals",
+          "category": {
+            "en": "Hotels and car rentals",
+            "zhHans": "酒店与租车"
+          },
+          "details": {
+            "en": "Eligible hotel and car-rental purchases.",
+            "zhHans": "合资格酒店及租车消费。"
+          },
+          "multiplier": 2,
+          "sourceURL": "https://www.skypassvisa.com/credit/visaSelectCard.do",
+          "lastVerified": "2026-09-09T06:00:00Z"
+        },
+        {
+          "id": "us-bank-skypass-select-dining",
+          "category": {
+            "en": "Dining",
+            "zhHans": "餐饮"
+          },
+          "details": {
+            "en": "Includes eligible takeout and restaurant delivery.",
+            "zhHans": "包括合资格外卖及餐厅配送。"
+          },
+          "multiplier": 2,
+          "sourceURL": "https://www.skypassvisa.com/credit/visaSelectCard.do",
+          "lastVerified": "2026-09-09T06:00:00Z"
+        },
+        {
+          "id": "us-bank-skypass-select-other-purchases",
+          "category": {
+            "en": "Other purchases",
+            "zhHans": "其他消费"
+          },
+          "details": {
+            "en": "Other eligible purchases.",
+            "zhHans": "其他合资格消费。"
+          },
+          "multiplier": 1,
+          "sourceURL": "https://www.skypassvisa.com/credit/visaSelectCard.do",
+          "lastVerified": "2026-09-09T06:00:00Z"
+        }
+      ],
+      "benefitIDs": [
+        "us-bank-skypass-select-travel-credit",
+        "us-bank-skypass-select-korean-air-discounts",
+        "us-bank-skypass-select-korean-air-lounges",
+        "us-bank-skypass-select-priority-pass",
+        "us-bank-skypass-select-trusted-traveler",
+        "us-bank-skypass-select-duty-free",
+        "us-bank-skypass-select-renewal-miles",
+        "us-bank-skypass-select-no-foreign-fee"
+      ],
+      "sourceURLs": [
+        "https://www.skypassvisa.com/credit/visaSelectCard.do"
+      ],
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-ihg-premier-business",
+      "issuer": "Chase",
+      "name": {
+        "en": "IHG One Rewards Premier Business",
+        "zhHans": "IHG One Rewards Premier 商业卡"
+      },
+      "family": {
+        "en": "IHG One Rewards Business",
+        "zhHans": "IHG 洲际商业联名卡"
+      },
+      "searchAliases": [
+        "Chase IHG Business",
+        "Chase IHG Premier Business",
+        "IHG Premier Business",
+        "洲际商业卡"
+      ],
+      "network": "mastercard",
+      "artwork": {
+        "primaryHex": "334A56",
+        "secondaryHex": "142A35",
+        "accentHex": "F2E5BD",
+        "symbolName": "building.2.fill",
+        "remoteImageURL": null
+      },
+      "earningRates": [
+        {
+          "id": "chase-ihg-premier-business-ihg",
+          "category": {
+            "en": "IHG hotels and resorts",
+            "zhHans": "IHG 酒店与度假村"
+          },
+          "details": {
+            "en": "Card earnings only; excludes separate IHG membership and status points.",
+            "zhHans": "仅计算信用卡积分，不含 IHG 会员及会籍积分。"
+          },
+          "multiplier": 10,
+          "sourceURL": "https://creditcards.chase.com/business-credit-cards/IHG/business-premier",
+          "lastVerified": "2026-09-09T06:00:00Z"
+        },
+        {
+          "id": "chase-ihg-premier-business-travel-dining-gas-business",
+          "category": {
+            "en": "Travel, dining, gas and select business purchases",
+            "zhHans": "旅行、餐饮、加油及指定商业消费"
+          },
+          "details": {
+            "en": "Includes office supplies and social-media/search advertising; excludes IHG purchases earning 10X.",
+            "zhHans": "包括办公用品及社交媒体与搜索广告；不含获得 10X 的 IHG 消费。"
+          },
+          "multiplier": 5,
+          "sourceURL": "https://creditcards.chase.com/business-credit-cards/IHG/business-premier",
+          "lastVerified": "2026-09-09T06:00:00Z"
+        },
+        {
+          "id": "chase-ihg-premier-business-other-purchases",
+          "category": {
+            "en": "Other purchases",
+            "zhHans": "其他消费"
+          },
+          "details": {
+            "en": "Other eligible net purchases.",
+            "zhHans": "其他合资格净消费。"
+          },
+          "multiplier": 3,
+          "sourceURL": "https://creditcards.chase.com/business-credit-cards/IHG/business-premier",
+          "lastVerified": "2026-09-09T06:00:00Z"
+        }
+      ],
+      "benefitIDs": [
+        "chase-ihg-premier-business-anniversary-night",
+        "chase-ihg-premier-business-platinum-status",
+        "chase-ihg-premier-business-fourth-night-free",
+        "chase-ihg-premier-business-annual-spend-bonus",
+        "chase-ihg-premier-business-trusted-traveler",
+        "chase-ihg-premier-business-doordash-quarterly",
+        "chase-ihg-premier-business-instacart-monthly",
+        "chase-ihg-premier-business-no-foreign-fee"
+      ],
+      "sourceURLs": [
+        "https://creditcards.chase.com/business-credit-cards/IHG/business-premier"
+      ],
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "boa-customized-cash-rewards",
+      "issuer": "Bank of America",
+      "name": {
+        "en": "Customized Cash Rewards",
+        "zhHans": "美国银行自选返现信用卡"
+      },
+      "family": {
+        "en": "Bank of America Rewards",
+        "zhHans": "美国银行奖励系列"
+      },
+      "searchAliases": [
+        "BoA Customized Cash Rewards",
+        "BofA Customized Cash Rewards"
+      ],
+      "network": "visa",
+      "artwork": {
+        "primaryHex": "B32635",
+        "secondaryHex": "19283B",
+        "accentHex": "F3E8D4",
+        "symbolName": "slider.horizontal.3",
+        "remoteImageURL": null
+      },
+      "earningRates": [
+        {
+          "id": "boa-customized-choice",
+          "category": {
+            "en": "Selected choice category",
+            "zhHans": "已选择的自选类别"
+          },
+          "details": {
+            "en": "Standard rate in one selected category: gas/EV charging, online shopping, dining, travel, drug stores, or home improvement/furnishings. Change once per calendar month. Shares a $2,500 quarterly purchase cap with grocery stores and wholesale clubs; then 1%. Eligible first-year offers pay 6% in the selected category. Relationship bonuses are excluded.",
+            "zhHans": "在加油及充电、网购、餐饮、旅行、药店、家装及家具中选择一个类别，每自然月可更改一次。与超市及仓储会员店共用每季度 $2,500 消费上限，超出后为 1%。符合首年优惠条件时，所选类别为 6%；此处未计入客户关系加成。"
+          },
+          "multiplier": 3,
+          "unit": "percent",
+          "sourceURL": "https://www.bankofamerica.com/credit-cards/products/cash-back-credit-card/",
+          "lastVerified": "2026-09-09T00:00:00Z"
+        },
+        {
+          "id": "boa-customized-grocery-wholesale",
+          "category": {
+            "en": "Grocery stores and wholesale clubs",
+            "zhHans": "超市及仓储会员店"
+          },
+          "details": {
+            "en": "Shares a $2,500 combined quarterly purchase cap with the selected choice category; then 1%. Relationship bonuses are excluded.",
+            "zhHans": "与自选类别共用每季度 $2,500 消费上限，超出后为 1%；未计入客户关系加成。"
+          },
+          "multiplier": 2,
+          "unit": "percent",
+          "sourceURL": "https://www.bankofamerica.com/bofa-rewards/increasing-bofa-rewards-with-credit-cards/",
+          "lastVerified": "2026-09-09T00:00:00Z"
+        },
+        {
+          "id": "boa-customized-other-purchases",
+          "category": {
+            "en": "Other purchases",
+            "zhHans": "其他消费"
+          },
+          "details": {
+            "en": "Standard rate on other eligible purchases and purchases above the shared quarterly cap, before relationship bonuses.",
+            "zhHans": "其他合资格消费及超出季度共享上限后的基础返现率，未计入客户关系加成。"
+          },
+          "multiplier": 1,
+          "unit": "percent",
+          "sourceURL": "https://www.bankofamerica.com/bofa-rewards/increasing-bofa-rewards-with-credit-cards/",
+          "lastVerified": "2026-09-09T00:00:00Z"
+        }
+      ],
+      "benefitIDs": [],
+      "sourceURLs": [
+        "https://www.bankofamerica.com/credit-cards/products/cash-back-credit-card/",
+        "https://www.bankofamerica.com/bofa-rewards/increasing-bofa-rewards-with-credit-cards/"
+      ],
+      "lastVerified": "2026-09-09T00:00:00Z"
+    },
+    {
+      "id": "boa-unlimited-cash-rewards",
+      "issuer": "Bank of America",
+      "name": {
+        "en": "Unlimited Cash Rewards",
+        "zhHans": "美国银行无限返现信用卡"
+      },
+      "family": {
+        "en": "Bank of America Rewards",
+        "zhHans": "美国银行奖励系列"
+      },
+      "searchAliases": [
+        "BoA Unlimited Cash Rewards",
+        "BofA Unlimited Cash Rewards"
+      ],
+      "network": "visa",
+      "artwork": {
+        "primaryHex": "696F78",
+        "secondaryHex": "19283B",
+        "accentHex": "F3E8D4",
+        "symbolName": "infinity",
+        "remoteImageURL": null
+      },
+      "earningRates": [
+        {
+          "id": "boa-unlimited-other-purchases",
+          "category": {
+            "en": "All purchases",
+            "zhHans": "所有消费"
+          },
+          "details": {
+            "en": "Unlimited standard cash back. Eligible first-year offers pay 2% for 12 months from account opening, then 1.5%. Relationship bonuses are excluded.",
+            "zhHans": "基础返现无上限。符合首年优惠条件时，开户后 12 个月内为 2%，之后为 1.5%；未计入客户关系加成。"
+          },
+          "multiplier": 1.5,
+          "unit": "percent",
+          "sourceURL": "https://www.bankofamerica.com/credit-cards/products/unlimited-cash-back-credit-card/",
+          "lastVerified": "2026-09-09T00:00:00Z"
+        }
+      ],
+      "benefitIDs": [],
+      "sourceURLs": [
+        "https://www.bankofamerica.com/credit-cards/products/unlimited-cash-back-credit-card/",
+        "https://www.bankofamerica.com/bofa-rewards/increasing-bofa-rewards-with-credit-cards/"
+      ],
+      "lastVerified": "2026-09-09T00:00:00Z"
+    },
+    {
+      "id": "boa-travel-rewards",
+      "issuer": "Bank of America",
+      "name": {
+        "en": "Travel Rewards",
+        "zhHans": "美国银行旅行奖励信用卡"
+      },
+      "family": {
+        "en": "Bank of America Rewards",
+        "zhHans": "美国银行奖励系列"
+      },
+      "searchAliases": [
+        "BoA Travel Rewards",
+        "BofA Travel Rewards"
+      ],
+      "network": "visa",
+      "artwork": {
+        "primaryHex": "20578D",
+        "secondaryHex": "19283B",
+        "accentHex": "F3E8D4",
+        "symbolName": "airplane",
+        "remoteImageURL": null
+      },
+      "earningRates": [
+        {
+          "id": "boa-travel-center",
+          "category": {
+            "en": "Bank of America Travel Center",
+            "zhHans": "美国银行旅行预订平台"
+          },
+          "details": {
+            "en": "Eligible net purchases through the Travel Center earn 1.5 base points plus 1.5 bonus points per dollar. Relationship bonuses are excluded.",
+            "zhHans": "通过 Travel Center 完成的合资格净消费，每美元获得 1.5 基础积分及 1.5 额外积分；未计入客户关系加成。"
+          },
+          "multiplier": 3,
+          "unit": "multiplier",
+          "sourceURL": "https://secure.bankofamerica.com/apply-now-services/credit-cards/rest/get-disclosures/v1/usa/show-in-browser?cId=4079343&isMobile=true&locale=en_US&poCd=W2",
+          "lastVerified": "2026-09-09T00:00:00Z"
+        },
+        {
+          "id": "boa-travel-other-purchases",
+          "category": {
+            "en": "Other purchases",
+            "zhHans": "其他消费"
+          },
+          "details": {
+            "en": "Unlimited base points on eligible net purchases, before relationship bonuses. Travel and dining statement-credit redemptions are worth 1 cent per point; other redemptions may differ.",
+            "zhHans": "合资格净消费的基础积分无上限，未计入客户关系加成。抵扣旅行及餐饮账单时每积分价值 1 美分，其他兑换方式价值可能不同。"
+          },
+          "multiplier": 1.5,
+          "unit": "multiplier",
+          "sourceURL": "https://secure.bankofamerica.com/apply-now-services/credit-cards/rest/get-disclosures/v1/usa/show-in-browser?cId=4079343&isMobile=true&locale=en_US&poCd=W2",
+          "lastVerified": "2026-09-09T00:00:00Z"
+        }
+      ],
+      "benefitIDs": [
+        "boa-travel-no-foreign-transaction-fee"
+      ],
+      "sourceURLs": [
+        "https://www.bankofamerica.com/credit-cards/products/travel-rewards-credit-card/",
+        "https://www.bankofamerica.com/bofa-rewards/increasing-bofa-rewards-with-credit-cards/",
+        "https://secure.bankofamerica.com/apply-now-services/credit-cards/rest/get-disclosures/v1/usa/show-in-browser?cId=4079343&isMobile=true&locale=en_US&poCd=W2"
+      ],
+      "lastVerified": "2026-09-09T00:00:00Z"
+    },
     {
       "id": "amex-platinum",
       "issuer": "American Express",
@@ -187,47 +814,59 @@
       "earningRates": [
         {
           "id": "chase-reserve-chase-travel",
-          "category": {"en": "Chase Travel", "zhHans": "Chase Travel"},
+          "category": {
+            "en": "Chase Travel",
+            "zhHans": "Chase Travel"
+          },
           "details": {
             "en": "Flights, hotels, rental cars, cruises, activities, and tours booked through Chase Travel. Purchases covered by a statement credit may not earn points.",
             "zhHans": "通过 Chase Travel 预订的机票、酒店、租车、邮轮、活动和行程；已获得账单报销的消费可能不赚取积分。"
           },
           "multiplier": 8,
           "sourceURL": "https://www.chase.com/sapphire-cards/personal/reserve",
-          "lastVerified": "2026-07-22T20:00:00Z"
+          "lastVerified": "2026-09-09T06:00:00Z"
         },
         {
           "id": "chase-reserve-direct-flights-hotels",
-          "category": {"en": "Flights and hotels booked direct", "zhHans": "直接预订机票与酒店"},
+          "category": {
+            "en": "Flights and hotels booked direct",
+            "zhHans": "直接预订机票与酒店"
+          },
           "details": {
             "en": "Eligible bookings made directly with an airline or hotel.",
             "zhHans": "直接向航空公司或酒店完成的合资格预订。"
           },
           "multiplier": 4,
           "sourceURL": "https://www.chase.com/sapphire-cards/personal/reserve",
-          "lastVerified": "2026-07-22T20:00:00Z"
+          "lastVerified": "2026-09-09T06:00:00Z"
         },
         {
           "id": "chase-reserve-dining",
-          "category": {"en": "Dining worldwide", "zhHans": "全球餐饮"},
+          "category": {
+            "en": "Dining worldwide",
+            "zhHans": "全球餐饮"
+          },
           "details": {
             "en": "Eligible restaurant purchases, including qualifying takeout and delivery.",
             "zhHans": "合资格餐厅消费，包括符合条件的外卖和配送。"
           },
           "multiplier": 3,
           "sourceURL": "https://www.chase.com/sapphire-cards/personal/reserve",
-          "lastVerified": "2026-07-22T20:00:00Z"
+          "lastVerified": "2026-09-09T06:00:00Z"
         },
         {
           "id": "chase-reserve-other-purchases",
-          "category": {"en": "Other purchases", "zhHans": "其他消费"},
+          "category": {
+            "en": "Other purchases",
+            "zhHans": "其他消费"
+          },
           "details": {
             "en": "The standard rate for other purchases.",
             "zhHans": "其他消费的基础积攒倍率。"
           },
           "multiplier": 1,
           "sourceURL": "https://www.chase.com/sapphire-cards/personal/reserve",
-          "lastVerified": "2026-07-22T20:00:00Z"
+          "lastVerified": "2026-09-09T06:00:00Z"
         }
       ],
       "benefitIDs": [
@@ -235,12 +874,15 @@
         "chase-reserve-edit-credit",
         "chase-reserve-dining-credit",
         "chase-reserve-lounge-access",
-        "chase-reserve-travel-protections"
+        "chase-reserve-travel-protections",
+        "chase-sapphire-reserve-doordash-restaurant",
+        "chase-sapphire-reserve-doordash-nonrestaurant-1",
+        "chase-sapphire-reserve-doordash-nonrestaurant-2"
       ],
       "sourceURLs": [
         "https://www.chase.com/sapphire-cards/personal/reserve"
       ],
-      "lastVerified": "2026-07-19T10:30:00Z"
+      "lastVerified": "2026-09-09T06:00:00Z"
     },
     {
       "id": "chase-sapphire-preferred",
@@ -800,6 +1442,942 @@
     }
   ],
   "benefits": [
+    {
+      "id": "chase-british-airways-no-foreign-fee",
+      "cardIDs": [
+        "chase-british-airways"
+      ],
+      "title": {
+        "en": "No foreign transaction fees",
+        "zhHans": "免外币交易手续费"
+      },
+      "summary": {
+        "en": "No foreign transaction fee on purchases.",
+        "zhHans": "消费不收取外币交易手续费。"
+      },
+      "details": {
+        "en": "Other fees and currency conversion may apply.",
+        "zhHans": "仍可能涉及其他费用及汇率换算。"
+      },
+      "category": "travelCredit",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/travel-credit-cards/avios/british-airways",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-iberia-no-foreign-fee",
+      "cardIDs": [
+        "chase-iberia"
+      ],
+      "title": {
+        "en": "No foreign transaction fees",
+        "zhHans": "免外币交易手续费"
+      },
+      "summary": {
+        "en": "No foreign transaction fee on purchases.",
+        "zhHans": "消费不收取外币交易手续费。"
+      },
+      "details": {
+        "en": "Other fees and currency conversion may apply.",
+        "zhHans": "仍可能涉及其他费用及汇率换算。"
+      },
+      "category": "travelCredit",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/travel-credit-cards/avios/iberia",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-aer-lingus-no-foreign-fee",
+      "cardIDs": [
+        "chase-aer-lingus"
+      ],
+      "title": {
+        "en": "No foreign transaction fees",
+        "zhHans": "免外币交易手续费"
+      },
+      "summary": {
+        "en": "No foreign transaction fee on purchases.",
+        "zhHans": "消费不收取外币交易手续费。"
+      },
+      "details": {
+        "en": "Other fees and currency conversion may apply.",
+        "zhHans": "仍可能涉及其他费用及汇率换算。"
+      },
+      "category": "travelCredit",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/travel-credit-cards/avios/aer-lingus",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "us-bank-skypass-select-no-foreign-fee",
+      "cardIDs": [
+        "us-bank-skypass-select"
+      ],
+      "title": {
+        "en": "No foreign transaction fees",
+        "zhHans": "免外币交易手续费"
+      },
+      "summary": {
+        "en": "No foreign transaction fee on purchases.",
+        "zhHans": "消费不收取外币交易手续费。"
+      },
+      "details": {
+        "en": "Other fees and currency conversion may apply.",
+        "zhHans": "仍可能涉及其他费用及汇率换算。"
+      },
+      "category": "travelCredit",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.skypassvisa.com/credit/visaSelectCard.do",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-ihg-premier-business-no-foreign-fee",
+      "cardIDs": [
+        "chase-ihg-premier-business"
+      ],
+      "title": {
+        "en": "No foreign transaction fees",
+        "zhHans": "免外币交易手续费"
+      },
+      "summary": {
+        "en": "No foreign transaction fee on purchases.",
+        "zhHans": "消费不收取外币交易手续费。"
+      },
+      "details": {
+        "en": "Other fees and currency conversion may apply.",
+        "zhHans": "仍可能涉及其他费用及汇率换算。"
+      },
+      "category": "travelCredit",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/business-credit-cards/IHG/business-premier",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-british-airways-anniversary-avios",
+      "cardIDs": [
+        "chase-british-airways"
+      ],
+      "title": {
+        "en": "2,500 anniversary Avios",
+        "zhHans": "周年奖励 2,500 Avios"
+      },
+      "summary": {
+        "en": "Receive 2,500 Avios each account anniversary year.",
+        "zhHans": "每个账户周年年度获得 2,500 Avios。"
+      },
+      "details": {
+        "en": "Allow 6–8 weeks after the anniversary for posting.",
+        "zhHans": "周年日后到账可能需要 6–8 周。"
+      },
+      "category": "points",
+      "cadence": "anniversary",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/travel-credit-cards/avios/british-airways",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-british-airways-doordash-quarterly",
+      "cardIDs": [
+        "chase-british-airways"
+      ],
+      "title": {
+        "en": "Quarterly $10 DoorDash discount",
+        "zhHans": "每季度 $10 DoorDash 折扣"
+      },
+      "summary": {
+        "en": "One eligible non-restaurant order per quarter through December 31, 2027.",
+        "zhHans": "2027 年 12 月 31 日前，每季度一笔合资格非餐厅订单可享折扣。"
+      },
+      "details": {
+        "en": "Activate DashPass with this card; pay with it. Unused discount expires each quarter.",
+        "zhHans": "需使用此卡激活 DashPass 并付款；未用折扣当季到期。"
+      },
+      "category": "shopping",
+      "cadence": "quarterly",
+      "isTrackable": true,
+      "valueCents": 1000,
+      "currencyCode": "USD",
+      "enrollmentRequired": true,
+      "sourceURL": "https://creditcards.chase.com/travel-credit-cards/avios/british-airways",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-iberia-anniversary-avios",
+      "cardIDs": [
+        "chase-iberia"
+      ],
+      "title": {
+        "en": "2,500 anniversary Avios",
+        "zhHans": "周年奖励 2,500 Avios"
+      },
+      "summary": {
+        "en": "Receive 2,500 Avios each account anniversary year.",
+        "zhHans": "每个账户周年年度获得 2,500 Avios。"
+      },
+      "details": {
+        "en": "Allow 6–8 weeks after the anniversary for posting.",
+        "zhHans": "周年日后到账可能需要 6–8 周。"
+      },
+      "category": "points",
+      "cadence": "anniversary",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/travel-credit-cards/avios/iberia",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-iberia-doordash-quarterly",
+      "cardIDs": [
+        "chase-iberia"
+      ],
+      "title": {
+        "en": "Quarterly $10 DoorDash discount",
+        "zhHans": "每季度 $10 DoorDash 折扣"
+      },
+      "summary": {
+        "en": "One eligible non-restaurant order per quarter through December 31, 2027.",
+        "zhHans": "2027 年 12 月 31 日前，每季度一笔合资格非餐厅订单可享折扣。"
+      },
+      "details": {
+        "en": "Activate DashPass with this card; pay with it. Unused discount expires each quarter.",
+        "zhHans": "需使用此卡激活 DashPass 并付款；未用折扣当季到期。"
+      },
+      "category": "shopping",
+      "cadence": "quarterly",
+      "isTrackable": true,
+      "valueCents": 1000,
+      "currencyCode": "USD",
+      "enrollmentRequired": true,
+      "sourceURL": "https://creditcards.chase.com/travel-credit-cards/avios/iberia",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-aer-lingus-anniversary-avios",
+      "cardIDs": [
+        "chase-aer-lingus"
+      ],
+      "title": {
+        "en": "2,500 anniversary Avios",
+        "zhHans": "周年奖励 2,500 Avios"
+      },
+      "summary": {
+        "en": "Receive 2,500 Avios each account anniversary year.",
+        "zhHans": "每个账户周年年度获得 2,500 Avios。"
+      },
+      "details": {
+        "en": "Allow 6–8 weeks after the anniversary for posting.",
+        "zhHans": "周年日后到账可能需要 6–8 周。"
+      },
+      "category": "points",
+      "cadence": "anniversary",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/travel-credit-cards/avios/aer-lingus",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-aer-lingus-doordash-quarterly",
+      "cardIDs": [
+        "chase-aer-lingus"
+      ],
+      "title": {
+        "en": "Quarterly $10 DoorDash discount",
+        "zhHans": "每季度 $10 DoorDash 折扣"
+      },
+      "summary": {
+        "en": "One eligible non-restaurant order per quarter through December 31, 2027.",
+        "zhHans": "2027 年 12 月 31 日前，每季度一笔合资格非餐厅订单可享折扣。"
+      },
+      "details": {
+        "en": "Activate DashPass with this card; pay with it. Unused discount expires each quarter.",
+        "zhHans": "需使用此卡激活 DashPass 并付款；未用折扣当季到期。"
+      },
+      "category": "shopping",
+      "cadence": "quarterly",
+      "isTrackable": true,
+      "valueCents": 1000,
+      "currencyCode": "USD",
+      "enrollmentRequired": true,
+      "sourceURL": "https://creditcards.chase.com/travel-credit-cards/avios/aer-lingus",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-british-airways-reward-flight-credit",
+      "cardIDs": [
+        "chase-british-airways"
+      ],
+      "title": {
+        "en": "Up to $600 in annual reward-flight credits",
+        "zhHans": "每年最高 $600 奖励机票报销"
+      },
+      "summary": {
+        "en": "Up to three credits: $100 economy/premium economy or $200 business/first per booking.",
+        "zhHans": "每年最多三次：每笔经济舱或超经舱 $100，商务舱或头等舱 $200。"
+      },
+      "details": {
+        "en": "Redeem from your BA account for BA-operated transatlantic travel starting in the U.S.; pay all taxes and fees with this card.",
+        "zhHans": "须从本人 BA 账户兑换美国出发、英航执飞的跨大西洋行程，并用此卡支付全部税费。"
+      },
+      "category": "travelCredit",
+      "cadence": "annual",
+      "isTrackable": true,
+      "valueCents": 60000,
+      "currencyCode": "USD",
+      "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/travel-credit-cards/avios/british-airways",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-british-airways-travel-together",
+      "cardIDs": [
+        "chase-british-airways"
+      ],
+      "title": {
+        "en": "Travel Together Ticket after $30,000 spend",
+        "zhHans": "年度消费 $30,000 后获同行券"
+      },
+      "summary": {
+        "en": "Earn one voucher per calendar year; valid for two years.",
+        "zhHans": "每自然年可获一张，有效期两年。"
+      },
+      "details": {
+        "en": "Use on eligible BA, Iberia or Aer Lingus reward flights for a companion or 50% fewer Avios solo; taxes and fees remain payable.",
+        "zhHans": "可用于合资格英航、伊比利亚或爱尔兰航空奖励机票，兑换同行票或单人减免 50% Avios；仍须付税费。"
+      },
+      "category": "transportation",
+      "cadence": "annual",
+      "isTrackable": true,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/travel-credit-cards/avios/british-airways",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-british-airways-flight-discount",
+      "cardIDs": [
+        "chase-british-airways"
+      ],
+      "title": {
+        "en": "10% British Airways flight discount",
+        "zhHans": "英航机票九折"
+      },
+      "summary": {
+        "en": "Eligible BA-operated flights from the U.S. via ba.com/Chase10.",
+        "zhHans": "通过 ba.com/Chase10 购买美国出发的合资格英航执飞航班。"
+      },
+      "details": {
+        "en": "U.S.-resident cardholder must travel, use the code and pay in USD with this card.",
+        "zhHans": "美国居民持卡人须同行，使用折扣码并以此卡支付美元。"
+      },
+      "category": "transportation",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/travel-credit-cards/avios/british-airways",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-iberia-flight-voucher",
+      "cardIDs": [
+        "chase-iberia"
+      ],
+      "title": {
+        "en": "$1,000 voucher after $30,000 spend",
+        "zhHans": "年度消费 $30,000 后获 $1,000 机票券"
+      },
+      "summary": {
+        "en": "One voucher each calendar year for two tickets on the same Iberia flights.",
+        "zhHans": "每自然年可获一张，用于相同 Iberia 航班的两张机票。"
+      },
+      "details": {
+        "en": "Cardholder must travel; taxes excluded. Complete travel within 12 months of issuance.",
+        "zhHans": "持卡人须同行；不抵税费，旅行须在发券后 12 个月内完成。"
+      },
+      "category": "transportation",
+      "cadence": "annual",
+      "isTrackable": true,
+      "valueCents": 100000,
+      "currencyCode": "USD",
+      "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/travel-credit-cards/avios/iberia",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-iberia-flight-discount",
+      "cardIDs": [
+        "chase-iberia"
+      ],
+      "title": {
+        "en": "10% Iberia flight discount",
+        "zhHans": "Iberia 机票九折"
+      },
+      "summary": {
+        "en": "Eligible roundtrip fares booked through iberia.com/Chase10.",
+        "zhHans": "通过 iberia.com/Chase10 购买合资格往返机票。"
+      },
+      "details": {
+        "en": "Cardholder must travel and pay with this card; excludes taxes, fees and carrier charges.",
+        "zhHans": "持卡人须同行并用此卡付款；税费及承运人附加费除外。"
+      },
+      "category": "transportation",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/travel-credit-cards/avios/iberia",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-aer-lingus-companion-ticket",
+      "cardIDs": [
+        "chase-aer-lingus"
+      ],
+      "title": {
+        "en": "Companion ticket after $30,000 spend",
+        "zhHans": "年度消费 $30,000 后获同行票"
+      },
+      "summary": {
+        "en": "One economy companion voucher each calendar year.",
+        "zhHans": "每自然年可获一张经济舱同行券。"
+      },
+      "details": {
+        "en": "Valid 12 months with a paid economy roundtrip from the U.S. to Ireland on Aer Lingus; book at least 30 days ahead.",
+        "zhHans": "有效期 12 个月，搭配美国至爱尔兰的 Aer Lingus 付费经济舱往返票；至少提前 30 天预订。"
+      },
+      "category": "transportation",
+      "cadence": "annual",
+      "isTrackable": true,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/travel-credit-cards/avios/aer-lingus",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-aer-lingus-priority-boarding",
+      "cardIDs": [
+        "chase-aer-lingus"
+      ],
+      "title": {
+        "en": "Aer Lingus priority boarding",
+        "zhHans": "Aer Lingus 优先登机"
+      },
+      "summary": {
+        "en": "Cardholder and authorized users on eligible U.S.–Ireland flights.",
+        "zhHans": "持卡人及附属卡用户可在合资格美国与爱尔兰航班优先登机。"
+      },
+      "details": {
+        "en": "Subject to availability and airline rules.",
+        "zhHans": "受供应情况及航空公司规则限制。"
+      },
+      "category": "transportation",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/travel-credit-cards/avios/aer-lingus",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "us-bank-skypass-select-travel-credit",
+      "cardIDs": [
+        "us-bank-skypass-select"
+      ],
+      "title": {
+        "en": "$200 annual travel credit",
+        "zhHans": "每年 $200 旅行报销"
+      },
+      "summary": {
+        "en": "Credits for eligible direct airline, hotel and car-rental purchases.",
+        "zhHans": "直接向航空公司、酒店及租车公司完成的合资格消费可获报销。"
+      },
+      "details": {
+        "en": "Up to $200 per account anniversary year; merchant coding applies.",
+        "zhHans": "每账户周年年度最高 $200；以商户分类为准。"
+      },
+      "category": "travelCredit",
+      "cadence": "anniversary",
+      "isTrackable": true,
+      "valueCents": 20000,
+      "currencyCode": "USD",
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.skypassvisa.com/credit/visaSelectCard.do",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "us-bank-skypass-select-korean-air-discounts",
+      "cardIDs": [
+        "us-bank-skypass-select"
+      ],
+      "title": {
+        "en": "Two annual 5% Korean Air discounts",
+        "zhHans": "每年两次大韩航空九五折"
+      },
+      "summary": {
+        "en": "Available for the cardholder and one companion.",
+        "zhHans": "适用于持卡人及一名同行人。"
+      },
+      "details": {
+        "en": "Check the coupons in your SKYPASS account for qualifying tickets and expiration.",
+        "zhHans": "适用机票及有效期以 SKYPASS 账户中的优惠券为准。"
+      },
+      "category": "transportation",
+      "cadence": "anniversary",
+      "isTrackable": true,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.skypassvisa.com/credit/visaSelectCard.do",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "us-bank-skypass-select-korean-air-lounges",
+      "cardIDs": [
+        "us-bank-skypass-select"
+      ],
+      "title": {
+        "en": "Two annual Korean Air lounge vouchers",
+        "zhHans": "每年两张大韩航空贵宾室券"
+      },
+      "summary": {
+        "en": "Two lounge vouchers issued each year.",
+        "zhHans": "每年发放两张贵宾室券。"
+      },
+      "details": {
+        "en": "Check your SKYPASS account for access and expiration restrictions.",
+        "zhHans": "入场及有效期限制以 SKYPASS 账户为准。"
+      },
+      "category": "lounge",
+      "cadence": "anniversary",
+      "isTrackable": true,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.skypassvisa.com/credit/visaSelectCard.do",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "us-bank-skypass-select-priority-pass",
+      "cardIDs": [
+        "us-bank-skypass-select"
+      ],
+      "title": {
+        "en": "Four annual Priority Pass visits",
+        "zhHans": "每年四次 Priority Pass 使用次数"
+      },
+      "summary": {
+        "en": "Enrollment provides four included lounge visits yearly.",
+        "zhHans": "注册后每年包含四次贵宾室使用次数。"
+      },
+      "details": {
+        "en": "Program rules govern guests, extra visits and the renewal period.",
+        "zhHans": "同行人、额外使用费用及续期周期以计划条款为准。"
+      },
+      "category": "lounge",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": true,
+      "sourceURL": "https://www.skypassvisa.com/credit/visaSelectCard.do",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "us-bank-skypass-select-trusted-traveler",
+      "cardIDs": [
+        "us-bank-skypass-select"
+      ],
+      "title": {
+        "en": "Up to $120 trusted-traveler fee credit",
+        "zhHans": "最高 $120 快速通关申请费报销"
+      },
+      "summary": {
+        "en": "Pay an eligible Global Entry or TSA PreCheck fee with the card.",
+        "zhHans": "使用此卡支付合资格 Global Entry 或 TSA PreCheck 申请费。"
+      },
+      "details": {
+        "en": "Confirm remaining eligibility and repeat-credit timing with the issuer.",
+        "zhHans": "剩余资格及再次报销时间请向发卡行确认。"
+      },
+      "category": "travelCredit",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": 12000,
+      "currencyCode": "USD",
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.skypassvisa.com/credit/visaSelectCard.do",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "us-bank-skypass-select-duty-free",
+      "cardIDs": [
+        "us-bank-skypass-select"
+      ],
+      "title": {
+        "en": "Two annual $25 duty-free coupons",
+        "zhHans": "每年两张 $25 免税购物券"
+      },
+      "summary": {
+        "en": "Two $25 Korean Air duty-free coupons each year.",
+        "zhHans": "每年提供两张 $25 大韩航空免税购物券。"
+      },
+      "details": {
+        "en": "Eligible purchases and expiration follow the coupon terms.",
+        "zhHans": "合资格消费及有效期以优惠券条款为准。"
+      },
+      "category": "shopping",
+      "cadence": "anniversary",
+      "isTrackable": true,
+      "valueCents": 5000,
+      "currencyCode": "USD",
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.skypassvisa.com/credit/visaSelectCard.do",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "us-bank-skypass-select-renewal-miles",
+      "cardIDs": [
+        "us-bank-skypass-select"
+      ],
+      "title": {
+        "en": "Renewal miles after annual spending",
+        "zhHans": "年度消费达标后的续卡里程"
+      },
+      "summary": {
+        "en": "5,000 miles after $15,000 spend; 10,000 at renewal after $35,000 annual spend.",
+        "zhHans": "年度消费 $15,000 后获 5,000 里程；年度消费 $35,000 后续卡获 10,000 里程。"
+      },
+      "details": {
+        "en": "Issuer terms determine qualifying spend and award fulfillment.",
+        "zhHans": "合资格消费及奖励发放以发卡行条款为准。"
+      },
+      "category": "points",
+      "cadence": "anniversary",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://www.skypassvisa.com/credit/visaSelectCard.do",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-ihg-premier-business-anniversary-night",
+      "cardIDs": [
+        "chase-ihg-premier-business"
+      ],
+      "title": {
+        "en": "40,000-point anniversary night",
+        "zhHans": "40,000 积分周年住宿券"
+      },
+      "summary": {
+        "en": "One annual certificate; extra points may cover a higher-priced night.",
+        "zhHans": "每周年一张住宿券，可补积分兑换更高价住宿。"
+      },
+      "details": {
+        "en": "Complete the stay within 12 months of issuance; availability and resort fees apply.",
+        "zhHans": "须在发券后 12 个月内完成住宿；受房态限制，度假村费另计。"
+      },
+      "category": "hotel",
+      "cadence": "anniversary",
+      "isTrackable": true,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/business-credit-cards/IHG/business-premier",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-ihg-premier-business-platinum-status",
+      "cardIDs": [
+        "chase-ihg-premier-business"
+      ],
+      "title": {
+        "en": "IHG Platinum Elite status",
+        "zhHans": "IHG Platinum Elite 会籍"
+      },
+      "summary": {
+        "en": "Automatic status while the card and membership remain eligible.",
+        "zhHans": "卡片及会员账户保持合资格状态期间自动享有会籍。"
+      },
+      "details": {
+        "en": "Allow 6–8 weeks for fulfillment.",
+        "zhHans": "发放可能需要 6–8 周。"
+      },
+      "category": "hotel",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/business-credit-cards/IHG/business-premier",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-ihg-premier-business-fourth-night-free",
+      "cardIDs": [
+        "chase-ihg-premier-business"
+      ],
+      "title": {
+        "en": "Fourth reward night free",
+        "zhHans": "奖励住宿第四晚免费"
+      },
+      "summary": {
+        "en": "Every fourth night of an eligible consecutive points stay is free.",
+        "zhHans": "合资格连续积分住宿每第四晚免费。"
+      },
+      "details": {
+        "en": "Same hotel and standard room; excludes paid and Points & Cash bookings.",
+        "zhHans": "须为同一酒店标准房；付费及积分加现金预订除外。"
+      },
+      "category": "hotel",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/business-credit-cards/IHG/business-premier",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-ihg-premier-business-annual-spend-bonus",
+      "cardIDs": [
+        "chase-ihg-premier-business"
+      ],
+      "title": {
+        "en": "$100 and 10,000 points after $20,000 spend",
+        "zhHans": "年消费 $20,000 后获 $100 及 10,000 积分"
+      },
+      "summary": {
+        "en": "Earn after eligible spending each calendar year.",
+        "zhHans": "每自然年合资格消费达标后获得。"
+      },
+      "details": {
+        "en": "Allow 6–8 weeks; account must remain eligible.",
+        "zhHans": "到账可能需 6–8 周，账户须保持合资格状态。"
+      },
+      "category": "points",
+      "cadence": "annual",
+      "isTrackable": false,
+      "valueCents": 10000,
+      "currencyCode": "USD",
+      "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/business-credit-cards/IHG/business-premier",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-ihg-premier-business-trusted-traveler",
+      "cardIDs": [
+        "chase-ihg-premier-business"
+      ],
+      "title": {
+        "en": "Up to $120 trusted-traveler credit",
+        "zhHans": "最高 $120 快速通关报销"
+      },
+      "summary": {
+        "en": "Global Entry, TSA PreCheck or NEXUS fee once every four years.",
+        "zhHans": "每四年一次 Global Entry、TSA PreCheck 或 NEXUS 申请费报销。"
+      },
+      "details": {
+        "en": "Pay an authorized provider directly with this card.",
+        "zhHans": "须使用此卡直接向授权机构付款。"
+      },
+      "category": "travelCredit",
+      "cadence": "fourYears",
+      "isTrackable": true,
+      "valueCents": 12000,
+      "currencyCode": "USD",
+      "enrollmentRequired": false,
+      "sourceURL": "https://creditcards.chase.com/business-credit-cards/IHG/business-premier",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-ihg-premier-business-doordash-quarterly",
+      "cardIDs": [
+        "chase-ihg-premier-business"
+      ],
+      "title": {
+        "en": "Quarterly $10 DoorDash discount",
+        "zhHans": "每季度 $10 DoorDash 折扣"
+      },
+      "summary": {
+        "en": "One eligible non-restaurant order per quarter through December 31, 2027.",
+        "zhHans": "2027 年 12 月 31 日前，每季度一笔合资格非餐厅订单可享折扣。"
+      },
+      "details": {
+        "en": "Activate DashPass with this card and use it to pay; no rollover.",
+        "zhHans": "用此卡激活 DashPass 并付款；不结转。"
+      },
+      "category": "shopping",
+      "cadence": "quarterly",
+      "isTrackable": true,
+      "valueCents": 1000,
+      "currencyCode": "USD",
+      "enrollmentRequired": true,
+      "sourceURL": "https://creditcards.chase.com/business-credit-cards/IHG/business-premier",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-ihg-premier-business-instacart-monthly",
+      "cardIDs": [
+        "chase-ihg-premier-business"
+      ],
+      "title": {
+        "en": "Monthly $10 Instacart credit",
+        "zhHans": "每月 $10 Instacart 额度"
+      },
+      "summary": {
+        "en": "Eligible purchases through December 31, 2027 require active Instacart+.",
+        "zhHans": "2027 年 12 月 31 日前适用于合资格消费，须保持 Instacart+ 会员。"
+      },
+      "details": {
+        "en": "Three complimentary months, then automatic $99 annual renewal unless canceled.",
+        "zhHans": "前三个月免费，之后自动按年收取 $99，除非取消。"
+      },
+      "category": "shopping",
+      "cadence": "monthly",
+      "isTrackable": true,
+      "valueCents": 1000,
+      "currencyCode": "USD",
+      "enrollmentRequired": true,
+      "sourceURL": "https://creditcards.chase.com/business-credit-cards/IHG/business-premier",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-sapphire-reserve-doordash-restaurant",
+      "cardIDs": [
+        "chase-sapphire-reserve"
+      ],
+      "title": {
+        "en": "$5 monthly DoorDash restaurant discount",
+        "zhHans": "每月 $5 DoorDash 餐厅折扣"
+      },
+      "summary": {
+        "en": "One eligible restaurant order each calendar month.",
+        "zhHans": "每自然月一笔合资格餐厅订单。"
+      },
+      "details": {
+        "en": "Activate DashPass and pay with this card. Taxes, fees and tips excluded; no rollover.",
+        "zhHans": "须激活 DashPass 并以此卡付款；税费及小费除外，不结转。"
+      },
+      "category": "dining",
+      "cadence": "monthly",
+      "isTrackable": true,
+      "valueCents": 500,
+      "currencyCode": "USD",
+      "enrollmentRequired": true,
+      "sourceURL": "https://www.chase.com/personal/credit-cards/offerdetails/chasesapphire",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-sapphire-reserve-doordash-nonrestaurant-1",
+      "cardIDs": [
+        "chase-sapphire-reserve"
+      ],
+      "title": {
+        "en": "$10 monthly DoorDash non-restaurant discount 1",
+        "zhHans": "每月 $10 DoorDash 非餐厅折扣（1）"
+      },
+      "summary": {
+        "en": "One of two separate monthly discounts on eligible orders.",
+        "zhHans": "每月两个独立折扣之一，适用于合资格订单。"
+      },
+      "details": {
+        "en": "Use each on a separate order; activated DashPass and card payment required. No rollover.",
+        "zhHans": "每个折扣须用于不同订单；需激活 DashPass 并以此卡付款，不结转。"
+      },
+      "category": "shopping",
+      "cadence": "monthly",
+      "isTrackable": true,
+      "valueCents": 1000,
+      "currencyCode": "USD",
+      "enrollmentRequired": true,
+      "sourceURL": "https://www.chase.com/personal/credit-cards/offerdetails/chasesapphire",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "chase-sapphire-reserve-doordash-nonrestaurant-2",
+      "cardIDs": [
+        "chase-sapphire-reserve"
+      ],
+      "title": {
+        "en": "$10 monthly DoorDash non-restaurant discount 2",
+        "zhHans": "每月 $10 DoorDash 非餐厅折扣（2）"
+      },
+      "summary": {
+        "en": "One of two separate monthly discounts on eligible orders.",
+        "zhHans": "每月两个独立折扣之一，适用于合资格订单。"
+      },
+      "details": {
+        "en": "Use each on a separate order; activated DashPass and card payment required. No rollover.",
+        "zhHans": "每个折扣须用于不同订单；需激活 DashPass 并以此卡付款，不结转。"
+      },
+      "category": "shopping",
+      "cadence": "monthly",
+      "isTrackable": true,
+      "valueCents": 1000,
+      "currencyCode": "USD",
+      "enrollmentRequired": true,
+      "sourceURL": "https://www.chase.com/personal/credit-cards/offerdetails/chasesapphire",
+      "lastVerified": "2026-09-09T06:00:00Z"
+    },
+    {
+      "id": "boa-travel-no-foreign-transaction-fee",
+      "cardIDs": [
+        "boa-travel-rewards"
+      ],
+      "title": {
+        "en": "No foreign transaction fee",
+        "zhHans": "免外币交易手续费"
+      },
+      "summary": {
+        "en": "The card charges no foreign transaction fee.",
+        "zhHans": "此卡不收取外币交易手续费。"
+      },
+      "details": {
+        "en": "Currency conversion and merchant charges may still affect the purchase amount. Other account fees follow the card agreement.",
+        "zhHans": "汇率换算及商户收费仍可能影响消费金额；其他账户费用以持卡协议为准。"
+      },
+      "category": "travelCredit",
+      "cadence": "ongoing",
+      "isTrackable": false,
+      "valueCents": null,
+      "currencyCode": null,
+      "enrollmentRequired": false,
+      "sourceURL": "https://secure.bankofamerica.com/apply-now-services/credit-cards/rest/get-disclosures/v1/usa/show-in-browser?cId=4079343&isMobile=true&locale=en_US&poCd=W2",
+      "lastVerified": "2026-09-09T00:00:00Z"
+    },
     {
       "id": "amex-platinum-hotel-credit",
       "cardIDs": ["amex-platinum"],

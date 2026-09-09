@@ -16,7 +16,7 @@ Every published benefit must include a stable ID, applicable card IDs, English a
 
 Earning-rate comparison converts rewards into an estimated return percentage. Cash-back cards use their published percentage directly. Points and miles use a local cents-per-point map keyed by rewards program, while separate stable-ID maps assign each supported card to its program and each earning rate to a comparison category.
 
-The bundled defaults use The Points Guy's July 2026 monthly valuations as a consistent cross-program benchmark: <https://thepointsguy.com/loyalty-programs/monthly-valuations/>. These estimates are editorial opinions rather than issuer-guaranteed redemption values. They are not downloaded or refreshed automatically, and users can override every value locally in Settings. Overrides never leave the device and can be reset to the bundled defaults.
+The airline, hotel, and transferable-points program defaults use The Points Guy's July 2026 monthly valuations as a consistent cross-program benchmark: <https://thepointsguy.com/loyalty-programs/monthly-valuations/>. These estimates are editorial opinions rather than issuer-guaranteed redemption values. They are not downloaded or refreshed automatically, and users can override every value locally in Settings. Overrides never leave the device and can be reset to the bundled defaults.
 
 ## US Credit Card Guide
 
@@ -95,3 +95,48 @@ The app checks the reviewed GitHub Raw catalog on foreground launch and schedule
 The discontinued Deserve EDU record is retained only so existing cardholders can find their legacy product. Its historical earning rate is sourced from the archived official cardholder agreement published by the Consumer Financial Protection Bureau: <https://files.consumerfinance.gov/a/assets/credit-card-agreements/pdf/Celtic_Bank/Deserve_EDU_Cardholder_Agreement.pdf>. The current Deserve site no longer offers that card: <https://deserve.com/>.
 
 Issuer terms control whenever a BeniPin summary differs from current issuer material.
+
+## Bank of America Cash and Travel Rewards
+
+Customized Cash Rewards and Unlimited Cash Rewards use standard cash-back rates. First-year offers are described as conditional in the rate details; comparisons do not assume eligibility or a relationship-rewards tier. Customized Cash Rewards uses one choice-category row and documents the shared quarterly cap. These cash-back products have no separate recurring benefit record.
+
+Travel Rewards defaults to 1 cent per point for eligible travel and dining statement credits, based on the issuer agreement rather than an editorial valuation; users can override this locally. Its foreign-transaction-fee benefit is informational and cannot be marked used.
+
+- <https://www.bankofamerica.com/credit-cards/products/cash-back-credit-card/>
+- <https://www.bankofamerica.com/credit-cards/products/unlimited-cash-back-credit-card/>
+- <https://www.bankofamerica.com/credit-cards/products/travel-rewards-credit-card/>
+- <https://www.bankofamerica.com/bofa-rewards/increasing-bofa-rewards-with-credit-cards/>
+- <https://secure.bankofamerica.com/apply-now-services/credit-cards/rest/get-disclosures/v1/usa/show-in-browser?cId=4079343&isMobile=true&locale=en_US&poCd=W2>
+
+## September 2026 Ongoing-Benefit Review
+
+The September 1–8 post excerpts supplied by the user were used only to identify candidates. The user requested ongoing benefits and excluded welcome offers. No editorial content was scraped or copied into the catalog.
+
+Added British Airways Visa Signature, Iberia Visa Signature, Aer Lingus Visa Signature, U.S. Bank SKYPASS Select, and IHG One Rewards Premier Business. Each includes bilingual names, curated aliases, card earning rates, and issuer-sourced benefits. IHG earning comparisons count the card's 10X, not the combined 26X marketing figure that includes separate hotel and elite-status earnings.
+
+Fixed anniversary Avios and recurring spending bonuses use the existing `points` benefit category and are now visible in Benefits and card details. They are informational rather than marked used; purchase multipliers remain exclusively in Earning. No schema changes are required. Older app versions that explicitly hide the points category will continue to hide those bonuses until updated.
+
+British Airways, Iberia, AerClub and Korean Air SKYPASS each have independent editable valuations initialized to 1 cent. These are neutral comparison assumptions, not issuer redemption guarantees or figures attributed to the existing July benchmark. The Settings explanation identifies this distinction. Bank of America Travel Rewards retains its issuer-backed 1-cent travel/dining redemption baseline.
+
+### Sources checked September 9, 2026 UTC
+
+- [British Airways card and terms](https://creditcards.chase.com/travel-credit-cards/avios/british-airways)
+- [Iberia card and terms](https://creditcards.chase.com/travel-credit-cards/avios/iberia)
+- [Aer Lingus card and terms](https://creditcards.chase.com/travel-credit-cards/avios/aer-lingus)
+- [SKYPASS Select current benefits](https://www.skypassvisa.com/credit/visaSelectCard.do)
+- [SKYPASS FAQ](https://www.skypassvisa.com/credit/faqs.do)
+- [SKYPASS historical issuer booklet](https://www.skypassvisa.com/credit/skypass/pdfs/VisaSelect_Benefits_Booklet.pdf), used only to corroborate the travel-credit account-year basis, not current amounts or the current benefit lineup
+- [IHG Premier Business card and terms](https://creditcards.chase.com/business-credit-cards/IHG/business-premier)
+- [Sapphire Reserve current benefits](https://www.chase.com/sapphire-cards/personal/reserve)
+- [Sapphire benefit terms](https://www.chase.com/personal/credit-cards/offerdetails/chasesapphire)
+
+Sapphire Reserve's two $10 monthly non-restaurant DoorDash discounts have separate stable IDs so each can be marked used independently. Its current $5 restaurant discount is separate as well. All require activated DashPass and eligible payment/orders. Voucher, anniversary and multi-year checklist states use the existing manual-reset behavior; no account anniversary, transaction amounts or credentials are stored. SKYPASS Priority Pass and application-fee credits remain informational because the accessible current source did not establish their precise reset periods.
+
+### Reported changes awaiting official confirmation
+
+| Reported change | Verified public terms | Catalog decision |
+| --- | --- | --- |
+| IHG Business anniversary night rises to 50,000 points after December 31, 2026 | Chase still states 40,000 points, with points top-ups allowed | Retain 40,000; do not activate the reported future value without an official notice and its applicability |
+| Sapphire Reserve $15 monthly DoorDash benefit beginning October 1, 2026 | Chase still states one $5 restaurant discount and two $10 non-restaurant discounts | Add current benefits; do not publish the future amount as current |
+
+BoA welcome bonuses and Rakuten referrals, targeted Amex Offers, the Capital One transfer promotion, and the targeted Bilt Rent Day redemption offer were excluded under the user's scope. The three BoA cards already added remain supported with standard earning rates. BoA Checking, Amex Rewards Checking, and X Money are bank-account products and were not added to the credit-card catalog. The underlying Amex, Capital One and Bilt cards already exist; the excerpts identify promotions rather than new card products.
