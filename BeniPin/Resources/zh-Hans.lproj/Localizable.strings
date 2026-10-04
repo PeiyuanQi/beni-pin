@@ -33,7 +33,7 @@
 "benefit.title" = "权益详情";
 "benefits.mode" = "权益视图";
 "benefits.mode.benefits" = "权益";
-"benefits.mode.earningRates" = "消费积分";
+"benefits.mode.earningRates" = "消费回报";
 "benefits.empty.cards.title" = "还没有选择卡片";
 "benefits.empty.cards.message" = "请先在“我的卡片”添加卡片，再查看对应权益和消费积分。";
 "benefits.search.prompt" = "搜索贵宾室、旅行报销、保险……";
@@ -137,3 +137,7 @@
 
 "common.yes" = "是";
 "common.no" = "否";
+
+"earnings.card.empty.message" = "当前目录尚未收录此卡的消费回报比例。";
+"earnings.estimatedReturn" = "预估回报根据你设置的积分价值计算。";
+"earnings.card.footer" = "轻点回报比例可查看发卡行条款。积分估值可在设置中调整。";

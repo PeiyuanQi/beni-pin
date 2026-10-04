@@ -137,3 +137,7 @@
 
 "common.yes" = "Yes";
 "common.no" = "No";
+
+"earnings.card.empty.message" = "The current catalog does not yet include earning rates for this card.";
+"earnings.estimatedReturn" = "Estimated return based on your point valuation.";
+"earnings.card.footer" = "Tap a rate to open issuer terms. Edit point values in Settings.";

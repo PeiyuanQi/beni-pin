@@ -38,6 +38,30 @@ enum EarningCategory: String, CaseIterable, Identifiable, Sendable {
     }
 }
 
+struct EarningRateResult: Identifiable {
+    let card: CardProduct
+    let earningRate: CardEarningRate
+    let category: EarningCategory
+    let pointValueCents: Double?
+    let effectiveReturnPercent: Double
+
+    var id: String { "\(card.id)|\(earningRate.id)" }
+
+    init(card: CardProduct, earningRate: CardEarningRate, centsPerPoint: (String) -> Double) {
+        self.card = card
+        self.earningRate = earningRate
+        category = RewardValueCatalog.category(for: earningRate)
+        pointValueCents = earningRate.unit == .multiplier
+            ? RewardValueCatalog.rewardProgramByCardID[card.id].map(centsPerPoint)
+            : nil
+        effectiveReturnPercent = RewardValueCatalog.effectiveReturnPercent(
+            for: earningRate,
+            card: card,
+            centsPerPoint: centsPerPoint
+        )
+    }
+}
+
 enum RewardValueCatalog {
     static let valuationSourceURL = URL(
         string: "https://thepointsguy.com/loyalty-programs/monthly-valuations/"

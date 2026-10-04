@@ -47,6 +47,28 @@ final class CatalogTests: XCTestCase {
         ), 0.9, accuracy: 0.0001)
     }
 
+    func testEarningRowsUseCashRatesAndCurrentPointValuations() throws {
+        let catalog = try loadStarterCatalog()
+        let cash = try XCTUnwrap(catalog.card(id: "boa-unlimited-cash-rewards"))
+        let cashRate = try XCTUnwrap(cash.earningRates.first)
+        let cashResult = EarningRateResult(card: cash, earningRate: cashRate) { _ in
+            XCTFail("Cashback must not depend on point valuations")
+            return 10
+        }
+        XCTAssertNil(cashResult.pointValueCents)
+        XCTAssertEqual(cashResult.effectiveReturnPercent, 1.5)
+
+        let travel = try XCTUnwrap(catalog.card(id: "boa-travel-rewards"))
+        let travelRate = try XCTUnwrap(travel.earningRates.last)
+        let result = EarningRateResult(card: travel, earningRate: travelRate) { programID in
+            XCTAssertEqual(programID, "boa-travel-rewards")
+            return 0.6
+        }
+        XCTAssertEqual(result.pointValueCents, 0.6)
+        XCTAssertEqual(result.effectiveReturnPercent, 0.9, accuracy: 0.0001)
+        XCTAssertEqual(result.category, .other)
+    }
+
     func testLegacyCardWithoutEarningRatesStillDecodes() throws {
         let data = Data(
             """

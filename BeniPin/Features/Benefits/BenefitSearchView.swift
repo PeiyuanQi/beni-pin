@@ -57,19 +57,10 @@ struct BenefitSearchView: View {
     private var earningRateResults: [EarningRateResult] {
         ownedCards.flatMap { card in
             card.earningRates.map { earningRate in
-                let programID = RewardValueCatalog.rewardProgramByCardID[card.id]
-                let pointValue = programID.map(pointValuationStore.centsPerPoint(for:))
-
-                return EarningRateResult(
+                EarningRateResult(
                     card: card,
                     earningRate: earningRate,
-                    category: RewardValueCatalog.category(for: earningRate),
-                    pointValueCents: earningRate.unit == .multiplier ? pointValue : nil,
-                    effectiveReturnPercent: RewardValueCatalog.effectiveReturnPercent(
-                        for: earningRate,
-                        card: card,
-                        centsPerPoint: pointValuationStore.centsPerPoint(for:)
-                    )
+                    centsPerPoint: pointValuationStore.centsPerPoint(for:)
                 )
             }
         }
@@ -333,67 +324,5 @@ struct BenefitSearchView: View {
         }
         .buttonStyle(.plain)
         .accessibilityAddTraits(isSelected ? .isSelected : [])
-    }
-}
-
-private struct EarningRateResult: Identifiable {
-    let card: CardProduct
-    let earningRate: CardEarningRate
-    let category: EarningCategory
-    let pointValueCents: Double?
-    let effectiveReturnPercent: Double
-
-    var id: String { "\(card.id)|\(earningRate.id)" }
-}
-
-private struct EarningRateRow: View {
-    let result: EarningRateResult
-    let language: AppLanguage
-
-    var body: some View {
-        HStack(alignment: .top, spacing: 12) {
-            HStack(alignment: .firstTextBaseline, spacing: 0) {
-                Text(result.effectiveReturnPercent, format: .number.precision(.fractionLength(0...2)))
-                    .font(.title3.bold())
-                    .foregroundStyle(Color(hex: "197466"))
-                Text("%")
-                    .font(.caption.weight(.semibold))
-                    .foregroundStyle(Color(hex: "197466"))
-            }
-            .frame(width: 60, height: 48)
-            .background(Color(hex: "DDEFEA"), in: RoundedRectangle(cornerRadius: 8))
-
-            VStack(alignment: .leading, spacing: 4) {
-                HStack(alignment: .firstTextBaseline) {
-                    Text(result.card.name.value(for: language))
-                        .font(.headline)
-                        .foregroundStyle(.primary)
-                    Spacer(minLength: 8)
-                    Image(systemName: "arrow.up.right")
-                        .font(.caption.weight(.semibold))
-                        .foregroundStyle(.tertiary)
-                        .accessibilityHidden(true)
-                }
-
-                Text(result.earningRate.category.value(for: language))
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
-
-                HStack(spacing: 5) {
-                    Text(result.earningRate.displayText)
-                        .fontWeight(.semibold)
-
-                    if let pointValueCents = result.pointValueCents {
-                        Text("×")
-                            .foregroundStyle(.tertiary)
-                        Text(pointValueCents, format: .number.precision(.fractionLength(0...2)))
-                        Text("earnings.centsPerPoint.short")
-                    }
-                }
-                .font(.caption)
-                .foregroundStyle(.secondary)
-            }
-        }
-        .padding(.vertical, 4)
     }
 }

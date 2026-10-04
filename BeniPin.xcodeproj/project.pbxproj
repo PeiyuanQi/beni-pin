@@ -41,6 +41,7 @@
 		E5F3B8C9D0A14234B6C7D8E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4E2A7B8C9F04123A5B6C7D8 /* Assets.xcassets */; };
 		F4EB6C07950FF8F2BD70F060 /* CardCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401414A5C44735A6B8AEAEF1 /* CardCatalog.swift */; };
 		F8A1C2D3E4F5061728394051 /* RewardValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A1C2D3E4F5061728394052 /* RewardValue.swift */; };
+		B91A10203040506070809001 /* EarningRateRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91A10203040506070809002 /* EarningRateRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		E943980087E339D5AFDA2F1F /* BenefitSearchView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BenefitSearchView.swift; path = Features/Benefits/BenefitSearchView.swift; sourceTree = "<group>"; };
 		EE5AA18CDEC4ABB123A9A34A /* WalletCapability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WalletCapability.swift; path = Services/WalletCapability.swift; sourceTree = "<group>"; };
 		F8A1C2D3E4F5061728394052 /* RewardValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RewardValue.swift; path = Models/RewardValue.swift; sourceTree = "<group>"; };
+		B91A10203040506070809002 /* EarningRateRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EarningRateRow.swift; path = Components/EarningRateRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				539C322E556B9FA812F44F3C /* BeniPinApp.swift */,
 				A2866FEEA54DF103683FAF3D /* RootView.swift */,
 				216AB2721D3086FE511B7E1B /* BenefitRow.swift */,
+				B91A10203040506070809002 /* EarningRateRow.swift */,
 				D3001776C1052E4FA3F85300 /* CardArtworkView.swift */,
 				926EBC2EDB9093AF08DA87EA /* BenefitDetailView.swift */,
 				E943980087E339D5AFDA2F1F /* BenefitSearchView.swift */,
@@ -307,6 +310,7 @@
 				3B565744DDC1E86FDB7AAB83 /* BeniPinApp.swift in Sources */,
 				C643AF8DB0590368E690A3C6 /* RootView.swift in Sources */,
 				6634D3D6183659D98D199F65 /* BenefitRow.swift in Sources */,
+				B91A10203040506070809001 /* EarningRateRow.swift in Sources */,
 				BCF59B8D7A04FDBDFE314CFE /* CardArtworkView.swift in Sources */,
 				00D2852B1E64CBC8A87233F0 /* BenefitDetailView.swift in Sources */,
 				7E85CDC7B1B9209F2ADD8A5B /* BenefitSearchView.swift in Sources */,

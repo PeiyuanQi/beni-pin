@@ -7,6 +7,9 @@ struct MyCardsView: View {
     @EnvironmentObject private var cardCollection: UserCardCollection
     @EnvironmentObject private var usageStore: BenefitUsageStore
     @State private var isAddingCard = false
+#if DEBUG
+    @State private var showsDemoCardDetail = false
+#endif
 
     private var ownedCards: [CardProduct] {
         catalogStore.catalog.cards
@@ -43,10 +46,29 @@ struct MyCardsView: View {
                 .accessibilityLabel(Text("cards.add"))
             }
         }
+#if DEBUG
+        .task(id: catalogStore.catalog.cards.count) {
+            showsDemoCardDetail = demoCard != nil
+        }
+        .navigationDestination(isPresented: $showsDemoCardDetail) {
+            if let card = demoCard {
+                CardDetailView(card: card, language: language)
+            }
+        }
+#endif
         .sheet(isPresented: $isAddingCard) {
             AddCardView(language: language)
         }
     }
+
+#if DEBUG
+    private var demoCard: CardProduct? {
+        let arguments = ProcessInfo.processInfo.arguments
+        guard let index = arguments.firstIndex(of: "-demoCardDetail"),
+              arguments.indices.contains(index + 1) else { return nil }
+        return catalogStore.catalog.card(id: arguments[index + 1])
+    }
+#endif
 
     @ViewBuilder
     private var cardsContent: some View {

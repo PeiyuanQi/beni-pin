@@ -12,6 +12,7 @@ The app stores only catalog product IDs, local usage state, and app preferences 
 - Apple Wallet-style My Cards stack with neutral, original card artwork.
 - Benefit-first navigation with searchable, horizontally scrollable category filters.
 - Fixed recurring points and miles bonuses appear in Benefits; welcome offers and targeted promotions are excluded.
+- Each card detail includes a Benefits/Earning switch, with cashback percentages, estimated points returns using your saved valuations, full earning conditions, verification dates, and official source links.
 - Separate Benefits and Earning views for selected cards; earning rates are grouped by purchase category and ranked by estimated return.
 - Locally editable cents-per-point valuations for supported rewards programs, with cash-back rates compared directly as percentages.
 - Articles tab with direct system-browser links to US Credit Card Guide's current homepage, card-article categories, and directories.
@@ -52,6 +53,8 @@ Apple does not provide a public permission flow that lets a normal third-party a
   ```
 
 - Documentation-only verification: `git diff --check`.
+
+For repeatable card-detail simulator screenshots, Debug builds accept `-demoTab cards -demoCardDetail <catalog-card-id> -demoEarningRates`. Omit `-demoEarningRates` to inspect Benefits. Use `-appLanguage english` or `-appLanguage simplifiedChinese` to check both localizations. These demo navigation arguments are ignored in Release builds.
 
 ## Catalog Updates
 
